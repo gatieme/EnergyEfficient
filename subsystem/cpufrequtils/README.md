@@ -18,8 +18,11 @@ http://www.kernel.org/pub/linux/utils/kernel/cpufreq/cpufrequtils.html )
 consists of the following elements:
 
 *   ubuntu package
+
 cpufrequtils    :   http://packages.ubuntu.com/trusty/cpufrequtils
+
 libcpufreq-dev  :   http://packages.ubuntu.com/trusty/libcpufreq-dev
+
 libcpufreq0     :   http://packages.ubuntu.com/trusty/libcpufreq0
 
 
