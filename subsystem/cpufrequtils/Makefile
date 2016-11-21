@@ -45,7 +45,7 @@ SYSFS ?=	true
 PROC ?=		true
 
 # Prefix to the directories we're installing to
-DESTDIR ?=	
+DESTDIR ?=
 
 # --- CONFIGURATION END ---
 
@@ -259,7 +259,7 @@ install-gmo:
 install-bench:
 	@#DESTDIR must be set from outside to survive
 	@sbindir=$(sbindir) bindir=$(bindir) docdir=$(docdir) confdir=$(confdir) $(MAKE) -C bench install
-       
+
 install: all install-lib install-tools install-man $(INSTALL_NLS) $(INSTALL_BENCH)
 
 uninstall:
@@ -275,4 +275,4 @@ uninstall:
 	  done;
 
 .PHONY: all utils libcpufreq ccdv update-po update-gmo install-lib install-tools install-man install-gmo install uninstall \
-	clean 
+	clean
