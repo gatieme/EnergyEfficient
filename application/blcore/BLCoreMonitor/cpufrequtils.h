@@ -6,7 +6,7 @@
 
 
 
-#include "cpufreqbase.h"
+#include "cpufreqinfo.h"
 
 
 #ifdef __cplusplus
