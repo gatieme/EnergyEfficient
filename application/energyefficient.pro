@@ -23,10 +23,10 @@ INCLUDEPATH +=  ./CGMonitor2/InlcudeCG   \
 #INCLUDEPATH += /home/cc/ipcamera/x264/include#embeded
 
 # for FPGA and qwt-6.1.3
-#LIBS += -L./lib/x86 -lfpgaCG_mon    \
-#        -L/usr/local/Trolltech/qwt-6.1.3-qt-4.8.0/x86/lib
-LIBS += -L./lib/arm -lfpgaCG_mon    \
-        -L/usr/local/Trolltech/qwt-6.1.3-qt-4.8.0/arm/lib
+LIBS += -L./lib/x86 -lfpgaCG_mon    \
+        -L/usr/local/Trolltech/qwt-6.1.3-qt-4.8.0/x86/lib
+#LIBS += -L./lib/arm -lfpgaCG_mon    \
+#        -L/usr/local/Trolltech/qwt-6.1.3-qt-4.8.0/arm/lib
 
 SOURCES += main.cpp\
     fpga/jpeg/JPEGmainwindow.cpp \

@@ -27,7 +27,8 @@ SOURCES += main.cpp\
     qhexedit.cpp \
     chunks.cpp \
     commands.cpp \
-    IniEx.cpp
+    IniEx.cpp \
+    CGmainwindow.cpp
 
 HEADERS  += mainwindow.h \
     SummaryTab.h \
@@ -41,6 +42,8 @@ HEADERS  += mainwindow.h \
     chunks.h \
     commands.h \
     fpgaCGMon.h \
-    IniEx.h
+    IniEx.h \
+    CGmainwindow.h
 
-FORMS    +=
+FORMS    += \
+    mainwindow.ui

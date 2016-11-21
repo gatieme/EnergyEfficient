@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CpuFreqWidgetTab</class>
+ <widget class="QWidget" name="CpuFreqWidgetTab">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QRadioButton" name="glocalCpuRadioButton">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>10</y>
+     <width>117</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>全局设置</string>
+   </property>
+  </widget>
+  <widget class="QRadioButton" name="customCpuRadioButton">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>10</y>
+     <width>117</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>定制CPU</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
