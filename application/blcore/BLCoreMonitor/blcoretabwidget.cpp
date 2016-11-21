@@ -18,4 +18,5 @@ BLCoreTabWidget::~BLCoreTabWidget( )
 {
     delete m_cpumonitorWidgetTab;
     delete m_cpufreqWidgetTab;
+
 }

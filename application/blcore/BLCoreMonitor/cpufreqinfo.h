@@ -1,5 +1,5 @@
-#ifndef CPUFREQ_H
-#define CPUFREQ_H
+#ifndef CPUFREQINFO_H
+#define CPUFREQINFO_H
 
 #include <QObject>
 #include <QList>
@@ -17,11 +17,11 @@ extern "C"
 
 
 // 每个CPU的结构体
-class CpuFreqBase : public QObject
+class CpuFreqInfo : public QObject
 {
     Q_OBJECT
 public:
-    explicit CpuFreqBase(QObject *parent = 0);
+    explicit CpuFreqInfo(QObject *parent = 0);
 
 signals:
 
@@ -29,7 +29,7 @@ public slots:
 
 protected :
     unsigned int    m_cpuid;                      //  当前CPU的编号
-    bool   m_isonline;                   //  当前CPU是否在线
+    bool            m_isonline;                   //  当前CPU是否在线
 
     unsigned long   m_scalingMinFrequency;        //  理论上最小运行频率
     unsigned long   m_scalingMaxFrequency;        //  理论上最大运行频率
@@ -44,4 +44,4 @@ protected :
     struct cpufreq_policy                         m_curPolicy;                  //  当前使用的cpufreq
 };
 
-#endif // CPUFREQ_H
+#endif // CPUFREQINFO_H

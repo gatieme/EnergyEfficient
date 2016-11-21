@@ -14,9 +14,14 @@ BLCoreMainWindow::BLCoreMainWindow(QWidget *parent) :
     this->ui->menuBar->hide();          //  隐藏菜单栏
     this->ui->statusBar->hide( );       //  隐藏状态栏
 
+    //  初始化调频工具类
+    this->m_cpuFreqUtils = CpuFreqUtils::GetInstance( );
+    qDebug() <<this->m_cpuFreqUtils->CpuNumAvaliable();
     //  添加tabwidget
     m_blcoreTabWidget= new BLCoreTabWidget();
     setCentralWidget(m_blcoreTabWidget);
+
+
 
     //signal(SIGPIPE, SIG_IGN);
     setWindowTitle(tr("多核低功耗调度平台"));
@@ -25,4 +30,7 @@ BLCoreMainWindow::BLCoreMainWindow(QWidget *parent) :
 BLCoreMainWindow::~BLCoreMainWindow()
 {
     delete ui;
+
+    delete m_blcoreTabWidget;       //  销毁tabwidget
+    delete m_cpuFreqUtils;          //  销毁调频工具类
 }

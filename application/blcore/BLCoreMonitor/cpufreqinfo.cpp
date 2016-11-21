@@ -1,6 +1,6 @@
 #include "cpufreqbase.h"
 
-CpuFreqBase::CpuFreqBase(QObject *parent) :
+CpuFreqInfo::CpuFreqInfo(QObject *parent) :
     QObject(parent)
 {
 }
