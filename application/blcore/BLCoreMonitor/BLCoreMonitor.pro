@@ -31,12 +31,16 @@ SOURCES += main.cpp\
         blcoremainwindow.cpp \
     cpufreqwidgettab.cpp \
     blcoretabwidget.cpp \
-    cpumonitorwidgettab.cpp
+    cpumonitorwidgettab.cpp \
+    cpufrequtils.cpp \
+    cpufreqbase.cpp
 
 HEADERS  += blcoremainwindow.h \
     cpufreqwidgettab.h \
     blcoretabwidget.h \
-    cpumonitorwidgettab.h
+    cpumonitorwidgettab.h \
+    cpufrequtils.h \
+    cpufreqbase.h
 
 FORMS    += blcoremainwindow.ui \
     cpufreqwidgettab.ui \
