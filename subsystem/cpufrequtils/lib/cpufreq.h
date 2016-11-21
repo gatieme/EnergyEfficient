@@ -20,23 +20,27 @@
 #ifndef _CPUFREQ_H
 #define _CPUFREQ_H 1
 
-struct cpufreq_policy {
-	unsigned long min;
-	unsigned long max;
-	char *governor;
-};
 
-struct cpufreq_available_governors {
-	char *governor;
-	struct cpufreq_available_governors *next;
-	struct cpufreq_available_governors *first;
-};
+/*  cpufreq的调频策略   */
+typedef struct cpufreq_policy {
+	unsigned long min;      /*  最小运行频率    */
+	unsigned long max;      /*  最大运行频率    */
+	char *governor;         /*  cpu的频率调节器 */
+}cpufreq_policy;
 
-struct cpufreq_available_frequencies {
-	unsigned long frequency;
-	struct cpufreq_available_frequencies *next;
-	struct cpufreq_available_frequencies *first;
-};
+/*  cpufreq可供选择的cpu频率调节器的集合--组成的链表    */
+typedef struct cpufreq_available_governors {
+	char *governor;                             /*  当前cpu的频率调节器    */
+	struct cpufreq_available_governors *next;   /*  下一个可用的频率调节器 */
+	struct cpufreq_available_governors *first;  /*  第一个可用的频率调节器 */
+}cpufreq_available_governors;
+
+/*  cpufreq可供选择的运行频率的集合--组成的链表  */
+typedef struct cpufreq_available_frequencies {
+	unsigned long frequency;                    /*  当前cpu的运行频率        */
+	struct cpufreq_available_frequencies *next; /*  当前cpu下一个可运行频率  */
+	struct cpufreq_available_frequencies *first;/*  当前cpu的可运行频率链表头*/
+}cpufreq__available_frequencies;
 
 
 struct cpufreq_affected_cpus {
@@ -73,8 +77,10 @@ extern int cpufreq_cpu_exists(unsigned int cpu);
  * returns 0 on failure, else frequency in kHz.
  */
 
+/*  cat /sys/devices/system/cpu/cpufreq/policyX/scaling_cur_freq  */
 extern unsigned long cpufreq_get_freq_kernel(unsigned int cpu);
 
+/*  cat /sys/devices/system/cpu/cpufreq/policyX/cpuinfo_cur_freq  */
 extern unsigned long cpufreq_get_freq_hardware(unsigned int cpu);
 
 #define cpufreq_get(cpu) cpufreq_get_freq_kernel(cpu);
@@ -93,8 +99,8 @@ extern unsigned long cpufreq_get_transition_latency(unsigned int cpu);
  * considerations by cpufreq policy notifiers in the kernel.
  */
 
-extern int cpufreq_get_hardware_limits(unsigned int cpu, 
-				       unsigned long *min, 
+extern int cpufreq_get_hardware_limits(unsigned int cpu,
+				       unsigned long *min,
 				       unsigned long *max);
 
 
@@ -146,7 +152,7 @@ extern struct cpufreq_available_frequencies * cpufreq_get_available_frequencies(
 extern void cpufreq_put_available_frequencies(struct cpufreq_available_frequencies *first);
 
 
-/* determine affected CPUs 
+/* determine affected CPUs
  *
  * Remember to call cpufreq_put_affected_cpus when no longer needed
  * to avoid memory leakage, please.
@@ -157,7 +163,7 @@ extern struct cpufreq_affected_cpus * cpufreq_get_affected_cpus(unsigned int cpu
 extern void cpufreq_put_affected_cpus(struct cpufreq_affected_cpus *first);
 
 
-/* determine related CPUs 
+/* determine related CPUs
  *
  * Remember to call cpufreq_put_related_cpus when no longer needed
  * to avoid memory leakage, please.
@@ -180,8 +186,8 @@ extern void cpufreq_put_stats(struct cpufreq_stats *stats);
 extern unsigned long cpufreq_get_transitions(unsigned int cpu);
 
 
-/* set new cpufreq policy 
- * 
+/* set new cpufreq policy
+ *
  * Tries to set the passed policy as new policy as close as possible,
  * but results may differ depending e.g. on governors being available.
  */
@@ -189,7 +195,7 @@ extern unsigned long cpufreq_get_transitions(unsigned int cpu);
 extern int cpufreq_set_policy(unsigned int cpu, struct cpufreq_policy *policy);
 
 
-/* modify a policy by only changing min/max freq or governor 
+/* modify a policy by only changing min/max freq or governor
  *
  * Does not check whether result is what was intended.
  */
@@ -202,7 +208,7 @@ extern int cpufreq_modify_policy_governor(unsigned int cpu, char *governor);
 /* set a specific frequency
  *
  * Does only work if userspace governor can be used and no external
- * interference (other calls to this function or to set/modify_policy) 
+ * interference (other calls to this function or to set/modify_policy)
  * occurs. Also does not work on ->range() cpufreq drivers.
  */
 
