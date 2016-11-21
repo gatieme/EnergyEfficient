@@ -2,6 +2,10 @@
 #define CPUFREQUTILS_H
 
 #include <QObject>
+#include <QDebug>
+
+
+
 #include "cpufreqbase.h"
 
 
@@ -11,6 +15,8 @@ extern "C"
 #endif
 
 #include "cpufreq.h"
+
+#include <sys/sysinfo.h>  // for get_nprocs(void) and get_nprocs_conf(void)
 
 #ifdef __cplusplus
 }
@@ -25,9 +31,14 @@ class CpuFreqUtils : public QObject
 public:
     explicit CpuFreqUtils(QObject *parent = 0);
 
+
+
 signals:
 
 public slots:
+
+
+
 
 protected :
     int                     m_cpuNumKernel;             //  系统中插入的CPU的数目(包括online和offline)
