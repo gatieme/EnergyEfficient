@@ -16,7 +16,6 @@ BLCoreMainWindow::BLCoreMainWindow(QWidget *parent) :
 
     //  初始化调频工具类
     this->m_cpuFreqUtils = CpuFreqUtils::GetInstance( );
-    qDebug() <<this->m_cpuFreqUtils->CpuNumAvaliable();
     //  添加tabwidget
     m_blcoreTabWidget= new BLCoreTabWidget();
     setCentralWidget(m_blcoreTabWidget);

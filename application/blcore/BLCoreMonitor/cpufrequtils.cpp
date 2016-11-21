@@ -18,12 +18,12 @@ CpuFreqUtils::CpuFreqUtils(QObject *parent) :
 
 
 
-unsigned long CpuFreqUtils::CpuNumKernel( )
+unsigned long CpuFreqUtils::GetCpuNumKernel( )
 {
     return this->m_cpuNumKernel;
 }
 
-unsigned long CpuFreqUtils::CpuNumAvaliable( )
+unsigned long CpuFreqUtils::GetCpuNumAvaliable( )
 {
     return this->m_cpuNumAvaliable;
 }

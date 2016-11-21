@@ -60,7 +60,7 @@ public :
     /////////////////////
     //  获取编号为cpuid的CPU的信息
     /////////////////////
-    const CpuFreqBase GetCpuInfo(unsigned int cpuid);      //  获取编号为cpuid的CPU完整信息
+    const CpuFreqInfo GetCpuInfo(unsigned int cpuid);      //  获取编号为cpuid的CPU完整信息
     const bool GetIsOnline(unsigned int cpuid);                  //  编号为cpuid的CPU是否online
     const unsigned GetScalingMinFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最小运行频率
     const unsigned GetScalingMaxFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最大运行频率
@@ -75,7 +75,7 @@ public :
     /////////////////////
     //  更新编号为cpuid的CPU的信息
     /////////////////////
-    const CpuFreqBase UpdateCpuInfo(unsigned int cpuid);      //  获取编号为cpuid的CPU完整信息
+    const CpuFreqInfo UpdateCpuInfo(unsigned int cpuid);      //  获取编号为cpuid的CPU完整信息
     bool UpdateIsOnline(unsigned int cpuid);                  //  编号为cpuid的CPU是否online
     unsigned UpdateScalingMinFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最小运行频率
     unsigned UpdateScalingMaxFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最大运行频率
@@ -85,7 +85,7 @@ public :
     unsigned UpdateCpuInfoCurFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的当前运行频率
     QList<struct cpufreq_available_frequencies> UpdateAvailableFrequencies(unsigned int cpuid);   //  可用的CPU频率值
     QList<struct cpufreq_available_governors> UpdateAvailableGovernors(unsigned int cpuid);         //  可用的CPU频率调节器
-    struct cpufreq_policy   GetCpuFreqPolicy(unsigned int cpuid);
+    struct cpufreq_policy   UpdateCpuFreqPolicy(unsigned int cpuid);
 
 
 
@@ -107,7 +107,7 @@ public slots:
 protected :
     int                     m_cpuNumKernel;             //  系统中插入的CPU的数目(包括online和offline)
     int                     m_cpuNumAvaliable;          //  系统中可用的CPU数目(即onlie的CPU数目)
-    QList<CpuFreqBase>      m_cpus;                     //  当前系统中CPU的集合
+    QList<CpuFreqInfo>      m_cpus;                     //  当前系统中CPU的集合
 
     //  单例模式
     static CpuFreqUtils     *m_singleton;
