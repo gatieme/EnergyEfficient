@@ -7,7 +7,7 @@ GITHUB_COMMIT := $(COMMIT)
 
 
 ifeq ($(COMMIT), )
-	GITHUB_COMMIT="完善了目录结构..."
+	GITHUB_COMMIT="增加了subsystem/cpufrequtils, 支持cpufreq动态调频..."
 endif
 
 

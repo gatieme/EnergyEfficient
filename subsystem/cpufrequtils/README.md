@@ -12,18 +12,27 @@ sudo apt-get -d source "cpufrequtils"
 ```
 
 
-*   kernel tools
-The cpufrequtils package (homepage:
-http://www.kernel.org/pub/linux/utils/kernel/cpufreq/cpufrequtils.html )
-consists of the following elements:
-
 *   ubuntu package
 
-cpufrequtils    :   http://packages.ubuntu.com/trusty/cpufrequtils
 
-libcpufreq-dev  :   http://packages.ubuntu.com/trusty/libcpufreq-dev
+| package | url-page |
+|:-------:|:--------:|
+| cpufrequtils      |   http://packages.ubuntu.com/trusty/cpufrequtils      |
+| libcpufreq-dev    |   http://packages.ubuntu.com/trusty/libcpufreq-dev    |
+| libcpufreq0       |   http://packages.ubuntu.com/trusty/libcpufreq0       |
 
-libcpufreq0     :   http://packages.ubuntu.com/trusty/libcpufreq0
+*   kernel tools
+
+The cpufrequtils package
+
+homepage:http://www.kernel.org/pub/linux/utils/kernel/cpufreq/cpufrequtils.html
+consists of the following elements
+
+| elements | description |
+|:--------:|:-----------:|
+| libcpufreq | libcpufreq is a library which offers a unified access method for userspace tools     |
+| utils      | interface for `cpufrequtils` in userspace, include "cpufreq-info" and "cpufreq-set"  |
+| debug      | A few debug tools helpful for cpufreq have been merged into this package             |
 
 
 #1   libcpufreq
