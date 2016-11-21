@@ -15,6 +15,8 @@ public:
     explicit CpuFreqWidgetTab(QWidget *parent = 0);
     ~CpuFreqWidgetTab();
 
+
+
 private:
     Ui::CpuFreqWidgetTab *ui;
 };
