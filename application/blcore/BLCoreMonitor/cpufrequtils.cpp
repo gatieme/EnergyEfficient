@@ -75,13 +75,13 @@ unsigned long CpuFreqUtils::UpdateCpuNumAvaliable( )
 //  获取编号为cpuid的CPU完整信息
 const CpuFreqInfo GetCpuInfo(unsigned int cpuid)
 {
-
+    return this->m_cpus[cpuid];
 }
 
 //  编号为cpuid的CPU是否online
 const bool GetIsOnline(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)
 }
 
 
