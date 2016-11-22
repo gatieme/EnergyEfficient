@@ -3,8 +3,6 @@
 BLCoreTabWidget::BLCoreTabWidget(QWidget *parent) :
     QTabWidget(parent)
 {
-
-
     //
     this->m_cpumonitorWidgetTab = new CpuMonitorWidgetTab(this);
     this->addTab(m_cpumonitorWidgetTab, tr("监控"));

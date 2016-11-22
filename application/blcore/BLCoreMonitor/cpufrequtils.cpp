@@ -32,9 +32,23 @@ CpuFreqUtils::CpuFreqUtils(QObject *parent) :
             this->m_cpus.append(NULL);
         }
     }
-    qDebug() <<(unsigned long )-1 <<endl;
 }
 
+
+
+CpuFreqUtils::~CpuFreqUtils( )
+{
+    for(int cpuid = 0;
+        cpuid < this->m_cpuNumKernel;
+        cpuid++)
+    {
+        CpuFreqInfo *cpuinfo = this->m_cpus[cpuid];
+        if(cpuinfo != NULL)
+        {
+            delete cpuinfo;
+        }
+    }
+}
 
 
 //  判断编号为cpuid的CPU是否被安装(exist|present)

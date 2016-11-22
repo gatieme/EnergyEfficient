@@ -134,13 +134,14 @@ public :
     bool SetPolicyGovernor(unsigned int cpuid, QString *governor);
     bool SetFrequency(unsigned int cpuid, unsigned long targetFrequency);
 
-
+    virtual ~CpuFreqUtils( );
 private:
     explicit CpuFreqUtils(QObject *parent = 0);
 
     explicit CpuFreqUtils(const CpuFreqUtils &singleton)       // 赋值构造函数[被保护]
     {
     }
+
 
 
 signals:

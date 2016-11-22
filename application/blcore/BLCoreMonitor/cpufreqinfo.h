@@ -47,6 +47,7 @@ public:
     explicit CpuFreqInfo(QObject *parent = 0, unsigned int cpuid = 0);
     virtual ~CpuFreqInfo( )
     {
+
     }
     friend std::ostream &operator<<(std::ostream &os, const CpuFreqInfo &info);
     friend QDebug operator<<(QDebug dbg, const CpuFreqInfo &info);
