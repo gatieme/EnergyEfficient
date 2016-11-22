@@ -14,8 +14,11 @@ BLCoreMainWindow::BLCoreMainWindow(QWidget *parent) :
     this->ui->menuBar->hide();          //  隐藏菜单栏
     this->ui->statusBar->hide( );       //  隐藏状态栏
 
+    ///////////////////////////////////
     //  初始化调频工具类
+    ///////////////////////////////////
     this->m_cpuFreqUtils = CpuFreqUtils::GetInstance( );
+
     //  添加tabwidget
     m_blcoreTabWidget= new BLCoreTabWidget();
     setCentralWidget(m_blcoreTabWidget);
