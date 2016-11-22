@@ -7,6 +7,26 @@ CpuMonitorWidgetTab::CpuMonitorWidgetTab(QWidget *parent) :
 {
     ui->setupUi(this);
 
+    ///////////////////////////////////
+    ///  初始化调频工具类
+    ///////////////////////////////////
+    this->m_cpuFreqUtils = CpuFreqUtils::GetInstance( );
+
+    ///////////////////////////////////
+    /// 定时器每隔一秒中开始读取cpufreq的信息
+    /// QTimer *m_cpuUsageMonitorTimer      cpu频率frequency的监视定时器
+    /// QTimer *m_cpuFrequencyMonitorTimer  cpu使用率usage的监视定时器
+    ///////////////////////////////////
+    this->m_cpuUsageMonitorTimer = new QTimer(this);
+    connect(this->m_cpuUsageMonitorTimer, SIGNAL(timeout( )),
+            this, SLOT(slotShowCpuUsagePlot( )));
+    this->m_cpuUsageMonitorTimer->start(1000);
+
+    this->m_cpuFrequencyMonitorTimer = new QTimer(this);
+    connect(this->m_cpuUsageMonitorTimer, SIGNAL(timeout( )),
+            this, SLOT(slotShowCpuFrequencyPlot( )));
+    this->m_cpuFrequencyMonitorTimer->start(1000);
+
 
 
 
@@ -68,12 +88,6 @@ CpuMonitorWidgetTab::CpuMonitorWidgetTab(QWidget *parent) :
     this->m_locateCurve->setRenderHint(QwtPlotItem::RenderAntialiased,true);
     */
 
-    ///////////////////////////////////
-    ///  定时器每隔一秒中开始读取cpufreq的信息
-    ///////////////////////////////////
-    QTimer *timer = new QTimer(this);
-       connect(timer, SIGNAL(timeout()), this, SLOT(processOneThing()));
-       timer->start();
 
 }
 
@@ -86,13 +100,13 @@ CpuMonitorWidgetTab::~CpuMonitorWidgetTab()
 //  绘制cpu使用率的曲线
 void CpuMonitorWidgetTab::slotShowCpuUsagePlot()
 {
-
-
+    qDebug( ) <<__func__ <<endl;
 }
 
 //  绘制cpu频率的曲线
-void CpuMonitorWidgetTab::slotShowCpuUsageFrequency( )
+void CpuMonitorWidgetTab::slotShowCpuFrequencyPlot( )
 {
+    qDebug( ) <<__func__ <<endl;
 
 
 }

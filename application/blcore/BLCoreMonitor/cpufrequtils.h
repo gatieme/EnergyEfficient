@@ -35,6 +35,9 @@ public :
         return const_cast<CpuFreqUtils *>(CpuFreqUtils::m_singleton);
     }
 
+    virtual ~CpuFreqUtils( );
+
+
     //  判断编号为cpuid的CPU是否被安装(exist|present)
     static bool IsCpuPresent(unsigned int cpuid);
     //  判断编号为cpuid的CPU是否活跃(online)
@@ -134,7 +137,7 @@ public :
     bool SetPolicyGovernor(unsigned int cpuid, QString *governor);
     bool SetFrequency(unsigned int cpuid, unsigned long targetFrequency);
 
-    virtual ~CpuFreqUtils( );
+
 private:
     explicit CpuFreqUtils(QObject *parent = 0);
 
@@ -147,9 +150,15 @@ private:
 signals:
 
 public slots:
-
-
-
+    ///////////////////////////////////////////////////////////////////
+    /// 3--CPU
+    ///////////////////////////////////////////////////////////////////
+    /////////////////////
+    //  3.1--获取编号为cpuid的CPU的信息
+    /////////////////////
+    QList<unsigned long> UpdateCpusScalingCurFrequency(unsigned int cpuid);   //  CPU的当前运行频率
+    QList<unsigned long> UpdateCpusCpuInfoCurFrequency(unsigned int cpuid);   //  当前运行频率
+    QList<unsigned long> UpdateCpusUsage(unsigned int cpuid);                 //  当前运行频率
 
 protected :
     ///  m_cpuNumKernel     the number of processors configured by the operating system.
