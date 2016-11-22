@@ -27,12 +27,12 @@ QObject(parent)
 
 
 ///////////////////////////////////////////////////////////////////
-/// CPU信息CpuFreq的操作
+/// 1--CPU信息CpuFreq的操作
 ///////////////////////////////////////////////////////////////////
 
 
 /////////////////////
-//  获取编号为cpuid的CPU的信息
+//  1.1--获取编号为cpuid的CPU的信息
 /////////////////////
 
 //  获取编号为cpuid的CPU完整信息
@@ -155,7 +155,7 @@ CpuFreqInfo::GetAvailableGovernors( )         //  可用的CPU频率调节器
 
 
 /////////////////////
-//  更新编号为cpuid的CPU的信息
+//  1.2--更新编号为cpuid的CPU的信息
 /////////////////////
 
 //  获取编号为cpuid的CPU完整信息
@@ -191,7 +191,7 @@ unsigned long CpuFreqInfo::UpdateTransitionLatency( )
     unsigned long transitionLatency = cpufreq_get_transition_latency(this->m_cpuid);
     if(transitionLatency == 0)
     {
-        qDebug() <<__FILE__ <<__LINE__ <<"read transition_latency error" <<endl;
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read transition_latency error" <<endl;
         return -1;
     }
     else
@@ -213,7 +213,7 @@ struct cpufreq_policy*   CpuFreqInfo::UpdateCpuFreqPolicy( )
     struct cpufreq_policy *policy = cpufreq_get_policy(this->m_cpuid);
     if(policy == NULL)
     {
-        qDebug() <<__FILE__ <<__LINE__ <<__func__ <<" error" <<endl;
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<__func__ <<" error" <<endl;
         return NULL;
     }
     else
@@ -238,7 +238,7 @@ unsigned long CpuFreqInfo::UpdateScalingMinFrequency( )
     struct cpufreq_policy *policy = cpufreq_get_policy(this->m_cpuid);
     if(policy == NULL)
     {
-        qDebug() <<__FILE__ <<__LINE__ <<__func__ <<" error" <<endl;
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<__func__ <<" error" <<endl;
         return -1;
     }
     else
@@ -263,7 +263,7 @@ unsigned long CpuFreqInfo::UpdateScalingMaxFrequency( )
     struct cpufreq_policy *policy = cpufreq_get_policy(this->m_cpuid);
     if(policy == NULL)
     {
-        qDebug() <<__FILE__ <<__LINE__ <<__func__ <<" error" <<endl;
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<__func__ <<" error" <<endl;
         return -1;
     }
     else
@@ -283,7 +283,7 @@ unsigned long CpuFreqInfo::UpdateScalingCurFrequency( )
 
     if(curfreq == 0)
     {
-        qDebug() <<__FILE__ <<__LINE__ <<"read scaling_cur_freq error" <<endl;
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read scaling_cur_freq error" <<endl;
         return -1;
     }
     else
@@ -301,7 +301,7 @@ unsigned long CpuFreqInfo::UpdateCpuInfoMinFrequency( )
 
     if(cpufreq_get_hardware_limits(this->m_cpuid, &min, &max) != 0)
     {
-        qDebug() <<__FILE__ <<__LINE__ <<"read cpuinfo_min_freq error" <<endl;
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read cpuinfo_min_freq error" <<endl;
         return -1;
     }
     else
@@ -319,7 +319,7 @@ unsigned long CpuFreqInfo::UpdateCpuInfoMaxFrequency( )
 
     if(cpufreq_get_hardware_limits(this->m_cpuid, &min, &max) != 0)
     {
-        qDebug() <<__FILE__ <<__LINE__ <<"read cpuinfo_max_freq error" <<endl;
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read cpuinfo_max_freq error" <<endl;
         return -1;
     }
     else
@@ -338,7 +338,7 @@ unsigned long CpuFreqInfo::UpdateCpuInfoCurFrequency( )
 
     if(curfreq == 0)
     {
-        qDebug() <<__FILE__ <<__LINE__ <<"read cpuinfo_cur_freq error" <<endl;
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read cpuinfo_cur_freq error" <<endl;
         return -1;
     }
     else
@@ -390,16 +390,108 @@ CpuFreqInfo::UpdateAvailableGovernors( )         //  可用的CPU频率调节器
 struct cpufreq_available_frequencies *
 CpuFreqInfo::UpdateAvailableFrequencies( )   //  可用的CPU频率值
 {
+    struct cpufreq_available_frequencies *headFrequencies = cpufreq_get_available_frequencies(this->m_cpuid);
+    if(headFrequencies == NULL)
+    {
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read cpufreq_available_frequencies error" <<endl;
+        return NULL;
+    }
+    else
+    {
+        if(this->m_availableFrequencies != NULL)    //  首先清除原来的数据, 避免内存泄露
+        {
+            cpufreq_put_available_frequencies(this->m_availableFrequencies);
+        }
 
-
+        this->m_availableFrequencies = headFrequencies;
+        return this->m_availableFrequencies;
+    }
 }
 
 
 struct cpufreq_available_governors*
 CpuFreqInfo::UpdateAvailableGovernors( )         //  可用的CPU频率调节器
 {
-
-
+    struct cpufreq_available_governors *headGovernors = cpufreq_get_available_governors(this->m_cpuid);
+    if(headGovernors == NULL)
+    {
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read cpufreq_available_governors error" <<endl;
+        return NULL;
+    }
+    else
+    {
+        if(this->m_availableGovernors != NULL)    //  首先清除原来的数据, 避免内存泄露
+        {
+            cpufreq_put_available_governors(this->m_availableGovernors);
+        }
+        this->m_availableGovernors = headGovernors;
+        return this->m_availableGovernors;
+    }
 }
 
 #endif
+
+
+/////////////////////
+//  1.3--更新当前CPU的信息
+/////////////////////
+bool CpuFreqInfo::SetPolicy(struct cpufreq_policy *policy)
+{
+    if(cpufreq_set_policy(this->m_cpuid, policy) != 0)
+    {
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<" set policy error" <<endl;
+        return false;
+    }
+
+    return true;
+}
+
+
+bool CpuFreqInfo::SetPolicyMin(unsigned long minFreq)
+{
+    if(cpufreq_modify_policy_min(this->m_cpuid, minFreq) != 0)
+    {
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"set policy min frequency " <<minFreq <<" failed" <<endl;
+        return false;
+    }
+
+    return true;
+}
+
+bool CpuFreqInfo::SetPolicyMax(unsigned long maxFreq)
+{
+    if(cpufreq_modify_policy_max(this->m_cpuid, maxFreq) != 0)
+    {
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"set policy max frequency " <<maxFreq <<" failed" <<endl;
+        return false;
+    }
+
+    return true;
+}
+
+
+bool CpuFreqInfo::SetPolicyGovernor(QString *governor)
+{
+    char targetGovernor[81];
+    strcpy(targetGovernor, governor->toStdString( ).c_str( ));
+    if(cpufreq_modify_policy_governor(this->m_cpuid, targetGovernor) != 0)
+    {
+        qDebug( ) <<__FILE__ <<", " <<__LINE__ <<" set policy min frequency " <<governor <<" failed" <<endl;
+        return false;
+    }
+    qDebug( ) <<__FILE__ <<", " <<__LINE__ <<" set policy governor to " <<targetGovernor <<" success" <<endl;
+    return true;
+}
+
+
+bool CpuFreqInfo::SetFrequency(unsigned long targetFrequency)
+{
+    if(cpufreq_set_frequency(this->m_cpuid, targetFrequency) != 0)
+    {
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"set policy frequency " <<targetFrequency <<" failed" <<endl;
+        return false;
+    }
+
+    return true;
+}
+

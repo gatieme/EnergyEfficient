@@ -35,30 +35,40 @@ public :
         return const_cast<CpuFreqUtils *>(CpuFreqUtils::m_singleton);
     }
     ///////////////////////////////////////////////////////////////////
-    /// CPU数目的操作
+    /// 1--CPU数目的操作
     ///////////////////////////////////////////////////////////////////
 
     /////////////////////
-    //  获取CPU的数目
+    //  1.1--获取CPU的数目
     /////////////////////
     inline unsigned long GetCpuNumKernel( );
     inline unsigned long GetCpuNumAvaliable( );
+    inline struct cpufreq_affected_cpus* GetAffectedCpus(unsigned int cpuid);
+    inline struct cpufreq_affected_cpus* GetRelatedCpus(unsigned int cpuid);
+    inline struct cpufreq_stats* GetStats(unsigned int cpuid, unsigned long long *total_time);
+    inline unsigned long GetTransitions(unsigned int cpuid);
+
     /////////////////////
-    //  更新CPU的数目
+    //  1.2--更新CPU的数目
     /////////////////////
     inline unsigned long UpdateCpuNumKernel( );
     inline unsigned long UpdateCpuNumAvaliable( );
+    inline struct cpufreq_affected_cpus *UpdateAffectedCpus(unsigned int cpuid);
+    inline struct cpufreq_affected_cpus* UpdateRelatedCpus(unsigned int cpuid);
+    inline struct cpufreq_stats* UpdateStats(unsigned int cpuid, unsigned long long *total_time);
+    inline unsigned long UpdateTransitions(unsigned int cpuid);
+
     /////////////////////
-    //  设置CPU的数目
+    //  1.3--设置CPU的数目
     /////////////////////
     //unsigned long SetCpuNumKernel( );
     //unsigned long SetCpuNumAvaliable( );
 
     ///////////////////////////////////////////////////////////////////
-    /// CPU信息CpuFreq的操作
+    /// 2--CPU信息CpuFreq的操作
     ///////////////////////////////////////////////////////////////////
     /////////////////////
-    //  获取编号为cpuid的CPU的信息
+    //  2.1--获取编号为cpuid的CPU的信息
     /////////////////////
     inline CpuFreqInfo* GetCpuInfo(unsigned int cpuid);      //  获取编号为cpuid的CPU完整信息
     inline const bool GetIsOnline(unsigned int cpuid);                  //  编号为cpuid的CPU是否online
@@ -84,7 +94,7 @@ public :
     inline const struct cpufreq_policy*   GetCpuFreqPolicy(unsigned int cpuid);
 
     /////////////////////
-    //  更新编号为cpuid的CPU的信息
+    //  2.2--更新编号为cpuid的CPU的信息
     /////////////////////
     inline CpuFreqInfo* UpdateCpuInfo(unsigned int cpuid);      //  获取编号为cpuid的CPU完整信息
     inline bool UpdateIsOnline(unsigned int cpuid);                  //  编号为cpuid的CPU是否online
@@ -109,6 +119,15 @@ public :
 #endif
     inline struct cpufreq_policy*   UpdateCpuFreqPolicy(unsigned int cpuid);
 
+
+    /////////////////////
+    //  2.3--设置编号为cpuid的CPU的信息
+    /////////////////////
+    bool SetPolicy(unsigned int cpuid, struct cpufreq_policy *policy);
+    bool SetPolicyMin(unsigned int cpuid, unsigned long min_freq);
+    bool SetPolicyMax(unsigned int cpuid, unsigned long max_freq);
+    bool SetPolicyGovernor(unsigned int cpuid, QString *governor);
+    bool SetFrequency(unsigned int cpuid, unsigned long targetFrequency);
 
 
 private:

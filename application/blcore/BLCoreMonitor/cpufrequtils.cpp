@@ -17,11 +17,11 @@ CpuFreqUtils::CpuFreqUtils(QObject *parent) :
 }
 
 ///////////////////////////////////////////////////////////////////
-/// CPU数目的操作
+/// 1--CPU数目的操作
 ///////////////////////////////////////////////////////////////////
 
 /////////////////////
-///  获取CPU的数目
+///  1.1--获取CPU的数目
 /////////////////////
 
 /// 获取当前系统中安装的CPU的数目
@@ -38,7 +38,7 @@ unsigned long CpuFreqUtils::GetCpuNumAvaliable( )
 
 
 /////////////////////
-///  更新CPU的数目
+///  1.2--更新CPU的数目
 /////////////////////
 /// 更新当前系统中安装的CPU的数目
 unsigned long CpuFreqUtils::UpdateCpuNumKernel( )
@@ -57,7 +57,7 @@ unsigned long CpuFreqUtils::UpdateCpuNumAvaliable( )
 }
 
 /////////////////////
-///  设置CPU的数目
+///  1.3--设置CPU的数目
 /////////////////////
 
 //  NOP
@@ -66,10 +66,10 @@ unsigned long CpuFreqUtils::UpdateCpuNumAvaliable( )
 
 
 ///////////////////////////////////////////////////////////////////
-/// CPU信息CpuFreq的操作
+/// 2--CPU信息CpuFreq的操作
 ///////////////////////////////////////////////////////////////////
 /////////////////////
-//  获取编号为cpuid的CPU的信息
+//  2.1--获取编号为cpuid的CPU的信息
 /////////////////////
 
 //  获取编号为cpuid的CPU完整信息
@@ -168,7 +168,7 @@ CpuFreqUtils::GetCpuFreqPolicy(unsigned int cpuid)
 }
 
 /////////////////////
-//  更新编号为cpuid的CPU的信息
+//  2.2--更新编号为cpuid的CPU的信息
 /////////////////////
 
 
@@ -267,4 +267,34 @@ struct cpufreq_policy*   CpuFreqUtils::UpdateCpuFreqPolicy(unsigned int cpuid)
 }
 
 
+/////////////////////
+//  2.3--设置编号为cpuid的CPU的信息
+/////////////////////
+bool CpuFreqUtils::SetPolicy(unsigned int cpuid, struct cpufreq_policy *policy)
+{
+    return this->GetCpuInfo(cpuid)->SetPolicy(policy);
+}
 
+
+bool CpuFreqUtils::SetPolicyMin(unsigned int cpuid, unsigned long minFreq)
+{
+    return this->GetCpuInfo(cpuid)->SetPolicyMin(minFreq);
+}
+
+
+bool CpuFreqUtils::SetPolicyMax(unsigned int cpuid, unsigned long maxFreq)
+{
+    return this->GetCpuInfo(cpuid)->SetPolicyMax(maxFreq);
+}
+
+
+bool CpuFreqUtils::SetPolicyGovernor(unsigned int cpuid, QString *governor)
+{
+    return this->GetCpuInfo(cpuid)->SetPolicyGovernor(governor);
+}
+
+
+bool CpuFreqUtils::SetFrequency(unsigned int cpuid, unsigned long targetFrequency)
+{
+    return this->GetCpuInfo(cpuid)->SetFrequency(targetFrequency);
+}

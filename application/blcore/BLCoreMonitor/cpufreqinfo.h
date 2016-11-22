@@ -55,10 +55,10 @@ public:
     const bool GetIsOnline( ) const;
 
     ///////////////////////////////////////////////////////////////////
-    /// CPU信息CpuFreq的操作
+    /// 1--CPU信息CpuFreq的操作
     ///////////////////////////////////////////////////////////////////
     /////////////////////
-    //  获取当前CPU的信息
+    //  1.1--获取当前CPU的信息
     /////////////////////
     const CpuFreqInfo* GetCpuInfo( );                    //  获取当前CPU完整信息
     const bool GetIsOnline( );                          //  当前CPU是否online
@@ -87,7 +87,7 @@ public:
 
 
     /////////////////////
-    //  更新当前CPU的信息
+    //  1.2--更新当前CPU的信息
     /////////////////////
     CpuFreqInfo* UpdateCpuInfo( );                 //  获取当前CPU完整信息
     bool UpdateIsOnline( );                             //  当前CPU是否online
@@ -114,6 +114,15 @@ public:
 
 
     struct cpufreq_policy*   UpdateCpuFreqPolicy( );
+
+    /////////////////////
+    //  1.3--更新当前CPU的信息
+    /////////////////////
+    bool SetPolicy(struct cpufreq_policy *policy);
+    bool SetPolicyMin(unsigned long min_freq);
+    bool SetPolicyMax(unsigned long max_freq);
+    bool SetPolicyGovernor(QString *governor);
+    bool SetFrequency(unsigned long targetFrequency);
 
 signals:
 

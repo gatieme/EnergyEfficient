@@ -7,7 +7,7 @@ GITHUB_COMMIT := $(COMMIT)
 
 
 ifeq ($(COMMIT), )
-	GITHUB_COMMIT="增加了application/blcore/BLCoreMonitor, 大小核调度平台监视器..."
+	GITHUB_COMMIT="application/blcore/BLCoreMonitor, 完善了CpuFreqInfo和CpuFreqUtils接口..."
 endif
 
 
