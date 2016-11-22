@@ -6,6 +6,7 @@ CpuFreqWidgetTab::CpuFreqWidgetTab(QWidget *parent) :
     ui(new Ui::CpuFreqWidgetTab)
 {
     ui->setupUi(this);
+
 }
 
 CpuFreqWidgetTab::~CpuFreqWidgetTab()

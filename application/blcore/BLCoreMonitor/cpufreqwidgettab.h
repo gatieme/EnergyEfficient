@@ -21,8 +21,6 @@ public:
 
 private:
     Ui::CpuFreqWidgetTab   *ui;
-    QTimer                 m_cpuMonitorTimer;       //  CPU监控定时器
-    CpuFreqUtils
 };
 
 #endif // CPUFREQWIDGETTAB_H

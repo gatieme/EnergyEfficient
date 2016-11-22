@@ -41,8 +41,7 @@ private:
     Ui::CpuMonitorWidgetTab *ui;
 
 protected :
-    CpuFreqUtils    *m_cpuFreqUtils;            //  CPU调频工具类
-    //  注意m_cpuFreqUtils必须优先于窗体完成初始化, 并被所有窗体共享
+
 
     QwtPlotGrid     *m_cpuUsageQwtPlotGrid;
     QwtPlotGrid     *m_cpuFrequencyQwtPlotGrid;

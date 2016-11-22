@@ -7,10 +7,7 @@ CpuMonitorWidgetTab::CpuMonitorWidgetTab(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    ///////////////////////////////////
-    //  初始化调频工具类
-    ///////////////////////////////////
-    this->m_cpuFreqUtils = CpuFreqUtils::GetInstance( );
+
 
 
     ///////////////////////////////////
@@ -74,7 +71,9 @@ CpuMonitorWidgetTab::CpuMonitorWidgetTab(QWidget *parent) :
     ///////////////////////////////////
     ///  定时器每隔一秒中开始读取cpufreq的信息
     ///////////////////////////////////
-
+    QTimer *timer = new QTimer(this);
+       connect(timer, SIGNAL(timeout()), this, SLOT(processOneThing()));
+       timer->start();
 
 }
 
