@@ -13,6 +13,7 @@ endif
 
 .PHONY	:	github
 github :
+	git pull
 	git add -A
 	git commit -m $(GITHUB_COMMIT)
 	git push origin master
