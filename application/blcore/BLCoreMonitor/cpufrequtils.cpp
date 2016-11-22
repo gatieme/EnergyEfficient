@@ -73,75 +73,98 @@ unsigned long CpuFreqUtils::UpdateCpuNumAvaliable( )
 /////////////////////
 
 //  获取编号为cpuid的CPU完整信息
-const CpuFreqInfo GetCpuInfo(unsigned int cpuid)
+CpuFreqInfo* CpuFreqUtils::GetCpuInfo(unsigned int cpuid)
 {
     return this->m_cpus[cpuid];
 }
 
 //  编号为cpuid的CPU是否online
-const bool GetIsOnline(unsigned int cpuid)
+const bool CpuFreqUtils::GetIsOnline(unsigned int cpuid)
 {
-    return this->GetCpuInfo(cpuid)
+    return this->GetCpuInfo(cpuid)->GetIsOnline( );
 }
 
 
 //  编号为cpuid的CPU的最小运行频率
-const unsigned long GetScalingMinFrequency(unsigned int cpuid)
+const unsigned long CpuFreqUtils::GetScalingMinFrequency(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)->GetScalingMinFrequency( );
 }
 
 
 //  编号为cpuid的CPU的最大运行频率
-const unsigned long GetScalingMaxFrequency(unsigned int cpuid)
+const unsigned long CpuFreqUtils::GetScalingMaxFrequency(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)->GetScalingMaxFrequency( );
 }
 
 
 //  编号为cpuid的CPU的当前运行频率
-const unsigned long GetScalingCurFrequency(unsigned int cpuid)
+const unsigned long CpuFreqUtils::GetScalingCurFrequency(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)->GetScalingCurFrequency( );
 }
 
 
 //  编号为cpuid的CPU的最小运行频率
-const unsigned long GetCpuInfoMinFrequency(unsigned int cpuid)
+const unsigned long CpuFreqUtils::GetCpuInfoMinFrequency(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)->GetCpuInfoMinFrequency( );
 }
 
 //  编号为cpuid的CPU的最大运行频率
-const unsigned long GetCpuInfoMaxFrequency(unsigned int cpuid)
+const unsigned long CpuFreqUtils::GetCpuInfoMaxFrequency(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)->GetCpuInfoMaxFrequency( );
 }
 
 //  编号为cpuid的CPU的当前运行频率
-const unsigned long GetCpuInfoCurFrequency(unsigned int cpuid)
+const unsigned long CpuFreqUtils::GetCpuInfoCurFrequency(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)->GetCpuInfoCurFrequency( );
 }
 
 
 
 //  可用的CPU频率值
-const QList<struct cpufreq_available_frequencies> GetAvailableFrequencies(unsigned int cpuid)
+#if defined(CNODE_IN_QLIST)
+//一种是将节点重新组织在QList中
+QList<struct cpufreq_available_frequencies *>&
+#elif defined(CLIST_TO_QLIST)
+//另一种是近将节点的数据域组织在QList, 即将CLIST转换为QLIST
+QList<QString>&                                      //  可用的CPU频率值
+#elif defined(USE_CLIST)
+//另外一种方式是直接使用CLIST
+struct cpufreq_available_frequencies*            //  可用的CPU频率值
+#endif
+CpuFreqUtils::GetAvailableFrequencies(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)->GetAvailableFrequencies( );
 }
 
 
-//  可用的CPU频率调节器
-const QList<struct cpufreq_available_governors> GetAvailableGovernors(unsigned int cpuid)
+//  可用的CPU频率值
+#if defined(CNODE_IN_QLIST)
+//一种是将节点重新组织在QList中
+QList<struct cpufreq_available_governors *>&
+#elif defined(CLIST_TO_QLIST)
+//另一种是近将节点的数据域组织在QList, 即将CLIST转换为QLIST
+QList<unsigned long >&                            //  可用的CPU频率调节器
+#elif defined(USE_CLIST)
+//另外一种方式是直接使用CLIST
+struct cpufreq_available_governors *              //  可用的CPU频率调节器
+#endif
+CpuFreqUtils::GetAvailableGovernors(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)->GetAvailableGovernors( );
 }
 
-const struct cpufreq_policy   GetCpuFreqPolicy(unsigned int cpuid)
-{
 
+
+const struct cpufreq_policy*
+CpuFreqUtils::GetCpuFreqPolicy(unsigned int cpuid)
+{
+    return this->GetCpuInfo(cpuid)->GetCpuFreqPolicy( );
 }
 
 /////////////////////
@@ -150,71 +173,97 @@ const struct cpufreq_policy   GetCpuFreqPolicy(unsigned int cpuid)
 
 
 //  获取编号为cpuid的CPU完整信息
-const CpuFreqInfo UpdateCpuInfo(unsigned int cpuid)
+CpuFreqInfo* CpuFreqUtils::UpdateCpuInfo(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)->UpdateCpuInfo( );
 }
 
 
 //  编号为cpuid的CPU是否online
-const bool UpdateIsOnline(unsigned int cpuid)
+bool CpuFreqUtils::UpdateIsOnline(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)->UpdateIsOnline( );
 }
 
 //  编号为cpuid的CPU的最小运行频率
-unsigned long UpdateScalingMinFrequency(unsigned int cpuid)
+unsigned long CpuFreqUtils::UpdateScalingMinFrequency(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)->UpdateScalingMinFrequency( );
 }
 
 //  编号为cpuid的CPU的最大运行频率
-unsigned long UpdateScalingMaxFrequency(unsigned int cpuid)
+unsigned long CpuFreqUtils::UpdateScalingMaxFrequency(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)->UpdateScalingMaxFrequency( );
 }
 
 //  编号为cpuid的CPU的当前运行频率
-unsigned long UpdateScalingCurFrequency(unsigned int cpuid)
+unsigned long CpuFreqUtils::UpdateScalingCurFrequency(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)->UpdateScalingCurFrequency( );
 }
 
 
 //  编号为cpuid的CPU的最小运行频率
-unsigned long UpdateInfoMinFrequency(unsigned int cpuid)
+unsigned long CpuFreqUtils::UpdateInfoMinFrequency(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)->UpdateCpuInfoMinFrequency( );
 }
 
 //  编号为cpuid的CPU的最大运行频率
-unsigned long UpdateCpuInfoMaxFrequency(unsigned int cpuid)
+unsigned long CpuFreqUtils::UpdateCpuInfoMaxFrequency(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)->UpdateCpuInfoMaxFrequency( );
 }
 
 
 //  编号为cpuid的CPU的当前运行频率
-unsigned long UpdateCpuInfoCurFrequency(unsigned int cpuid)
+unsigned long CpuFreqUtils::UpdateCpuInfoCurFrequency(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)->UpdateCpuInfoCurFrequency( );
 }
+
+
 
 //  可用的CPU频率值
-QList<struct cpufreq_available_frequencies> UpdateAvailableFrequencies(unsigned int cpuid)
+#if defined(CNODE_IN_QLIST)
+//一种是将节点重新组织在QList中
+QList<struct cpufreq_available_frequencies *>&
+#elif defined(CLIST_TO_QLIST)
+//另一种是近将节点的数据域组织在QList, 即将CLIST转换为QLIST
+QList<QString>&                                      //  可用的CPU频率值
+#elif defined(USE_CLIST)
+//另外一种方式是直接使用CLIST
+struct cpufreq_available_frequencies *            //  可用的CPU频率值
+#endif
+CpuFreqUtils::UpdateAvailableFrequencies(unsigned int cpuid)
 {
-
+    return this->GetCpuInfo(cpuid)->UpdateAvailableFrequencies( );
 }
 
-//  可用的CPU频率调节器
-QList<struct cpufreq_available_governors> UpdateAvailableGovernors(unsigned int cpuid)
-{
 
+
+//  可用的CPU频率值
+#if defined(CNODE_IN_QLIST)
+//一种是将节点重新组织在QList中
+QList<struct cpufreq_available_governors *>&
+#elif defined(CLIST_TO_QLIST)
+//另一种是近将节点的数据域组织在QList, 即将CLIST转换为QLIST
+QList<unsigned long >&                            //  可用的CPU频率调节器
+#elif defined(USE_CLIST)
+//另外一种方式是直接使用CLIST
+struct cpufreq_available_governors *              //  可用的CPU频率调节器
+#endif
+CpuFreqUtils::UpdateAvailableGovernors(unsigned int cpuid)
+{
+    return this->GetCpuInfo(cpuid)->UpdateAvailableGovernors( );
 }
 
-struct cpufreq_policy   UpdateCpuFreqPolicy(unsigned int cpuid)
-{
 
+
+struct cpufreq_policy*   CpuFreqUtils::UpdateCpuFreqPolicy(unsigned int cpuid)
+{
+    return this->GetCpuInfo(cpuid)->UpdateCpuFreqPolicy( );
 }
 
 
