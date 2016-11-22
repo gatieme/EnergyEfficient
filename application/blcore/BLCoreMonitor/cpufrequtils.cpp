@@ -50,7 +50,6 @@ CpuFreqUtils::~CpuFreqUtils( )
     }
 }
 
-
 //  判断编号为cpuid的CPU是否被安装(exist|present)
 bool CpuFreqUtils::IsCpuPresent(unsigned int cpuid)
 {
