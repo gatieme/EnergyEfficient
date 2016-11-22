@@ -22,6 +22,14 @@
 
 # --- CONFIGURATION BEGIN ---
 
+
+ifeq ($(DEBUG), y)
+DEFFLAGS=-DDEBUG -DLINUX
+else
+DEFFLAGS=-DRELEASE -DLINUX
+endif
+
+
 # Set the following to `true' to make a unstripped, unoptimized
 # binary. Leave this set to `false' for production use.
 DEBUG ?=	false
@@ -87,7 +95,13 @@ INSTALL_SCRIPT = ${INSTALL_PROGRAM}
 # If you are running a cross compiler, you may want to set this
 # to something more interesting, like "arm-linux-".  If you want
 # to compile vs uClibc, that can be done here as well.
-CROSS = #/usr/i386-linux-uclibc/usr/bin/i386-uclibc-
+#ifeq ($(arm)), y)
+CROSS = aarch64-linux-gnu-
+@echo "=======arm build======="
+#else
+#CROSS = #/usr/i386-linux-uclibc/usr/bin/i386-uclibc-
+#@echo "=======default build======="
+#endif
 CC = $(CROSS)gcc
 LD = $(CROSS)gcc
 AR = $(CROSS)ar

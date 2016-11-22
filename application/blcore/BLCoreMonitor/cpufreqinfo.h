@@ -44,15 +44,14 @@ class CpuFreqInfo : public QObject
 {
     Q_OBJECT
 public:
-    explicit CpuFreqInfo(QObject *parent = 0);
-
+    explicit CpuFreqInfo(QObject *parent = 0, unsigned int cpuid = 0);
     virtual ~CpuFreqInfo( )
     {
     }
+    friend std::ostream &operator<<(std::ostream &os, const CpuFreqInfo &info);
+    friend QDebug operator<<(QDebug dbg, const CpuFreqInfo &info);
 
-    const unsigned int GetCpuId( ) const;
 
-    const bool GetIsOnline( ) const;
 
     ///////////////////////////////////////////////////////////////////
     /// 1--CPU信息CpuFreq的操作
@@ -60,6 +59,7 @@ public:
     /////////////////////
     //  1.1--获取当前CPU的信息
     /////////////////////
+    const unsigned int GetCpuId( );
     const CpuFreqInfo* GetCpuInfo( );                    //  获取当前CPU完整信息
     const bool GetIsOnline( );                          //  当前CPU是否online
     const unsigned long GetTransitionLatency( );        //  当前cpu完成频率切换所需要的时间
@@ -95,9 +95,11 @@ public:
     unsigned long UpdateScalingMinFrequency( );         //  当前CPU的最小运行频率
     unsigned long UpdateScalingMaxFrequency( );         //  当前CPU的最大运行频率
     unsigned long UpdateScalingCurFrequency( );         //  当前CPU的当前运行频率
+    bool UpdateCpuInfoLimitsFrequency();
     unsigned long UpdateCpuInfoMinFrequency( );         //  当前CPU的最小运行频率
     unsigned long UpdateCpuInfoMaxFrequency( );         //  当前CPU的最大运行频率
     unsigned long UpdateCpuInfoCurFrequency( );         //  当前CPU的当前运行频率
+
 #if defined(CNODE_IN_QLIST)
     //一种是将节点重新组织在QList中
     QList<struct cpufreq_available_frequencies *>& UpdateAvailableFrequencies( );   //  可用的CPU频率值

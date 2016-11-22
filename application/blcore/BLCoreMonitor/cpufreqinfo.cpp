@@ -20,11 +20,48 @@ QList<struct cpufreq_available_governors>     m_availableGovernors;         //  
 */
 
 
-CpuFreqInfo::CpuFreqInfo(QObject *parent) :
-QObject(parent)
+CpuFreqInfo::CpuFreqInfo(QObject *parent, unsigned int cpuid) :
+ QObject(parent),
+ m_cpuid(cpuid),
+ m_curPolicy(NULL),
+ m_availableFrequencies(NULL),
+ m_availableGovernors(NULL)
 {
+    this->UpdateCpuInfo( );
 }
 
+
+std::ostream &operator<<(std::ostream &out, const CpuFreqInfo &info)
+{
+    out <<"cpuid : " <<info.m_cpuid <<", ";
+    out <<"isonline : " <<info.m_isonline <<", ";
+    out <<"cpuinfo_transition_latency : "<<info.m_transitionLatency <<endl;
+
+    out <<"scalling : min = " <<info.m_scalingMinFrequency <<" kHz, ";
+    out <<           "max = " <<info.m_scalingMaxFrequency <<" kHz, ";
+    out <<           "cur = " <<info.m_scalingCurFrequency <<" kHz" <<endl;
+
+    out <<"cpuinfo  : min = " <<info.m_cpuinfoMinFrequency <<" kHz, ";
+          out <<           "max = " <<info.m_cpuinfoMaxFrequency <<" kHz, ";
+          out <<           "cur = " <<info.m_cpuinfoCurFrequency <<" kHz" <<endl;
+}
+
+QDebug operator<<(QDebug dbg, const CpuFreqInfo &info)
+{
+    dbg.nospace( ) <<"cpuid : " <<info.m_cpuid <<", ";
+    dbg.nospace( ) <<"isonline : " <<info.m_isonline <<", ";
+    dbg.nospace( ) <<"cpuinfo_transition_latency : "<<info.m_transitionLatency <<endl;
+
+    dbg.nospace( ) <<"scalling : min = " <<info.m_scalingMinFrequency <<" kHz, ";
+    dbg.nospace( ) <<           "max = " <<info.m_scalingMaxFrequency <<" kHz, ";
+    dbg.nospace( ) <<           "cur = " <<info.m_scalingCurFrequency <<" kHz" <<endl;
+
+    dbg.nospace( ) <<"cpuinfo  : min = " <<info.m_cpuinfoMinFrequency <<" kHz, ";
+    dbg.nospace( ) <<           "max = " <<info.m_cpuinfoMaxFrequency <<" kHz, ";
+    dbg.nospace( ) <<           "cur = " <<info.m_cpuinfoCurFrequency <<" kHz" <<endl;
+
+    return dbg.space( );
+}
 
 ///////////////////////////////////////////////////////////////////
 /// 1--CPU信息CpuFreq的操作
@@ -34,6 +71,12 @@ QObject(parent)
 /////////////////////
 //  1.1--获取编号为cpuid的CPU的信息
 /////////////////////
+
+//  获取当前CPU的编号
+const unsigned int CpuFreqInfo::GetCpuId( )
+{
+    return this->m_cpuid;
+}
 
 //  获取编号为cpuid的CPU完整信息
 const CpuFreqInfo* CpuFreqInfo::GetCpuInfo( )
@@ -164,8 +207,8 @@ CpuFreqInfo* CpuFreqInfo::UpdateCpuInfo( )
     this->UpdateIsOnline( );            //  当前CPU是否在线
     this->UpdateTransitionLatency( );   //  当前CPU的调频周期
     this->UpdateCpuFreqPolicy( );       //  当前CPU的调频策略, 包括min, max和governor
-    this->UpdateCpuInfoMinFrequency( ); //  从硬件中读取的当前CPU的最小运行频率
-    this->UpdateCpuInfoMaxFrequency( ); //  从硬件中读取的当前CPU的最大运行频率
+    this->UpdateScalingCurFrequency( );
+    this->UpdateCpuInfoLimitsFrequency( ); //  从硬件中读取的当前CPU的最小和最大运行频率
     this->UpdateCpuInfoCurFrequency( ); //  从硬件中读取的当前CPU的运行频率
 
     return (this);
@@ -177,10 +220,12 @@ bool CpuFreqInfo::UpdateIsOnline( )
     if(cpufreq_cpu_exists(this->m_cpuid) == 0)
     {
         this->m_isonline = true;
+        qDebug() <<"cpu " <<this->m_cpuid <<" is online"<<endl;
     }
     else
     {
         this->m_isonline = false;
+        qDebug() <<"cpu " <<this->m_cpuid <<" is not online"<<endl;
     }
 }
 
@@ -191,12 +236,15 @@ unsigned long CpuFreqInfo::UpdateTransitionLatency( )
     unsigned long transitionLatency = cpufreq_get_transition_latency(this->m_cpuid);
     if(transitionLatency == 0)
     {
+        this->m_transitionLatency = -1;
         qDebug() <<__FILE__ <<", " <<__LINE__ <<"read transition_latency error" <<endl;
         return -1;
     }
     else
     {
         this->m_transitionLatency = transitionLatency;
+        qDebug() <<"cpu " <<this->m_cpuid <<" cpuinfo_transition_latency = " <<this->m_transitionLatency <<endl;
+
         return this->m_transitionLatency;
     }
 }
@@ -213,6 +261,7 @@ struct cpufreq_policy*   CpuFreqInfo::UpdateCpuFreqPolicy( )
     struct cpufreq_policy *policy = cpufreq_get_policy(this->m_cpuid);
     if(policy == NULL)
     {
+        this->m_curPolicy = NULL;
         qDebug() <<__FILE__ <<", " <<__LINE__ <<__func__ <<" error" <<endl;
         return NULL;
     }
@@ -221,6 +270,7 @@ struct cpufreq_policy*   CpuFreqInfo::UpdateCpuFreqPolicy( )
         this->m_curPolicy = policy;
         this->m_scalingMinFrequency = policy->min;
         this->m_scalingMaxFrequency = policy->max;
+        qDebug( ) <<"cpu " <<this->m_cpuid <<" policy : min = " <<policy->min <<", max = " <<policy->max <<", governor = " <<policy->governor <<endl;
         return this->m_curPolicy;
     }
 }
@@ -228,51 +278,21 @@ struct cpufreq_policy*   CpuFreqInfo::UpdateCpuFreqPolicy( )
 //  编号为cpuid的CPU的最小运行频率
 unsigned long CpuFreqInfo::UpdateScalingMinFrequency( )
 {
-    if(this->m_curPolicy != NULL)
+    if(this->UpdateCpuFreqPolicy( ) == NULL)
     {
-        /*  Remember to call cpufreq_put_policy when no longer needed
-         *  to avoid memory leakage, please.    */
-        cpufreq_put_policy(this->m_curPolicy);
-        assert(this->m_curPolicy == NULL);
+        this->m_scalingMaxFrequency = -1;
     }
-    struct cpufreq_policy *policy = cpufreq_get_policy(this->m_cpuid);
-    if(policy == NULL)
-    {
-        qDebug() <<__FILE__ <<", " <<__LINE__ <<__func__ <<" error" <<endl;
-        return -1;
-    }
-    else
-    {
-        this->m_curPolicy = policy;
-        this->m_scalingMinFrequency = policy->min;
-        this->m_scalingMaxFrequency = policy->max;
-        return this->m_scalingMinFrequency;
-    }
+    return this->m_scalingMaxFrequency;
 }
 
 //  编号为cpuid的CPU的最大运行频率
 unsigned long CpuFreqInfo::UpdateScalingMaxFrequency( )
 {
-    if(this->m_curPolicy != NULL)
+    if(this->UpdateCpuFreqPolicy( ) == NULL)
     {
-        /*  Remember to call cpufreq_put_policy when no longer needed
-         *  to avoid memory leakage, please.    */
-        cpufreq_put_policy(this->m_curPolicy);
-        assert(this->m_curPolicy == NULL);
+        this->m_scalingMinFrequency = -1;
     }
-    struct cpufreq_policy *policy = cpufreq_get_policy(this->m_cpuid);
-    if(policy == NULL)
-    {
-        qDebug() <<__FILE__ <<", " <<__LINE__ <<__func__ <<" error" <<endl;
-        return -1;
-    }
-    else
-    {
-        this->m_curPolicy = policy;
-        this->m_scalingMinFrequency = policy->min;
-        this->m_scalingMaxFrequency = policy->max;
-        return this->m_scalingMaxFrequency;
-    }
+    return this->m_scalingMinFrequency;
 }
 
 
@@ -283,31 +303,48 @@ unsigned long CpuFreqInfo::UpdateScalingCurFrequency( )
 
     if(curfreq == 0)
     {
+        this->m_scalingCurFrequency = -1;
         qDebug() <<__FILE__ <<", " <<__LINE__ <<"read scaling_cur_freq error" <<endl;
         return -1;
     }
     else
     {
         this->m_scalingCurFrequency = curfreq;
+        qDebug() <<"cpu" <<this->m_cpuid <<" scaling_cur_freq = " <<this->m_scalingCurFrequency <<endl;
+
         return m_scalingCurFrequency;
     }
 }
 
-
-//  编号为cpuid的CPU的最小运行频率
-unsigned long CpuFreqInfo::UpdateCpuInfoMinFrequency( )
+bool CpuFreqInfo::UpdateCpuInfoLimitsFrequency()
 {
     unsigned long min, max;
 
     if(cpufreq_get_hardware_limits(this->m_cpuid, &min, &max) != 0)
     {
-        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read cpuinfo_min_freq error" <<endl;
-        return -1;
+        this->m_cpuinfoMinFrequency = -1;
+        this->m_cpuinfoMaxFrequency = -1;
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read cpuinfo_min_and_max_freq error" <<endl;
+        return false;
     }
     else
     {
         this->m_cpuinfoMinFrequency = min;
         this->m_cpuinfoMaxFrequency = max;
+        qDebug( ) <<"cpu " <<this->m_cpuid <<" cpuinfo_min_freq = " <<this->m_cpuinfoMinFrequency <<", max = " <<this->m_cpuinfoMaxFrequency <<endl;
+        return true;
+    }
+}
+
+//  编号为cpuid的CPU的最小运行频率
+unsigned long CpuFreqInfo::UpdateCpuInfoMinFrequency( )
+{
+    if(this->UpdateCpuInfoLimitsFrequency( ) != true)
+    {
+        return -1;
+    }
+    else
+    {
         return this->m_cpuinfoMinFrequency;
     }
 }
@@ -315,17 +352,12 @@ unsigned long CpuFreqInfo::UpdateCpuInfoMinFrequency( )
 //  编号为cpuid的CPU的最大运行频率
 unsigned long CpuFreqInfo::UpdateCpuInfoMaxFrequency( )
 {
-    unsigned long min, max;
-
-    if(cpufreq_get_hardware_limits(this->m_cpuid, &min, &max) != 0)
+    if(this->UpdateCpuInfoLimitsFrequency( ) != true)
     {
-        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read cpuinfo_max_freq error" <<endl;
         return -1;
     }
     else
     {
-        this->m_cpuinfoMinFrequency = min;
-        this->m_cpuinfoMaxFrequency = max;
         return this->m_cpuinfoMaxFrequency;
     }
 }
@@ -338,7 +370,10 @@ unsigned long CpuFreqInfo::UpdateCpuInfoCurFrequency( )
 
     if(curfreq == 0)
     {
-        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read cpuinfo_cur_freq error" <<endl;
+        this->m_cpuinfoCurFrequency = -1;
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read cpuinfo_cur_freq error";
+        perror("errno ");
+        qDebug( ) <<endl;
         return -1;
     }
     else

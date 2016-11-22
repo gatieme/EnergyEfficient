@@ -10,11 +10,59 @@ CpuFreqUtils::CpuFreqUtils(QObject *parent) :
     QObject(parent)
 {
     this->m_cpuNumKernel = get_nprocs();
-    this->m_cpuNumAvaliable = get_nprocs_conf( );
+    this->m_cpuNumAvailable = get_nprocs_conf( );
     qDebug() <<"cpu numbers kernel = " <<this->m_cpuNumKernel <<endl;
     qDebug() <<"cpu numbers avaliable = " <<this->m_cpuNumKernel <<endl;
     qDebug() <<"cpu numbers offline = " <<this->m_cpuNumKernel - this->m_cpuNumKernel <<endl;
+
+    for(int cpuid = 0, availCount = 0;
+        cpuid < this->m_cpuNumKernel;
+        cpuid++)
+    {
+        //  查看编号为cpuid的CPU是否在线
+        if(CpuFreqUtils::IsCpuPresent(cpuid) == true)
+        {
+            availCount++;
+            CpuFreqInfo *cpuFreqInfo = new CpuFreqInfo(this, cpuid);
+            this->m_cpus.append(cpuFreqInfo);
+            qDebug( ) <<*cpuFreqInfo <<endl;
+        }
+        else
+        {
+            this->m_cpus.append(NULL);
+        }
+    }
+    qDebug() <<(unsigned long )-1 <<endl;
 }
+
+
+
+//  判断编号为cpuid的CPU是否被安装(exist|present)
+bool CpuFreqUtils::IsCpuPresent(unsigned int cpuid)
+{
+    if(cpufreq_cpu_exists(cpuid) == 0)
+    {
+        qDebug() <<"cpu " <<cpuid <<" is present"<<endl;
+        return true;
+    }
+    else
+    {
+        qDebug() <<"cpu " <<cpuid <<" is not present"<<endl;
+        return false;
+    }
+}
+
+
+//  判断编号为cpuid的CPU是否活跃(online)
+bool CpuFreqUtils::IsCpuOnline(unsigned int copuid)
+{
+    //// NOP
+    ///  未实现
+    //// NOP
+    return true;
+}
+
+
 
 ///////////////////////////////////////////////////////////////////
 /// 1--CPU数目的操作
@@ -33,7 +81,7 @@ unsigned long CpuFreqUtils::GetCpuNumKernel( )
 /// 获取当前系统中当前活跃的CPU数目
 unsigned long CpuFreqUtils::GetCpuNumAvaliable( )
 {
-    return this->m_cpuNumAvaliable;
+    return this->m_cpuNumAvailable;
 }
 
 
@@ -51,9 +99,9 @@ unsigned long CpuFreqUtils::UpdateCpuNumKernel( )
 /// 更新当前系统中当前活跃的CPU数目
 unsigned long CpuFreqUtils::UpdateCpuNumAvaliable( )
 {
-    this->m_cpuNumAvaliable = get_nprocs_conf( );
+    this->m_cpuNumAvailable = get_nprocs_conf( );
 
-    return this->m_cpuNumAvaliable;
+    return this->m_cpuNumAvailable;
 }
 
 /////////////////////

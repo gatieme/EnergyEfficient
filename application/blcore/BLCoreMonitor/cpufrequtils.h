@@ -34,6 +34,11 @@ public :
     {
         return const_cast<CpuFreqUtils *>(CpuFreqUtils::m_singleton);
     }
+
+    //  判断编号为cpuid的CPU是否被安装(exist|present)
+    static bool IsCpuPresent(unsigned int cpuid);
+    //  判断编号为cpuid的CPU是否活跃(online)
+    static bool IsCpuOnline(unsigned int copuid);
     ///////////////////////////////////////////////////////////////////
     /// 1--CPU数目的操作
     ///////////////////////////////////////////////////////////////////
@@ -151,8 +156,8 @@ protected :
     ///  This may be less than the number returned by get_nprocs_conf( )
     ///   because processors may be offline (e.g., on hotpluggable systems).
     int                     m_cpuNumKernel;             //  系统中插入的CPU的数目(包括online和offline)
-    int                     m_cpuNumAvaliable;          //  系统中可用的CPU数目(即onlie的CPU数目)
-    QList<CpuFreqInfo *>      m_cpus;                     //  当前系统中CPU的集合
+    int                     m_cpuNumAvailable;          //  系统中可用的CPU数目(即onlie的CPU数目)
+    QList<CpuFreqInfo *>    m_cpus;                     //  当前系统中CPU的集合
 
     //  单例模式
     static CpuFreqUtils     *m_singleton;
