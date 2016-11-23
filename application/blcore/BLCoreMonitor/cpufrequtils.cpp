@@ -1,361 +1,532 @@
 #include "cpufrequtils.h"
 
+#include <cassert>
 
 
-/*static*/CpuFreqUtils* CpuFreqUtils::m_singleton = new CpuFreqUtils( );
-/*static*/CpuFreqUtils::GC CpuFreqUtils::GC::gc;
+/*
+unsigned int    m_cpuid;                      //  当前CPU的编号
+bool            m_isonline;                   //  当前CPU是否在线
+
+unsigned long   m_scalingMinFrequency;        //  理论上最小运行频率
+unsigned long   m_scalingMaxFrequency;        //  理论上最大运行频率
+unsigned long   m_scalingCurFrequency;        //  理论上当前运行频率
+
+unsigned long   m_cpuinfoMinFrequency;        //  硬件读取的实际最小运行频率
+unsigned long   m_cpuinfoMaxFrequency;        //  硬件读取的实际最大运行频率
+unsigned long   m_cpuinfoCurFrequency;        //  硬件读取的实际当前运行频率
+
+QList<struct cpufreq_available_frequencies>   m_availableFrequencies;       //  可用的CPU频率值
+QList<struct cpufreq_available_governors>     m_availableGovernors;         //  可用的CPU频率调节器
+*/
 
 
-CpuFreqUtils::CpuFreqUtils(QObject *parent) :
-    QObject(parent)
+CpuFreqUtils::CpuFreqUtils(QObject *parent, unsigned int cpuid) :
+ QObject(parent),
+ m_cpuid(cpuid),
+ m_curPolicy(NULL),
+ m_availableFrequencies(NULL),
+ m_availableGovernors(NULL)
 {
-    this->m_cpuNumKernel = get_nprocs();
-    this->m_cpuNumAvailable = get_nprocs_conf( );
-    qDebug() <<"cpu numbers kernel = " <<this->m_cpuNumKernel <<endl;
-    qDebug() <<"cpu numbers avaliable = " <<this->m_cpuNumKernel <<endl;
-    qDebug() <<"cpu numbers offline = " <<this->m_cpuNumKernel - this->m_cpuNumKernel <<endl;
+    this->UpdateCpuInfo( );
+}
 
-    for(int cpuid = 0, availCount = 0;
-        cpuid < this->m_cpuNumKernel;
-        cpuid++)
-    {
-        //  查看编号为cpuid的CPU是否在线
-        if(CpuFreqUtils::IsCpuPresent(cpuid) == true)
-        {
-            availCount++;
-            CpuFreqInfo *cpuFreqInfo = new CpuFreqInfo(this, cpuid);
-            this->m_cpus.append(cpuFreqInfo);
-            qDebug( ) <<*cpuFreqInfo <<endl;
-        }
-        else
-        {
-            this->m_cpus.append(NULL);
-        }
-    }
+
+std::ostream &operator<<(std::ostream &out, const CpuFreqUtils &info)
+{
+    out <<"cpuid : " <<info.m_cpuid <<", ";
+    out <<"isonline : " <<info.m_isonline <<", ";
+    out <<"cpuinfo_transition_latency : "<<info.m_transitionLatency <<endl;
+
+    out <<"scalling : min = " <<info.m_scalingMinFrequency <<" kHz, ";
+    out <<           "max = " <<info.m_scalingMaxFrequency <<" kHz, ";
+    out <<           "cur = " <<info.m_scalingCurFrequency <<" kHz" <<endl;
+
+    out <<"cpuinfo  : min = " <<info.m_cpuinfoMinFrequency <<" kHz, ";
+          out <<           "max = " <<info.m_cpuinfoMaxFrequency <<" kHz, ";
+          out <<           "cur = " <<info.m_cpuinfoCurFrequency <<" kHz" <<endl;
+}
+
+QDebug operator<<(QDebug dbg, const CpuFreqUtils &info)
+{
+    dbg.nospace( ) <<"cpuid : " <<info.m_cpuid <<", ";
+    dbg.nospace( ) <<"isonline : " <<info.m_isonline <<", ";
+    dbg.nospace( ) <<"cpuinfo_transition_latency : "<<info.m_transitionLatency <<endl;
+
+    dbg.nospace( ) <<"scalling : min = " <<info.m_scalingMinFrequency <<" kHz, ";
+    dbg.nospace( ) <<           "max = " <<info.m_scalingMaxFrequency <<" kHz, ";
+    dbg.nospace( ) <<           "cur = " <<info.m_scalingCurFrequency <<" kHz" <<endl;
+
+    dbg.nospace( ) <<"cpuinfo  : min = " <<info.m_cpuinfoMinFrequency <<" kHz, ";
+    dbg.nospace( ) <<           "max = " <<info.m_cpuinfoMaxFrequency <<" kHz, ";
+    dbg.nospace( ) <<           "cur = " <<info.m_cpuinfoCurFrequency <<" kHz" <<endl;
+
+    return dbg.space( );
+}
+
+///////////////////////////////////////////////////////////////////
+/// 1--CPU信息CpuFreq的操作
+///////////////////////////////////////////////////////////////////
+
+
+/////////////////////
+//  1.1--获取编号为cpuid的CPU的信息
+/////////////////////
+
+//  获取当前CPU的编号
+const unsigned int CpuFreqUtils::GetCpuId( )
+{
+    return this->m_cpuid;
+}
+
+//  获取编号为cpuid的CPU完整信息
+const CpuFreqUtils* CpuFreqUtils::GetCpuInfo( )
+{
+    return (this);
+}
+
+//  编号为cpuid的CPU是否online
+const bool CpuFreqUtils::GetIsOnline( )
+{
+    return this->m_isonline;
+}
+
+//  当前cpu完成频率切换所需要的时间
+const unsigned long CpuFreqUtils::GetTransitionLatency( )
+{
+    return this->m_transitionLatency;
+}
+
+
+//  当前CPU的调频策略
+const struct cpufreq_policy*   CpuFreqUtils::GetCpuFreqPolicy( )
+{
+    return this->m_curPolicy;
 }
 
 
 
-CpuFreqUtils::~CpuFreqUtils( )
+//  编号为cpuid的CPU的最小运行频率
+const unsigned long CpuFreqUtils::GetScalingMinFrequency( )
 {
-    for(int cpuid = 0;
-        cpuid < this->m_cpuNumKernel;
-        cpuid++)
-    {
-        CpuFreqInfo *cpuinfo = this->m_cpus[cpuid];
-        if(cpuinfo != NULL)
-        {
-            delete cpuinfo;
-        }
-    }
+    assert(this->m_scalingMinFrequency == this->m_curPolicy->min);
+
+    return this->m_scalingMinFrequency;
 }
 
-//  判断编号为cpuid的CPU是否被安装(exist|present)
-bool CpuFreqUtils::IsCpuPresent(unsigned int cpuid)
+//  编号为cpuid的CPU的最大运行频率
+const unsigned long CpuFreqUtils::GetScalingMaxFrequency( )
 {
-    if(cpufreq_cpu_exists(cpuid) == 0)
+    assert(this->m_scalingMaxFrequency == this->m_curPolicy->max);
+
+    return this->m_scalingMaxFrequency;
+}
+
+//  编号为cpuid的CPU的当前运行频率
+const unsigned long CpuFreqUtils::GetScalingCurFrequency( )
+{
+    return this->m_scalingCurFrequency;
+}
+
+//  编号为cpuid的CPU的最小运行频率
+const unsigned long CpuFreqUtils::GetCpuInfoMinFrequency( )
+{
+    return this->m_cpuinfoMinFrequency;
+}
+
+//  编号为cpuid的CPU的最大运行频率
+const unsigned long CpuFreqUtils::GetCpuInfoMaxFrequency( )
+{
+    return this->m_cpuinfoMaxFrequency;
+}
+
+
+//  编号为cpuid的CPU的当前运行频率
+const unsigned long CpuFreqUtils::GetCpuInfoCurFrequency( )
+{
+    return this->m_scalingCurFrequency;
+}
+
+
+#if defined(CNODE_IN_QLIST)
+//一种是将节点重新组织在QList中
+QList<struct cpufreq_available_frequencies *>&
+CpuFreqUtils::GetAvailableFrequencies( )   //  可用的CPU频率值
+{
+    return this->m_avaliableFrequencies;
+}
+
+QList<struct cpufreq_available_governors *>&
+CpuFreqUtils::GetAvailableGovernors( );         //  可用的CPU频率调节器
+{
+    return this->m_availableGovernors;
+}
+#elif defined(CLIST_TO_QLIST)
+//另一种是近将节点的数据域组织在QList, 即将CLIST转换为QLIST
+QList<QString>&
+CpuFreqUtils::GetAvailableFrequencies( )   //  可用的CPU频率值
+{
+    return this->m_availableFrequencies;
+}
+
+
+QList<unsigned long >&
+CpuFreqUtils::GetAvailableGovernors( )         //  可用的CPU频率调节器
+{
+    return this->m_availableGovernors;
+}
+
+#elif defined(USE_CLIST)
+//另外一种方式是直接使用CLIST
+struct cpufreq_available_frequencies*
+CpuFreqUtils::GetAvailableFrequencies( )   //  可用的CPU频率值
+{
+    return this->m_availableFrequencies;
+}
+
+struct cpufreq_available_governors*
+CpuFreqUtils::GetAvailableGovernors( )         //  可用的CPU频率调节器
+{
+    return this->m_availableGovernors;
+}
+
+#endif
+
+
+
+
+
+
+
+/////////////////////
+//  1.2--更新编号为cpuid的CPU的信息
+/////////////////////
+
+//  获取编号为cpuid的CPU完整信息
+CpuFreqUtils* CpuFreqUtils::UpdateCpuInfo( )
+{
+    this->UpdateIsOnline( );            //  当前CPU是否在线
+    this->UpdateTransitionLatency( );   //  当前CPU的调频周期
+    this->UpdateCpuFreqPolicy( );       //  当前CPU的调频策略, 包括min, max和governor
+    this->UpdateScalingCurFrequency( );
+    this->UpdateCpuInfoLimitsFrequency( ); //  从硬件中读取的当前CPU的最小和最大运行频率
+    this->UpdateCpuInfoCurFrequency( ); //  从硬件中读取的当前CPU的运行频率
+
+    return (this);
+}
+
+//  编号为cpuid的CPU是否online
+bool CpuFreqUtils::UpdateIsOnline( )
+{
+    if(cpufreq_cpu_exists(this->m_cpuid) == 0)
     {
-        qDebug() <<"cpu " <<cpuid <<" is present"<<endl;
-        return true;
+        this->m_isonline = true;
+        qDebug() <<"cpu " <<this->m_cpuid <<" is online"<<endl;
     }
     else
     {
-        qDebug() <<"cpu " <<cpuid <<" is not present"<<endl;
-        return false;
+        this->m_isonline = false;
+        qDebug() <<"cpu " <<this->m_cpuid <<" is not online"<<endl;
     }
 }
 
 
-//  判断编号为cpuid的CPU是否活跃(online)
-bool CpuFreqUtils::IsCpuOnline(unsigned int copuid)
+//  当前cpu完成频率切换所需要的时间
+unsigned long CpuFreqUtils::UpdateTransitionLatency( )
 {
-    //// NOP
-    ///  未实现
-    //// NOP
+    unsigned long transitionLatency = cpufreq_get_transition_latency(this->m_cpuid);
+    if(transitionLatency == 0)
+    {
+        this->m_transitionLatency = -1;
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read transition_latency error" <<endl;
+        return -1;
+    }
+    else
+    {
+        this->m_transitionLatency = transitionLatency;
+        qDebug() <<"cpu " <<this->m_cpuid <<" cpuinfo_transition_latency = " <<this->m_transitionLatency <<endl;
+
+        return this->m_transitionLatency;
+    }
+}
+
+struct cpufreq_policy*   CpuFreqUtils::UpdateCpuFreqPolicy( )
+{
+    if(this->m_curPolicy != NULL)
+    {
+        /*  Remember to call cpufreq_put_policy when no longer needed
+         *  to avoid memory leakage, please.    */
+        cpufreq_put_policy(this->m_curPolicy);
+        assert(this->m_curPolicy == NULL);
+    }
+    struct cpufreq_policy *policy = cpufreq_get_policy(this->m_cpuid);
+    if(policy == NULL)
+    {
+        this->m_curPolicy = NULL;
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<__func__ <<" error" <<endl;
+        return NULL;
+    }
+    else
+    {
+        this->m_curPolicy = policy;
+        this->m_scalingMinFrequency = policy->min;
+        this->m_scalingMaxFrequency = policy->max;
+        qDebug( ) <<"cpu " <<this->m_cpuid <<" policy : min = " <<policy->min <<", max = " <<policy->max <<", governor = " <<policy->governor <<endl;
+        return this->m_curPolicy;
+    }
+}
+
+//  编号为cpuid的CPU的最小运行频率
+unsigned long CpuFreqUtils::UpdateScalingMinFrequency( )
+{
+    if(this->UpdateCpuFreqPolicy( ) == NULL)
+    {
+        this->m_scalingMaxFrequency = -1;
+    }
+    return this->m_scalingMaxFrequency;
+}
+
+//  编号为cpuid的CPU的最大运行频率
+unsigned long CpuFreqUtils::UpdateScalingMaxFrequency( )
+{
+    if(this->UpdateCpuFreqPolicy( ) == NULL)
+    {
+        this->m_scalingMinFrequency = -1;
+    }
+    return this->m_scalingMinFrequency;
+}
+
+
+//  编号为cpuid的CPU的当前运行频率
+unsigned long CpuFreqUtils::UpdateScalingCurFrequency( )
+{
+    unsigned long curfreq = cpufreq_get_freq_kernel(this->m_cpuid);
+
+    if(curfreq == 0)
+    {
+        this->m_scalingCurFrequency = -1;
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read scaling_cur_freq error" <<endl;
+        return -1;
+    }
+    else
+    {
+        this->m_scalingCurFrequency = curfreq;
+        qDebug() <<"cpu" <<this->m_cpuid <<" scaling_cur_freq = " <<this->m_scalingCurFrequency <<endl;
+
+        return m_scalingCurFrequency;
+    }
+}
+
+bool CpuFreqUtils::UpdateCpuInfoLimitsFrequency()
+{
+    unsigned long min, max;
+
+    if(cpufreq_get_hardware_limits(this->m_cpuid, &min, &max) != 0)
+    {
+        this->m_cpuinfoMinFrequency = -1;
+        this->m_cpuinfoMaxFrequency = -1;
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read cpuinfo_min_and_max_freq error" <<endl;
+        return false;
+    }
+    else
+    {
+        this->m_cpuinfoMinFrequency = min;
+        this->m_cpuinfoMaxFrequency = max;
+        qDebug( ) <<"cpu " <<this->m_cpuid <<" cpuinfo_min_freq = " <<this->m_cpuinfoMinFrequency <<", max = " <<this->m_cpuinfoMaxFrequency <<endl;
+        return true;
+    }
+}
+
+//  编号为cpuid的CPU的最小运行频率
+unsigned long CpuFreqUtils::UpdateCpuInfoMinFrequency( )
+{
+    if(this->UpdateCpuInfoLimitsFrequency( ) != true)
+    {
+        return -1;
+    }
+    else
+    {
+        return this->m_cpuinfoMinFrequency;
+    }
+}
+
+//  编号为cpuid的CPU的最大运行频率
+unsigned long CpuFreqUtils::UpdateCpuInfoMaxFrequency( )
+{
+    if(this->UpdateCpuInfoLimitsFrequency( ) != true)
+    {
+        return -1;
+    }
+    else
+    {
+        return this->m_cpuinfoMaxFrequency;
+    }
+}
+
+
+//  编号为cpuid的CPU的当前运行频率
+unsigned long CpuFreqUtils::UpdateCpuInfoCurFrequency( )
+{
+    unsigned long curfreq = cpufreq_get_freq_hardware(this->m_cpuid);
+
+    if(curfreq == 0)
+    {
+        this->m_cpuinfoCurFrequency = -1;
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read cpuinfo_cur_freq error";
+        perror("errno ");
+        qDebug( ) <<endl;
+        return -1;
+    }
+    else
+    {
+        this->m_cpuinfoCurFrequency = curfreq;
+        return m_cpuinfoCurFrequency;
+    }
+}
+
+#if defined(CNODE_IN_QLIST)
+
+//一种是将节点重新组织在QList中
+QList<struct cpufreq_available_frequencies *>&
+CpuFreqUtils::UpdateAvailableFrequencies( )   //  可用的CPU频率值
+{
+
+
+}
+
+
+QList<struct cpufreq_available_governors *>&
+CpuFreqUtils::UpdateAvailableGovernors( )         //  可用的CPU频率调节器
+{
+
+
+}
+
+
+
+#elif defined(CLIST_TO_QLIST)
+
+//另一种是近将节点的数据域组织在QList, 即将CLIST转换为QLIST
+QList<QString>&
+CpuFreqUtils::UpdateAvailableFrequencies( )   //  可用的CPU频率值
+{
+
+}
+
+QList<unsigned long >&
+CpuFreqUtils::UpdateAvailableGovernors( )         //  可用的CPU频率调节器
+{
+
+}
+
+
+#elif defined(USE_CLIST)
+
+//另外一种方式是直接使用CLIST
+struct cpufreq_available_frequencies *
+CpuFreqUtils::UpdateAvailableFrequencies( )   //  可用的CPU频率值
+{
+    struct cpufreq_available_frequencies *headFrequencies = cpufreq_get_available_frequencies(this->m_cpuid);
+    if(headFrequencies == NULL)
+    {
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read cpufreq_available_frequencies error" <<endl;
+        return NULL;
+    }
+    else
+    {
+        if(this->m_availableFrequencies != NULL)    //  首先清除原来的数据, 避免内存泄露
+        {
+            cpufreq_put_available_frequencies(this->m_availableFrequencies);
+        }
+
+        this->m_availableFrequencies = headFrequencies;
+        return this->m_availableFrequencies;
+    }
+}
+
+
+struct cpufreq_available_governors*
+CpuFreqUtils::UpdateAvailableGovernors( )         //  可用的CPU频率调节器
+{
+    struct cpufreq_available_governors *headGovernors = cpufreq_get_available_governors(this->m_cpuid);
+    if(headGovernors == NULL)
+    {
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"read cpufreq_available_governors error" <<endl;
+        return NULL;
+    }
+    else
+    {
+        if(this->m_availableGovernors != NULL)    //  首先清除原来的数据, 避免内存泄露
+        {
+            cpufreq_put_available_governors(this->m_availableGovernors);
+        }
+        this->m_availableGovernors = headGovernors;
+        return this->m_availableGovernors;
+    }
+}
+
+#endif
+
+
+/////////////////////
+//  1.3--更新当前CPU的信息
+/////////////////////
+bool CpuFreqUtils::SetPolicy(struct cpufreq_policy *policy)
+{
+    if(cpufreq_set_policy(this->m_cpuid, policy) != 0)
+    {
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<" set policy error" <<endl;
+        return false;
+    }
+
     return true;
 }
 
 
-
-///////////////////////////////////////////////////////////////////
-/// 1--CPU数目的操作
-///////////////////////////////////////////////////////////////////
-
-/////////////////////
-///  1.1--获取CPU的数目
-/////////////////////
-
-/// 获取当前系统中安装的CPU的数目
-unsigned long CpuFreqUtils::GetCpuNumKernel( )
+bool CpuFreqUtils::SetPolicyMin(unsigned long minFreq)
 {
-    return this->m_cpuNumKernel;
+    if(cpufreq_modify_policy_min(this->m_cpuid, minFreq) != 0)
+    {
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"set policy min frequency " <<minFreq <<" failed" <<endl;
+        return false;
+    }
+
+    return true;
 }
 
-/// 获取当前系统中当前活跃的CPU数目
-unsigned long CpuFreqUtils::GetCpuNumAvaliable( )
+bool CpuFreqUtils::SetPolicyMax(unsigned long maxFreq)
 {
-    return this->m_cpuNumAvailable;
-}
+    if(cpufreq_modify_policy_max(this->m_cpuid, maxFreq) != 0)
+    {
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"set policy max frequency " <<maxFreq <<" failed" <<endl;
+        return false;
+    }
 
-
-/////////////////////
-///  1.2--更新CPU的数目
-/////////////////////
-/// 更新当前系统中安装的CPU的数目
-unsigned long CpuFreqUtils::UpdateCpuNumKernel( )
-{
-    this->m_cpuNumKernel = get_nprocs();
-
-    return this->m_cpuNumKernel;
-}
-
-/// 更新当前系统中当前活跃的CPU数目
-unsigned long CpuFreqUtils::UpdateCpuNumAvaliable( )
-{
-    this->m_cpuNumAvailable = get_nprocs_conf( );
-
-    return this->m_cpuNumAvailable;
-}
-
-/////////////////////
-///  1.3--设置CPU的数目
-/////////////////////
-
-//  NOP
-//  暂时未实现
-//  预计实现功能, CPU的热插拔等
-
-
-///////////////////////////////////////////////////////////////////
-/// 2--CPU信息CpuFreq的操作
-///////////////////////////////////////////////////////////////////
-/////////////////////
-//  2.1--获取编号为cpuid的CPU的信息
-/////////////////////
-
-//  获取编号为cpuid的CPU完整信息
-CpuFreqInfo* CpuFreqUtils::GetCpuInfo(unsigned int cpuid)
-{
-    return this->m_cpus[cpuid];
-}
-
-//  编号为cpuid的CPU是否online
-const bool CpuFreqUtils::GetIsOnline(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->GetIsOnline( );
+    return true;
 }
 
 
-//  编号为cpuid的CPU的最小运行频率
-const unsigned long CpuFreqUtils::GetScalingMinFrequency(unsigned int cpuid)
+bool CpuFreqUtils::SetPolicyGovernor(QString *governor)
 {
-    return this->GetCpuInfo(cpuid)->GetScalingMinFrequency( );
+    char targetGovernor[81];
+    strcpy(targetGovernor, governor->toStdString( ).c_str( ));
+    if(cpufreq_modify_policy_governor(this->m_cpuid, targetGovernor) != 0)
+    {
+        qDebug( ) <<__FILE__ <<", " <<__LINE__ <<" set policy min frequency " <<governor <<" failed" <<endl;
+        return false;
+    }
+    qDebug( ) <<__FILE__ <<", " <<__LINE__ <<" set policy governor to " <<targetGovernor <<" success" <<endl;
+    return true;
 }
 
 
-//  编号为cpuid的CPU的最大运行频率
-const unsigned long CpuFreqUtils::GetScalingMaxFrequency(unsigned int cpuid)
+bool CpuFreqUtils::SetFrequency(unsigned long targetFrequency)
 {
-    return this->GetCpuInfo(cpuid)->GetScalingMaxFrequency( );
+    if(cpufreq_set_frequency(this->m_cpuid, targetFrequency) != 0)
+    {
+        qDebug() <<__FILE__ <<", " <<__LINE__ <<"set policy frequency " <<targetFrequency <<" failed" <<endl;
+        return false;
+    }
+
+    return true;
 }
 
-
-//  编号为cpuid的CPU的当前运行频率
-const unsigned long CpuFreqUtils::GetScalingCurFrequency(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->GetScalingCurFrequency( );
-}
-
-
-//  编号为cpuid的CPU的最小运行频率
-const unsigned long CpuFreqUtils::GetCpuInfoMinFrequency(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->GetCpuInfoMinFrequency( );
-}
-
-//  编号为cpuid的CPU的最大运行频率
-const unsigned long CpuFreqUtils::GetCpuInfoMaxFrequency(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->GetCpuInfoMaxFrequency( );
-}
-
-//  编号为cpuid的CPU的当前运行频率
-const unsigned long CpuFreqUtils::GetCpuInfoCurFrequency(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->GetCpuInfoCurFrequency( );
-}
-
-
-
-//  可用的CPU频率值
-#if defined(CNODE_IN_QLIST)
-//一种是将节点重新组织在QList中
-QList<struct cpufreq_available_frequencies *>&
-#elif defined(CLIST_TO_QLIST)
-//另一种是近将节点的数据域组织在QList, 即将CLIST转换为QLIST
-QList<QString>&                                      //  可用的CPU频率值
-#elif defined(USE_CLIST)
-//另外一种方式是直接使用CLIST
-struct cpufreq_available_frequencies*            //  可用的CPU频率值
-#endif
-CpuFreqUtils::GetAvailableFrequencies(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->GetAvailableFrequencies( );
-}
-
-
-//  可用的CPU频率值
-#if defined(CNODE_IN_QLIST)
-//一种是将节点重新组织在QList中
-QList<struct cpufreq_available_governors *>&
-#elif defined(CLIST_TO_QLIST)
-//另一种是近将节点的数据域组织在QList, 即将CLIST转换为QLIST
-QList<unsigned long >&                            //  可用的CPU频率调节器
-#elif defined(USE_CLIST)
-//另外一种方式是直接使用CLIST
-struct cpufreq_available_governors *              //  可用的CPU频率调节器
-#endif
-CpuFreqUtils::GetAvailableGovernors(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->GetAvailableGovernors( );
-}
-
-
-
-const struct cpufreq_policy*
-CpuFreqUtils::GetCpuFreqPolicy(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->GetCpuFreqPolicy( );
-}
-
-/////////////////////
-//  2.2--更新编号为cpuid的CPU的信息
-/////////////////////
-
-
-//  获取编号为cpuid的CPU完整信息
-CpuFreqInfo* CpuFreqUtils::UpdateCpuInfo(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->UpdateCpuInfo( );
-}
-
-
-//  编号为cpuid的CPU是否online
-bool CpuFreqUtils::UpdateIsOnline(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->UpdateIsOnline( );
-}
-
-//  编号为cpuid的CPU的最小运行频率
-unsigned long CpuFreqUtils::UpdateScalingMinFrequency(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->UpdateScalingMinFrequency( );
-}
-
-//  编号为cpuid的CPU的最大运行频率
-unsigned long CpuFreqUtils::UpdateScalingMaxFrequency(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->UpdateScalingMaxFrequency( );
-}
-
-//  编号为cpuid的CPU的当前运行频率
-unsigned long CpuFreqUtils::UpdateScalingCurFrequency(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->UpdateScalingCurFrequency( );
-}
-
-
-//  编号为cpuid的CPU的最小运行频率
-unsigned long CpuFreqUtils::UpdateInfoMinFrequency(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->UpdateCpuInfoMinFrequency( );
-}
-
-//  编号为cpuid的CPU的最大运行频率
-unsigned long CpuFreqUtils::UpdateCpuInfoMaxFrequency(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->UpdateCpuInfoMaxFrequency( );
-}
-
-
-//  编号为cpuid的CPU的当前运行频率
-unsigned long CpuFreqUtils::UpdateCpuInfoCurFrequency(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->UpdateCpuInfoCurFrequency( );
-}
-
-
-
-//  可用的CPU频率值
-#if defined(CNODE_IN_QLIST)
-//一种是将节点重新组织在QList中
-QList<struct cpufreq_available_frequencies *>&
-#elif defined(CLIST_TO_QLIST)
-//另一种是近将节点的数据域组织在QList, 即将CLIST转换为QLIST
-QList<QString>&                                      //  可用的CPU频率值
-#elif defined(USE_CLIST)
-//另外一种方式是直接使用CLIST
-struct cpufreq_available_frequencies *            //  可用的CPU频率值
-#endif
-CpuFreqUtils::UpdateAvailableFrequencies(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->UpdateAvailableFrequencies( );
-}
-
-
-
-//  可用的CPU频率值
-#if defined(CNODE_IN_QLIST)
-//一种是将节点重新组织在QList中
-QList<struct cpufreq_available_governors *>&
-#elif defined(CLIST_TO_QLIST)
-//另一种是近将节点的数据域组织在QList, 即将CLIST转换为QLIST
-QList<unsigned long >&                            //  可用的CPU频率调节器
-#elif defined(USE_CLIST)
-//另外一种方式是直接使用CLIST
-struct cpufreq_available_governors *              //  可用的CPU频率调节器
-#endif
-CpuFreqUtils::UpdateAvailableGovernors(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->UpdateAvailableGovernors( );
-}
-
-
-
-struct cpufreq_policy*   CpuFreqUtils::UpdateCpuFreqPolicy(unsigned int cpuid)
-{
-    return this->GetCpuInfo(cpuid)->UpdateCpuFreqPolicy( );
-}
-
-
-/////////////////////
-//  2.3--设置编号为cpuid的CPU的信息
-/////////////////////
-bool CpuFreqUtils::SetPolicy(unsigned int cpuid, struct cpufreq_policy *policy)
-{
-    return this->GetCpuInfo(cpuid)->SetPolicy(policy);
-}
-
-
-bool CpuFreqUtils::SetPolicyMin(unsigned int cpuid, unsigned long minFreq)
-{
-    return this->GetCpuInfo(cpuid)->SetPolicyMin(minFreq);
-}
-
-
-bool CpuFreqUtils::SetPolicyMax(unsigned int cpuid, unsigned long maxFreq)
-{
-    return this->GetCpuInfo(cpuid)->SetPolicyMax(maxFreq);
-}
-
-
-bool CpuFreqUtils::SetPolicyGovernor(unsigned int cpuid, QString *governor)
-{
-    return this->GetCpuInfo(cpuid)->SetPolicyGovernor(governor);
-}
-
-
-bool CpuFreqUtils::SetFrequency(unsigned int cpuid, unsigned long targetFrequency)
-{
-    return this->GetCpuInfo(cpuid)->SetFrequency(targetFrequency);
-}

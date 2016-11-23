@@ -22,7 +22,7 @@
 #include <qwt_plot_zoomer.h>
 #include <qwt_plot_directpainter.h>
 
-#include "cpufrequtils.h"
+#include "cpufreqtools.h"
 
 
 
@@ -51,7 +51,7 @@ protected :
     QwtPlotGrid     *m_cpuUsageQwtPlotGrid;
     QwtPlotGrid     *m_cpuFrequencyQwtPlotGrid;
 
-    CpuFreqUtils    *m_cpuFreqUtils;                //  CPU调频工具类
+    CpuFreqTools    *m_cpuFreqTools;                //  CPU调频工具类
     //  注意m_cpuFreqUtils必须优先于窗体完成初始化, 并被所有窗体共享
     QTimer          *m_cpuUsageMonitorTimer;        //  cpu频率frequency的监视定时器
     QTimer          *m_cpuFrequencyMonitorTimer;    //  cpu使用率usage的监视定时器

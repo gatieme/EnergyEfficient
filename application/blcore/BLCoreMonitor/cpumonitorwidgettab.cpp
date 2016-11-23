@@ -10,7 +10,7 @@ CpuMonitorWidgetTab::CpuMonitorWidgetTab(QWidget *parent) :
     ///////////////////////////////////
     ///  初始化调频工具类
     ///////////////////////////////////
-    this->m_cpuFreqUtils = CpuFreqUtils::GetInstance( );
+    this->m_cpuFreqTools = CpuFreqTools::GetInstance( );
 
     ///////////////////////////////////
     /// 定时器每隔一秒中开始读取cpufreq的信息

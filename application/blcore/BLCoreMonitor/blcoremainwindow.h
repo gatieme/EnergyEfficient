@@ -4,7 +4,7 @@
 #include <QMainWindow>
 
 #include "blcoretabwidget.h"    // tabwidget
-#include "cpufrequtils.h"       //  cpu调频工具类
+#include "cpufreqtools.h"       //  cpu调频工具类
 
 namespace Ui {
 class BLCoreMainWindow;
@@ -23,7 +23,7 @@ private:
 
 protected :
 
-    CpuFreqUtils    *m_cpuFreqUtils;            //  CPU调频工具类
+    CpuFreqTools    *m_cpuFreqTools;            //  CPU调频工具类
     //  注意m_cpuFreqUtils必须优先于窗体完成初始化, 并被所有窗体共享
 
     BLCoreTabWidget *m_blcoreTabWidget;         //  tabwidget
