@@ -48,7 +48,18 @@ extern "C" {
 #endif
 
 
-#ifdef __cplusplus
+/*  获取cpu的总stat信息             */
+extern struct cpustat *cpuusage_get_totalstat( );
+/*  获取cpu的stat信息(/proc/stat)   */
+extern struct cpustat *cpuusage_get_stat(unsigned int cpuid);
+/*  释放cpustat的空间*/
+extern struct int cpuusage_put_stat(unsigned int cpuid);
+
+
+/*  获取cpu的使用率                 */
+extern unsigned long cpuusgae_get_usage(struct cpustat *first, struct cpustat *second);
+
+ifnef __cplusplus
 }
 #endif
 
