@@ -54,6 +54,10 @@ typedef struct cpuusage_jiffies_stat
     long int    steal;      /*  which is the time spent in other operating systems when running in a virtualized environment(since 2.6.11)  */
     long int    guest;      /*  which is the time spent running a virtual  CPU  for  guest operating systems under the control of the Linux kernel(since 2.6.24)    */
     long int    guest_nice; /*  running a niced guest  */
+
+
+    struct cpuusage_jiffies_stat    *next;
+    struct cpuusage_jiffies_stat    *first;
 }cpuusage_jiffies_stat;
 
 
@@ -73,10 +77,44 @@ cpuusage_get_cpu_jiffies_stat(unsigned int cpuid);
 extern void
 cpuusage_put_jiffies_stat(struct cpuusage_jiffies_stat *stat);
 
+/*  设置并分配cpuusage_jiffies_stat的空间   */
+/*struct cpuusgae_jiffies_stat*
+cpuusage_set_jiffies_stat(
+        const char *cpu,
+        unsigned long user, unsigned long nice,
+        unsigned long system, unsigned long idle,
+        unsigned long iowait, unsigned long irq,
+        unsigned long softirq, unsigned long steal,
+        unsigned long guest, unsigned long guest_nice,
+        struct cpuusgae_jiffies_stat *next,
+        struct cpuusgae_jiffies_stat *first);
+*/
 
-/*  获取cpu的使用率                 */
+struct cpuusgae_jiffies_stat*
+cpuusage_set_jiffies_stat(
+        const char *cpu,
+        unsigned long user, unsigned long nice,
+        unsigned long system, unsigned long idle,
+        unsigned long iowait, unsigned long irq,
+        unsigned long softirq, unsigned long steal,
+        unsigned long guest, unsigned long guest_nice,
+        struct cpuusage_jiffies_stat  *next,
+        struct cpuusgae_jiffies_stat *first);
+
+
+
+
+/*  计算cpu的使用率                 */
 extern double
-cpuusage_get_usage(struct cpuusage_jiffies_stat *first, struct cpuusage_jiffies_stat *second);
+cpuusage_calc_cpu_usage(
+        struct cpuusage_jiffies_stat *first,
+        struct cpuusage_jiffies_stat *second);
+
+/*  获取当前cpu的使用率                 */
+extern double cpuusage_get_cpu_usage(unsigned int cpuid, unsigned int delay);
+
+/*  获取系统cpu的使用率                 */
+extern double cpuusage_get_total_cpu_usage(unsigned int delay);
 
 
 /*  获取当前cpu的总运行时间         */
@@ -99,21 +137,28 @@ cpuusage_get_usage(struct cpuusage_jiffies_stat *first, struct cpuusage_jiffies_
 /////////////////////
 /// cpuusage_jiffies_stat_list链表的数据结构
 /////////////////////
+#if 0
+
+
 typedef struct cpuusage_jiffies_stat_list
 {
     struct cpuusage_jiffies_stat        *jiffies_stat;
     struct cpuusage_jiffies_stat_list   *next;
 }cpuusage_jiffies_stat_list;
 
+#else
+
+typedef struct cpuusage_jiffies_stat*   cpuusage_jiffies_stat_list;
+
+#endif
 
 /*  获取所有cpu的总stat信息并组织成链表             */
-extern struct cpuusage_jiffies_stat_list *
+cpuusage_jiffies_stat_list*
 cpuusage_get_jiffies_stat_list( );
 
 /*  获取所有cpu的总stat信息并组织成链表             */
-extern int
-cpuusage_put_jiffies_stat_list( );
-
+#define cpuusage_put_jiffies_stat_list(plist)   \
+    cpuusage_put_jiffies_stat(plist)
 
 
 #ifdef __cplusplus

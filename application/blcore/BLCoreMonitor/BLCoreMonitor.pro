@@ -14,8 +14,8 @@ TEMPLATE = app
 
 # for qwt-6.1.3
 INCLUDEPATH += /usr/local/Trolltech/qwt-6.1.3-qt-4.8.0/x86/include
-LIBS += -L/usr/local/Trolltech/qwt-6.1.3-qt-4.8.0/x86/lib -lqwt
-#LIBS += -L/opt/arm/qt/qwt-6.1.3-qt-4.8.6/x86_64/lib -lqwt
+#LIBS += -L/usr/local/Trolltech/qwt-6.1.3-qt-4.8.0/x86/lib -lqwt
+LIBS += -L/opt/arm/qt/qwt-6.1.3-qt-4.8.6/x86_64/lib -lqwt
 #LIBS += -L/usr/local/Trolltech/qwt-6.1.3-qt-4.8.0/arm/lib -lqwt
 
 # for fpga
@@ -27,8 +27,8 @@ LIBS += -L/usr/lib/ -lcpufreq
 #LIBS += -L./lib/arm -lcpufreq
 
 # for libcpuusage
-INCLUDEPATH += /usr/include  #/cpufreq.h
-LIBS += -L/usr/lib/ -lcpufreq
+INCLUDEPATH += /home/gatieme/Work/Arm/Application/energyefficient/EnergyEfficient/subsystem/cpuusageutils #/cpufreq.h
+LIBS += -L/home/gatieme/Work/Arm/Application/energyefficient/EnergyEfficient/subsystem/cpuusageutils -lcpuusage
 #LIBS += -L./lib/arm -lcpufreq
 
 

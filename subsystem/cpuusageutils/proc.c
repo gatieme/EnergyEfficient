@@ -31,12 +31,15 @@ struct cpuusage_jiffies_stat_list *
 proc_get_jiffies_stat_list( )
 {
     unsigned int cpunums = get_nprocs( );
-    FILE *fp = NULL;
-    char buf[128];
-    char cpu[6];
-    long int user, nice, system, idle, iowait, irq, softirq, steal, guest, guest_nice;
+
+    FILE        *fp = NULL;
+    char        buf[128];
+    char        cpu[6];
+    long int    user, nice, system, idle, iowait, irq, softirq, steal, guest, guest_nice;
     //long int total_jiffies_stat;
-    struct cpuusage_jiffies_stat    *jiffies_stat = NULL;
+    struct cpuusage_jiffies_stat        *head_jiffies_stat_list = NULL;
+    struct cpuusage_jiffies_stat        *prev_jiffies_stat = NULL;
+    struct cpuusage_jiffies_stat        *curr_jiffies_stat = NULL;
 
     fp = fopen(PROC_STAT_FILE, "r");
     if(fp == NULL)
@@ -45,9 +48,9 @@ proc_get_jiffies_stat_list( )
         exit (0);
     }
 
-	for(unsigned int id = 0;
-        id <=  (cpunums + 1) && !feof(fp);
-        id++)
+	for(unsigned int cpuid = 0;
+        cpuid <=  (cpunums + 1) && !feof(fp);
+        cpuid++)
     {
 		if (!fgets(buf, sizeof(buf), fp))
         {
@@ -70,26 +73,29 @@ proc_get_jiffies_stat_list( )
             cpu, user, nice, system, idle, iowait,
             irq, softirq, steal, guest, guest_nice);
 #endif
-        fclose(fp);
-    }
-    if((jiffies_stat = (struct cpuusage_jiffies_stat *)malloc(sizeof(struct cpuusage_jiffies_stat))) == NULL)
-    {
-        perror("malloc");
-        exit(-1);
-    }
-    strcpy(jiffies_stat->cpu, cpu);
-    jiffies_stat->user      = user;
-    jiffies_stat->nice      = nice;
-    jiffies_stat->system    = system;
-    jiffies_stat->idle      = idle;
-    jiffies_stat->iowait    = iowait;
-    jiffies_stat->irq       = irq;
-    jiffies_stat->softirq   = softirq;
-    jiffies_stat->steal     = steal;
-    jiffies_stat->guest     = guest;
-    jiffies_stat->guest     = guest_nice;
+        if((curr_jiffies_stat = cpuusage_set_jiffies_stat(cpu, user, nice, system, idle, iowait, irq, softirq, steal, guest, guest_nice, NULL, NULL)) == NULL)
+        {
+            perror("error ");
+            exit(-1);
+        }
+        if(head_jiffies_stat_list == NULL)
+        {
+            head_jiffies_stat_list->first   = curr_jiffies_stat;
+        }
+        else
+        {
+            prev_jiffies_stat->next        = curr_jiffies_stat;
+        }
+        curr_jiffies_stat->next     = NULL;
+        curr_jiffies_stat->first    = head_jiffies_stat_list;
 
-	return jiffies_stat;
+        prev_jiffies_stat           = curr_jiffies_stat;
+    }
+
+    fclose(fp);
+
+    return head_jiffies_stat_list;
+
 error:
 	fclose(fp);
 	return NULL;
@@ -148,22 +154,11 @@ proc_get_total_jiffies_stat( )
     //total_jiffies_stat = user + nice + system + idle + iowait + irq + softirq + steal + guest + guest_nice;
     fclose(fp);
 
-    if((jiffies_stat = (struct cpuusage_jiffies_stat *)malloc(sizeof(struct cpuusage_jiffies_stat))) == NULL)
+    if((jiffies_stat = cpuusage_set_jiffies_stat(cpu, user, nice, system, idle, iowait, irq, softirq, steal, guest, guest_nice, NULL, NULL)) == NULL)
     {
-        perror("malloc");
+        perror("error ");
         exit(-1);
     }
-    strcpy(jiffies_stat->cpu, cpu);
-    jiffies_stat->user      = user;
-    jiffies_stat->nice      = nice;
-    jiffies_stat->system    = system;
-    jiffies_stat->idle      = idle;
-    jiffies_stat->iowait    = iowait;
-    jiffies_stat->irq       = irq;
-    jiffies_stat->softirq   = softirq;
-    jiffies_stat->steal     = steal;
-    jiffies_stat->guest     = guest;
-    jiffies_stat->guest     = guest_nice;
 
     return jiffies_stat;
 error:
@@ -245,29 +240,14 @@ proc_get_cpu_jiffies_stat(unsigned int cpuid)
             cpu, user, nice, system, idle, iowait,
             irq, softirq, steal, guest, guest_nice);
 #endif
-
+        fclose(fp);
     }
 
-    //total_jiffies_stat = user + nice + system + idle + iowait + irq + softirq + steal + guest + guest_nice;
-    fclose(fp);
-
-    if((jiffies_stat = (struct cpuusage_jiffies_stat *)malloc(sizeof(struct cpuusage_jiffies_stat))) == NULL)
+    if((jiffies_stat = cpuusage_set_jiffies_stat(cpu, user, nice, system, idle, iowait, irq, softirq, steal, guest, guest_nice, NULL, NULL)) == NULL)
     {
-        perror("malloc");
+        perror("error ");
         exit(-1);
     }
-    strcpy(jiffies_stat->cpu, cpu);
-    jiffies_stat->user      = user;
-    jiffies_stat->nice      = nice;
-    jiffies_stat->system    = system;
-    jiffies_stat->idle      = idle;
-    jiffies_stat->iowait    = iowait;
-    jiffies_stat->irq       = irq;
-    jiffies_stat->softirq   = softirq;
-    jiffies_stat->steal     = steal;
-    jiffies_stat->guest     = guest;
-    jiffies_stat->guest     = guest_nice;
-
     return jiffies_stat;
 
 error:

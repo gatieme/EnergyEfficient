@@ -96,11 +96,11 @@ INSTALL_SCRIPT = ${INSTALL_PROGRAM}
 # to something more interesting, like "arm-linux-".  If you want
 # to compile vs uClibc, that can be done here as well.
 #ifeq ($(arm)), y)
-CROSS = aarch64-linux-gnu-
-@echo "=======arm build======="
+#CROSS = aarch64-linux-gnu-
+#@echo "=======arm build======="
 #else
-#CROSS = #/usr/i386-linux-uclibc/usr/bin/i386-uclibc-
-#@echo "=======default build======="
+CROSS = #/usr/i386-linux-uclibc/usr/bin/i386-uclibc-
+@echo "=======default build======="
 #endif
 CC = $(CROSS)gcc
 LD = $(CROSS)gcc

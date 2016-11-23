@@ -379,3 +379,31 @@ double UpdateTotalUsage( )
 
 
 }
+
+
+
+///////////////////////////////////////////////////////////////////
+/// 3--CPU
+///////////////////////////////////////////////////////////////////
+/////////////////////
+//  3.1--获取编号为cpuid的CPU-freq的信息
+/////////////////////
+//  CPU的当前运行频率
+QList<unsigned long> CpuFreqTools::UpdateAllCpusScalingCurFrequency(unsigned int cpuid)
+{
+}
+
+
+//  当前运行频率
+QList<unsigned long> CpuFreqTools::UpdateAllCpusCpuInfoCurFrequency(unsigned int cpuid)
+{
+
+}
+
+/////////////////////
+//  3.2--获取编号为cpuid的CPU-usage的信息
+/////////////////////
+QList<double> CpuFreqTools::UpdateAllCpusUsage(unsigned int cpuid)
+{
+
+}
