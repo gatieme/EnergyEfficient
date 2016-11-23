@@ -24,7 +24,8 @@ RANLIB=echo
 AR=ar
 AWK=awk
 LIBAPUE=
-
+FPIC=-fPIC
+SHAREDLIB_LINK_OPTIONS=-shared
 
 # Common temp files to delete from each directory.
 TEMPFILES=core core.* *.o temp.* *.out

@@ -1,7 +1,7 @@
 /*
- *  (C) 2004-2009  Dominik Brodowski <linux@dominikbrodowski.de>
+ *  Copyright (C) 2016-2017  gatieme <gatieme@163.com>
  *
- *  Licensed under the terms of the GNU GPL License version 2.
+ *  Licensed under the terms of the GNU GPL License version 3.
  */
 
 
@@ -10,246 +10,65 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "cpufreq.h"
-#include "interfaces.h"
+#include "cpuusage.h"
 
-int cpufreq_cpu_exists(unsigned int cpu)
+
+/////////////////////
+/// cpuusage_jiffies_stat的处理函数
+/////////////////////
+
+/*  获取cpu的总stat信息             */
+struct cpuusage_jiffies_stat *
+cpuusage_get_total_jiffies_stat( )
 {
-	int ret = sysfs_cpu_exists(cpu);
-	if (ret == -ENOSYS)
-		ret = proc_cpu_exists(cpu);
-	return (ret);
+	struct cpuusage_jiffies_stat *jiffies_stat = NULL;
+
+    jiffies_stat = proc_get_total_jiffies_stat( );
+
+    return jiffies_stat;
 }
 
-unsigned long cpufreq_get_freq_kernel(unsigned int cpu)
+/*  获取cpu的stat信息(/proc/stat)   */
+struct cpuusage_jiffies_stat*
+cpuusage_get_cpu_jiffies_stat(unsigned int cpuid)
 {
-	unsigned long ret = sysfs_get_freq_kernel(cpu);
-	if (!ret)
-		ret = proc_get_freq_kernel(cpu);
-	return (ret);
+	struct cpuusage_jiffies_stat *jiffies_stat = NULL;
+
+    jiffies_stat = proc_get_cpu_jiffies_stat(cpuid);
+
+    return jiffies_stat;
+
 }
 
-unsigned long cpufreq_get_freq_hardware(unsigned int cpu)
+/*  释放cpuusage_jiffies_stat的空间*/
+void cpuusage_put_jiffies_stat(struct cpuusage_jiffies_stat *stat)
 {
-	unsigned long ret = sysfs_get_freq_hardware(cpu);
-	if (!ret)
-		ret = proc_get_freq_hardware(cpu);
-	return (ret);
+    if(stat != NULL)
+    {
+        free(stat);
+    }
 }
 
-unsigned long cpufreq_get_transition_latency(unsigned int cpu)
+
+
+
+/*  获取cpu的使用率                 */
+double cpuusage_get_usage(struct cpuusage_jiffies_stat *first, struct cpuusage_jiffies_stat *second)
 {
-	unsigned long ret = sysfs_get_transition_latency(cpu);
-	if (!ret)
-		ret = proc_get_transition_latency(cpu);
-	return (ret);
-}
+    /*
+     * cpu usage=(idle2-idle1)/(cpu2-cpu1)*100
+     * cpu usage=[(user_2 +sys_2+nice_2) - (user_1 + sys_1+nice_1)]/(total_2 - total_1)*100
+     * */
+    unsigned long first_total = cpuusage_get_cpu_total_time(first);
+    unsigned long first_idle  = cpuusage_get_cpu_idle_time(first);
+    unsigned long second_total = cpuusage_get_cpu_total_time(second);
+    unsigned long second_idle = cpuusage_get_cpu_idle_time(second);
 
-int cpufreq_get_hardware_limits(unsigned int cpu,
-				unsigned long *min,
-				unsigned long *max)
-{
-	int ret;
-	if ((!min) || (!max))
-		return -EINVAL;
-	ret = sysfs_get_hardware_limits(cpu, min, max);
-	if (ret)
-		ret = proc_get_hardware_limits(cpu, min, max);
-	return (ret);
-}
+    double idle = (double)(second_idle - first_idle) / (second_total - first_total) * 100;
+    double usage = 100 - idle;
+    printf("cpu total  = %ld\n", second_total - first_total);
+    printf("cpu idle   = %ld\n", second_idle - first_idle);
+    printf("cpu useage = %.2f%%\n", usage);
 
-char * cpufreq_get_driver(unsigned int cpu) {
-	char * ret;
-	ret = sysfs_get_driver(cpu);
-	if (!ret) {
-		ret = proc_get_driver(cpu);
-	}
-	return (ret);
-}
-
-void cpufreq_put_driver(char * ptr) {
-	if (!ptr)
-		return;
-	free(ptr);
-}
-
-struct cpufreq_policy * cpufreq_get_policy(unsigned int cpu) {
-	struct cpufreq_policy * ret;
-	ret = sysfs_get_policy(cpu);
-	if (!ret)
-		ret = proc_get_policy(cpu);
-	return (ret);
-}
-
-void cpufreq_put_policy(struct cpufreq_policy *policy) {
-	if ((!policy) || (!policy->governor))
-		return;
-
-	free(policy->governor);
-	policy->governor = NULL;
-	free(policy);
-}
-
-struct cpufreq_available_governors * cpufreq_get_available_governors(unsigned int cpu) {
-	struct cpufreq_available_governors *ret;
-	ret = sysfs_get_available_governors(cpu);
-	if (!ret)
-		ret = proc_get_available_governors(cpu);
-	return (ret);
-}
-
-void cpufreq_put_available_governors(struct cpufreq_available_governors *any) {
-	struct cpufreq_available_governors *tmp, *next;
-
-	if (!any)
-		return;
-
-	tmp = any->first;
-	while (tmp) {
-		next = tmp->next;
-		if (tmp->governor)
-			free(tmp->governor);
-		free(tmp);
-		tmp = next;
-	}
-}
-
-
-struct cpufreq_available_frequencies * cpufreq_get_available_frequencies(unsigned int cpu) {
-	struct cpufreq_available_frequencies * ret;
-	ret = sysfs_get_available_frequencies(cpu);
-	if (!ret)
-		ret = proc_get_available_frequencies(cpu);
-	return (ret);
-}
-
-void cpufreq_put_available_frequencies(struct cpufreq_available_frequencies *any) {
-	struct cpufreq_available_frequencies *tmp, *next;
-
-	if (!any)
-		return;
-
-	tmp = any->first;
-	while (tmp) {
-		next = tmp->next;
-		free(tmp);
-		tmp = next;
-	}
-}
-
-
-struct cpufreq_affected_cpus * cpufreq_get_affected_cpus(unsigned int cpu) {
-	struct cpufreq_affected_cpus * ret;
-	ret = sysfs_get_affected_cpus(cpu);
-	if (!ret)
-		ret = proc_get_affected_cpus(cpu);
-	return (ret);
-}
-
-void cpufreq_put_affected_cpus(struct cpufreq_affected_cpus *any) {
-	struct cpufreq_affected_cpus *tmp, *next;
-
-	if (!any)
-		return;
-
-	tmp = any->first;
-	while (tmp) {
-		next = tmp->next;
-		free(tmp);
-		tmp = next;
-	}
-}
-
-
-struct cpufreq_affected_cpus * cpufreq_get_related_cpus(unsigned int cpu) {
-	struct cpufreq_affected_cpus * ret;
-	ret = sysfs_get_related_cpus(cpu);
-	if (!ret)
-		ret = proc_get_related_cpus(cpu);
-	return (ret);
-}
-
-void cpufreq_put_related_cpus(struct cpufreq_affected_cpus *any) {
-	cpufreq_put_affected_cpus(any);
-}
-
-
-int cpufreq_set_policy(unsigned int cpu, struct cpufreq_policy *policy) {
-	int ret;
-	if (!policy || !(policy->governor))
-		return -EINVAL;
-
-	ret = sysfs_set_policy(cpu, policy);
-	if (ret)
-		ret = proc_set_policy(cpu, policy);
-	return (ret);
-}
-
-
-int cpufreq_modify_policy_min(unsigned int cpu, unsigned long min_freq) {
-	int ret;
-
-	ret = sysfs_modify_policy_min(cpu, min_freq);
-	if (ret)
-		ret = proc_modify_policy_min(cpu, min_freq);
-	return (ret);
-}
-
-
-int cpufreq_modify_policy_max(unsigned int cpu, unsigned long max_freq) {
-	int ret;
-
-	ret = sysfs_modify_policy_max(cpu, max_freq);
-	if (ret)
-		ret = proc_modify_policy_max(cpu, max_freq);
-	return (ret);
-}
-
-
-int cpufreq_modify_policy_governor(unsigned int cpu, char *governor) {
-	int ret;
-
-	if ((!governor) || (strlen(governor) > 19))
-		return -EINVAL;
-
-	ret = sysfs_modify_policy_governor(cpu, governor);
-	if (ret)
-		ret = proc_modify_policy_governor(cpu, governor);
-	return (ret);
-}
-
-int cpufreq_set_frequency(unsigned int cpu, unsigned long target_frequency) {
-	int ret;
-
-	ret = sysfs_set_frequency(cpu, target_frequency);
-	if (ret)
-		ret = proc_set_frequency(cpu, target_frequency);
-	return (ret);
-}
-
-struct cpufreq_stats * cpufreq_get_stats(unsigned int cpu, unsigned long long *total_time) {
-	struct cpufreq_stats *ret;
-
-	ret = sysfs_get_stats(cpu, total_time);
-	return (ret);
-}
-
-void cpufreq_put_stats(struct cpufreq_stats *any) {
-	struct cpufreq_stats *tmp, *next;
-
-	if (!any)
-		return;
-
-	tmp = any->first;
-	while (tmp) {
-		next = tmp->next;
-		free(tmp);
-		tmp = next;
-	}
-}
-
-unsigned long cpufreq_get_transitions(unsigned int cpu) {
-	unsigned long ret = sysfs_get_transitions(cpu);
-
-	return (ret);
+    return usage;
 }

@@ -20,14 +20,25 @@
 #ifndef __CPUUSAGE_H_INCLUDE__
 #define __CPUUSAGE_H_INCLUDE__
 
+#include "interface.h"
 
 #ifdef __cplusplus
 extern "C" {
 #endif
 
+
 // http://lxr.free-electrons.com/source/Documentation/filesystems/proc.txt
 // http://blog.csdn.net/stormbjm/article/details/19202849
-typedef struct cpustat
+
+
+///////////////////////////////////////////////////////////////
+/// cpuusage_jiffies_stat的接口
+///////////////////////////////////////////////////////////////
+
+/////////////////////
+/// cpuusage_jiffies_stat的数据结构
+/////////////////////
+typedef struct cpuusage_jiffies_stat
 {
     /*  参数--解析--(单位：jiffies)
      *  总的cpu时间total_cpu_time = user + nice + system + idle + iowait + irq + softirq + stealstolen + guest + guest_nice
@@ -43,31 +54,69 @@ typedef struct cpustat
     long int    steal;      /*  which is the time spent in other operating systems when running in a virtualized environment(since 2.6.11)  */
     long int    guest;      /*  which is the time spent running a virtual  CPU  for  guest operating systems under the control of the Linux kernel(since 2.6.24)    */
     long int    guest_nice; /*  running a niced guest  */
-}cpustat;
-
-
+}cpuusage_jiffies_stat;
 
 
 /////////////////////
-/// cpustat的处理函数
+/// cpuusage_jiffies_stat的处理函数
 /////////////////////
 
 /*  获取cpu的总stat信息             */
-extern struct cpustat *cpuusage_get_totalstat( );
+extern struct cpuusage_jiffies_stat*
+cpuusage_get_total_jiffies_stat( );
 
 /*  获取cpu的stat信息(/proc/stat)   */
-extern struct cpustat *cpuusage_get_stat(unsigned int cpuid);
+extern struct cpuusage_jiffies_stat*
+cpuusage_get_cpu_jiffies_stat(unsigned int cpuid);
 
-/*  释放cpustat的空间*/
-extern struct int cpuusage_put_stat(struct cpustat *stat);
+/*  释放cpuusage_jiffies_stat的空间*/
+extern void
+cpuusage_put_jiffies_stat(struct cpuusage_jiffies_stat *stat);
 
 
 /*  获取cpu的使用率                 */
-extern unsigned long cpuusgae_get_usage(struct cpustat *first, struct cpustat *second);
+extern double
+cpuusage_get_usage(struct cpuusage_jiffies_stat *first, struct cpuusage_jiffies_stat *second);
+
+
+/*  获取当前cpu的总运行时间         */
+#define cpuusage_get_cpu_total_time(pjiffies)            \
+    ((pjiffies)->user    + (pjiffies)->nice          +   \
+     (pjiffies)->system  + (pjiffies)->idle          +   \
+     (pjiffies)->iowait  + (pjiffies)->irq           +   \
+     (pjiffies)->softirq + (pjiffies)->steal         +   \
+     (pjiffies)->guest   + (pjiffies)->guest_nice)
+
+/*  获取当前cpu的总空闲时间         */
+#define cpuusage_get_cpu_idle_time(pjiffies)            \
+    ((pjiffies)->idle)
+
+
+///////////////////////////////////////////////////////////////
+/// cpuusage_jiffies_stat_list链表的接口
+///////////////////////////////////////////////////////////////
+
+/////////////////////
+/// cpuusage_jiffies_stat_list链表的数据结构
+/////////////////////
+typedef struct cpuusage_jiffies_stat_list
+{
+    struct cpuusage_jiffies_stat        *jiffies_stat;
+    struct cpuusage_jiffies_stat_list   *next;
+}cpuusage_jiffies_stat_list;
+
+
+/*  获取所有cpu的总stat信息并组织成链表             */
+extern struct cpuusage_jiffies_stat_list *
+cpuusage_get_jiffies_stat_list( );
+
+/*  获取所有cpu的总stat信息并组织成链表             */
+extern int
+cpuusage_put_jiffies_stat_list( );
 
 
 
-ifnef __cplusplus
+#ifdef __cplusplus
 }
 #endif
 

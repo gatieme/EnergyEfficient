@@ -21,11 +21,11 @@ main_cpuusage_sdk : mainusage.o libcpuusage.so
 
 
 
-libcpuusage.a : proc.o sysfs.o cpuusage.o
+libcpuusage.a : proc.o cpuusage.o
 	ar crv $@ $^
 
 
-libcpuusage.so : proc.o sysfs.o cpuusage.o
+libcpuusage.so : proc.o cpuusage.o
 	$(CC) $(SHAREDLIB_LINK_OPTIONS) $(FPIC) $(LDFLAGS) $^ -o $@
 
 %.o : %.cpp
