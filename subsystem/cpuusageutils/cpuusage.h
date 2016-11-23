@@ -1,11 +1,11 @@
 /*
  *  cpuusage.h - definitions for libcpufreq
  *
- *  Copyright (C) 2004-2009  Dominik Brodowski <linux@dominikbrodowski.de>
+ *  Copyright (C) 2016-2017  gatieme <gatieme@163.com>
  *
  *  This program is free software; you can redistribute it and/or modify
  *  it under the terms of the GNU General Public License as published by
- *  the Free Software Foundation, version 2 of the License.
+ *  the Free Software Foundation, version 3 of the License.
  *
  *  This program is distributed in the hope that it will be useful,
  *  but WITHOUT ANY WARRANTY; without even the implied warranty of
@@ -20,6 +20,10 @@
 #ifndef __CPUUSAGE_H_INCLUDE__
 #define __CPUUSAGE_H_INCLUDE__
 
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 // http://lxr.free-electrons.com/source/Documentation/filesystems/proc.txt
 // http://blog.csdn.net/stormbjm/article/details/19202849
@@ -39,28 +43,35 @@ typedef struct cpustat
     long int    steal;      /*  which is the time spent in other operating systems when running in a virtualized environment(since 2.6.11)  */
     long int    guest;      /*  which is the time spent running a virtual  CPU  for  guest operating systems under the control of the Linux kernel(since 2.6.24)    */
     long int    guest_nice; /*  running a niced guest  */
-};
+}cpustat;
 
 
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 
+/////////////////////
+/// cpustat的处理函数
+/////////////////////
 
 /*  获取cpu的总stat信息             */
 extern struct cpustat *cpuusage_get_totalstat( );
+
 /*  获取cpu的stat信息(/proc/stat)   */
 extern struct cpustat *cpuusage_get_stat(unsigned int cpuid);
+
 /*  释放cpustat的空间*/
-extern struct int cpuusage_put_stat(unsigned int cpuid);
+extern struct int cpuusage_put_stat(struct cpustat *stat);
 
 
 /*  获取cpu的使用率                 */
 extern unsigned long cpuusgae_get_usage(struct cpustat *first, struct cpustat *second);
 
+
+
 ifnef __cplusplus
 }
 #endif
 
-#endif /* _cpuusage_H */
+
+
+
+#endif /*   #define __CPUUSAGE_H_INCLUDE__    */
