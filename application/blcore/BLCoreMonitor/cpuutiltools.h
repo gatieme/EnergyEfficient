@@ -5,10 +5,12 @@
 #include <QDebug>
 
 
-//#define CPU_FREQ
-//#define CPU_USAG
-//#define SINGLETON_GC
+#define CPU_FREQ
+#define CPU_USAGE
 
+
+#define SINGLETON_GC
+//#define SINGLETON
 
 #include "cpuusageutils.h"
 #include "cpufrequtils.h"
@@ -34,16 +36,29 @@ extern "C"
 class CpuUtilTools : public QObject
 {
     Q_OBJECT
+#if defined(SINGLETON_GC) || defined(SINGLETON)
+private:
+#else
+public :
+#endif
+    explicit CpuUtilTools(QObject *parent = 0);
+
+    explicit CpuUtilTools(const CpuUtilTools &singleton)       // 赋值构造函数[被保护]
+    {
+    }
+
 public :
     static CpuUtilTools*  GetInstance( )           // 获取对象单例的指针
     {
 #if defined(SINGLETON_GC)
         return const_cast<CpuUtilTools *>(CpuUtilTools::m_singleton);
-#else
+#elif defined(SINGLETON)
         if(CpuUtilTools::m_singleton == NULL)       // 如果单例对象没有创建， 则将其创建
         {
             CpuUtilTools::m_singleton = new CpuUtilTools( );
         }
+#else
+        return NULL;
 #endif
     }
 
@@ -163,18 +178,6 @@ public :
     double UpdateTotalUsage( );                         //  获取系统中总的cpuusage信息
 #endif
 
-private:
-    explicit CpuUtilTools(QObject *parent = 0);
-
-    explicit CpuUtilTools(const CpuUtilTools &singleton)       // 赋值构造函数[被保护]
-    {
-    }
-
-
-
-signals:
-
-public slots:
     ///////////////////////////////////////////////////////////////////
     /// 3--CPU
     ///////////////////////////////////////////////////////////////////
@@ -188,6 +191,19 @@ public slots:
     /////////////////////
 
     QList<double> UpdateAllCpusUsage( );                 //  当前运行频率
+
+
+signals:
+
+public slots:
+
+    void slotUpdateAllCpusScalingCurFrequency( );
+    void slotUpdateAllCpusCpuInfoCurFrequency( );   //  当前运行频率
+    /////////////////////
+    //  3.2--获取编号为cpuid的CPU-usage的信息
+    /////////////////////
+
+    void slotUpdateAllCpusUsage( );                 //  当前运行频率
 
 protected :
     ///  m_cpuNumKernel     the number of processors configured by the operating system.
@@ -203,8 +219,11 @@ protected :
 #ifdef CPU_USAGE
     CpuUsageUtils            *m_cpuusages;                //  当前系统中CPU使用率的集合
 #endif
+
+#if defined(SINGLETON) || defined(SINGLETON_GC)
     //  单例模式
     static CpuUtilTools      *m_singleton;
+#endif
 
 #if defined(SINGLETON_GC)
     class GC

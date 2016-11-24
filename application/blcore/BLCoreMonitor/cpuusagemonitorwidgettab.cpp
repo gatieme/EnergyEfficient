@@ -77,7 +77,7 @@ CpuUsageMonitorWidgetTab::~CpuUsageMonitorWidgetTab()
 //  绘制cpu使用率的曲线
 void CpuUsageMonitorWidgetTab::slotShowCpuUsagePlot()
 {
-    this->m_cpuUtilTools->UpdateAllCpusUsage( );
-    //qDebug( ) <<__FILE__ <<", " <<__LINE__ <<endl;
+    this->m_cpuUtilTools->slotUpdateAllCpusUsage( );
+    qDebug( ) <<__FILE__ <<", " <<__LINE__ <<endl;
 
 }

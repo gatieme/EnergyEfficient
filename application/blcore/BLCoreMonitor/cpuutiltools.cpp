@@ -3,9 +3,12 @@
 
 
 #if defined(SINGLETON_GC)
+
 /*static*/CpuUtilTools* CpuUtilTools::m_singleton = new CpuUtilTools( );
 /*static*/CpuUtilTools::GC CpuUtilTools::GC::gc;
-#else
+
+#elif defined(SINGLETON)
+
 /*static*/CpuUtilTools* CpuUtilTools::m_singleton = NULL;
 
 #endif
@@ -446,10 +449,29 @@ QList<double> CpuUtilTools::UpdateAllCpusUsage( )
 {
 #ifdef CPU_USAGE
     //qDebug( ) <<__FILE__ <<", " <<__LINE__ <<endl;
-    this->m_cpuusages->UpdateAllCpusUsage( );
+    return this->m_cpuusages->UpdateAllCpusUsage( );
     //qDebug( ) <<__FILE__ <<", " <<__LINE__ <<endl;
 #else
     qDebug( ) <<__FILE__ <<", " <<__LINE__ <<endl;
 #endif
 }
 
+
+
+void CpuUtilTools::slotUpdateAllCpusScalingCurFrequency( )
+{
+
+}
+
+void CpuUtilTools::slotUpdateAllCpusCpuInfoCurFrequency( )   //  当前运行频率
+{
+
+}
+/////////////////////
+//  3.2--获取编号为cpuid的CPU-usage的信息
+/////////////////////
+
+void CpuUtilTools::slotUpdateAllCpusUsage( )                 //  当前运行频率
+{
+
+}
