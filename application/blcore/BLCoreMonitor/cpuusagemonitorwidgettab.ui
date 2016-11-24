@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>CpuMonitorWidgetTab</class>
- <widget class="QWidget" name="CpuMonitorWidgetTab">
+ <class>CpuUsageMonitorWidgetTab</class>
+ <widget class="QWidget" name="CpuUsageMonitorWidgetTab">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>760</width>
-    <height>528</height>
+    <width>825</width>
+    <height>371</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,8 +16,8 @@
   <widget class="QFrame" name="CpuUsageFrame">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>20</y>
+     <x>10</x>
+     <y>50</y>
      <width>731</width>
      <height>221</height>
     </rect>
@@ -42,45 +42,6 @@
     </property>
    </widget>
    <widget class="QwtPlot" name="cpuUsageQwtPlot">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>40</y>
-      <width>711</width>
-      <height>111</height>
-     </rect>
-    </property>
-   </widget>
-  </widget>
-  <widget class="QFrame" name="CpuFrequencyFrame">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>280</y>
-     <width>731</width>
-     <height>211</height>
-    </rect>
-   </property>
-   <property name="frameShape">
-    <enum>QFrame::StyledPanel</enum>
-   </property>
-   <property name="frameShadow">
-    <enum>QFrame::Raised</enum>
-   </property>
-   <widget class="QLabel" name="cpuFrequencyLabel">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>91</width>
-      <height>21</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>CPU频率</string>
-    </property>
-   </widget>
-   <widget class="QwtPlot" name="cpuFrequencyQwtPlot">
     <property name="geometry">
      <rect>
       <x>10</x>

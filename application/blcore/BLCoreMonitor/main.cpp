@@ -2,6 +2,7 @@
 #include <QApplication>
 #include <QTextCodec>
 
+#include "singleton.h"
 
 int main(int argc, char *argv[])
 {
@@ -24,6 +25,11 @@ int main(int argc, char *argv[])
 
     BLCoreMainWindow w;
     w.show();
+//    CpuUtilTools *cpufreq = CpuUtilTools::GetInstance( );
+//    cpufreq->UpdateAllCpusUsage( );
+//    cpufreq->UpdateAllCpusScalingCurFrequency( );
+
+
 
     return a.exec();
 }

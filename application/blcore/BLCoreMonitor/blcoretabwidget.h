@@ -5,9 +5,9 @@
 #include "blcoretabwidget.h"
 
 
-#include "cpumonitorwidgettab.h"    //  CPU监控子系统
+#include "cpufreqmonitorwidgettab.h"    //  CPU监控子系统
 #include "cpufreqwidgettab.h"       //  COU变频调节子系统
-
+#include "cpuusagemonitorwidgettab.h"   //  CPU使用率监控子系统
 
 class BLCoreTabWidget : public QTabWidget
 {
@@ -22,9 +22,9 @@ public slots:
 
 
 protected   :
-    CpuMonitorWidgetTab *m_cpumonitorWidgetTab;     //  CPU监控子系统
-    CpuFreqWidgetTab    *m_cpufreqWidgetTab;        //  CPU变频子系统
-
+    CpuFreqMonitorWidgetTab     *m_cpufreqMonitorWidgetTab;     //  CPU监控子系统
+    CpuFreqWidgetTab            *m_cpufreqWidgetTab;        //  CPU变频子系统
+    CpuUsageMonitorWidgetTab    *m_cpuusageMonitorWidgetTab;
 };
 
 #endif // BLCORETABWIDGET_H

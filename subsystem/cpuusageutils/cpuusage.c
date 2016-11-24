@@ -67,22 +67,23 @@ cpuusage_set_jiffies_stat(
 {
     struct cpuusage_jiffies_stat    *jiffies_stat = NULL;
     if((jiffies_stat = (struct cpuusage_jiffies_stat *)malloc(sizeof(struct cpuusage_jiffies_stat))) == NULL)
+    //if((jiffies_stat = (struct cpuusage_jiffies_stat *)calloc(1, sizeof(struct cpuusage_jiffies_stat))) == NULL)
     {
         perror("malloc");
         exit(-1);
     }
 
     strcpy(jiffies_stat->cpu, cpu);
-    jiffies_stat->user      = user;
-    jiffies_stat->nice      = nice;
-    jiffies_stat->system    = system;
-    jiffies_stat->idle      = idle;
-    jiffies_stat->iowait    = iowait;
-    jiffies_stat->irq       = irq;
-    jiffies_stat->softirq   = softirq;
-    jiffies_stat->steal     = steal;
-    jiffies_stat->guest     = guest;
-    jiffies_stat->guest     = guest_nice;
+    jiffies_stat->user          = user;
+    jiffies_stat->nice          = nice;
+    jiffies_stat->system        = system;
+    jiffies_stat->idle          = idle;
+    jiffies_stat->iowait        = iowait;
+    jiffies_stat->irq           = irq;
+    jiffies_stat->softirq       = softirq;
+    jiffies_stat->steal         = steal;
+    jiffies_stat->guest         = guest;
+    jiffies_stat->guest_nice    = guest_nice;
 
     jiffies_stat->next      = next;
     jiffies_stat->first     = first;
@@ -172,8 +173,11 @@ cpuusage_calc_usage(
     unsigned long first_idle  = cpuusage_get_idle_time(first);
     unsigned long second_total = cpuusage_get_total_time(second);
     unsigned long second_idle = cpuusage_get_idle_time(second);
-
-    double idle = (double)(second_idle - first_idle) / (second_total - first_total) * 100;
+    if (second_total - first_total == 0)
+    {
+        return 0.0;
+    }
+    double idle = (double)((long)second_idle - (long)first_idle) / ((long)second_total - (long)first_total) * 100;
     double usage = 100 - idle;
     printf("cpu total  = %ld\n", second_total - first_total);
     printf("cpu idle   = %ld\n", second_idle - first_idle);

@@ -5,6 +5,7 @@
 #include <QTimer>
 
 
+
 /// qwt-6.1.3
 #include <qwt_plot.h>
 #include <qwt_plot.h>
@@ -22,39 +23,38 @@
 #include <qwt_plot_zoomer.h>
 #include <qwt_plot_directpainter.h>
 
-#include "cpufreqtools.h"
-
+#include "cpuutiltools.h"
 
 
 namespace Ui {
-class CpuMonitorWidgetTab;
+class CpuFreqMonitorWidgetTab;
 }
 
-class CpuMonitorWidgetTab : public QWidget
+class CpuFreqMonitorWidgetTab : public QWidget
 {
     Q_OBJECT
 
 public:
-    explicit CpuMonitorWidgetTab(QWidget *parent = 0);
-    ~CpuMonitorWidgetTab();
+    explicit CpuFreqMonitorWidgetTab(QWidget *parent = 0);
+    ~CpuFreqMonitorWidgetTab();
 
 private slots:
-    void slotShowCpuUsagePlot( );       //  绘制cpu使用率的曲线
+
     void slotShowCpuFrequencyPlot( );  //  绘制cpu频率的曲线
 
 private:
-    Ui::CpuMonitorWidgetTab *ui;
+    Ui::CpuFreqMonitorWidgetTab *ui;
 
 protected :
 
 
-    QwtPlotGrid     *m_cpuUsageQwtPlotGrid;
     QwtPlotGrid     *m_cpuFrequencyQwtPlotGrid;
-
-    CpuFreqTools    *m_cpuFreqTools;                //  CPU调频工具类
-    //  注意m_cpuFreqUtils必须优先于窗体完成初始化, 并被所有窗体共享
-    QTimer          *m_cpuUsageMonitorTimer;        //  cpu频率frequency的监视定时器
     QTimer          *m_cpuFrequencyMonitorTimer;    //  cpu使用率usage的监视定时器
+
+    CpuUtilTools    *m_cpuUtilTools;                //  CPU调频工具类
+    //  注意m_cpuFreqUtils必须优先于窗体完成初始化, 并被所有窗体共享
+
+
 };
 
 #endif // CPUMONITORWIDGETTAB_H

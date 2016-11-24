@@ -11,15 +11,15 @@
 #include "cpuusage.h"
 
 
-#define CK_TIME 1
+#define CK_TIME 5
 
 int main(int argc ,char *argv[])
 {
     unsigned int cpunum = get_nprocs( );
-
+    printf("==%d==\n", sizeof(struct cpuusage_jiffies_stat));
     struct cpuusage_jiffies_stat *first_stat =  NULL;
     struct cpuusage_jiffies_stat *second_stat =  NULL;
-
+/*
     ///
     first_stat = cpuusage_get_total_jiffies_stat( );
     sleep(CK_TIME);
@@ -41,7 +41,7 @@ int main(int argc ,char *argv[])
         cpuusage_get_usage(cpuid, CK_TIME);
 
     }
-
+*/
     first_stat = cpuusage_get_jiffies_stat_list( );
     cpuusage_show_jiffies_stat_list(first_stat);
     return EXIT_SUCCESS;

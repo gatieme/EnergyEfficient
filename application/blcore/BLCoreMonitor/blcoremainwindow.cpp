@@ -17,7 +17,7 @@ BLCoreMainWindow::BLCoreMainWindow(QWidget *parent) :
     ///////////////////////////////////
     //  初始化调频工具类
     ///////////////////////////////////
-    this->m_cpuFreqTools = CpuFreqTools::GetInstance( );
+    this->m_cpuUtilTools = CpuUtilTools::GetInstance( );
 
     //  添加tabwidget
     m_blcoreTabWidget= new BLCoreTabWidget();
@@ -34,6 +34,6 @@ BLCoreMainWindow::~BLCoreMainWindow()
     delete ui;
 
     delete m_blcoreTabWidget;       //  销毁tabwidget
-    delete m_cpuFreqTools;          //  销毁调频工具类
+    delete m_cpuUtilTools;          //  销毁调频工具类
 
 }

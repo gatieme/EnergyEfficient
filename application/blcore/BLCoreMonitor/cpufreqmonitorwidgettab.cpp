@@ -1,53 +1,30 @@
-#include "cpumonitorwidgettab.h"
-#include "ui_cpumonitorwidgettab.h"
+#include "cpufreqmonitorwidgettab.h"
+#include "ui_cpufreqmonitorwidgettab.h"
 
-CpuMonitorWidgetTab::CpuMonitorWidgetTab(QWidget *parent) :
+CpuFreqMonitorWidgetTab::CpuFreqMonitorWidgetTab(QWidget *parent) :
     QWidget(parent),
-    ui(new Ui::CpuMonitorWidgetTab)
+    ui(new Ui::CpuFreqMonitorWidgetTab)
 {
     ui->setupUi(this);
 
     ///////////////////////////////////
     ///  初始化调频工具类
     ///////////////////////////////////
-    this->m_cpuFreqTools = CpuFreqTools::GetInstance( );
+    this->m_cpuUtilTools = CpuUtilTools::GetInstance( );
 
     ///////////////////////////////////
     /// 定时器每隔一秒中开始读取cpufreq的信息
     /// QTimer *m_cpuUsageMonitorTimer      cpu频率frequency的监视定时器
     /// QTimer *m_cpuFrequencyMonitorTimer  cpu使用率usage的监视定时器
     ///////////////////////////////////
-    this->m_cpuUsageMonitorTimer = new QTimer(this);
-    connect(this->m_cpuUsageMonitorTimer, SIGNAL(timeout( )),
-            this, SLOT(slotShowCpuUsagePlot( )));
-    this->m_cpuUsageMonitorTimer->start(1000);
-
     this->m_cpuFrequencyMonitorTimer = new QTimer(this);
-    connect(this->m_cpuUsageMonitorTimer, SIGNAL(timeout( )),
+    connect(this->m_cpuFrequencyMonitorTimer, SIGNAL(timeout( )),
             this, SLOT(slotShowCpuFrequencyPlot( )));
     this->m_cpuFrequencyMonitorTimer->start(1000);
 
 
 
 
-    ///////////////////////////////////
-    /// CPU使用率图表cpuUsageQwtPlot
-    ///////////////////////////////////
-    //  设置其Y轴信息
-    this->ui->cpuUsageQwtPlot->setAxisTitle(QwtPlot::yLeft, "Usage(%)" );
-    this->ui->cpuUsageQwtPlot->setAxisScale(QwtPlot::yLeft, 0, 100);
-    // 增加网格
-    this->m_cpuUsageQwtPlotGrid = new QwtPlotGrid();
-    this->m_cpuUsageQwtPlotGrid->attach( this->ui->cpuUsageQwtPlot);
-    // 设置画布背景
-    this->ui->cpuUsageQwtPlot->setCanvasBackground(QColor(29, 100, 141)); // nice blue
-    /*
-    // panning with the left mouse button支持鼠标平移
-    ( void ) new QwtPlotPanner( this->ui->cpuUsageQwtPlot->canvas() );
-
-    // zoom in/out with the wheel支持滚轮放大缩小
-    ( void ) new QwtPlotMagnifier( this->ui->cpuUsageQwtPlot->canvas() );
-    */
     ///////////////////////////////////
     /// CPU频率的图表cpuFrequencyQwtPlot
     ///////////////////////////////////
@@ -92,22 +69,18 @@ CpuMonitorWidgetTab::CpuMonitorWidgetTab(QWidget *parent) :
 }
 
 
-CpuMonitorWidgetTab::~CpuMonitorWidgetTab()
+CpuFreqMonitorWidgetTab::~CpuFreqMonitorWidgetTab()
 {
     delete ui;
 }
 
-//  绘制cpu使用率的曲线
-void CpuMonitorWidgetTab::slotShowCpuUsagePlot()
-{
-    qDebug( ) <<__func__ <<endl;
-}
+
 
 //  绘制cpu频率的曲线
-void CpuMonitorWidgetTab::slotShowCpuFrequencyPlot( )
+void CpuFreqMonitorWidgetTab::slotShowCpuFrequencyPlot( )
 {
-    qDebug( ) <<__func__ <<endl;
+    //this->m_cpuUtilTools->UpdateAllCpusScalingCurFrequency( );
 
-
+    qDebug( ) <<__FILE__ <<", " <<__LINE__ <<endl;
 }
 

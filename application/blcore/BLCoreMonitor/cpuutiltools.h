@@ -1,13 +1,18 @@
-#ifndef __CPUFREQTOOL_H_INCLUDE__
-#define __CPUFREQTOOL_H_INCLUDE__
+#ifndef __CPUUTILTOOLS_H_INCLUDE__
+#define __CPUUTILTOOLS_H_INCLUDE__
 
 #include <QObject>
 #include <QDebug>
 
 
+//#define CPU_FREQ
+//#define CPU_USAG
+//#define SINGLETON_GC
 
-#include "cpufrequtils.h"
+
 #include "cpuusageutils.h"
+#include "cpufrequtils.h"
+
 
 #ifdef __cplusplus
 extern "C"
@@ -26,22 +31,24 @@ extern "C"
 
 //  该工具可以设计为单例
 //  也可以在主窗体中初始化, 并被所有窗体共享
-class CpuFreqTools : public QObject
+class CpuUtilTools : public QObject
 {
     Q_OBJECT
 public :
-    static CpuFreqTools*  GetInstance( )           // 获取对象单例的指针
+    static CpuUtilTools*  GetInstance( )           // 获取对象单例的指针
     {
-        return const_cast<CpuFreqTools *>(CpuFreqTools::m_singleton);
+#if defined(SINGLETON_GC)
+        return const_cast<CpuUtilTools *>(CpuUtilTools::m_singleton);
+#else
+        if(CpuUtilTools::m_singleton == NULL)       // 如果单例对象没有创建， 则将其创建
+        {
+            CpuUtilTools::m_singleton = new CpuUtilTools( );
+        }
+#endif
     }
 
-    virtual ~CpuFreqTools( );
+    virtual ~CpuUtilTools( );
 
-
-    //  判断编号为cpuid的CPU是否被安装(exist|present)
-    static bool IsCpuPresent(unsigned int cpuid);
-    //  判断编号为cpuid的CPU是否活跃(online)
-    static bool IsCpuOnline(unsigned int copuid);
     ///////////////////////////////////////////////////////////////////
     /// 1--CPU数目的操作
     ///////////////////////////////////////////////////////////////////
@@ -51,16 +58,26 @@ public :
     /////////////////////
     inline unsigned long GetCpuNumKernel( );
     inline unsigned long GetCpuNumAvaliable( );
+
+#ifdef CPU_FREQ
+
+    //  判断编号为cpuid的CPU是否被安装(exist|present)
+    static bool IsCpuPresent(unsigned int cpuid);
+    //  判断编号为cpuid的CPU是否活跃(online)
+    static bool IsCpuOnline(unsigned int copuid);
+
     inline struct cpufreq_affected_cpus* GetAffectedCpus(unsigned int cpuid);
     inline struct cpufreq_affected_cpus* GetRelatedCpus(unsigned int cpuid);
     inline struct cpufreq_stats* GetStats(unsigned int cpuid, unsigned long long *total_time);
     inline unsigned long GetTransitions(unsigned int cpuid);
-
+#endif
     /////////////////////
     //  1.2--更新CPU的数目
     /////////////////////
     inline unsigned long UpdateCpuNumKernel( );
     inline unsigned long UpdateCpuNumAvaliable( );
+
+#ifdef CPU_FREQ
     inline struct cpufreq_affected_cpus *UpdateAffectedCpus(unsigned int cpuid);
     inline struct cpufreq_affected_cpus* UpdateRelatedCpus(unsigned int cpuid);
     inline struct cpufreq_stats* UpdateStats(unsigned int cpuid, unsigned long long *total_time);
@@ -136,18 +153,20 @@ public :
     bool SetPolicyMax(unsigned int cpuid, unsigned long max_freq);
     bool SetPolicyGovernor(unsigned int cpuid, QString *governor);
     bool SetFrequency(unsigned int cpuid, unsigned long targetFrequency);
+#endif
 
-
+#ifdef CPU_USAGE
     ///////////////////////////////////////////////////////////////////
     /// 3--CPU信息CpuUsage的操作
     ///////////////////////////////////////////////////////////////////
     double UpdateCpuUsage(unsigned int cpuid);          //  获取编号为cpuid的CPU的usage信息
     double UpdateTotalUsage( );                         //  获取系统中总的cpuusage信息
+#endif
 
 private:
-    explicit CpuFreqTools(QObject *parent = 0);
+    explicit CpuUtilTools(QObject *parent = 0);
 
-    explicit CpuFreqTools(const CpuFreqTools &singleton)       // 赋值构造函数[被保护]
+    explicit CpuUtilTools(const CpuUtilTools &singleton)       // 赋值构造函数[被保护]
     {
     }
 
@@ -162,12 +181,13 @@ public slots:
     /////////////////////
     //  3.1--获取编号为cpuid的CPU-freq的信息
     /////////////////////
-    QList<unsigned long> UpdateAllCpusScalingCurFrequency(unsigned int cpuid);   //  CPU的当前运行频率
-    QList<unsigned long> UpdateAllCpusCpuInfoCurFrequency(unsigned int cpuid);   //  当前运行频率
+    QList<unsigned long> UpdateAllCpusScalingCurFrequency( );   //  CPU的当前运行频率
+    QList<unsigned long> UpdateAllCpusCpuInfoCurFrequency( );   //  当前运行频率
     /////////////////////
     //  3.2--获取编号为cpuid的CPU-usage的信息
     /////////////////////
-    QList<double> UpdateAllCpusUsage(unsigned int cpuid);                 //  当前运行频率
+
+    QList<double> UpdateAllCpusUsage( );                 //  当前运行频率
 
 protected :
     ///  m_cpuNumKernel     the number of processors configured by the operating system.
@@ -176,17 +196,23 @@ protected :
     ///   because processors may be offline (e.g., on hotpluggable systems).
     int                      m_cpuNumKernel;             //  系统中插入的CPU的数目(包括online和offline)
     int                      m_cpuNumAvailable;          //  系统中可用的CPU数目(即onlie的CPU数目)
+#ifdef CPU_FREQ
     QList<CpuFreqUtils *>    m_cpufreqs;                 //  当前系统中CPU频率操作的集合
-    QList<CpuUsageUtils *>   m_cpuusages;                //  当前系统中CPU使用率的集合
-    //  单例模式
-    static CpuFreqTools     *m_singleton;
+#endif
 
+#ifdef CPU_USAGE
+    CpuUsageUtils            *m_cpuusages;                //  当前系统中CPU使用率的集合
+#endif
+    //  单例模式
+    static CpuUtilTools      *m_singleton;
+
+#if defined(SINGLETON_GC)
     class GC
     {
       public :
         ~GC( )
         {
-            if (CpuFreqTools::m_singleton != NULL)
+            if (CpuUtilTools::m_singleton != NULL)
             {
                 delete m_singleton;
                 m_singleton = NULL ;
@@ -194,9 +220,10 @@ protected :
         }
         static GC gc;
     };
+#endif
 };
 
 
 
 
-#endif // __CPUFREQTOOL_H_INCLUDE__
+#endif // __CPUUTILTOOLS_H_INCLUDE__
