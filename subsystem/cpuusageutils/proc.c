@@ -27,7 +27,7 @@
 
 
 /*  获取所有cpu的总stat信息并组织成链表             */
-struct cpuusage_jiffies_stat_list *
+struct cpuusage_jiffies_stat *
 proc_get_jiffies_stat_list( )
 {
     unsigned int cpunums = get_nprocs( );
@@ -38,8 +38,14 @@ proc_get_jiffies_stat_list( )
     long int    user, nice, system, idle, iowait, irq, softirq, steal, guest, guest_nice;
     //long int total_jiffies_stat;
     struct cpuusage_jiffies_stat        *head_jiffies_stat_list = NULL;
+    struct cpuusage_jiffies_stat        *total_jiffies_stat = NULL;
     struct cpuusage_jiffies_stat        *prev_jiffies_stat = NULL;
     struct cpuusage_jiffies_stat        *curr_jiffies_stat = NULL;
+
+
+#ifdef __DEBUG__
+    printf("there are %d cpus in your machine\n", cpunums);
+#endif
 
     fp = fopen(PROC_STAT_FILE, "r");
     if(fp == NULL)
@@ -49,7 +55,7 @@ proc_get_jiffies_stat_list( )
     }
 
 	for(unsigned int cpuid = 0;
-        cpuid <=  (cpunums + 1) && !feof(fp);
+        cpuid <=  cpunums && !feof(fp);
         cpuid++)
     {
 		if (!fgets(buf, sizeof(buf), fp))
@@ -78,9 +84,14 @@ proc_get_jiffies_stat_list( )
             perror("error ");
             exit(-1);
         }
+#define TOTAL_IN_TAIL   1
+#if defined(TOTAL_IN_HEAD)      //  total stat放在链表的头部
+        // 则链表的顺序为 total, cpu0, cpu1, cpu2, cpu3, ......
         if(head_jiffies_stat_list == NULL)
         {
-            head_jiffies_stat_list->first   = curr_jiffies_stat;
+            //  当前结点就是total结点, 作为链表的头结点
+            head_jiffies_stat_list = curr_jiffies_stat;
+            total_jiffies_stat = curr_jiffies_stat;
         }
         else
         {
@@ -90,10 +101,41 @@ proc_get_jiffies_stat_list( )
         curr_jiffies_stat->first    = head_jiffies_stat_list;
 
         prev_jiffies_stat           = curr_jiffies_stat;
+#elif defined(TOTAL_IN_TAIL)    //  total stat放在链表的尾部
+        // 则链表的顺序为 cpu0, cpu1, cpu2, cpu3, total, ......
+        if(head_jiffies_stat_list == NULL)  // 第一个节点
+        {
+            if(total_jiffies_stat == NULL)
+            {
+                //  当前结点就是total结点, 不作为链表的头结点
+                total_jiffies_stat = curr_jiffies_stat;
+                total_jiffies_stat->next = NULL;
+            }
+            else
+            {
+                //  再次读取的结点cpu0作为头结点
+                head_jiffies_stat_list = curr_jiffies_stat;
+
+                curr_jiffies_stat->next = total_jiffies_stat;
+                curr_jiffies_stat->first = head_jiffies_stat_list;
+
+                total_jiffies_stat->first = head_jiffies_stat_list;
+            }
+        }       //  cpu0->total
+        else
+        {
+            curr_jiffies_stat->next     = prev_jiffies_stat->next;
+            curr_jiffies_stat->first    = head_jiffies_stat_list;
+            prev_jiffies_stat->next        = curr_jiffies_stat;
+        }
+
+        prev_jiffies_stat           = curr_jiffies_stat;
+#endif
     }
 
     fclose(fp);
 
+    // 当前链表的顺序是,
     return head_jiffies_stat_list;
 
 error:
@@ -172,7 +214,7 @@ error:
 
 /*  获取cpu的stat信息(/proc/stat)   */
 struct cpuusage_jiffies_stat *
-proc_get_cpu_jiffies_stat(unsigned int cpuid)
+proc_get_jiffies_stat(unsigned int cpuid)
 {
     FILE *fp = NULL;
     char buf[128];

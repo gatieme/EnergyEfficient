@@ -44,13 +44,14 @@ proc_get_total_jiffies_stat( );
 
 /*  获取cpu的stat信息(/proc/stat)   */
 extern struct cpuusage_jiffies_stat*
-proc_get_cpu_jiffies_stat(unsigned int cpuid);
+proc_get_jiffies_stat(unsigned int cpuid);
 
 
 
 /*  获取所有cpu的总stat信息并组织成链表             */
-extern struct cpuusage_jiffies_stat_list *
-proc_get_total_jiffies_stat_list( );
+extern struct cpuusage_jiffies_stat *
+proc_get_jiffies_stat_list( );
+
 
 #endif
 

@@ -71,54 +71,69 @@ cpuusage_get_total_jiffies_stat( );
 
 /*  获取cpu的stat信息(/proc/stat)   */
 extern struct cpuusage_jiffies_stat*
-cpuusage_get_cpu_jiffies_stat(unsigned int cpuid);
+cpuusage_get_jiffies_stat(unsigned int cpuid);
+
+
+#if defined(INLINE)
+
 
 /*  释放cpuusage_jiffies_stat的空间*/
-extern void
+extern inline void
 cpuusage_put_jiffies_stat(struct cpuusage_jiffies_stat *stat);
 
+/*  释放cpuusage_jiffies_stat的空间*/
+extern inline void
+cpuusage_show_jiffies_stat(struct cpuusage_jiffies_stat *stat);
+
+
+#else
+
+#define cpuusage_put_jiffies_stat(pstat)                                \
+        if(pstat != NULL)                                               \
+        {                                                               \
+            free(pstat);                                                \
+        }
+
+
+#define cpuusage_show_jiffies_stat(pstat)                               \
+        printf("jiffies-stat : "                                        \
+           "%s, %ld, %ld, %ld, %ld, %ld, %ld, %ld, %ld, %ld, %ld\n",    \
+            pstat->cpu,                                                 \
+            pstat->user, pstat->nice, pstat->system, pstat->idle,       \
+            pstat->iowait, pstat->irq, pstat->softirq,                  \
+            pstat->steal, pstat->guest, pstat->guest_nice);
+
+#endif
+
 /*  设置并分配cpuusage_jiffies_stat的空间   */
-/*struct cpuusgae_jiffies_stat*
+extern struct cpuusage_jiffies_stat*
 cpuusage_set_jiffies_stat(
-        const char *cpu,
-        unsigned long user, unsigned long nice,
-        unsigned long system, unsigned long idle,
-        unsigned long iowait, unsigned long irq,
-        unsigned long softirq, unsigned long steal,
-        unsigned long guest, unsigned long guest_nice,
-        struct cpuusgae_jiffies_stat *next,
-        struct cpuusgae_jiffies_stat *first);
-*/
-
-struct cpuusgae_jiffies_stat*
-cpuusage_set_jiffies_stat(
-        const char *cpu,
-        unsigned long user, unsigned long nice,
-        unsigned long system, unsigned long idle,
-        unsigned long iowait, unsigned long irq,
-        unsigned long softirq, unsigned long steal,
-        unsigned long guest, unsigned long guest_nice,
-        struct cpuusage_jiffies_stat  *next,
-        struct cpuusgae_jiffies_stat *first);
-
+        const char      *cpu,
+        unsigned long   user,       unsigned long   nice,
+        unsigned long   system,     unsigned long   idle,
+        unsigned long   iowait,     unsigned long   irq,
+        unsigned long   softirq,    unsigned long   steal,
+        unsigned long   guest,      unsigned long   guest_nice,
+        struct cpuusage_jiffies_stat    *next,
+        struct cpuusage_jiffies_stat    *first);
 
 
 
 /*  计算cpu的使用率                 */
 extern double
-cpuusage_calc_cpu_usage(
+cpuusage_calc_usage(
         struct cpuusage_jiffies_stat *first,
         struct cpuusage_jiffies_stat *second);
 
 /*  获取当前cpu的使用率                 */
-extern double cpuusage_get_cpu_usage(unsigned int cpuid, unsigned int delay);
+extern double cpuusage_get_usage(unsigned int cpuid, unsigned int delay);
 
 /*  获取系统cpu的使用率                 */
-extern double cpuusage_get_total_cpu_usage(unsigned int delay);
+extern double cpuusage_get_total_usage(unsigned int delay);
 
 
 /*  获取当前cpu的总运行时间         */
-#define cpuusage_get_cpu_total_time(pjiffies)            \
+#define cpuusage_get_total_time(pjiffies)            \
     ((pjiffies)->user    + (pjiffies)->nice          +   \
      (pjiffies)->system  + (pjiffies)->idle          +   \
      (pjiffies)->iowait  + (pjiffies)->irq           +   \
@@ -126,7 +141,7 @@ extern double cpuusage_get_total_cpu_usage(unsigned int delay);
      (pjiffies)->guest   + (pjiffies)->guest_nice)
 
 /*  获取当前cpu的总空闲时间         */
-#define cpuusage_get_cpu_idle_time(pjiffies)            \
+#define cpuusage_get_idle_time(pjiffies)            \
     ((pjiffies)->idle)
 
 
@@ -152,13 +167,21 @@ typedef struct cpuusage_jiffies_stat*   cpuusage_jiffies_stat_list;
 
 #endif
 
-/*  获取所有cpu的总stat信息并组织成链表             */
-cpuusage_jiffies_stat_list*
-cpuusage_get_jiffies_stat_list( );
+
 
 /*  获取所有cpu的总stat信息并组织成链表             */
-#define cpuusage_put_jiffies_stat_list(plist)   \
-    cpuusage_put_jiffies_stat(plist)
+struct cpuusage_jiffies_stat *
+cpuusage_get_jiffies_stat_list( );
+
+
+/*  释放cpuusage_jiffies_stat的空间*/
+extern void
+cpuusage_put_jiffies_stat_list(struct cpuusage_jiffies_stat *stat);
+
+
+/*  释放cpuusage_jiffies_stat的空间*/
+extern void
+cpuusage_show_jiffies_stat_list(struct cpuusage_jiffies_stat *stat);
 
 
 #ifdef __cplusplus
