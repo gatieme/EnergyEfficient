@@ -5,12 +5,12 @@
 #include <QDebug>
 
 
-#define CPU_FREQ
+#define CPU_FREQ            //
 #define CPU_USAGE
 
-
+// only one can be set
 #define SINGLETON_GC
-//#define SINGLETON
+//#define SINGLETON_NONGC
 
 #include "cpuusageutils.h"
 #include "cpufrequtils.h"
@@ -36,33 +36,37 @@ extern "C"
 class CpuUtilTools : public QObject
 {
     Q_OBJECT
-#if defined(SINGLETON_GC) || defined(SINGLETON)
+#if defined(SINGLETON_GC) || defined(SINGLETON_NONGC)
 private:
 #else
 public :
 #endif
     explicit CpuUtilTools(QObject *parent = 0);
+    virtual ~CpuUtilTools( );
 
+private :
     explicit CpuUtilTools(const CpuUtilTools &singleton)       // 赋值构造函数[被保护]
     {
     }
-
 public :
     static CpuUtilTools*  GetInstance( )           // 获取对象单例的指针
     {
-#if defined(SINGLETON_GC)
+#if defined(SINGLETON_GC) || defined(SINGLETON_NONGC)
         return const_cast<CpuUtilTools *>(CpuUtilTools::m_singleton);
-#elif defined(SINGLETON)
-        if(CpuUtilTools::m_singleton == NULL)       // 如果单例对象没有创建， 则将其创建
-        {
-            CpuUtilTools::m_singleton = new CpuUtilTools( );
-        }
 #else
         return NULL;
 #endif
     }
+    static void DestroyInstance( )                  // 销毁单例对象的空间
+    {
+        if(CpuUtilTools::m_singleton != NULL)
+        {
+            delete CpuUtilTools::m_singleton;
+            CpuUtilTools::m_singleton = NULL;
+        }
+    }
 
-    virtual ~CpuUtilTools( );
+
 
     ///////////////////////////////////////////////////////////////////
     /// 1--CPU数目的操作
@@ -178,6 +182,13 @@ public :
     double UpdateTotalUsage( );                         //  获取系统中总的cpuusage信息
 #endif
 
+
+
+
+signals:
+
+public slots:
+
     ///////////////////////////////////////////////////////////////////
     /// 3--CPU
     ///////////////////////////////////////////////////////////////////
@@ -192,19 +203,6 @@ public :
 
     QList<double> UpdateAllCpusUsage( );                 //  当前运行频率
 
-
-signals:
-
-public slots:
-
-    void slotUpdateAllCpusScalingCurFrequency( );
-    void slotUpdateAllCpusCpuInfoCurFrequency( );   //  当前运行频率
-    /////////////////////
-    //  3.2--获取编号为cpuid的CPU-usage的信息
-    /////////////////////
-
-    void slotUpdateAllCpusUsage( );                 //  当前运行频率
-
 protected :
     ///  m_cpuNumKernel     the number of processors configured by the operating system.
     ///  m_cpuNumAvaliable  the number of processors currently available in the system.
@@ -213,14 +211,15 @@ protected :
     int                      m_cpuNumKernel;             //  系统中插入的CPU的数目(包括online和offline)
     int                      m_cpuNumAvailable;          //  系统中可用的CPU数目(即onlie的CPU数目)
 #ifdef CPU_FREQ
-    QList<CpuFreqUtils *>    m_cpufreqs;                 //  当前系统中CPU频率操作的集合
+    QList<CpuFreqUtils *>    m_cpufreqUtils;                 //  当前系统中CPU频率操作的集合
+    QList<unsigned long>     m_cpufreqs;
 #endif
 
 #ifdef CPU_USAGE
     CpuUsageUtils            *m_cpuusages;                //  当前系统中CPU使用率的集合
 #endif
 
-#if defined(SINGLETON) || defined(SINGLETON_GC)
+#if defined(SINGLETON_NONGC) || defined(SINGLETON_GC)
     //  单例模式
     static CpuUtilTools      *m_singleton;
 #endif

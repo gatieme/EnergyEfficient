@@ -34,6 +34,6 @@ BLCoreMainWindow::~BLCoreMainWindow()
     delete ui;
 
     delete m_blcoreTabWidget;       //  销毁tabwidget
-    delete m_cpuUtilTools;          //  销毁调频工具类
+    //delete m_cpuUtilTools;          //  销毁调频工具类
 
 }

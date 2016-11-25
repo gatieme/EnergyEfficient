@@ -85,6 +85,8 @@ QList<double>  CpuUsageUtils::CalcAllCpusUsage( )
         qDebug( ) <<"cpuid = " <<cpuid <<", cpusuage = " <<usage <<endl;
         this->m_cpuusgae.append(usage);
     }
+
+    return this->m_cpuusgae;
 }
 
 ///  输出jiffies stat的值

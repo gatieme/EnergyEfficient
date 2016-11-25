@@ -7,22 +7,22 @@
 /*static*/CpuUtilTools* CpuUtilTools::m_singleton = new CpuUtilTools( );
 /*static*/CpuUtilTools::GC CpuUtilTools::GC::gc;
 
-#elif defined(SINGLETON)
+#elif defined(SINGLETON_NONGC)
 
-/*static*/CpuUtilTools* CpuUtilTools::m_singleton = NULL;
+/*static*/CpuUtilTools* CpuUtilTools::m_singleton = new CpuUtilTools( );
 
 #endif
 
 CpuUtilTools::CpuUtilTools(QObject *parent) :
     QObject(parent)
 {
-    /*
+
     this->m_cpuNumKernel = get_nprocs();
     this->m_cpuNumAvailable = get_nprocs_conf( );
     qDebug() <<"cpu numbers kernel = " <<this->m_cpuNumKernel <<endl;
     qDebug() <<"cpu numbers avaliable = " <<this->m_cpuNumKernel <<endl;
     qDebug() <<"cpu numbers offline = " <<this->m_cpuNumKernel - this->m_cpuNumKernel <<endl;
-*/
+
 #ifdef CPU_FREQ
     for(int cpuid = 0, availCount = 0;
         cpuid < this->m_cpuNumKernel;
@@ -32,13 +32,13 @@ CpuUtilTools::CpuUtilTools(QObject *parent) :
         if(CpuUtilTools::IsCpuPresent(cpuid) == true)
         {
             availCount++;
-            CpuFreqUtils *cpufreq = new CpuFreqUtils(this, cpuid);
-            this->m_cpufreqs.append(cpufreq);
-            qDebug( ) <<*cpufreq <<endl;
+            CpuFreqUtils *cpufrequtil = new CpuFreqUtils(this, cpuid);
+            this->m_cpufreqUtils.append(cpufrequtil);
+            qDebug( ) <<*cpufrequtil <<endl;
         }
         else
         {
-            this->m_cpufreqs.append(NULL);
+            this->m_cpufreqUtils.append(NULL);
         }
     }
 #endif
@@ -57,7 +57,7 @@ CpuUtilTools::~CpuUtilTools( )
         cpuid < this->m_cpuNumKernel;
         cpuid++)
     {
-        CpuFreqUtils *cpufreq = this->m_cpufreqs[cpuid];
+        CpuFreqUtils *cpufreq = this->m_cpufreqUtils[cpuid];
         if(cpufreq != NULL)
         {
             delete cpufreq;
@@ -159,7 +159,7 @@ bool CpuUtilTools::IsCpuOnline(unsigned int copuid)
 //  获取编号为cpuid的CPU完整信息
 CpuFreqUtils* CpuUtilTools::GetCpuInfo(unsigned int cpuid)
 {
-    return this->m_cpufreqs[cpuid];
+    return this->m_cpufreqUtils[cpuid];
 }
 
 //  编号为cpuid的CPU是否online
@@ -426,12 +426,14 @@ QList<unsigned long> CpuUtilTools::UpdateAllCpusScalingCurFrequency( )
         if(CpuUtilTools::IsCpuPresent(cpuid) == true)
         {
             availCount++;
-            this->m_cpufreqs[cpuid]->UpdateScalingCurFrequency( );
+            double cpufreq = this->m_cpufreqUtils[cpuid]->UpdateScalingCurFrequency( );
+            this->m_cpufreqs.append(cpufreq);
         }
     }
 #else
     qDebug( ) <<__FILE__ <<", " <<__LINE__ <<endl;
 #endif
+    return this->m_cpufreqs;
 }
 
 
@@ -458,20 +460,3 @@ QList<double> CpuUtilTools::UpdateAllCpusUsage( )
 
 
 
-void CpuUtilTools::slotUpdateAllCpusScalingCurFrequency( )
-{
-
-}
-
-void CpuUtilTools::slotUpdateAllCpusCpuInfoCurFrequency( )   //  当前运行频率
-{
-
-}
-/////////////////////
-//  3.2--获取编号为cpuid的CPU-usage的信息
-/////////////////////
-
-void CpuUtilTools::slotUpdateAllCpusUsage( )                 //  当前运行频率
-{
-
-}

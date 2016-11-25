@@ -79,7 +79,7 @@ CpuFreqMonitorWidgetTab::~CpuFreqMonitorWidgetTab()
 //  绘制cpu频率的曲线
 void CpuFreqMonitorWidgetTab::slotShowCpuFrequencyPlot( )
 {
-    this->m_cpuUtilTools->slotUpdateAllCpusScalingCurFrequency( );
+    this->m_cpuUtilTools->UpdateAllCpusScalingCurFrequency( );
 
     qDebug( ) <<__FILE__ <<", " <<__LINE__ <<endl;
 }
