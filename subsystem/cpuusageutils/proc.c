@@ -1,5 +1,5 @@
 /*
- *  (C) 2004  Dominik Brodowski <linux@dominikbrodowski.de>
+ *  Copyright (C) 2016-2017  gatieme <gatieme@163.com>
  *
  *  Licensed under the terms of the GNU GPL License version 2.
  */
@@ -18,7 +18,7 @@
 #include <unistd.h>
 
 
-#define __DEBUG__   1
+//#define __DEBUG__   1
 #include "cpuusage.h"
 
 #define MAX_LINE_LEN 255

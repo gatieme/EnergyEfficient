@@ -179,10 +179,11 @@ cpuusage_calc_usage(
     }
     double idle = (double)((long)second_idle - (long)first_idle) / ((long)second_total - (long)first_total) * 100;
     double usage = 100 - idle;
+#ifdef  __DEBUG__
     printf("cpu total  = %ld\n", second_total - first_total);
     printf("cpu idle   = %ld\n", second_idle - first_idle);
     printf("cpu useage = %.2f%%\n", usage);
-
+#endif
     return usage;
 }
 

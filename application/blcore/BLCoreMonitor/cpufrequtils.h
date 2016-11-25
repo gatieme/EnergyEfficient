@@ -60,17 +60,17 @@ public:
     /////////////////////
     //  1.1--获取当前CPU的信息
     /////////////////////
-    const unsigned int GetCpuId( );
-    const CpuFreqUtils* GetCpuInfo( );                    //  获取当前CPU完整信息
-    const bool GetIsOnline( );                          //  当前CPU是否online
-    const unsigned long GetTransitionLatency( );        //  当前cpu完成频率切换所需要的时间
-    const unsigned long GetScalingMinFrequency( );      //  当前CPU的最小运行频率
-    const unsigned long GetScalingMaxFrequency( );      //  当前CPU的最大运行频率
-    const unsigned long GetScalingCurFrequency( );      //  当前CPU的当前运行频率
-    const unsigned long GetCpuInfoMinFrequency( );      //  当前CPU的最小运行频率
-    const unsigned long GetCpuInfoMaxFrequency( );      //  当前CPU的最大运行频率
-    const unsigned long GetCpuInfoCurFrequency( );      //  当前CPU的当前运行频率
-    const struct cpufreq_policy*   GetCpuFreqPolicy( );
+    unsigned int GetCpuId( );
+    CpuFreqUtils* GetCpuInfo( );                    //  获取当前CPU完整信息
+    bool GetIsOnline( );                          //  当前CPU是否online
+    unsigned long GetTransitionLatency( );        //  当前cpu完成频率切换所需要的时间
+    unsigned long GetScalingMinFrequency( );      //  当前CPU的最小运行频率
+    unsigned long GetScalingMaxFrequency( );      //  当前CPU的最大运行频率
+    unsigned long GetScalingCurFrequency( );      //  当前CPU的当前运行频率
+    unsigned long GetCpuInfoMinFrequency( );      //  当前CPU的最小运行频率
+    unsigned long GetCpuInfoMaxFrequency( );      //  当前CPU的最大运行频率
+    unsigned long GetCpuInfoCurFrequency( );      //  当前CPU的当前运行频率
+    struct cpufreq_policy*   GetCpuFreqPolicy( );
 
 #if defined(CNODE_IN_QLIST)
     //一种是将节点重新组织在QList中

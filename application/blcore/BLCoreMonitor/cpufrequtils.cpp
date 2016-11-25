@@ -73,32 +73,32 @@ QDebug operator<<(QDebug dbg, const CpuFreqUtils &info)
 /////////////////////
 
 //  获取当前CPU的编号
-const unsigned int CpuFreqUtils::GetCpuId( )
+unsigned int CpuFreqUtils::GetCpuId( )
 {
     return this->m_cpuid;
 }
 
 //  获取编号为cpuid的CPU完整信息
-const CpuFreqUtils* CpuFreqUtils::GetCpuInfo( )
+CpuFreqUtils* CpuFreqUtils::GetCpuInfo( )
 {
     return (this);
 }
 
 //  编号为cpuid的CPU是否online
-const bool CpuFreqUtils::GetIsOnline( )
+bool CpuFreqUtils::GetIsOnline( )
 {
     return this->m_isonline;
 }
 
 //  当前cpu完成频率切换所需要的时间
-const unsigned long CpuFreqUtils::GetTransitionLatency( )
+unsigned long CpuFreqUtils::GetTransitionLatency( )
 {
     return this->m_transitionLatency;
 }
 
 
 //  当前CPU的调频策略
-const struct cpufreq_policy*   CpuFreqUtils::GetCpuFreqPolicy( )
+struct cpufreq_policy*   CpuFreqUtils::GetCpuFreqPolicy( )
 {
     return this->m_curPolicy;
 }
@@ -106,7 +106,7 @@ const struct cpufreq_policy*   CpuFreqUtils::GetCpuFreqPolicy( )
 
 
 //  编号为cpuid的CPU的最小运行频率
-const unsigned long CpuFreqUtils::GetScalingMinFrequency( )
+unsigned long CpuFreqUtils::GetScalingMinFrequency( )
 {
     assert(this->m_scalingMinFrequency == this->m_curPolicy->min);
 
@@ -114,7 +114,7 @@ const unsigned long CpuFreqUtils::GetScalingMinFrequency( )
 }
 
 //  编号为cpuid的CPU的最大运行频率
-const unsigned long CpuFreqUtils::GetScalingMaxFrequency( )
+unsigned long CpuFreqUtils::GetScalingMaxFrequency( )
 {
     assert(this->m_scalingMaxFrequency == this->m_curPolicy->max);
 
@@ -122,26 +122,26 @@ const unsigned long CpuFreqUtils::GetScalingMaxFrequency( )
 }
 
 //  编号为cpuid的CPU的当前运行频率
-const unsigned long CpuFreqUtils::GetScalingCurFrequency( )
+unsigned long CpuFreqUtils::GetScalingCurFrequency( )
 {
     return this->m_scalingCurFrequency;
 }
 
 //  编号为cpuid的CPU的最小运行频率
-const unsigned long CpuFreqUtils::GetCpuInfoMinFrequency( )
+unsigned long CpuFreqUtils::GetCpuInfoMinFrequency( )
 {
     return this->m_cpuinfoMinFrequency;
 }
 
 //  编号为cpuid的CPU的最大运行频率
-const unsigned long CpuFreqUtils::GetCpuInfoMaxFrequency( )
+unsigned long CpuFreqUtils::GetCpuInfoMaxFrequency( )
 {
     return this->m_cpuinfoMaxFrequency;
 }
 
 
 //  编号为cpuid的CPU的当前运行频率
-const unsigned long CpuFreqUtils::GetCpuInfoCurFrequency( )
+unsigned long CpuFreqUtils::GetCpuInfoCurFrequency( )
 {
     return this->m_scalingCurFrequency;
 }

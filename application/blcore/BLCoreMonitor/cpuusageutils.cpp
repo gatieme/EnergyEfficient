@@ -18,13 +18,14 @@ unsigned int CpuUsageUtils::InitAllCpusJiffiesStat( )
     }
     struct cpuusage_jiffies_stat* jiffies_stat_list = cpuusage_get_jiffies_stat_list();
     struct cpuusage_jiffies_stat* curr_stat = jiffies_stat_list;
-    qDebug( ) <<__FILE__ <<", " <<__LINE__ <<sizeof(struct cpuusage_jiffies_stat) <<endl;
+    //qDebug( ) <<__FILE__ <<", " <<__LINE__ <<sizeof(struct cpuusage_jiffies_stat) <<endl;
     while(curr_stat != NULL)
     {
         //curr_stat->guest_nice = 0;
         this->m_jiffiesStats.append(curr_stat);
+#ifdef __DEBUG__
         ShowCpuJiffiesStat(curr_stat);
-
+#endif
         curr_stat = curr_stat->next;
     }
 
@@ -78,11 +79,13 @@ QList<double>  CpuUsageUtils::CalcAllCpusUsage( )
 
     for(int cpuid = 0; cpuid <= this->m_cpunums; cpuid++)
     {
+#ifdef  __DEBUG__
         ShowCpuJiffiesStat(this->m_jiffiesStats[cpuid]);
         ShowCpuJiffiesStat(this->m_prevJiffiesStats[cpuid]);
+#endif
         //qDebug( ) <<this->m_jiffiesStats[cpuid]->cpu <<endl;
         usage = cpuusage_calc_usage(this->m_prevJiffiesStats[cpuid], this->m_jiffiesStats[cpuid]);
-        qDebug( ) <<"cpuid = " <<cpuid <<", cpusuage = " <<usage <<endl;
+        qDebug( ) <<"cpuid = " <<cpuid <<", cpusuage = " <<usage <<"%" <<endl;
         this->m_cpuusgae.append(usage);
     }
 

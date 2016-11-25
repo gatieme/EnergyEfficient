@@ -12,6 +12,9 @@ TARGET = BLCoreMonitor
 TEMPLATE = app
 
 
+#release:DEFINES += QT_NO_WARNING_OUTPUT     \
+#                  QT_NO_DEBUG_OUTPUT
+
 # for qwt-6.1.3
 INCLUDEPATH += /usr/local/Trolltech/qwt-6.1.3-qt-4.8.0/x86/include
 #LIBS += -L/usr/local/Trolltech/qwt-6.1.3-qt-4.8.0/x86/lib -lqwt

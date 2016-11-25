@@ -78,6 +78,6 @@ CpuUsageMonitorWidgetTab::~CpuUsageMonitorWidgetTab()
 void CpuUsageMonitorWidgetTab::slotShowCpuUsagePlot()
 {
     QList<double> usages = this->m_cpuUtilTools->UpdateAllCpusUsage( );
-    qDebug( ) <<__FILE__ <<", " <<__LINE__ <<endl;
+    //qDebug( ) <<__FILE__ <<", " <<__LINE__ <<endl;
 
 }

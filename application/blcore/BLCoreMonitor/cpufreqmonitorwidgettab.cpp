@@ -81,6 +81,6 @@ void CpuFreqMonitorWidgetTab::slotShowCpuFrequencyPlot( )
 {
     this->m_cpuUtilTools->UpdateAllCpusScalingCurFrequency( );
 
-    qDebug( ) <<__FILE__ <<", " <<__LINE__ <<endl;
+    //qDebug( ) <<__FILE__ <<", " <<__LINE__ <<endl;
 }
 

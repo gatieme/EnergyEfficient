@@ -44,7 +44,7 @@ CpuUtilTools::CpuUtilTools(QObject *parent) :
 #endif
 
 #ifdef CPU_USAGE
-    this->m_cpuusages = new CpuUsageUtils(this, this->m_cpuNumKernel);
+    this->m_cpuusageUtils = new CpuUsageUtils(this, this->m_cpuNumKernel);
 #endif
 }
 
@@ -163,47 +163,47 @@ CpuFreqUtils* CpuUtilTools::GetCpuInfo(unsigned int cpuid)
 }
 
 //  编号为cpuid的CPU是否online
-const bool CpuUtilTools::GetIsOnline(unsigned int cpuid)
+bool CpuUtilTools::GetIsOnline(unsigned int cpuid)
 {
     return this->GetCpuInfo(cpuid)->GetIsOnline( );
 }
 
 
 //  编号为cpuid的CPU的最小运行频率
-const unsigned long CpuUtilTools::GetScalingMinFrequency(unsigned int cpuid)
+unsigned long CpuUtilTools::GetScalingMinFrequency(unsigned int cpuid)
 {
     return this->GetCpuInfo(cpuid)->GetScalingMinFrequency( );
 }
 
 
 //  编号为cpuid的CPU的最大运行频率
-const unsigned long CpuUtilTools::GetScalingMaxFrequency(unsigned int cpuid)
+unsigned long CpuUtilTools::GetScalingMaxFrequency(unsigned int cpuid)
 {
     return this->GetCpuInfo(cpuid)->GetScalingMaxFrequency( );
 }
 
 
 //  编号为cpuid的CPU的当前运行频率
-const unsigned long CpuUtilTools::GetScalingCurFrequency(unsigned int cpuid)
+unsigned long CpuUtilTools::GetScalingCurFrequency(unsigned int cpuid)
 {
     return this->GetCpuInfo(cpuid)->GetScalingCurFrequency( );
 }
 
 
 //  编号为cpuid的CPU的最小运行频率
-const unsigned long CpuUtilTools::GetCpuInfoMinFrequency(unsigned int cpuid)
+unsigned long CpuUtilTools::GetCpuInfoMinFrequency(unsigned int cpuid)
 {
     return this->GetCpuInfo(cpuid)->GetCpuInfoMinFrequency( );
 }
 
 //  编号为cpuid的CPU的最大运行频率
-const unsigned long CpuUtilTools::GetCpuInfoMaxFrequency(unsigned int cpuid)
+unsigned long CpuUtilTools::GetCpuInfoMaxFrequency(unsigned int cpuid)
 {
     return this->GetCpuInfo(cpuid)->GetCpuInfoMaxFrequency( );
 }
 
 //  编号为cpuid的CPU的当前运行频率
-const unsigned long CpuUtilTools::GetCpuInfoCurFrequency(unsigned int cpuid)
+unsigned long CpuUtilTools::GetCpuInfoCurFrequency(unsigned int cpuid)
 {
     return this->GetCpuInfo(cpuid)->GetCpuInfoCurFrequency( );
 }
@@ -245,7 +245,7 @@ CpuUtilTools::GetAvailableGovernors(unsigned int cpuid)
 
 
 
-const struct cpufreq_policy*
+struct cpufreq_policy*
 CpuUtilTools::GetCpuFreqPolicy(unsigned int cpuid)
 {
     return this->GetCpuInfo(cpuid)->GetCpuFreqPolicy( );
@@ -395,7 +395,7 @@ bool CpuUtilTools::SetFrequency(unsigned int cpuid, unsigned long targetFrequenc
 //  获取编号为cpuid的CPU的usage信息
 double UpdateCpuUsage(unsigned int cpuid)
 {
-
+    return 0;
 }
 
 
@@ -403,7 +403,7 @@ double UpdateCpuUsage(unsigned int cpuid)
 double UpdateTotalUsage( )
 {
 
-
+    return 0;
 }
 
 #endif
@@ -417,6 +417,8 @@ double UpdateTotalUsage( )
 //  CPU的当前运行频率
 QList<unsigned long> CpuUtilTools::UpdateAllCpusScalingCurFrequency( )
 {
+    qDebug( ) <<"get all cpus scalling_curr_frequency" <<endl;
+
 #ifdef CPU_FREQ
     for(int cpuid = 0, availCount = 0;
         cpuid < this->m_cpuNumKernel;
@@ -440,7 +442,25 @@ QList<unsigned long> CpuUtilTools::UpdateAllCpusScalingCurFrequency( )
 //  当前运行频率
 QList<unsigned long> CpuUtilTools::UpdateAllCpusCpuInfoCurFrequency( )
 {
+    qDebug( ) <<"get all cpus cpuinfo_curr_frequency" <<endl;
 
+#ifdef CPU_FREQ
+    for(int cpuid = 0, availCount = 0;
+        cpuid < this->m_cpuNumKernel;
+        cpuid++)
+    {
+        //  查看编号为cpuid的CPU是否在线
+        if(CpuUtilTools::IsCpuPresent(cpuid) == true)
+        {
+            availCount++;
+            double cpufreq = this->m_cpufreqUtils[cpuid]->UpdateCpuInfoCurFrequency( );
+            this->m_cpufreqs.append(cpufreq);
+        }
+    }
+#else
+    qDebug( ) <<__FILE__ <<", " <<__LINE__ <<endl;
+#endif
+    return this->m_cpufreqs;
 }
 
 
@@ -449,13 +469,16 @@ QList<unsigned long> CpuUtilTools::UpdateAllCpusCpuInfoCurFrequency( )
 /////////////////////
 QList<double> CpuUtilTools::UpdateAllCpusUsage( )
 {
+    qDebug( ) <<"get all cpus usage" <<endl;
 #ifdef CPU_USAGE
     //qDebug( ) <<__FILE__ <<", " <<__LINE__ <<endl;
-    return this->m_cpuusages->UpdateAllCpusUsage( );
+    this->m_cpuusages = this->m_cpuusageUtils->UpdateAllCpusUsage( );
     //qDebug( ) <<__FILE__ <<", " <<__LINE__ <<endl;
 #else
     qDebug( ) <<__FILE__ <<", " <<__LINE__ <<endl;
 #endif
+
+    return this->m_cpuusages;
 }
 
 

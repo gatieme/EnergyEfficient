@@ -115,13 +115,13 @@ public :
     //  2.1--获取编号为cpuid的CPU的信息
     /////////////////////
     inline CpuFreqUtils* GetCpuInfo(unsigned int cpuid);      //  获取编号为cpuid的CPU完整信息
-    inline const bool GetIsOnline(unsigned int cpuid);                  //  编号为cpuid的CPU是否online
-    inline const unsigned long GetScalingMinFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最小运行频率
-    inline const unsigned long GetScalingMaxFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最大运行频率
-    inline const unsigned long GetScalingCurFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的当前运行频率
-    inline const unsigned long GetCpuInfoMinFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最小运行频率
-    inline const unsigned long GetCpuInfoMaxFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最大运行频率
-    inline const unsigned long GetCpuInfoCurFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的当前运行频率
+    inline bool GetIsOnline(unsigned int cpuid);                  //  编号为cpuid的CPU是否online
+    inline unsigned long GetScalingMinFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最小运行频率
+    inline unsigned long GetScalingMaxFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最大运行频率
+    inline unsigned long GetScalingCurFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的当前运行频率
+    inline unsigned long GetCpuInfoMinFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最小运行频率
+    inline unsigned long GetCpuInfoMaxFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最大运行频率
+    inline unsigned long GetCpuInfoCurFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的当前运行频率
 #if defined(CNODE_IN_QLIST)
     //一种是将节点重新组织在QList中
     inline QList<struct cpufreq_available_frequencies *>& GetAvailableFrequencies(unsigned int cpuid);   //  可用的CPU频率值
@@ -135,7 +135,7 @@ public :
     inline struct cpufreq_available_frequencies *GetAvailableFrequencies(unsigned int cpuid);   //  可用的CPU频率值
     inline struct cpufreq_available_governors *GetAvailableGovernors(unsigned int cpuid);         //  可用的CPU频率调节器
 #endif
-    inline const struct cpufreq_policy*   GetCpuFreqPolicy(unsigned int cpuid);
+    inline struct cpufreq_policy*   GetCpuFreqPolicy(unsigned int cpuid);
 
     /////////////////////
     //  2.2--更新编号为cpuid的CPU的信息
@@ -216,7 +216,8 @@ protected :
 #endif
 
 #ifdef CPU_USAGE
-    CpuUsageUtils            *m_cpuusages;                //  当前系统中CPU使用率的集合
+    CpuUsageUtils            *m_cpuusageUtils;                //  当前系统中CPU使用率的集合
+    QList<double>          m_cpuusages;
 #endif
 
 #if defined(SINGLETON_NONGC) || defined(SINGLETON_GC)
