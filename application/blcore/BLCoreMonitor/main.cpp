@@ -3,7 +3,7 @@
 #include <QTextCodec>
 
 #include "singleton.h"
-
+#define ARM_FONT
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);

@@ -44,10 +44,11 @@ public :
     explicit CpuUtilTools(QObject *parent = 0);
     virtual ~CpuUtilTools( );
 
-private :
     explicit CpuUtilTools(const CpuUtilTools &singleton)       // 赋值构造函数[被保护]
     {
     }
+
+
 public :
     static CpuUtilTools*  GetInstance( )           // 获取对象单例的指针
     {
@@ -75,8 +76,8 @@ public :
     /////////////////////
     //  1.1--获取CPU的数目
     /////////////////////
-    inline unsigned long GetCpuNumKernel( );
-    inline unsigned long GetCpuNumAvaliable( );
+    unsigned int GetCpuNumKernel( );
+    unsigned int GetCpuNumAvaliable( );
 
 #ifdef CPU_FREQ
 
@@ -93,8 +94,8 @@ public :
     /////////////////////
     //  1.2--更新CPU的数目
     /////////////////////
-    inline unsigned long UpdateCpuNumKernel( );
-    inline unsigned long UpdateCpuNumAvaliable( );
+    inline unsigned int UpdateCpuNumKernel( );
+    inline unsigned int UpdateCpuNumAvaliable( );
 
 #ifdef CPU_FREQ
     inline struct cpufreq_affected_cpus *UpdateAffectedCpus(unsigned int cpuid);
@@ -208,8 +209,8 @@ protected :
     ///  m_cpuNumAvaliable  the number of processors currently available in the system.
     ///  This may be less than the number returned by get_nprocs_conf( )
     ///   because processors may be offline (e.g., on hotpluggable systems).
-    int                      m_cpuNumKernel;             //  系统中插入的CPU的数目(包括online和offline)
-    int                      m_cpuNumAvailable;          //  系统中可用的CPU数目(即onlie的CPU数目)
+    unsigned int                      m_cpuNumKernel;             //  系统中插入的CPU的数目(包括online和offline)
+    unsigned int                      m_cpuNumAvailable;          //  系统中可用的CPU数目(即onlie的CPU数目)
 #ifdef CPU_FREQ
     QList<CpuFreqUtils *>    m_cpufreqUtils;                 //  当前系统中CPU频率操作的集合
     QList<unsigned long>     m_cpufreqs;

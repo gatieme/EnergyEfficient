@@ -79,13 +79,13 @@ CpuUtilTools::~CpuUtilTools( )
 /////////////////////
 
 /// 获取当前系统中安装的CPU的数目
-unsigned long CpuUtilTools::GetCpuNumKernel( )
+unsigned int CpuUtilTools::GetCpuNumKernel( )
 {
     return this->m_cpuNumKernel;
 }
 
 /// 获取当前系统中当前活跃的CPU数目
-unsigned long CpuUtilTools::GetCpuNumAvaliable( )
+unsigned int CpuUtilTools::GetCpuNumAvaliable( )
 {
     return this->m_cpuNumAvailable;
 }
@@ -95,7 +95,7 @@ unsigned long CpuUtilTools::GetCpuNumAvaliable( )
 ///  1.2--更新CPU的数目
 /////////////////////
 /// 更新当前系统中安装的CPU的数目
-unsigned long CpuUtilTools::UpdateCpuNumKernel( )
+unsigned int CpuUtilTools::UpdateCpuNumKernel( )
 {
     this->m_cpuNumKernel = get_nprocs();
 
@@ -103,7 +103,7 @@ unsigned long CpuUtilTools::UpdateCpuNumKernel( )
 }
 
 /// 更新当前系统中当前活跃的CPU数目
-unsigned long CpuUtilTools::UpdateCpuNumAvaliable( )
+unsigned int CpuUtilTools::UpdateCpuNumAvaliable( )
 {
     this->m_cpuNumAvailable = get_nprocs_conf( );
 
