@@ -17,8 +17,8 @@ TEMPLATE = app
 
 # for qwt-6.1.3
 INCLUDEPATH += /usr/local/Trolltech/qwt-6.1.3-qt-4.8.0/x86/include
-LIBS += -L/usr/local/Trolltech/qwt-6.1.3-qt-4.8.0/x86/lib -lqwt
-#LIBS += -L/opt/arm/qt/qwt-6.1.3-qt-4.8.6/x86_64/lib -lqwt
+#LIBS += -L/usr/local/Trolltech/qwt-6.1.3-qt-4.8.0/x86/lib -lqwt
+LIBS += -L/opt/arm/qt/qwt-6.1.3-qt-4.8.6/x86_64/lib -lqwt
 #LIBS += -L/usr/local/Trolltech/qwt-6.1.3-qt-4.8.0/arm/lib -lqwt
 
 # for fpga

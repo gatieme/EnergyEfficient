@@ -310,8 +310,9 @@ unsigned long CpuFreqUtils::UpdateScalingCurFrequency( )
     else
     {
         this->m_scalingCurFrequency = curfreq;
+#ifdef __DEBUG__
         qDebug() <<"cpu" <<this->m_cpuid <<" scaling_cur_freq = " <<this->m_scalingCurFrequency <<endl;
-
+#endif
         return m_scalingCurFrequency;
     }
 }

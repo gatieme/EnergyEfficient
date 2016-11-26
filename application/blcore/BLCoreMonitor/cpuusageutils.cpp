@@ -85,7 +85,9 @@ QList<double>  CpuUsageUtils::CalcAllCpusUsage( )
 #endif
         //qDebug( ) <<this->m_jiffiesStats[cpuid]->cpu <<endl;
         usage = cpuusage_calc_usage(this->m_prevJiffiesStats[cpuid], this->m_jiffiesStats[cpuid]);
+#ifdef __DEBUG__
         qDebug( ) <<"cpuid = " <<cpuid <<", cpusuage = " <<usage <<"%" <<endl;
+#endif
         this->m_cpuusgae.append(usage);
     }
 

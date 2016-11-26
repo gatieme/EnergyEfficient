@@ -415,10 +415,13 @@ double UpdateTotalUsage( )
 //  3.1--获取编号为cpuid的CPU-freq的信息
 /////////////////////
 //  CPU的当前运行频率
-QList<unsigned long> CpuUtilTools::UpdateAllCpusScalingCurFrequency( )
+QList<double> CpuUtilTools::UpdateAllCpusScalingCurFrequency( )
 {
-    qDebug( ) <<"get all cpus scalling_curr_frequency" <<endl;
-
+    //qDebug( ) <<"get all cpus scalling_curr_frequency" <<endl;
+    if(this->m_cpufreqs.length( ) != 0)
+    {
+        this->m_cpufreqs.clear( );
+    }
 #ifdef CPU_FREQ
     for(int cpuid = 0, availCount = 0;
         cpuid < this->m_cpuNumKernel;
@@ -428,8 +431,9 @@ QList<unsigned long> CpuUtilTools::UpdateAllCpusScalingCurFrequency( )
         if(CpuUtilTools::IsCpuPresent(cpuid) == true)
         {
             availCount++;
-            double cpufreq = this->m_cpufreqUtils[cpuid]->UpdateScalingCurFrequency( );
-            this->m_cpufreqs.append(cpufreq);
+            unsigned long cpufreq = this->m_cpufreqUtils[cpuid]->UpdateScalingCurFrequency( );
+            qDebug() <<"CPU" <<cpufreq / 1000.0 ;
+            this->m_cpufreqs.append((double)cpufreq / 1000.0);
         }
     }
 #else
@@ -440,9 +444,14 @@ QList<unsigned long> CpuUtilTools::UpdateAllCpusScalingCurFrequency( )
 
 
 //  当前运行频率
-QList<unsigned long> CpuUtilTools::UpdateAllCpusCpuInfoCurFrequency( )
+QList<double> CpuUtilTools::UpdateAllCpusCpuInfoCurFrequency( )
 {
-    qDebug( ) <<"get all cpus cpuinfo_curr_frequency" <<endl;
+//    qDebug( ) <<"get all cpus cpuinfo_curr_frequency" <<endl;
+
+    if(this->m_cpufreqs.length( ) != 0)
+    {
+        this->m_cpufreqs.clear( );
+    }
 
 #ifdef CPU_FREQ
     for(int cpuid = 0, availCount = 0;
@@ -453,8 +462,9 @@ QList<unsigned long> CpuUtilTools::UpdateAllCpusCpuInfoCurFrequency( )
         if(CpuUtilTools::IsCpuPresent(cpuid) == true)
         {
             availCount++;
-            double cpufreq = this->m_cpufreqUtils[cpuid]->UpdateCpuInfoCurFrequency( );
-            this->m_cpufreqs.append(cpufreq);
+            unsigned long cpufreq = this->m_cpufreqUtils[cpuid]->UpdateCpuInfoCurFrequency( );
+            qDebug() <<"CPU" <<cpufreq / 10000.0 ;
+            this->m_cpufreqs.append((double)cpufreq / 10000.0);
         }
     }
 #else

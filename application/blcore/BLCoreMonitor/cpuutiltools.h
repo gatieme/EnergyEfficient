@@ -196,8 +196,8 @@ public slots:
     /////////////////////
     //  3.1--获取编号为cpuid的CPU-freq的信息
     /////////////////////
-    QList<unsigned long> UpdateAllCpusScalingCurFrequency( );   //  CPU的当前运行频率
-    QList<unsigned long> UpdateAllCpusCpuInfoCurFrequency( );   //  当前运行频率
+    QList<double> UpdateAllCpusScalingCurFrequency( );   //  CPU的当前运行频率
+    QList<double> UpdateAllCpusCpuInfoCurFrequency( );   //  当前运行频率
     /////////////////////
     //  3.2--获取编号为cpuid的CPU-usage的信息
     /////////////////////
@@ -213,7 +213,7 @@ protected :
     unsigned int                      m_cpuNumAvailable;          //  系统中可用的CPU数目(即onlie的CPU数目)
 #ifdef CPU_FREQ
     QList<CpuFreqUtils *>    m_cpufreqUtils;                 //  当前系统中CPU频率操作的集合
-    QList<unsigned long>     m_cpufreqs;
+    QList<double>     m_cpufreqs;
 #endif
 
 #ifdef CPU_USAGE

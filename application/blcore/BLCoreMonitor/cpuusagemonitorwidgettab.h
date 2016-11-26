@@ -61,6 +61,14 @@ protected:
     //QList<QPen *>           m_cpuUsagePen;                  // QPen
     //QwtPlotMarker         *m_locateLocalMarker;       //  路线起点标记
     //LocateMarkerList      m_locateMarkerList;     // 定位信息
+
+    ///  保护函数 辅助功能
+//    inline double GetMaxCpuUsageData( )
+//    {
+//        return 0;
+//    }
+//    inline double GetMinCpuUsageData( );
+    QPen SetCpuUsageQwtPlotPen(unsigned int cpuid);
 };
 
 #endif // CPUUSAGEMONITORWIDGETTAB_H

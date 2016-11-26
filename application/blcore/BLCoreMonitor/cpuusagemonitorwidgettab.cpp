@@ -35,14 +35,16 @@ CpuUsageMonitorWidgetTab::CpuUsageMonitorWidgetTab(QWidget *parent, unsigned int
     //  设置其Y轴信息
     this->ui->cpuUsageQwtPlot->setAxisTitle(QwtPlot::yLeft, "Usage(%)" );
     this->ui->cpuUsageQwtPlot->setAxisScale(QwtPlot::yLeft, 0, 100);
+    this->ui->cpuUsageQwtPlot->setAxisTitle(QwtPlot::xBottom, "Time");
     this->ui->cpuUsageQwtPlot->setAxisScale(QwtPlot::xBottom, 0, 10);
     // 增加网格
     this->m_cpuUsageQwtPlotGrid = new QwtPlotGrid();
     this->m_cpuUsageQwtPlotGrid->attach( this->ui->cpuUsageQwtPlot);
+    this->ui->cpuUsageQwtPlot->insertLegend( new QwtLegend(), QwtPlot::RightLegend );
 
     // 设置画布背景
     this->ui->cpuUsageQwtPlot->setCanvasBackground(QColor(29, 100, 141)); // nice blue
-    qDebug( ) <<this->m_cpunums <<endl;
+    //qDebug( ) <<this->m_cpunums <<endl;
     for(unsigned int cpuid  = 0;
         cpuid <= this->m_cpunums;  /* 每个CPU的使用率 +　总的系统使用率*/
         cpuid++)
@@ -63,17 +65,13 @@ CpuUsageMonitorWidgetTab::CpuUsageMonitorWidgetTab(QWidget *parent, unsigned int
         //  将曲线对象添加到CPU USAGE曲线集合中
         this->m_cpuUsageQwtPlotCurves.append(cpuUsgaeCurve);
     }
-
+    //qDebug( ) <<this->m_cpuUsageQwtPlotCurves.length( ) <<endl;
 
     // panning with the left mouse button支持鼠标平移
     ( void ) new QwtPlotPanner( this->ui->cpuUsageQwtPlot->canvas() );
 
     // zoom in/out with the wheel支持滚轮放大缩小
     ( void ) new QwtPlotMagnifier( this->ui->cpuUsageQwtPlot->canvas() );
-
-
-
-
 }
 
 
@@ -86,6 +84,7 @@ CpuUsageMonitorWidgetTab::~CpuUsageMonitorWidgetTab()
     delete m_cpuUsageMonitorTimer;
     if(this->m_cpuUsageQwtPlotCurves.size( ) != 0)
     {
+        //qDebug( ) <<this->m_cpuUsageQwtPlotCurves.length( ) <<endl;
         foreach (QwtPlotCurve *curve, this->m_cpuUsageQwtPlotCurves)
         {
             delete curve;
@@ -98,18 +97,20 @@ CpuUsageMonitorWidgetTab::~CpuUsageMonitorWidgetTab()
 
 QwtPlotCurve*   CpuUsageMonitorWidgetTab::InitCpuUsageQwtPlotCurve(unsigned int cpuid)
 {
-    QwtPlotCurve* cpuUsgaeCurve = new QwtPlotCurve("cpu" + cpuid);
+    QString curveName = QString("cpu" +  QString::number((int)cpuid));
+    QwtPlotCurve* cpuUsgaeCurve = new QwtPlotCurve(curveName);
+    cpuUsgaeCurve->setLegendAttribute( QwtPlotCurve::LegendShowLine, true );
     cpuUsgaeCurve->setSamples(this->m_cpuusagesX, this->m_cpuusagesY[cpuid]);
     cpuUsgaeCurve->attach( this->ui->cpuUsageQwtPlot);
 //        cpuUsgaeCurve->setStyle( QwtPlotCurve::NoCurve );
     cpuUsgaeCurve->setSymbol( new QwtSymbol( QwtSymbol::XCross,
-                    Qt::NoBrush, QPen( Qt::red ), QSize(5, 5 ) ) );
+                    Qt::NoBrush, this->SetCpuUsageQwtPlotPen(cpuid), QSize(5, 5 ) ) );
     //  设置曲线颜色
-    QPen pen;   //  未使用指针, 可能会有问题
-    pen.setColor(QColor(cpuid * 10 + 200, cpuid * 50, cpuid * 10));
-    cpuUsgaeCurve->setPen(pen);
+    cpuUsgaeCurve->setPen(this->SetCpuUsageQwtPlotPen(cpuid));
+
     //  抗锯齿
-    cpuUsgaeCurve->setRenderHint(QwtPlotItem::RenderAntialiased,true);
+    //cpuUsgaeCurve->setRenderHint(QwtPlotItem::RenderAntialiased,true);
+    cpuUsgaeCurve->setCurveAttribute(QwtPlotCurve::Fitted, true);
 
     return cpuUsgaeCurve;
 }
@@ -123,10 +124,11 @@ void CpuUsageMonitorWidgetTab::slotShowCpuUsagePlot()
 
 void CpuUsageMonitorWidgetTab::UpdateCpuUsagePlot()
 {
+
     double maxX = (this->m_cpuusagesX.size( ) > 10) ? (double)this->m_cpuusagesX.size( ) : 10;
-    double maxY = 20;
+    //double maxY = 100;
     this->ui->cpuUsageQwtPlot->setAxisScale(QwtPlot::xBottom, 0, maxX);
-    this->ui->cpuUsageQwtPlot->setAxisScale(QwtPlot::yLeft, 0, maxY);
+    //this->ui->cpuUsageQwtPlot->setAxisScale(QwtPlot::yLeft, 0, maxY);
 
     for(unsigned int cpuid  = 0;
         cpuid <= this->m_cpunums;  /* 每个CPU的使用率 +　总的系统使用率*/
@@ -138,17 +140,31 @@ void CpuUsageMonitorWidgetTab::UpdateCpuUsagePlot()
         //新建一个曲线对象
         QwtPlotCurve *cpuUsgaeCurve = this->m_cpuUsageQwtPlotCurves[cpuid];
         cpuUsgaeCurve->setSamples(this->m_cpuusagesX, this->m_cpuusagesY[cpuid]);
-        cpuUsgaeCurve->attach( this->ui->cpuUsageQwtPlot);
-
-
-        //  抗锯齿
-        cpuUsgaeCurve->setRenderHint(QwtPlotItem::RenderAntialiased,true);
-
-        //  将曲线对象添加到CPU USAGE曲线集合中
-        this->m_cpuUsageQwtPlotCurves.append(cpuUsgaeCurve);
     }
     this->ui->cpuUsageQwtPlot->replot( );
 
+}
+
+
+QPen CpuUsageMonitorWidgetTab::SetCpuUsageQwtPlotPen(unsigned int cpuid)
+{
+    /*
+     * 赤色【RGB】255, 0, 0 【CMYK】 0, 100, 100, 0
+     * 橙色【RGB】 255, 165, 0 【CMYK】0, 35, 100, 0
+     * 黄色【RGB】255, 255, 0 【CMYK】0, 0, 100, 0
+     * 绿色【RGB】0, 255, 0 【CMYK】100, 0, 100, 0
+     * 青色【RGB】0, 127, 255 【CMYK】100, 50, 0, 0
+     * 蓝色【RGB】0, 0, 255 【CMYK】100, 100, 0, 0
+     * 紫色【RGB】139, 0, 255 【CMYK】45, 100, 0, 0
+     */
+    QVector<QPen> pens = {
+        QPen(Qt::red), QPen(Qt::green),
+        QPen(Qt::yellow),QPen(Qt::cyan),
+        QPen(Qt::magenta), QPen(Qt::blue),
+        QPen(Qt::gray)
+                         };
+
+    return pens[cpuid];
 }
 
 void CpuUsageMonitorWidgetTab::UpdateAllCpusUsageData()
@@ -156,6 +172,10 @@ void CpuUsageMonitorWidgetTab::UpdateAllCpusUsageData()
     //  更新当前cpu的usage信息
     QList<double> usages = this->m_cpuUtilTools->UpdateAllCpusUsage( );
     //  维护最大的cpu频率值, 用以设置Y轴的坐标
+    //double maxUsage = *std::max_element(usages.constBegin(), usages.constEnd());
+
+
+    //  将获取到的新的cpuusage信息添加到数据集合m_cpuusagesX和m_cpuusagesY中
     for(unsigned int cpuid = 0;
         cpuid <= this->m_cpunums;  /* 每个CPU的使用率 +　总的系统使用率*/
         cpuid++)
@@ -164,13 +184,15 @@ void CpuUsageMonitorWidgetTab::UpdateAllCpusUsageData()
         //  double usgaes[cpuid] 存储了获取到的编号为cpuid的cpu的usgae最新的信息
         this->m_cpuusagesY[cpuid].append(usages[cpuid]);
     }
-    this->m_cpuusagesX.append(this->m_cpuusagesX.size( ) + 1);
+    this->m_cpuusagesX.append(this->m_cpuusagesX.size( ));
 
+#ifdef __DEBUG__
     for(unsigned int num = 0;
         num < this->m_cpuusagesX.size( );
         num++)
     {
         qDebug( ) <<"X = " <<this->m_cpuusagesX[num] <<", Y = " <<this->m_cpuusagesY[0][num];
     }
+#endif
 
 }
