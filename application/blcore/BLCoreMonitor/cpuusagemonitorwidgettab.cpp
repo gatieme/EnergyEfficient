@@ -40,6 +40,10 @@ CpuUsageMonitorWidgetTab::CpuUsageMonitorWidgetTab(QWidget *parent, unsigned int
     // 增加网格
     this->m_cpuUsageQwtPlotGrid = new QwtPlotGrid();
     this->m_cpuUsageQwtPlotGrid->attach( this->ui->cpuUsageQwtPlot);
+
+    //QwtLegend *legend = new QwtLegend;
+    //legend->setDefaultItemMode( QwtLegendData::Checkable );
+    //this->ui->cpuUsageQwtPlot->insertLegend( legend, QwtPlot::RightLegend );
     this->ui->cpuUsageQwtPlot->insertLegend( new QwtLegend(), QwtPlot::RightLegend );
 
     // 设置画布背景
@@ -97,14 +101,23 @@ CpuUsageMonitorWidgetTab::~CpuUsageMonitorWidgetTab()
 
 QwtPlotCurve*   CpuUsageMonitorWidgetTab::InitCpuUsageQwtPlotCurve(unsigned int cpuid)
 {
-    QString curveName = QString("cpu" +  QString::number((int)cpuid));
+    QString curveName;
+    if(cpuid < this->m_cpunums)
+    {
+        curveName = QString("cpu" +  QString::number((int)cpuid));
+    }
+    else
+    {
+        curveName = "cpu";
+    }
     QwtPlotCurve* cpuUsgaeCurve = new QwtPlotCurve(curveName);
     cpuUsgaeCurve->setLegendAttribute( QwtPlotCurve::LegendShowLine, true );
     cpuUsgaeCurve->setSamples(this->m_cpuusagesX, this->m_cpuusagesY[cpuid]);
     cpuUsgaeCurve->attach( this->ui->cpuUsageQwtPlot);
 //        cpuUsgaeCurve->setStyle( QwtPlotCurve::NoCurve );
     cpuUsgaeCurve->setSymbol( new QwtSymbol( QwtSymbol::XCross,
-                    Qt::NoBrush, this->SetCpuUsageQwtPlotPen(cpuid), QSize(5, 5 ) ) );
+                    Qt::NoBrush, this->SetCpuUsageQwtPlotPen(cpuid),
+                    QSize(QWT_PLOT_POINT_WIDTH, QWT_PLOT_POINT_WIDTH ) ) );
     //  设置曲线颜色
     cpuUsgaeCurve->setPen(this->SetCpuUsageQwtPlotPen(cpuid));
 
@@ -158,10 +171,13 @@ QPen CpuUsageMonitorWidgetTab::SetCpuUsageQwtPlotPen(unsigned int cpuid)
      * 紫色【RGB】139, 0, 255 【CMYK】45, 100, 0, 0
      */
     QVector<QPen> pens = {
-        QPen(Qt::red), QPen(Qt::green),
-        QPen(Qt::yellow),QPen(Qt::cyan),
-        QPen(Qt::magenta), QPen(Qt::blue),
-        QPen(Qt::gray)
+        QPen(Qt::red, QWT_PLOT_CURVE_WIDTH),
+        QPen(Qt::green, QWT_PLOT_CURVE_WIDTH),
+        QPen(Qt::yellow, QWT_PLOT_CURVE_WIDTH),
+        QPen(Qt::cyan, QWT_PLOT_CURVE_WIDTH),
+        QPen(Qt::magenta, QWT_PLOT_CURVE_WIDTH),
+        QPen(Qt::blue, QWT_PLOT_CURVE_WIDTH),
+        QPen(Qt::gray, QWT_PLOT_CURVE_WIDTH)
                          };
 
     return pens[cpuid];
@@ -180,6 +196,7 @@ void CpuUsageMonitorWidgetTab::UpdateAllCpusUsageData()
         cpuid <= this->m_cpunums;  /* 每个CPU的使用率 +　总的系统使用率*/
         cpuid++)
     {
+        qDebug() <<"CPU" <<cpuid <<", USAGE = " <<usages[cpuid];
         //  QVector<double> m_cpuusagesY[cpuid]中存储了编号为cpuid的cpu的usgae信息集合
         //  double usgaes[cpuid] 存储了获取到的编号为cpuid的cpu的usgae最新的信息
         this->m_cpuusagesY[cpuid].append(usages[cpuid]);

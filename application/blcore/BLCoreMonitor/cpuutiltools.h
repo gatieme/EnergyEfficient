@@ -5,6 +5,8 @@
 #include <QDebug>
 
 
+#include "config.h"
+
 #define CPU_FREQ            //
 #define CPU_USAGE
 
@@ -117,12 +119,12 @@ public :
     /////////////////////
     inline CpuFreqUtils* GetCpuInfo(unsigned int cpuid);      //  获取编号为cpuid的CPU完整信息
     inline bool GetIsOnline(unsigned int cpuid);                  //  编号为cpuid的CPU是否online
-    inline unsigned long GetScalingMinFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最小运行频率
-    inline unsigned long GetScalingMaxFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最大运行频率
-    inline unsigned long GetScalingCurFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的当前运行频率
-    inline unsigned long GetCpuInfoMinFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最小运行频率
-    inline unsigned long GetCpuInfoMaxFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最大运行频率
-    inline unsigned long GetCpuInfoCurFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的当前运行频率
+    double GetScalingMinFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最小运行频率
+    double GetScalingMaxFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最大运行频率
+    inline double GetScalingCurFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的当前运行频率
+    inline double GetCpuInfoMinFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最小运行频率
+    inline double GetCpuInfoMaxFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的最大运行频率
+    inline double GetCpuInfoCurFrequency(unsigned int cpuid);   //  编号为cpuid的CPU的当前运行频率
 #if defined(CNODE_IN_QLIST)
     //一种是将节点重新组织在QList中
     inline QList<struct cpufreq_available_frequencies *>& GetAvailableFrequencies(unsigned int cpuid);   //  可用的CPU频率值

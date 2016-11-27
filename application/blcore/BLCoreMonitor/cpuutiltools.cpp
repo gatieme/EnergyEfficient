@@ -170,42 +170,42 @@ bool CpuUtilTools::GetIsOnline(unsigned int cpuid)
 
 
 //  编号为cpuid的CPU的最小运行频率
-unsigned long CpuUtilTools::GetScalingMinFrequency(unsigned int cpuid)
+double CpuUtilTools::GetScalingMinFrequency(unsigned int cpuid)
 {
-    return this->GetCpuInfo(cpuid)->GetScalingMinFrequency( );
+    return this->GetCpuInfo(cpuid)->GetScalingMinFrequency( ) / USAGE_CARDINAL_NUMBER;
 }
 
 
 //  编号为cpuid的CPU的最大运行频率
-unsigned long CpuUtilTools::GetScalingMaxFrequency(unsigned int cpuid)
+double CpuUtilTools::GetScalingMaxFrequency(unsigned int cpuid)
 {
-    return this->GetCpuInfo(cpuid)->GetScalingMaxFrequency( );
+    return this->GetCpuInfo(cpuid)->GetScalingMaxFrequency( ) / USAGE_CARDINAL_NUMBER;
 }
 
 
 //  编号为cpuid的CPU的当前运行频率
-unsigned long CpuUtilTools::GetScalingCurFrequency(unsigned int cpuid)
+double CpuUtilTools::GetScalingCurFrequency(unsigned int cpuid)
 {
-    return this->GetCpuInfo(cpuid)->GetScalingCurFrequency( );
+    return this->GetCpuInfo(cpuid)->GetScalingCurFrequency( ) / USAGE_CARDINAL_NUMBER;
 }
 
 
 //  编号为cpuid的CPU的最小运行频率
-unsigned long CpuUtilTools::GetCpuInfoMinFrequency(unsigned int cpuid)
+double CpuUtilTools::GetCpuInfoMinFrequency(unsigned int cpuid)
 {
-    return this->GetCpuInfo(cpuid)->GetCpuInfoMinFrequency( );
+    return this->GetCpuInfo(cpuid)->GetCpuInfoMinFrequency( ) / USAGE_CARDINAL_NUMBER;;
 }
 
 //  编号为cpuid的CPU的最大运行频率
-unsigned long CpuUtilTools::GetCpuInfoMaxFrequency(unsigned int cpuid)
+double CpuUtilTools::GetCpuInfoMaxFrequency(unsigned int cpuid)
 {
-    return this->GetCpuInfo(cpuid)->GetCpuInfoMaxFrequency( );
+    return this->GetCpuInfo(cpuid)->GetCpuInfoMaxFrequency( ) / USAGE_CARDINAL_NUMBER;
 }
 
 //  编号为cpuid的CPU的当前运行频率
-unsigned long CpuUtilTools::GetCpuInfoCurFrequency(unsigned int cpuid)
+double CpuUtilTools::GetCpuInfoCurFrequency(unsigned int cpuid)
 {
-    return this->GetCpuInfo(cpuid)->GetCpuInfoCurFrequency( );
+    return this->GetCpuInfo(cpuid)->GetCpuInfoCurFrequency( ) / USAGE_CARDINAL_NUMBER;;
 }
 
 
@@ -432,8 +432,8 @@ QList<double> CpuUtilTools::UpdateAllCpusScalingCurFrequency( )
         {
             availCount++;
             unsigned long cpufreq = this->m_cpufreqUtils[cpuid]->UpdateScalingCurFrequency( );
-            qDebug() <<"CPU" <<cpufreq / 1000.0 ;
-            this->m_cpufreqs.append((double)cpufreq / 1000.0);
+            //qDebug() <<"CPU" <<cpufreq / USAGE_CARDINAL_NUMBER ;
+            this->m_cpufreqs.append((double)cpufreq / USAGE_CARDINAL_NUMBER);
         }
     }
 #else
@@ -463,8 +463,8 @@ QList<double> CpuUtilTools::UpdateAllCpusCpuInfoCurFrequency( )
         {
             availCount++;
             unsigned long cpufreq = this->m_cpufreqUtils[cpuid]->UpdateCpuInfoCurFrequency( );
-            qDebug() <<"CPU" <<cpufreq / 10000.0 ;
-            this->m_cpufreqs.append((double)cpufreq / 10000.0);
+            qDebug() <<"CPU" <<cpufreq / USAGE_CARDINAL_NUMBER ;
+            this->m_cpufreqs.append((double)cpufreq / USAGE_CARDINAL_NUMBER);
         }
     }
 #else
@@ -479,7 +479,7 @@ QList<double> CpuUtilTools::UpdateAllCpusCpuInfoCurFrequency( )
 /////////////////////
 QList<double> CpuUtilTools::UpdateAllCpusUsage( )
 {
-    qDebug( ) <<"get all cpus usage" <<endl;
+    //qDebug( ) <<"get all cpus usage" <<endl;
 #ifdef CPU_USAGE
     //qDebug( ) <<__FILE__ <<", " <<__LINE__ <<endl;
     this->m_cpuusages = this->m_cpuusageUtils->UpdateAllCpusUsage( );

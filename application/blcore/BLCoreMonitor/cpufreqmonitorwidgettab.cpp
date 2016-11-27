@@ -31,7 +31,9 @@ CpuFreqMonitorWidgetTab::CpuFreqMonitorWidgetTab(QWidget *parent, unsigned int c
     ///////////////////////////////////
     //  设置其Y轴信息
     this->ui->cpuFrequencyQwtPlot->setAxisTitle(QwtPlot::yLeft, "Frequency(kHZ)" );
-    this->ui->cpuFrequencyQwtPlot->setAxisScale(QwtPlot::yLeft, 2200, 3000);
+    this->ui->cpuFrequencyQwtPlot->setAxisScale(QwtPlot::yLeft,
+                                                this->m_cpuUtilTools->GetScalingMinFrequency(0),
+                                                this->m_cpuUtilTools->GetScalingMaxFrequency(0));
     this->ui->cpuFrequencyQwtPlot->setAxisTitle(QwtPlot::xBottom, "Time");
     this->ui->cpuFrequencyQwtPlot->setAxisScale(QwtPlot::xBottom, 0, 10);
     this->ui->cpuFrequencyQwtPlot->insertLegend( new QwtLegend(), QwtPlot::RightLegend );
@@ -102,7 +104,8 @@ QwtPlotCurve*   CpuFreqMonitorWidgetTab::InitCpuFrequencyQwtPlotCurve(unsigned i
     cpuFrequencyCurve->attach( this->ui->cpuFrequencyQwtPlot);
 //        cpuFrequencyCurve->setStyle( QwtPlotCurve::NoCurve );
     cpuFrequencyCurve->setSymbol( new QwtSymbol( QwtSymbol::XCross,
-                    Qt::NoBrush, this->SetCpuFrequencyQwtPlotPen(cpuid), QSize(5, 5 ) ) );
+                    Qt::NoBrush, this->SetCpuFrequencyQwtPlotPen(cpuid),
+                    QSize(QWT_PLOT_POINT_WIDTH, QWT_PLOT_POINT_WIDTH ) ) );
     //  设置曲线颜色
     cpuFrequencyCurve->setPen(this->SetCpuFrequencyQwtPlotPen(cpuid));
 
@@ -156,10 +159,13 @@ QPen CpuFreqMonitorWidgetTab::SetCpuFrequencyQwtPlotPen(unsigned int cpuid)
      * 紫色【RGB】139, 0, 255 【CMYK】45, 100, 0, 0
      */
     QVector<QPen> pens = {
-        QPen(Qt::red), QPen(Qt::green),
-        QPen(Qt::yellow),QPen(Qt::cyan),
-        QPen(Qt::magenta), QPen(Qt::blue),
-        QPen(Qt::gray)
+        QPen(Qt::red, QWT_PLOT_CURVE_WIDTH),
+        QPen(Qt::green, QWT_PLOT_CURVE_WIDTH),
+        QPen(Qt::yellow, QWT_PLOT_CURVE_WIDTH),
+        QPen(Qt::cyan, QWT_PLOT_CURVE_WIDTH),
+        QPen(Qt::magenta, QWT_PLOT_CURVE_WIDTH),
+        QPen(Qt::blue, QWT_PLOT_CURVE_WIDTH),
+        QPen(Qt::gray, QWT_PLOT_CURVE_WIDTH)
                          };
 
     return pens[cpuid];
@@ -180,7 +186,7 @@ void CpuFreqMonitorWidgetTab::UpdateAllCpusFrequencyData()
     {
         //  QVector<double> m_cpufrequencysY[cpuid]中存储了编号为cpuid的cpu的usgae信息集合
         //  double usgaes[cpuid] 存储了获取到的编号为cpuid的cpu的usgae最新的信息
-        qDebug() <<"CPU" <<cpuid <<", " <<frequencys[cpuid] <<endl;
+        qDebug() <<"CPU" <<cpuid <<", FREQ = " <<frequencys[cpuid];
         this->m_cpufreqsY[cpuid].append(frequencys[cpuid]);
     }
     this->m_cpufreqsX.append(this->m_cpufreqsX.size( ));

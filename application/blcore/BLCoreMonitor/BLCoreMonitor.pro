@@ -58,7 +58,8 @@ HEADERS  += blcoremainwindow.h \
     cpufrequtils.h \
     cpufreqmonitorwidgettab.h \
     cpuusagemonitorwidgettab.h \
-    cpuutiltools.h
+    cpuutiltools.h \
+    config.h
 
 FORMS    += blcoremainwindow.ui \
     cpufreqwidgettab.ui \
