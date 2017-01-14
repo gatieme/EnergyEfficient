@@ -22,11 +22,11 @@
 struct cpuusage_jiffies_stat *
 cpuusage_get_total_jiffies_stat( )
 {
-	struct cpuusage_jiffies_stat *jiffies_stat = NULL;
+        struct cpuusage_jiffies_stat *jiffies_stat = NULL;
 
-    jiffies_stat = proc_get_total_jiffies_stat( );
+        jiffies_stat = proc_get_total_jiffies_stat( );
 
-    return jiffies_stat;
+        return jiffies_stat;
 }
 
 /*  获取cpu的stat信息(/proc/stat)   */
@@ -35,9 +35,9 @@ cpuusage_get_jiffies_stat(unsigned int cpuid)
 {
 	struct cpuusage_jiffies_stat *jiffies_stat = NULL;
 
-    jiffies_stat = proc_get_jiffies_stat(cpuid);
+        jiffies_stat = proc_get_jiffies_stat(cpuid);
 
-    return jiffies_stat;
+        return jiffies_stat;
 }
 
 
@@ -47,9 +47,9 @@ cpuusage_get_jiffies_stat_list( )
 {
 	struct cpuusage_jiffies_stat *jiffies_stat_list = NULL;
 
-    jiffies_stat_list = proc_get_jiffies_stat_list( );
+        jiffies_stat_list = proc_get_jiffies_stat_list( );
 
-    return jiffies_stat_list;
+        return jiffies_stat_list;
 }
 
 

@@ -15,7 +15,8 @@
 
 int main(int argc ,char *argv[])
 {
-        readout_proc_hmpsched(1);
+        hmpsched_avg avg;
+        proc_get_task_hmpskched_avg(1, avg);
 
         return EXIT_SUCCESS;
 }

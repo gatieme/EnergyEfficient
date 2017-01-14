@@ -216,12 +216,12 @@ error:
 struct cpuusage_jiffies_stat *
 proc_get_jiffies_stat(unsigned int cpuid)
 {
-    FILE *fp = NULL;
-    char buf[128];
-    char cpu[6];
-    long int user, nice, system, idle, iowait, irq, softirq, steal, guest, guest_nice;
-    //long int total_jiffies_stat;
-    struct cpuusage_jiffies_stat    *jiffies_stat = NULL;
+    FILE        *fp = NULL;
+    char        buf[128];
+    char        cpu[6];
+    long int    user, nice, system, idle, iowait, irq, softirq, steal, guest, guest_nice;
+    //long int  total_jiffies_stat;
+    struct      cpuusage_jiffies_stat   *jiffies_stat = NULL;
 
     fp = fopen(PROC_STAT_FILE, "r");
     if(fp == NULL)

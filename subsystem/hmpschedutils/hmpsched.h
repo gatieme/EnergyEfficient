@@ -55,11 +55,26 @@ typedef struct hmpsched_avg {
 extern "C" {
 #endif
 
+
+
 /*
  * returns 0 if the specified CPU is present,
  * and an error value if not.
  */
+struct hmpsched_avg* hmpsched_get_task_avg(unsigned int cpu);
+struct hmpsched_avg* hmpsched_set_task_avg(unsigned int cpu);
+void hmpsched_put_task_avg(unsigned int cpu);
 
+
+
+void hmpsched_get_XXX(unsigned int cpu);
+
+
+
+/*
+ * returns 0 if the specified CPU is present,
+ * and an error value if not.
+ */
 extern int hmpsched_task_exists(unsigned int cpu);
 
 
