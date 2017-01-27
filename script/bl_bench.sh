@@ -14,9 +14,9 @@ perf_sched_bench_clear()
 perf_sched_bench_run( )
 {
 #  写入表头信息
-echo "#bench = $BENCH"          > $RESULT_FILE
-echo "#group = $MAX_GROUP"      >> $RESULT_FILE
-echo "#num   = $LOOP"            >> $RESULT_FILE
+echo "#perf_bench = $BENCH"          > $RESULT_FILE
+echo "#max_group  = $MAX_GROUP"      >> $RESULT_FILE
+echo "#loop_num   = $LOOP"            >> $RESULT_FILE
 for (( GROUP = 1; GROUP <= $MAX_GROUP; GROUP ++ ))   #  增加GROUP的值
 do
         echo "+++++++++++++++++++++"
@@ -43,7 +43,8 @@ do
                 fi
         done
         echo -e "=====================\n\n"
-        #python ./readlog.py -p $POS -t $TYPE -n $LOOP >> $RESULT_DIR/$BENCH.log
+        python readlog.py  -u perf/$BENCH -m $MAX_GROUP -g $GROUP -l $LOOP >>$RESULT_FILE
+
 done
 }
 

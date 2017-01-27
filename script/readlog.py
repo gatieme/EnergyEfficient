@@ -52,15 +52,10 @@ def getReItem(data) :
         #  匹配的信息如下
         #  Total time: 0.038 [sec]
         #reStr = r'Total time: ([-+]?[0-9]*\.?[0-9]+) [sec]'
-        reStr = r'\s*Total time: ([0-9]*\.?[0-9]+) [sec]\s*'
+        reStr = r'Total time: ([0-9]*\.?[0-9]+)'
 
         pattern = re.compile(reStr, re.S)
         myItems = re.findall(pattern, data)
-        #print len(myItems)
-
-        #print myItems
-        for item in myItems     :
-                print item[0]
 
         return myItems
     finally:
@@ -68,8 +63,13 @@ def getReItem(data) :
 
 
 def getResult(myItems):
+    sum = 0.0
     for item in myItems :
-        print item
+        sum += float(item)
+    avg = sum / len(myItems)
+    #print "sum = %f, avg = %f" % (sum, avg)
+
+    return avg
 
 
 
@@ -93,21 +93,22 @@ if __name__ == "__main__" :
     parser = argparse.ArgumentParser( )
     parser.add_argument("-u", "--user", dest = "user", help = "Who you want to read...")
     parser.add_argument("-f", "--file", dest = "resultfile", help = "The file you want to read...")
+    parser.add_argument("-m", "--max_group", dest = "max_group", help = "The file you want to read...")
     parser.add_argument("-g", "--group", dest = "group", help = "The file you want to read...")
     parser.add_argument("-l", "--loop", dest = "loop", help = "The file you want to read...")
     args = parser.parse_args( )
 
-    resultfile = "./RESULT/" + args.user + "/" +args.group + "-" +args.loop + "/" + args.group + ".log"
+    resultfile = "./RESULT/" + args.user + "/" +args.max_group + "-" +args.loop + "/" + args.group + ".log"
 
     #print resultfile
     resultdata = readFile(resultfile)
-    print resultdata
+    #print resultdata
     myItems = getReItem(resultdata)
-    print myItems
-    if (len(myItems) != args.loop) :
+    #print len(myItems), myItems
+    if (len(myItems) != int(args.loop)) :
         print "miss something in read %s" % (resultfile)
-        exit(0)
+        exit(-1)
     result = getResult(myItems)
-
-    pass
+    print "%4s, %f" %(args.group, result)
+    exit(0)
 
