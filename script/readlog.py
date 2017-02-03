@@ -92,13 +92,15 @@ if __name__ == "__main__" :
 
     parser = argparse.ArgumentParser( )
     parser.add_argument("-u", "--user", dest = "user", help = "Who you want to read...")
+    parser.add_argument("-d", "--dir", dest = "directory", help = "The Directory")
     parser.add_argument("-f", "--file", dest = "resultfile", help = "The file you want to read...")
     parser.add_argument("-m", "--max_group", dest = "max_group", help = "The file you want to read...")
     parser.add_argument("-g", "--group", dest = "group", help = "The file you want to read...")
     parser.add_argument("-l", "--loop", dest = "loop", help = "The file you want to read...")
     args = parser.parse_args( )
 
-    resultfile = "./RESULT/" + args.user + "/" +args.max_group + "-" +args.loop + "/" + args.group + ".log"
+    #resultfile = "./RESULT/" + args.user + "/" +args.max_group + "-" +args.loop + "/" + args.group + ".log"
+    resultfile = args.resultfile
 
     #print resultfile
     resultdata = readFile(resultfile)
