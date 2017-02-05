@@ -14,9 +14,13 @@ perf_sched_bench_clear()
 perf_sched_bench_run( )
 {
 #  写入表头信息
-echo "#perf_bench = $BENCH"          > $RESULT_FILE
-echo "#max_group  = $MAX_GROUP"      >> $RESULT_FILE
-echo "#loop_num   = $LOOP"           >> $RESULT_FILE
+echo "#perf_bench = $BENCH"       > $RESULT_FILE
+echo "#min_group  = $MIN_GROUP"   >> $RESULT_FILE
+echo "#max_group  = $MAX_GROUP"   >> $RESULT_FILE
+echo "#step_group = $STEP_GROUP"  >> $RESULT_FILE
+echo "#loop_num   = $LOOP"        >> $RESULT_FILE
+echo "#logdir     = $LOG_DIR"     >> $RESULT_FILE
+echo "#resultfile = $RESULT_FILE" >> $RESULT_FILE
 for (( GROUP = $MIN_GROUP; GROUP <= $MAX_GROUP; GROUP += $STEP_GROUP ))   #  增加GROUP的值
 do
         echo "+++++++++++++++++++++"
