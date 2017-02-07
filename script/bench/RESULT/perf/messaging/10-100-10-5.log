@@ -1,0 +1,17 @@
+#perf_bench = messaging
+#min_group  = 10
+#max_group  = 100
+#step_group = 10
+#loop_num   = 5
+#logdir     = RESULT/perf/messaging/10-100-10-5
+#resultfile = RESULT/perf/messaging/10-100-10-5.log
+  10, 0.231400
+  20, 0.462400
+  30, 0.678600
+  40, 0.920800
+  50, 1.199800
+  60, 1.445400
+  70, 1.668800
+  80, 1.952600
+  90, 2.136600
+ 100, 2.386800

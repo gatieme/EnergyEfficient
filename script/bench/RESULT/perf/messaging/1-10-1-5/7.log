@@ -1,0 +1,30 @@
+GROUP : 7, Test Num : 1
+# Running 'sched/messaging' benchmark:
+# 20 sender and receiver processes per group
+# 7 groups == 280 processes run
+
+     Total time: 0.173 [sec]
+GROUP : 7, Test Num : 2
+# Running 'sched/messaging' benchmark:
+# 20 sender and receiver processes per group
+# 7 groups == 280 processes run
+
+     Total time: 0.183 [sec]
+GROUP : 7, Test Num : 3
+# Running 'sched/messaging' benchmark:
+# 20 sender and receiver processes per group
+# 7 groups == 280 processes run
+
+     Total time: 0.172 [sec]
+GROUP : 7, Test Num : 4
+# Running 'sched/messaging' benchmark:
+# 20 sender and receiver processes per group
+# 7 groups == 280 processes run
+
+     Total time: 0.164 [sec]
+GROUP : 7, Test Num : 5
+# Running 'sched/messaging' benchmark:
+# 20 sender and receiver processes per group
+# 7 groups == 280 processes run
+
+     Total time: 0.178 [sec]
