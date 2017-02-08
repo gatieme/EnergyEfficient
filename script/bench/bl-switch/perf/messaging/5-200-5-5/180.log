@@ -1,0 +1,25 @@
+GROUP : 180, Test Num : 1
+# 20 sender and receiver processes per group
+# 180 groups == 7200 processes run
+
+     Total time: 138.862 [sec]
+GROUP : 180, Test Num : 2
+# 20 sender and receiver processes per group
+# 180 groups == 7200 processes run
+
+     Total time: 195.431 [sec]
+GROUP : 180, Test Num : 3
+# 20 sender and receiver processes per group
+# 180 groups == 7200 processes run
+
+     Total time: 183.052 [sec]
+GROUP : 180, Test Num : 4
+# 20 sender and receiver processes per group
+# 180 groups == 7200 processes run
+
+     Total time: 56.342 [sec]
+GROUP : 180, Test Num : 5
+# 20 sender and receiver processes per group
+# 180 groups == 7200 processes run
+
+     Total time: 123.130 [sec]

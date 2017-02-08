@@ -1,0 +1,35 @@
+GROUP : 17300, Test Num : 1
+# Executed 17300 pipe operations between two tasks
+
+     Total time: 1.466 [sec]
+
+      84.766069 usecs/op
+          11797 ops/sec
+GROUP : 17300, Test Num : 2
+# Executed 17300 pipe operations between two tasks
+
+     Total time: 1.604 [sec]
+
+      92.725376 usecs/op
+          10784 ops/sec
+GROUP : 17300, Test Num : 3
+# Executed 17300 pipe operations between two tasks
+
+     Total time: 1.534 [sec]
+
+      88.716127 usecs/op
+          11271 ops/sec
+GROUP : 17300, Test Num : 4
+# Executed 17300 pipe operations between two tasks
+
+     Total time: 1.614 [sec]
+
+      93.329538 usecs/op
+          10714 ops/sec
+GROUP : 17300, Test Num : 5
+# Executed 17300 pipe operations between two tasks
+
+     Total time: 1.608 [sec]
+
+      93.002890 usecs/op
+          10752 ops/sec

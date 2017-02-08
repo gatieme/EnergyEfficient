@@ -1,0 +1,35 @@
+GROUP : 80200, Test Num : 1
+# Executed 80200 pipe operations between two tasks
+
+     Total time: 7.336 [sec]
+
+      91.482681 usecs/op
+          10931 ops/sec
+GROUP : 80200, Test Num : 2
+# Executed 80200 pipe operations between two tasks
+
+     Total time: 7.515 [sec]
+
+      93.715162 usecs/op
+          10670 ops/sec
+GROUP : 80200, Test Num : 3
+# Executed 80200 pipe operations between two tasks
+
+     Total time: 7.494 [sec]
+
+      93.447070 usecs/op
+          10701 ops/sec
+GROUP : 80200, Test Num : 4
+# Executed 80200 pipe operations between two tasks
+
+     Total time: 7.457 [sec]
+
+      92.991446 usecs/op
+          10753 ops/sec
+GROUP : 80200, Test Num : 5
+# Executed 80200 pipe operations between two tasks
+
+     Total time: 7.431 [sec]
+
+      92.661758 usecs/op
+          10791 ops/sec

@@ -1,0 +1,35 @@
+GROUP : 56900, Test Num : 1
+# Executed 56900 pipe operations between two tasks
+
+     Total time: 5.209 [sec]
+
+      91.559578 usecs/op
+          10921 ops/sec
+GROUP : 56900, Test Num : 2
+# Executed 56900 pipe operations between two tasks
+
+     Total time: 5.343 [sec]
+
+      93.912373 usecs/op
+          10648 ops/sec
+GROUP : 56900, Test Num : 3
+# Executed 56900 pipe operations between two tasks
+
+     Total time: 5.323 [sec]
+
+      93.558155 usecs/op
+          10688 ops/sec
+GROUP : 56900, Test Num : 4
+# Executed 56900 pipe operations between two tasks
+
+     Total time: 5.241 [sec]
+
+      92.110808 usecs/op
+          10856 ops/sec
+GROUP : 56900, Test Num : 5
+# Executed 56900 pipe operations between two tasks
+
+     Total time: 5.289 [sec]
+
+      92.957663 usecs/op
+          10757 ops/sec

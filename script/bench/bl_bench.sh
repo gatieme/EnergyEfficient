@@ -46,8 +46,8 @@ do
                 fi
         done
         echo -e "=====================\n\n"
-        python readlog.py  -f $LOG_DIR/$GROUP.log -g $GROUP -l $LOOP >>$RESULT_FILE
-
+        #python readlog.py  -f $LOG_DIR/$GROUP.log -g $GROUP -l $LOOP >>$RESULT_FILE
+        python readlog.py -d ./RESULT  -b $BENCH -min $MIN_GROUP -max $MAX_GROUP -step $STEP_GROUP -l $LOOP -g $GROUP >>$RESULT_FILE 
 done
 }
 

@@ -1,0 +1,35 @@
+GROUP : 75200, Test Num : 1
+# Executed 75200 pipe operations between two tasks
+
+     Total time: 6.758 [sec]
+
+      89.872221 usecs/op
+          11126 ops/sec
+GROUP : 75200, Test Num : 2
+# Executed 75200 pipe operations between two tasks
+
+     Total time: 6.984 [sec]
+
+      92.876862 usecs/op
+          10766 ops/sec
+GROUP : 75200, Test Num : 3
+# Executed 75200 pipe operations between two tasks
+
+     Total time: 7.007 [sec]
+
+      93.188790 usecs/op
+          10730 ops/sec
+GROUP : 75200, Test Num : 4
+# Executed 75200 pipe operations between two tasks
+
+     Total time: 6.967 [sec]
+
+      92.652460 usecs/op
+          10793 ops/sec
+GROUP : 75200, Test Num : 5
+# Executed 75200 pipe operations between two tasks
+
+     Total time: 6.628 [sec]
+
+      88.139947 usecs/op
+          11345 ops/sec

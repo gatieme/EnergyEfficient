@@ -1,0 +1,35 @@
+GROUP : 1700, Test Num : 1
+# Executed 1700 pipe operations between two tasks
+
+     Total time: 0.085 [sec]
+
+      50.053529 usecs/op
+          19978 ops/sec
+GROUP : 1700, Test Num : 2
+# Executed 1700 pipe operations between two tasks
+
+     Total time: 0.099 [sec]
+
+      58.803529 usecs/op
+          17005 ops/sec
+GROUP : 1700, Test Num : 3
+# Executed 1700 pipe operations between two tasks
+
+     Total time: 0.140 [sec]
+
+      82.837059 usecs/op
+          12071 ops/sec
+GROUP : 1700, Test Num : 4
+# Executed 1700 pipe operations between two tasks
+
+     Total time: 0.150 [sec]
+
+      88.397059 usecs/op
+          11312 ops/sec
+GROUP : 1700, Test Num : 5
+# Executed 1700 pipe operations between two tasks
+
+     Total time: 0.144 [sec]
+
+      85.267059 usecs/op
+          11727 ops/sec

@@ -1,0 +1,8 @@
+GROUP : 87400, Test Num : 1
+# Executed 87400 pipe operations between two tasks
+
+     Total time: 7.967 [sec]
+
+      91.160137 usecs/op
+          10969 ops/sec
+GROUP : 87400, Test Num : 2

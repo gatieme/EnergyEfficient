@@ -6,64 +6,93 @@
 
 import re
 import sys
-import urllib2
 import argparse
 import commands
 import os
 import subprocess
+import parse
+import matplotlib.pyplot as plt
+import numpy as np
+
+class PerfPlotData :
+    plotName = "none name"
+    logfile = "none path"
+    xData = []
+    yData = []
+
+    def __init__(self, plotName, logFile, xData, yData, color, marker) :
+
+        """
+        namelist        plot数据的标识, 对应各个调度算法[bl-switch, iks, hmp, hmpcb]
+        xdata           存储了横轴的数据
+        """
+        self.plotName = plotName
+        self.logFile  = logFile
+        self.xData = xData
+        self.yData = yData
+        self.color = color
+        self.marker = marker
 
 
-
-def readFile(file):
-    """
-    """
-    file_object = open(file)
-
-    try :
-
-        read_data = file_object.read( )
-        return read_data
-
-    finally :
-
-        file_object.close( )
-
-
-
-def writeData(positions, types, nums, sigalrm, sigsegv, sigill) :
-    """
-    """
-    resultfile = "./RESULT/" + nums + "/result.log"
-    file_object = open(resultfile, "a")
-    file_object.write(positions.center(10) + types.center(20) + str(sigalrm).center(10) + str(sigsegv).center(10) + str(sigill).center(10) + "\n")
-    file_object.close( )
-
-#  经验累计分布函数cumulative distribution function
-def ShowCDFPlot(xdata, ydata):
-    """
-    step  步长
-    """
-
-    #  设置图表的信息
+def ShowPerfPlot(poltDataList):
+    #http://blog.csdn.net/kkxgx/article/details/6951959
+    #http://www.mamicode.com/info-detail-280610.html
     plt.figure(num = 1, figsize = (8, 6))
     plt.title("Scheduler Bench Performance...")
     plt.xlabel("group", size = 14)
     plt.ylabel("time", size = 14)
+    for data in plotDataList :
+        #  设置图表的信息
+        print len(data.xData), len(data.yData)
+        plt.plot(data.xData, data.yData, color = data.color, linestyle = '-', marker = data.marker, label = data.plotName)
+        plt.legend(loc = "upper left")
+        #plt.savefig('cdf.png', format = 'png')
 
-    plt.plot(xdata, ydata, color = 'r', linestyle = '-', label = "cfs")
-
-    plt.legend(loc = "upper left")
-    #plt.savefig('cdf.png', format = 'png')
     plt.show()
 
 
 
+def ParsePlotData(str) :
+    # 测试字符串格式化
+    # 通过parse库可以实现与format相反的功能
+    # 其结果类似与C语言的sscanf
+    str_format =  " {:d}, {:f}"
+    xydata = parse.parse(str_format, str);
+    return xydata
 
 
+
+def ReadPlotXData(minData, maxData, step) :
+    #  生成X轴的数据，从minData~maxData，步长为step
+    xData = range(minData, maxData,  step)
+    return xData;
+
+
+def ReadPlotData(filepath, lines) :
+    fileobject = open(filepath)
+
+    xData = [ 0 ]
+    yData = [ 0 ]
+    while 1 :
+        linedata = fileobject.readlines(lines)
+
+        if not linedata:
+            break
+        for line in linedata:
+            #print line
+            xyData = ParsePlotData(line)
+            if (xyData != None) :
+                #print "data = ", xyData[0], xyData[1]
+                xData.append(xyData[0])
+                yData.append(xyData[1])
+            else :
+                #print "line = ", line
+                pass
+    return (xData, yData)
 
 if __name__ == "__main__" :
-    # 测试正则表达式
 
+#python logplot.py -d ../bench  -b messaging -min 10 -max 100 -step 10 -l 5
     reload(sys)
     sys.setdefaultencoding("utf-8")
 
@@ -79,7 +108,7 @@ if __name__ == "__main__" :
         exit(0)
 
     parser = argparse.ArgumentParser( )
-    parser.add_argument("-n", "--name", dest = "name", help = "bl-switch | iks | hmp | hmpcb...")
+    #parser.add_argument("-n", "--name", dest = "name", help = "bl-switch | iks | hmp | hmpcb...")
     parser.add_argument("-b", "--bench", dest = "bench", help = "messaging | pipe...")
     parser.add_argument("-d", "--dir", dest = "directory", help = "The Directory")
     parser.add_argument("-f", "--file", dest = "resultfile", help = "The file you want to read...")
@@ -89,12 +118,50 @@ if __name__ == "__main__" :
     parser.add_argument("-l", "--loop", dest = "loop", help = "The file you want to read...")
     args = parser.parse_args( )
 
-    resultfile = args.directory + "/" + args.name + "/perf/" + args.bench + "/"
-               + args.min_group + "-" + args.max_group + "-" +args.loop + ".log"
-    print "resultfile :", resultfile
-    #resultfile = args.resultfile
+    nameTuple = ( "bl-switch", "hmp", "hmpcb")
+    #   1）控制颜色
+    #   颜色之间的对应关系为
+    #   b---blue   c---cyan  g---green    k----black
+    #   m---magenta r---red  w---white    y----yellow
+    colorTuple = ( 'b', 'c', 'g', 'k', 'm', 'r', 'w', 'y')
+    #.  Point marker
+    #,  Pixel marker
+    #o  Circle marker
+    #v  Triangle down marker
+    #^  Triangle up marker
+    #<  Triangle left marker
+    #>  Triangle right marker
+    #1  Tripod down marker
+    #2  Tripod up marker
+    #3  Tripod left marker
+    #4  Tripod right marker
+    #s  Square marker
+    #p  Pentagon marker
+    #*  Star marker
+    #h  Hexagon marker
+    #H  Rotated hexagon D Diamond marker
+    #d  Thin diamond marker
+    #| Vertical line (vlinesymbol) marker
+    #_  Horizontal line (hline symbol) marker
+    #+  Plus marker
+    #x  Cross (x) marker
+    markerTuple= ( 'o', '^', '2', 's', 'p', '*', 'h', )
+    plotDataList = []
 
-    #print resultfile
-
-
+    #for name in nameTuple :
+    for index in range(len(nameTuple)) :
+        name = nameTuple[index]
+        color = colorTuple[index]
+        marker = markerTuple[index]
+        if (name == "NULL") :
+            break
+        resultfile = args.directory + "/" + name + "/perf/" + args.bench + "/" \
+                   + args.min_group + "-" + args.max_group + "-" + args.step_group + "-" +args.loop + ".log"
+        print "resultfile :", resultfile
+        (xData, yData) = ReadPlotData(resultfile, 1000)
+        print xData
+        print yData
+        plotdata = PerfPlotData(name, resultfile, xData, yData, color, marker)
+        plotDataList.append(plotdata)
+    ShowPerfPlot(plotDataList)
     exit(0)

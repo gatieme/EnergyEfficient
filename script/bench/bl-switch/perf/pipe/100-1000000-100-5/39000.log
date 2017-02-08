@@ -1,0 +1,35 @@
+GROUP : 39000, Test Num : 1
+# Executed 39000 pipe operations between two tasks
+
+     Total time: 3.432 [sec]
+
+      88.009641 usecs/op
+          11362 ops/sec
+GROUP : 39000, Test Num : 2
+# Executed 39000 pipe operations between two tasks
+
+     Total time: 3.562 [sec]
+
+      91.344821 usecs/op
+          10947 ops/sec
+GROUP : 39000, Test Num : 3
+# Executed 39000 pipe operations between two tasks
+
+     Total time: 3.593 [sec]
+
+      92.134231 usecs/op
+          10853 ops/sec
+GROUP : 39000, Test Num : 4
+# Executed 39000 pipe operations between two tasks
+
+     Total time: 3.590 [sec]
+
+      92.068974 usecs/op
+          10861 ops/sec
+GROUP : 39000, Test Num : 5
+# Executed 39000 pipe operations between two tasks
+
+     Total time: 3.653 [sec]
+
+      93.689333 usecs/op
+          10673 ops/sec

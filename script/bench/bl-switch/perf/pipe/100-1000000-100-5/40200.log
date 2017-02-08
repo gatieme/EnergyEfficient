@@ -1,0 +1,35 @@
+GROUP : 40200, Test Num : 1
+# Executed 40200 pipe operations between two tasks
+
+     Total time: 3.562 [sec]
+
+      88.620299 usecs/op
+          11284 ops/sec
+GROUP : 40200, Test Num : 2
+# Executed 40200 pipe operations between two tasks
+
+     Total time: 3.494 [sec]
+
+      86.932711 usecs/op
+          11503 ops/sec
+GROUP : 40200, Test Num : 3
+# Executed 40200 pipe operations between two tasks
+
+     Total time: 3.773 [sec]
+
+      93.873706 usecs/op
+          10652 ops/sec
+GROUP : 40200, Test Num : 4
+# Executed 40200 pipe operations between two tasks
+
+     Total time: 3.684 [sec]
+
+      91.648109 usecs/op
+          10911 ops/sec
+GROUP : 40200, Test Num : 5
+# Executed 40200 pipe operations between two tasks
+
+     Total time: 3.740 [sec]
+
+      93.042139 usecs/op
+          10747 ops/sec

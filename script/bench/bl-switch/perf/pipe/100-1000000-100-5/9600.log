@@ -1,0 +1,35 @@
+GROUP : 9600, Test Num : 1
+# Executed 9600 pipe operations between two tasks
+
+     Total time: 0.736 [sec]
+
+      76.753333 usecs/op
+          13028 ops/sec
+GROUP : 9600, Test Num : 2
+# Executed 9600 pipe operations between two tasks
+
+     Total time: 0.889 [sec]
+
+      92.674583 usecs/op
+          10790 ops/sec
+GROUP : 9600, Test Num : 3
+# Executed 9600 pipe operations between two tasks
+
+     Total time: 0.855 [sec]
+
+      89.066146 usecs/op
+          11227 ops/sec
+GROUP : 9600, Test Num : 4
+# Executed 9600 pipe operations between two tasks
+
+     Total time: 0.833 [sec]
+
+      86.856771 usecs/op
+          11513 ops/sec
+GROUP : 9600, Test Num : 5
+# Executed 9600 pipe operations between two tasks
+
+     Total time: 0.820 [sec]
+
+      85.421771 usecs/op
+          11706 ops/sec

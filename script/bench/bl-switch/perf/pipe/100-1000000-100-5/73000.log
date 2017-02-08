@@ -1,0 +1,35 @@
+GROUP : 73000, Test Num : 1
+# Executed 73000 pipe operations between two tasks
+
+     Total time: 6.681 [sec]
+
+      91.526658 usecs/op
+          10925 ops/sec
+GROUP : 73000, Test Num : 2
+# Executed 73000 pipe operations between two tasks
+
+     Total time: 6.813 [sec]
+
+      93.330000 usecs/op
+          10714 ops/sec
+GROUP : 73000, Test Num : 3
+# Executed 73000 pipe operations between two tasks
+
+     Total time: 6.717 [sec]
+
+      92.019918 usecs/op
+          10867 ops/sec
+GROUP : 73000, Test Num : 4
+# Executed 73000 pipe operations between two tasks
+
+     Total time: 6.765 [sec]
+
+      92.681356 usecs/op
+          10789 ops/sec
+GROUP : 73000, Test Num : 5
+# Executed 73000 pipe operations between two tasks
+
+     Total time: 6.819 [sec]
+
+      93.412671 usecs/op
+          10705 ops/sec

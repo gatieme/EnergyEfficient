@@ -1,0 +1,8 @@
+#perf_bench = pipe
+#min_group  = 100000
+#max_group  = 100000
+#step_group = 5
+#loop_num   = 100
+#logdir     = RESULT/perf/pipe/100000-100000-5-100
+#resultfile = RESULT/perf/pipe/100000-100000-5-100.log
+100000, 5.567770

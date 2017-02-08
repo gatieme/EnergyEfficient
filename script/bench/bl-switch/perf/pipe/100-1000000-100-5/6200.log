@@ -1,0 +1,35 @@
+GROUP : 6200, Test Num : 1
+# Executed 6200 pipe operations between two tasks
+
+     Total time: 0.375 [sec]
+
+      60.584516 usecs/op
+          16505 ops/sec
+GROUP : 6200, Test Num : 2
+# Executed 6200 pipe operations between two tasks
+
+     Total time: 0.495 [sec]
+
+      79.857903 usecs/op
+          12522 ops/sec
+GROUP : 6200, Test Num : 3
+# Executed 6200 pipe operations between two tasks
+
+     Total time: 0.558 [sec]
+
+      90.012258 usecs/op
+          11109 ops/sec
+GROUP : 6200, Test Num : 4
+# Executed 6200 pipe operations between two tasks
+
+     Total time: 0.563 [sec]
+
+      90.885484 usecs/op
+          11002 ops/sec
+GROUP : 6200, Test Num : 5
+# Executed 6200 pipe operations between two tasks
+
+     Total time: 0.558 [sec]
+
+      90.043548 usecs/op
+          11105 ops/sec

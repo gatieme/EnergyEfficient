@@ -62,7 +62,7 @@ def getReItem(data) :
         pass
 
 
-def getResult(myItems):
+def getAvgResult(myItems):
     sum = 0.0
     for item in myItems :
         sum += float(item)
@@ -91,26 +91,41 @@ if __name__ == "__main__" :
         exit(0)
 
     parser = argparse.ArgumentParser( )
-    parser.add_argument("-u", "--user", dest = "user", help = "Who you want to read...")
+    #parser.add_argument("-n", "--name", dest = "name", help = "bl-switch | iks | hmp | hmpcb...")
     parser.add_argument("-d", "--dir", dest = "directory", help = "The Directory")
+    parser.add_argument("-b", "--bench", dest = "bench", help = "messaging | pipe...")
     parser.add_argument("-f", "--file", dest = "resultfile", help = "The file you want to read...")
-    parser.add_argument("-m", "--max_group", dest = "max_group", help = "The file you want to read...")
-    parser.add_argument("-g", "--group", dest = "group", help = "The file you want to read...")
+    parser.add_argument("-min", "--min_group", dest = "min_group", help = "The min group you give...")
+    parser.add_argument("-max", "--max_group", dest = "max_group", help = "The max group you give...")
+    parser.add_argument("-step", "--step_group", dest = "step_group", help = "The step of the group grown you  give...")
+    parser.add_argument("-g", "--curr_group", dest = "curr_group", help = "The step of the group grown you  give...")
     parser.add_argument("-l", "--loop", dest = "loop", help = "The file you want to read...")
     args = parser.parse_args( )
 
-    #resultfile = "./RESULT/" + args.user + "/" +args.max_group + "-" +args.loop + "/" + args.group + ".log"
-    resultfile = args.resultfile
+    if (args.resultfile == None) :
+        resultfile = args.directory + "/perf/" + args.bench + "/"                                           \
+                   + args.min_group + "-" + args.max_group + "-" + args.step_group + "-" +args.loop + "/"   \
+                   + args.curr_group + ".log"
+    else :
+        resultfile = args.resultfile
 
     #print resultfile
     resultdata = readFile(resultfile)
     #print resultdata
     myItems = getReItem(resultdata)
     #print len(myItems), myItems
-    if (len(myItems) != int(args.loop)) :
-        print "miss something in read %s" % (resultfile)
+
+    avg = getAvgResult(myItems)
+    if ((args.min_group + args.step_group) > args.max_group) :  #  同一个循环多次
+        print "avg = %f" % (avg)
+        for i in range(len(myItems)) :
+            print "%d, %f" % (i + 1, float(myItems[i]))
+    else :
+        if (len(myItems) != int(args.loop)) :
+            print "miss something in read %sm, len = %d" % (resultfile, len(myItems))
         exit(-1)
-    result = getResult(myItems)
-    print "%4s, %f" %(args.group, result)
+
+        print "%4s, %f" %(args.group, avg)
+    
     exit(0)
 

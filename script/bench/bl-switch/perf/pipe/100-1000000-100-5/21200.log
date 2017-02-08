@@ -1,0 +1,35 @@
+GROUP : 21200, Test Num : 1
+# Executed 21200 pipe operations between two tasks
+
+     Total time: 1.787 [sec]
+
+      84.317406 usecs/op
+          11859 ops/sec
+GROUP : 21200, Test Num : 2
+# Executed 21200 pipe operations between two tasks
+
+     Total time: 1.971 [sec]
+
+      92.972123 usecs/op
+          10755 ops/sec
+GROUP : 21200, Test Num : 3
+# Executed 21200 pipe operations between two tasks
+
+     Total time: 1.985 [sec]
+
+      93.668349 usecs/op
+          10675 ops/sec
+GROUP : 21200, Test Num : 4
+# Executed 21200 pipe operations between two tasks
+
+     Total time: 1.980 [sec]
+
+      93.407594 usecs/op
+          10705 ops/sec
+GROUP : 21200, Test Num : 5
+# Executed 21200 pipe operations between two tasks
+
+     Total time: 1.992 [sec]
+
+      93.981038 usecs/op
+          10640 ops/sec

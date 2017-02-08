@@ -1,0 +1,70 @@
+GROUP : 2000, Test Num : 1
+# Executed 2000 pipe operations between two tasks
+
+     Total time: 0.094 [sec]
+
+      47.193500 usecs/op
+          21189 ops/sec
+GROUP : 2000, Test Num : 2
+# Executed 2000 pipe operations between two tasks
+
+     Total time: 0.085 [sec]
+
+      42.963500 usecs/op
+          23275 ops/sec
+GROUP : 2000, Test Num : 3
+# Executed 2000 pipe operations between two tasks
+
+     Total time: 0.140 [sec]
+
+      70.467500 usecs/op
+          14190 ops/sec
+GROUP : 2000, Test Num : 4
+# Executed 2000 pipe operations between two tasks
+
+     Total time: 0.231 [sec]
+
+     115.506000 usecs/op
+           8657 ops/sec
+GROUP : 2000, Test Num : 5
+# Executed 2000 pipe operations between two tasks
+
+     Total time: 0.150 [sec]
+
+      75.396500 usecs/op
+          13263 ops/sec
+GROUP : 2000, Test Num : 6
+# Executed 2000 pipe operations between two tasks
+
+     Total time: 0.165 [sec]
+
+      82.829500 usecs/op
+          12072 ops/sec
+GROUP : 2000, Test Num : 7
+# Executed 2000 pipe operations between two tasks
+
+     Total time: 0.159 [sec]
+
+      79.792500 usecs/op
+          12532 ops/sec
+GROUP : 2000, Test Num : 8
+# Executed 2000 pipe operations between two tasks
+
+     Total time: 0.181 [sec]
+
+      90.899500 usecs/op
+          11001 ops/sec
+GROUP : 2000, Test Num : 9
+# Executed 2000 pipe operations between two tasks
+
+     Total time: 0.159 [sec]
+
+      79.771000 usecs/op
+          12535 ops/sec
+GROUP : 2000, Test Num : 10
+# Executed 2000 pipe operations between two tasks
+
+     Total time: 0.169 [sec]
+
+      84.738500 usecs/op
+          11801 ops/sec

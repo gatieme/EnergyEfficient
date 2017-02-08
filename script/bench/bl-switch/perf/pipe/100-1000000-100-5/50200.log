@@ -1,0 +1,35 @@
+GROUP : 50200, Test Num : 1
+# Executed 50200 pipe operations between two tasks
+
+     Total time: 4.548 [sec]
+
+      90.598406 usecs/op
+          11037 ops/sec
+GROUP : 50200, Test Num : 2
+# Executed 50200 pipe operations between two tasks
+
+     Total time: 4.639 [sec]
+
+      92.414960 usecs/op
+          10820 ops/sec
+GROUP : 50200, Test Num : 3
+# Executed 50200 pipe operations between two tasks
+
+     Total time: 4.656 [sec]
+
+      92.752968 usecs/op
+          10781 ops/sec
+GROUP : 50200, Test Num : 4
+# Executed 50200 pipe operations between two tasks
+
+     Total time: 4.663 [sec]
+
+      92.898665 usecs/op
+          10764 ops/sec
+GROUP : 50200, Test Num : 5
+# Executed 50200 pipe operations between two tasks
+
+     Total time: 4.680 [sec]
+
+      93.241434 usecs/op
+          10724 ops/sec

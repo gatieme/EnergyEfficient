@@ -1,0 +1,35 @@
+GROUP : 40900, Test Num : 1
+# Executed 40900 pipe operations between two tasks
+
+     Total time: 3.649 [sec]
+
+      89.223716 usecs/op
+          11207 ops/sec
+GROUP : 40900, Test Num : 2
+# Executed 40900 pipe operations between two tasks
+
+     Total time: 3.870 [sec]
+
+      94.623301 usecs/op
+          10568 ops/sec
+GROUP : 40900, Test Num : 3
+# Executed 40900 pipe operations between two tasks
+
+     Total time: 3.769 [sec]
+
+      92.158215 usecs/op
+          10850 ops/sec
+GROUP : 40900, Test Num : 4
+# Executed 40900 pipe operations between two tasks
+
+     Total time: 3.841 [sec]
+
+      93.914499 usecs/op
+          10647 ops/sec
+GROUP : 40900, Test Num : 5
+# Executed 40900 pipe operations between two tasks
+
+     Total time: 3.791 [sec]
+
+      92.710611 usecs/op
+          10786 ops/sec

@@ -1,0 +1,35 @@
+GROUP : 8700, Test Num : 1
+# Executed 8700 pipe operations between two tasks
+
+     Total time: 0.638 [sec]
+
+      73.368046 usecs/op
+          13629 ops/sec
+GROUP : 8700, Test Num : 2
+# Executed 8700 pipe operations between two tasks
+
+     Total time: 0.743 [sec]
+
+      85.452069 usecs/op
+          11702 ops/sec
+GROUP : 8700, Test Num : 3
+# Executed 8700 pipe operations between two tasks
+
+     Total time: 0.797 [sec]
+
+      91.687931 usecs/op
+          10906 ops/sec
+GROUP : 8700, Test Num : 4
+# Executed 8700 pipe operations between two tasks
+
+     Total time: 0.805 [sec]
+
+      92.562759 usecs/op
+          10803 ops/sec
+GROUP : 8700, Test Num : 5
+# Executed 8700 pipe operations between two tasks
+
+     Total time: 0.737 [sec]
+
+      84.811954 usecs/op
+          11790 ops/sec
