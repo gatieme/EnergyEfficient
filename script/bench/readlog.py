@@ -119,7 +119,7 @@ if __name__ == "__main__" :
     if ((args.min_group + args.step_group) > args.max_group) :  #  同一个循环多次
         print "avg = %f" % (avg)
         for i in range(len(myItems)) :
-            print "%d, %f" % (i + 1, float(myItems[i]))
+            print "%4d, %f" % (i + 1, float(myItems[i]))
     else :
         if (len(myItems) != int(args.loop)) :
             print "miss something in read %sm, len = %d" % (resultfile, len(myItems))
