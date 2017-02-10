@@ -145,7 +145,7 @@ if __name__ == "__main__" :
     #_  Horizontal line (hline symbol) marker
     #+  Plus marker
     #x  Cross (x) marker
-    markerTuple= ( 'o', '^', '2', 's', 'p', '*', 'h', )
+    markerTuple= ( 'o', '^', '*', 's', 'p', '2', 'h', )
     plotDataList = []
 
     #for name in nameTuple :
