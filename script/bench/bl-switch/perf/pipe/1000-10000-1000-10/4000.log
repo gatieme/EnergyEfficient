@@ -1,0 +1,70 @@
+GROUP : 4000, Test Num : 1
+# Executed 4000 pipe operations between two tasks
+
+     Total time: 0.201 [sec]
+
+      50.362250 usecs/op
+          19856 ops/sec
+GROUP : 4000, Test Num : 2
+# Executed 4000 pipe operations between two tasks
+
+     Total time: 0.337 [sec]
+
+      84.444500 usecs/op
+          11842 ops/sec
+GROUP : 4000, Test Num : 3
+# Executed 4000 pipe operations between two tasks
+
+     Total time: 0.361 [sec]
+
+      90.475250 usecs/op
+          11052 ops/sec
+GROUP : 4000, Test Num : 4
+# Executed 4000 pipe operations between two tasks
+
+     Total time: 0.353 [sec]
+
+      88.294250 usecs/op
+          11325 ops/sec
+GROUP : 4000, Test Num : 5
+# Executed 4000 pipe operations between two tasks
+
+     Total time: 0.358 [sec]
+
+      89.712000 usecs/op
+          11146 ops/sec
+GROUP : 4000, Test Num : 6
+# Executed 4000 pipe operations between two tasks
+
+     Total time: 0.296 [sec]
+
+      74.049250 usecs/op
+          13504 ops/sec
+GROUP : 4000, Test Num : 7
+# Executed 4000 pipe operations between two tasks
+
+     Total time: 0.355 [sec]
+
+      88.859000 usecs/op
+          11253 ops/sec
+GROUP : 4000, Test Num : 8
+# Executed 4000 pipe operations between two tasks
+
+     Total time: 0.358 [sec]
+
+      89.581500 usecs/op
+          11163 ops/sec
+GROUP : 4000, Test Num : 9
+# Executed 4000 pipe operations between two tasks
+
+     Total time: 0.350 [sec]
+
+      87.714750 usecs/op
+          11400 ops/sec
+GROUP : 4000, Test Num : 10
+# Executed 4000 pipe operations between two tasks
+
+     Total time: 0.360 [sec]
+
+      90.130250 usecs/op
+          11095 ops/sec

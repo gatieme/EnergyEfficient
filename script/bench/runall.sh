@@ -9,7 +9,7 @@ sh bl_bench.sh pipe 100 1000 100 10
 sh bl_bench.sh pipe 1000 10000 1000 10
 sh bl_bench.sh pipe 10000 100000 10000 10
 sh bl_bench.sh pipe 100000 1000000 100000 10
-sh bl_bench.sh pipe 1000 1000000 100000 10
+sh bl_bench.sh pipe 1000 1000000 1000 10
 
 
 sh bl_bench.sh pipe 1000 1000 5 100
