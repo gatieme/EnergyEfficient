@@ -116,16 +116,16 @@ if __name__ == "__main__" :
     #print len(myItems), myItems
 
     avg = getAvgResult(myItems)
-    if ((args.min_group + args.step_group) > args.max_group) :  #  同一个循环多次
+    if ((int(args.min_group) + int(args.step_group)) > int(args.max_group)) :  #  同一个循环多次
         print "avg = %f" % (avg)
         for i in range(len(myItems)) :
             print "%4d, %f" % (i + 1, float(myItems[i]))
     else :
         if (len(myItems) != int(args.loop)) :
             print "miss something in read %sm, len = %d" % (resultfile, len(myItems))
-        exit(-1)
+            exit(-1)
 
-        print "%4s, %f" %(args.group, avg)
+        print " %4s, %f" %(args.curr_group, avg)
     
     exit(0)
 

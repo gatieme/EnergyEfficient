@@ -1,6 +1,6 @@
- #perf_bench = pipe
- #max_group  = 1000000
- #loop_num   = 5
+#perf_bench = pipe
+#max_group  = 1000000
+#loop_num   = 5
  10000, 0.828800
  20000, 1.782600
  30000, 2.733000

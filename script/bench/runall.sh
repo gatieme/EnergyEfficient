@@ -1,4 +1,7 @@
 sh bl_bench.sh messaging 5 200 5 5
+sh bl_bench.sh messaging 10 100 10 10
+sh bl_bench.sh messaging 20 200 20 10
+
 sh bl_bench.sh messaging 100 100 5 100
 sh bl_bench.sh messaging 50 50 5 100
 sh bl_bench.sh messaging 20 20 5 100
