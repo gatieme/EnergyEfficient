@@ -30,4 +30,12 @@ python logplot.py -d ../bench -n RESULT  -b messaging -min 10 -max 100 -step 10 
 python logplot.py -d ../bench -b messaging -min 20 -max 20 -step 5 -l 100
 python logplot.py -d ../bench -b messaging -min 100 -max 100 -step 5 -l 100
 
-python logplot.py -d ../bench -b pipe -min 100 -max 1000000 -step 100 -l 5
+# 缺少hmpcb
+python logplot.py -d ../bench -b pipe -min 100 -max 1000 -step 100 -l 10
+python logplot.py -d ../bench -b pipe -min 1000 -max 10000 -step 1000 -l 10
+python logplot.py -d ../bench -b pipe -min 10000 -max 100000 -step 10000 -l 10
+python logplot.py -d ../bench -b pipe -min 100000 -max 1000000 -step 100000 -l 10
+
+python logplot.py -d ../bench -b pipe -min 10000 -max 10000 -step 5 -l 100
+python logplot.py -d ../bench -b pipe -min 100000 -max 100000 -step 5 -l 100
+python logplot.py -d ../bench -b pipe -min 1000000 -max 1000000 -step 5 -l 100
