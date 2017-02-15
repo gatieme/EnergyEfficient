@@ -68,11 +68,15 @@ def ReadPlotXData(minData, maxData, step) :
     return xData;
 
 
-def ReadPlotData(filepath, lines) :
+def ReadPlotData(filepath, lines, iszero) :
     fileobject = open(filepath)
 
-    xData = [ 0 ]
-    yData = [ 0 ]
+    if iszero == True :
+        xData = [ 0 ]
+        yData = [ 0 ]
+    else :
+        xData = [ ]
+        yData = [ ]
     while 1 :
         linedata = fileobject.readlines(lines)
 
@@ -158,10 +162,16 @@ if __name__ == "__main__" :
         resultfile = args.directory + "/" + name + "/perf/" + args.bench + "/" \
                    + args.min_group + "-" + args.max_group + "-" + args.step_group + "-" +args.loop + ".log"
         print "resultfile :", resultfile
-        (xData, yData) = ReadPlotData(resultfile, 1000)
+
+        if ((int(args.min_group) + int(args.step_group)) > int(args.max_group)) :  #  同一个循环多次
+            iszero = False
+        else :
+            iszero = True
+        (xData, yData) = ReadPlotData(resultfile, 1000, iszero)
         print xData
         print yData
         plotdata = PerfPlotData(name, resultfile, xData, yData, color, marker)
         plotDataList.append(plotdata)
+
     ShowPerfPlot(plotDataList)
     exit(0)

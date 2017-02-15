@@ -126,6 +126,6 @@ if __name__ == "__main__" :
             exit(-1)
 
         print " %4s, %f" %(args.curr_group, avg)
-    
+
     exit(0)
 
