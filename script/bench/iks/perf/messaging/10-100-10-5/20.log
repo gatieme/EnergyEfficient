@@ -1,0 +1,25 @@
+GROUP : 20, Test Num : 1
+# 20 sender and receiver processes per group
+# 20 groups == 800 processes run
+
+     Total time: 5.553 [sec]
+GROUP : 20, Test Num : 2
+# 20 sender and receiver processes per group
+# 20 groups == 800 processes run
+
+     Total time: 4.224 [sec]
+GROUP : 20, Test Num : 3
+# 20 sender and receiver processes per group
+# 20 groups == 800 processes run
+
+     Total time: 5.200 [sec]
+GROUP : 20, Test Num : 4
+# 20 sender and receiver processes per group
+# 20 groups == 800 processes run
+
+     Total time: 5.138 [sec]
+GROUP : 20, Test Num : 5
+# 20 sender and receiver processes per group
+# 20 groups == 800 processes run
+
+     Total time: 5.855 [sec
