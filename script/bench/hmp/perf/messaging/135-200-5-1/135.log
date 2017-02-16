@@ -1,0 +1,5 @@
+GROUP : 135, Test Num : 1
+# 20 sender and receiver processes per group
+# 135 groups == 5400 processes run
+
+     Total time: 151.862 [sec]
