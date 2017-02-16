@@ -122,7 +122,7 @@ if __name__ == "__main__" :
     parser.add_argument("-l", "--loop", dest = "loop", help = "The file you want to read...")
     args = parser.parse_args( )
 
-    nameTuple = ( "bl-switch", "hmp", "hmpcb")
+    nameTuple = ( "bl-switch", "iks", "hmp", "hmpcb")
     #   1）控制颜色
     #   颜色之间的对应关系为
     #   b---blue   c---cyan  g---green    k----black

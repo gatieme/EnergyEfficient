@@ -1,0 +1,7 @@
+#perf_bench = messaging
+#min_group  = 100
+#max_group  = 100
+#step_group = 3
+#loop_num   = 100
+#logdir     = RESULT/perf/messaging/100-100-3-100
+#resultfile = RESULT/perf/messaging/100-100-3-100.log
