@@ -56,9 +56,10 @@ def ParsePlotData(str) :
     # 测试字符串格式化
     # 通过parse库可以实现与format相反的功能
     # 其结果类似与C语言的sscanf
-    str_format =  " {:d}, {:f}"
-    xydata = parse.parse(str_format, str);
-    return xydata
+    str_format =  "{:s}{:d}, {:f}"
+    xydata = parse.parse(str_format, str)
+    #print xydata
+    return xydata #(xydata[1], xydata[2])
 
 
 
@@ -87,8 +88,8 @@ def ReadPlotData(filepath, lines, iszero) :
             xyData = ParsePlotData(line)
             if (xyData != None) :
                 #print "data = ", xyData[0], xyData[1]
-                xData.append(xyData[0])
-                yData.append(xyData[1])
+                xData.append(xyData[1])
+                yData.append(xyData[2])
             else :
                 #print "line = ", line
                 pass
@@ -170,6 +171,7 @@ if __name__ == "__main__" :
         (xData, yData) = ReadPlotData(resultfile, 1000, iszero)
         print xData
         print yData
+        print ""
         plotdata = PerfPlotData(name, resultfile, xData, yData, color, marker)
         plotDataList.append(plotdata)
 
