@@ -162,6 +162,7 @@ if __name__ == "__main__" :
             break
         resultfile = args.directory + "/" + name + "/perf/" + args.bench + "/" \
                    + args.min_group + "-" + args.max_group + "-" + args.step_group + "-" +args.loop + ".log"
+        print "\n=========================================="
         print "resultfile :", resultfile
 
         if ((int(args.min_group) + int(args.step_group)) > int(args.max_group)) :  #  同一个循环多次
@@ -169,9 +170,10 @@ if __name__ == "__main__" :
         else :
             iszero = True
         (xData, yData) = ReadPlotData(resultfile, 1000, iszero)
+        print "+++++++", len(xData), len(yData), "+++++++"
         print xData
         print yData
-        print ""
+        print "==========================================\n"
         plotdata = PerfPlotData(name, resultfile, xData, yData, color, marker)
         plotDataList.append(plotdata)
 
