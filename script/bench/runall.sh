@@ -1,3 +1,16 @@
+#perf
+#
+#Parsec
+#
+#splash2
+#
+#SPEC bench 
+#
+#openmp Rodinia benchmark 
+#
+#Essays.se: OPENMPBENCH
+
+
 sh bl_bench.sh messaging 5 200 5 5
 sh bl_bench.sh messaging 10 100 10 10
 sh bl_bench.sh messaging 20 200 20 10
