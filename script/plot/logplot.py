@@ -11,6 +11,7 @@ import commands
 import os
 import subprocess
 import parse
+import matplotlib as mpl 
 import matplotlib.pyplot as plt
 import numpy as np
 
@@ -37,10 +38,19 @@ class PerfPlotData :
 def ShowPerfPlot(poltDataList):
     #http://blog.csdn.net/kkxgx/article/details/6951959
     #http://www.mamicode.com/info-detail-280610.html
-    plt.figure(num = 1, figsize = (8, 6))
-    plt.title("Scheduler Bench Performance...")
+    #http://blog.csdn.net/panda1234lee/article/details/52311593
+    #  中文信息支持
+    mpl.rcParams['font.sans-serif'] = ['SimHei'] #用来正常显示中文标签  
+    mpl.rcParams['axes.unicode_minus'] = False #用来正常显示负号  
+    #自动调整label显示方式，如果太挤则倾斜显示
+    fig = plt.figure(num = 1, figsize = (8, 6))
+    fig.autofmt_xdate( )
+    #plt.title("Scheduler Bench Performance...")
+    plt.title("调度器benchmark")
     plt.xlabel("group", size = 14)
     plt.ylabel("time", size = 14)
+    plt.grid( ) # 开启网格 
+    
     for data in plotDataList :
         #  设置图表的信息
         print len(data.xData), len(data.yData)
@@ -48,7 +58,7 @@ def ShowPerfPlot(poltDataList):
         plt.legend(loc = "upper left")
         #plt.savefig('cdf.png', format = 'png')
 
-    plt.show()
+    plt.show( )
 
 
 
