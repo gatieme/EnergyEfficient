@@ -55,7 +55,7 @@ def ShowPerfPlot(poltDataList):
         #  设置图表的信息
         print len(data.xData), len(data.yData)
         plt.plot(data.xData, data.yData, color = data.color, linestyle = '-', marker = data.marker, label = data.plotName)
-        plt.legend(loc = "upper left")
+        plt.legend(loc = "upper right")
         #plt.savefig('cdf.png', format = 'png')
 
     plt.show( )
