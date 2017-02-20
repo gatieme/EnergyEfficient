@@ -1,0 +1,4900 @@
+Test Num : 1
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1144728677
+COMPUTEEND = 1145780261
+COMPUTETIME (after initialization) = 1051584
+Measured Time (2nd timestep onward) = 523915
+Intramolecular time only (2nd timestep onward) = 12225
+Intermolecular time only (2nd timestep onward) = 511492
+Other time (2nd timestep onward) = 198
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 2
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1145820843
+COMPUTEEND = 1146904050
+COMPUTETIME (after initialization) = 1083207
+Measured Time (2nd timestep onward) = 526611
+Intramolecular time only (2nd timestep onward) = 12407
+Intermolecular time only (2nd timestep onward) = 514012
+Other time (2nd timestep onward) = 192
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 3
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1146944021
+COMPUTEEND = 1147843246
+COMPUTETIME (after initialization) = 899225
+Measured Time (2nd timestep onward) = 523874
+Intramolecular time only (2nd timestep onward) = 12265
+Intermolecular time only (2nd timestep onward) = 511408
+Other time (2nd timestep onward) = 201
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 4
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1147883395
+COMPUTEEND = 1148969107
+COMPUTETIME (after initialization) = 1085712
+Measured Time (2nd timestep onward) = 524066
+Intramolecular time only (2nd timestep onward) = 12241
+Intermolecular time only (2nd timestep onward) = 511628
+Other time (2nd timestep onward) = 197
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 5
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1149009311
+COMPUTEEND = 1150095536
+COMPUTETIME (after initialization) = 1086225
+Measured Time (2nd timestep onward) = 524399
+Intramolecular time only (2nd timestep onward) = 12327
+Intermolecular time only (2nd timestep onward) = 511871
+Other time (2nd timestep onward) = 201
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 6
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1150135501
+COMPUTEEND = 1151197970
+COMPUTETIME (after initialization) = 1062469
+Measured Time (2nd timestep onward) = 525128
+Intramolecular time only (2nd timestep onward) = 12162
+Intermolecular time only (2nd timestep onward) = 512767
+Other time (2nd timestep onward) = 199
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 7
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1151237901
+COMPUTEEND = 1152297207
+COMPUTETIME (after initialization) = 1059306
+Measured Time (2nd timestep onward) = 524935
+Intramolecular time only (2nd timestep onward) = 12250
+Intermolecular time only (2nd timestep onward) = 512486
+Other time (2nd timestep onward) = 199
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 8
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1152337217
+COMPUTEEND = 1153417637
+COMPUTETIME (after initialization) = 1080420
+Measured Time (2nd timestep onward) = 524243
+Intramolecular time only (2nd timestep onward) = 12162
+Intermolecular time only (2nd timestep onward) = 511885
+Other time (2nd timestep onward) = 196
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 9
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1153457567
+COMPUTEEND = 1154527343
+COMPUTETIME (after initialization) = 1069776
+Measured Time (2nd timestep onward) = 523658
+Intramolecular time only (2nd timestep onward) = 12215
+Intermolecular time only (2nd timestep onward) = 511250
+Other time (2nd timestep onward) = 193
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 10
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1154567202
+COMPUTEEND = 1155624106
+COMPUTETIME (after initialization) = 1056904
+Measured Time (2nd timestep onward) = 525237
+Intramolecular time only (2nd timestep onward) = 12243
+Intermolecular time only (2nd timestep onward) = 512765
+Other time (2nd timestep onward) = 229
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 11
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1155666258
+COMPUTEEND = 1156568340
+COMPUTETIME (after initialization) = 902082
+Measured Time (2nd timestep onward) = 525264
+Intramolecular time only (2nd timestep onward) = 12261
+Intermolecular time only (2nd timestep onward) = 512808
+Other time (2nd timestep onward) = 195
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 12
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1156608467
+COMPUTEEND = 1157675517
+COMPUTETIME (after initialization) = 1067050
+Measured Time (2nd timestep onward) = 524144
+Intramolecular time only (2nd timestep onward) = 12221
+Intermolecular time only (2nd timestep onward) = 511729
+Other time (2nd timestep onward) = 194
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 13
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1157715221
+COMPUTEEND = 1158777365
+COMPUTETIME (after initialization) = 1062144
+Measured Time (2nd timestep onward) = 523950
+Intramolecular time only (2nd timestep onward) = 12183
+Intermolecular time only (2nd timestep onward) = 511570
+Other time (2nd timestep onward) = 197
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 14
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1158817454
+COMPUTEEND = 1159773329
+COMPUTETIME (after initialization) = 955875
+Measured Time (2nd timestep onward) = 524463
+Intramolecular time only (2nd timestep onward) = 12290
+Intermolecular time only (2nd timestep onward) = 511972
+Other time (2nd timestep onward) = 201
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 15
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1159813515
+COMPUTEEND = 1160884006
+COMPUTETIME (after initialization) = 1070491
+Measured Time (2nd timestep onward) = 553836
+Intramolecular time only (2nd timestep onward) = 12263
+Intermolecular time only (2nd timestep onward) = 541220
+Other time (2nd timestep onward) = 353
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 16
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1160925697
+COMPUTEEND = 1161825818
+COMPUTETIME (after initialization) = 900121
+Measured Time (2nd timestep onward) = 524531
+Intramolecular time only (2nd timestep onward) = 12222
+Intermolecular time only (2nd timestep onward) = 512099
+Other time (2nd timestep onward) = 210
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 17
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1161868219
+COMPUTEEND = 1162942804
+COMPUTETIME (after initialization) = 1074585
+Measured Time (2nd timestep onward) = 524386
+Intramolecular time only (2nd timestep onward) = 12234
+Intermolecular time only (2nd timestep onward) = 511954
+Other time (2nd timestep onward) = 198
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 18
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1162982853
+COMPUTEEND = 1164062831
+COMPUTETIME (after initialization) = 1079978
+Measured Time (2nd timestep onward) = 524416
+Intramolecular time only (2nd timestep onward) = 12384
+Intermolecular time only (2nd timestep onward) = 511831
+Other time (2nd timestep onward) = 201
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 19
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1164103037
+COMPUTEEND = 1165033425
+COMPUTETIME (after initialization) = 930388
+Measured Time (2nd timestep onward) = 525269
+Intramolecular time only (2nd timestep onward) = 12297
+Intermolecular time only (2nd timestep onward) = 512776
+Other time (2nd timestep onward) = 196
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 20
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1165072997
+COMPUTEEND = 1166118049
+COMPUTETIME (after initialization) = 1045052
+Measured Time (2nd timestep onward) = 524247
+Intramolecular time only (2nd timestep onward) = 12181
+Intermolecular time only (2nd timestep onward) = 511845
+Other time (2nd timestep onward) = 221
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 21
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1166160754
+COMPUTEEND = 1167090024
+COMPUTETIME (after initialization) = 929270
+Measured Time (2nd timestep onward) = 524959
+Intramolecular time only (2nd timestep onward) = 12269
+Intermolecular time only (2nd timestep onward) = 512493
+Other time (2nd timestep onward) = 197
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 22
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1167129992
+COMPUTEEND = 1168192482
+COMPUTETIME (after initialization) = 1062490
+Measured Time (2nd timestep onward) = 525117
+Intramolecular time only (2nd timestep onward) = 12221
+Intermolecular time only (2nd timestep onward) = 512697
+Other time (2nd timestep onward) = 199
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 23
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1168232029
+COMPUTEEND = 1169311997
+COMPUTETIME (after initialization) = 1079968
+Measured Time (2nd timestep onward) = 524286
+Intramolecular time only (2nd timestep onward) = 12354
+Intermolecular time only (2nd timestep onward) = 511718
+Other time (2nd timestep onward) = 214
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 24
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1169351866
+COMPUTEEND = 1170434162
+COMPUTETIME (after initialization) = 1082296
+Measured Time (2nd timestep onward) = 524120
+Intramolecular time only (2nd timestep onward) = 12187
+Intermolecular time only (2nd timestep onward) = 511734
+Other time (2nd timestep onward) = 199
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 25
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1170474080
+COMPUTEEND = 1171530970
+COMPUTETIME (after initialization) = 1056890
+Measured Time (2nd timestep onward) = 524160
+Intramolecular time only (2nd timestep onward) = 12238
+Intermolecular time only (2nd timestep onward) = 511690
+Other time (2nd timestep onward) = 232
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 26
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1171580259
+COMPUTEEND = 1172654212
+COMPUTETIME (after initialization) = 1073953
+Measured Time (2nd timestep onward) = 525338
+Intramolecular time only (2nd timestep onward) = 12257
+Intermolecular time only (2nd timestep onward) = 512886
+Other time (2nd timestep onward) = 195
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 27
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1172694400
+COMPUTEEND = 1173774696
+COMPUTETIME (after initialization) = 1080296
+Measured Time (2nd timestep onward) = 524374
+Intramolecular time only (2nd timestep onward) = 12345
+Intermolecular time only (2nd timestep onward) = 511830
+Other time (2nd timestep onward) = 199
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 28
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1173814528
+COMPUTEEND = 1174860254
+COMPUTETIME (after initialization) = 1045726
+Measured Time (2nd timestep onward) = 524122
+Intramolecular time only (2nd timestep onward) = 12254
+Intermolecular time only (2nd timestep onward) = 511674
+Other time (2nd timestep onward) = 194
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 29
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1174899796
+COMPUTEEND = 1175975734
+COMPUTETIME (after initialization) = 1075938
+Measured Time (2nd timestep onward) = 523999
+Intramolecular time only (2nd timestep onward) = 12238
+Intermolecular time only (2nd timestep onward) = 511564
+Other time (2nd timestep onward) = 197
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 30
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1176015523
+COMPUTEEND = 1177107878
+COMPUTETIME (after initialization) = 1092355
+Measured Time (2nd timestep onward) = 527464
+Intramolecular time only (2nd timestep onward) = 12229
+Intermolecular time only (2nd timestep onward) = 515023
+Other time (2nd timestep onward) = 212
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 31
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1177147549
+COMPUTEEND = 1178233014
+COMPUTETIME (after initialization) = 1085465
+Measured Time (2nd timestep onward) = 524158
+Intramolecular time only (2nd timestep onward) = 12409
+Intermolecular time only (2nd timestep onward) = 511551
+Other time (2nd timestep onward) = 198
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 32
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1178272840
+COMPUTEEND = 1179339950
+COMPUTETIME (after initialization) = 1067110
+Measured Time (2nd timestep onward) = 524459
+Intramolecular time only (2nd timestep onward) = 12273
+Intermolecular time only (2nd timestep onward) = 511984
+Other time (2nd timestep onward) = 202
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 33
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1179379523
+COMPUTEEND = 1180440499
+COMPUTETIME (after initialization) = 1060976
+Measured Time (2nd timestep onward) = 524187
+Intramolecular time only (2nd timestep onward) = 12271
+Intermolecular time only (2nd timestep onward) = 511710
+Other time (2nd timestep onward) = 206
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 34
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1180480347
+COMPUTEEND = 1181543318
+COMPUTETIME (after initialization) = 1062971
+Measured Time (2nd timestep onward) = 525147
+Intramolecular time only (2nd timestep onward) = 12247
+Intermolecular time only (2nd timestep onward) = 512693
+Other time (2nd timestep onward) = 207
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 35
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1181583277
+COMPUTEEND = 1182664069
+COMPUTETIME (after initialization) = 1080792
+Measured Time (2nd timestep onward) = 524283
+Intramolecular time only (2nd timestep onward) = 12259
+Intermolecular time only (2nd timestep onward) = 511796
+Other time (2nd timestep onward) = 228
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 36
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1182704201
+COMPUTEEND = 1183622035
+COMPUTETIME (after initialization) = 917834
+Measured Time (2nd timestep onward) = 524189
+Intramolecular time only (2nd timestep onward) = 12248
+Intermolecular time only (2nd timestep onward) = 511740
+Other time (2nd timestep onward) = 201
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 37
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1183662231
+COMPUTEEND = 1184640493
+COMPUTETIME (after initialization) = 978262
+Measured Time (2nd timestep onward) = 524179
+Intramolecular time only (2nd timestep onward) = 12310
+Intermolecular time only (2nd timestep onward) = 511672
+Other time (2nd timestep onward) = 197
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 38
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1184680201
+COMPUTEEND = 1185716627
+COMPUTETIME (after initialization) = 1036426
+Measured Time (2nd timestep onward) = 525245
+Intramolecular time only (2nd timestep onward) = 12306
+Intermolecular time only (2nd timestep onward) = 512738
+Other time (2nd timestep onward) = 201
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 39
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1185756585
+COMPUTEEND = 1186817367
+COMPUTETIME (after initialization) = 1060782
+Measured Time (2nd timestep onward) = 524416
+Intramolecular time only (2nd timestep onward) = 12155
+Intermolecular time only (2nd timestep onward) = 512043
+Other time (2nd timestep onward) = 218
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 40
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1186860206
+COMPUTEEND = 1187942487
+COMPUTETIME (after initialization) = 1082281
+Measured Time (2nd timestep onward) = 524518
+Intramolecular time only (2nd timestep onward) = 12225
+Intermolecular time only (2nd timestep onward) = 512083
+Other time (2nd timestep onward) = 210
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 41
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1187982134
+COMPUTEEND = 1188881454
+COMPUTETIME (after initialization) = 899320
+Measured Time (2nd timestep onward) = 523806
+Intramolecular time only (2nd timestep onward) = 12208
+Intermolecular time only (2nd timestep onward) = 511396
+Other time (2nd timestep onward) = 202
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 42
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1188921661
+COMPUTEEND = 1189984558
+COMPUTETIME (after initialization) = 1062897
+Measured Time (2nd timestep onward) = 525383
+Intramolecular time only (2nd timestep onward) = 12286
+Intermolecular time only (2nd timestep onward) = 512896
+Other time (2nd timestep onward) = 201
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 43
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1190024150
+COMPUTEEND = 1191084449
+COMPUTETIME (after initialization) = 1060299
+Measured Time (2nd timestep onward) = 524133
+Intramolecular time only (2nd timestep onward) = 12211
+Intermolecular time only (2nd timestep onward) = 511723
+Other time (2nd timestep onward) = 199
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 44
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1191124544
+COMPUTEEND = 1192176448
+COMPUTETIME (after initialization) = 1051904
+Measured Time (2nd timestep onward) = 525240
+Intramolecular time only (2nd timestep onward) = 12318
+Intermolecular time only (2nd timestep onward) = 512723
+Other time (2nd timestep onward) = 199
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 45
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1192215978
+COMPUTEEND = 1193295814
+COMPUTETIME (after initialization) = 1079836
+Measured Time (2nd timestep onward) = 524126
+Intramolecular time only (2nd timestep onward) = 12312
+Intermolecular time only (2nd timestep onward) = 511585
+Other time (2nd timestep onward) = 229
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 46
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1193338290
+COMPUTEEND = 1194396711
+COMPUTETIME (after initialization) = 1058421
+Measured Time (2nd timestep onward) = 524980
+Intramolecular time only (2nd timestep onward) = 12264
+Intermolecular time only (2nd timestep onward) = 512520
+Other time (2nd timestep onward) = 196
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 47
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1194436344
+COMPUTEEND = 1195521697
+COMPUTETIME (after initialization) = 1085353
+Measured Time (2nd timestep onward) = 524004
+Intramolecular time only (2nd timestep onward) = 12324
+Intermolecular time only (2nd timestep onward) = 511482
+Other time (2nd timestep onward) = 198
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 48
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1195561287
+COMPUTEEND = 1196647102
+COMPUTETIME (after initialization) = 1085815
+Measured Time (2nd timestep onward) = 523966
+Intramolecular time only (2nd timestep onward) = 12185
+Intermolecular time only (2nd timestep onward) = 511587
+Other time (2nd timestep onward) = 194
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 49
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1196686985
+COMPUTEEND = 1197761891
+COMPUTETIME (after initialization) = 1074906
+Measured Time (2nd timestep onward) = 524169
+Intramolecular time only (2nd timestep onward) = 12196
+Intermolecular time only (2nd timestep onward) = 511687
+Other time (2nd timestep onward) = 286
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 50
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1197801701
+COMPUTEEND = 1198781976
+COMPUTETIME (after initialization) = 980275
+Measured Time (2nd timestep onward) = 525281
+Intramolecular time only (2nd timestep onward) = 12327
+Intermolecular time only (2nd timestep onward) = 512688
+Other time (2nd timestep onward) = 266
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 51
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1198822686
+COMPUTEEND = 1199898813
+COMPUTETIME (after initialization) = 1076127
+Measured Time (2nd timestep onward) = 524150
+Intramolecular time only (2nd timestep onward) = 12192
+Intermolecular time only (2nd timestep onward) = 511765
+Other time (2nd timestep onward) = 193
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 52
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1199939099
+COMPUTEEND = 1201019244
+COMPUTETIME (after initialization) = 1080145
+Measured Time (2nd timestep onward) = 524127
+Intramolecular time only (2nd timestep onward) = 12267
+Intermolecular time only (2nd timestep onward) = 511660
+Other time (2nd timestep onward) = 200
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 53
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1201058980
+COMPUTEEND = 1202145381
+COMPUTETIME (after initialization) = 1086401
+Measured Time (2nd timestep onward) = 525052
+Intramolecular time only (2nd timestep onward) = 12310
+Intermolecular time only (2nd timestep onward) = 512546
+Other time (2nd timestep onward) = 196
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 54
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1202185489
+COMPUTEEND = 1203267591
+COMPUTETIME (after initialization) = 1082102
+Measured Time (2nd timestep onward) = 525001
+Intramolecular time only (2nd timestep onward) = 12226
+Intermolecular time only (2nd timestep onward) = 512574
+Other time (2nd timestep onward) = 201
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 55
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1203307218
+COMPUTEEND = 1204381782
+COMPUTETIME (after initialization) = 1074564
+Measured Time (2nd timestep onward) = 524150
+Intramolecular time only (2nd timestep onward) = 12247
+Intermolecular time only (2nd timestep onward) = 511694
+Other time (2nd timestep onward) = 209
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 56
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1204421754
+COMPUTEEND = 1205488485
+COMPUTETIME (after initialization) = 1066731
+Measured Time (2nd timestep onward) = 524126
+Intramolecular time only (2nd timestep onward) = 12245
+Intermolecular time only (2nd timestep onward) = 511686
+Other time (2nd timestep onward) = 195
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 57
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1205528845
+COMPUTEEND = 1206614327
+COMPUTETIME (after initialization) = 1085482
+Measured Time (2nd timestep onward) = 523982
+Intramolecular time only (2nd timestep onward) = 12262
+Intermolecular time only (2nd timestep onward) = 511517
+Other time (2nd timestep onward) = 203
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 58
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1206654178
+COMPUTEEND = 1207582386
+COMPUTETIME (after initialization) = 928208
+Measured Time (2nd timestep onward) = 525000
+Intramolecular time only (2nd timestep onward) = 12238
+Intermolecular time only (2nd timestep onward) = 512568
+Other time (2nd timestep onward) = 194
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 59
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1207622065
+COMPUTEEND = 1208686283
+COMPUTETIME (after initialization) = 1064218
+Measured Time (2nd timestep onward) = 523869
+Intramolecular time only (2nd timestep onward) = 12200
+Intermolecular time only (2nd timestep onward) = 511474
+Other time (2nd timestep onward) = 195
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 60
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1208726251
+COMPUTEEND = 1209781480
+COMPUTETIME (after initialization) = 1055229
+Measured Time (2nd timestep onward) = 524401
+Intramolecular time only (2nd timestep onward) = 12179
+Intermolecular time only (2nd timestep onward) = 512025
+Other time (2nd timestep onward) = 197
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 61
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1209821204
+COMPUTEEND = 1210897404
+COMPUTETIME (after initialization) = 1076200
+Measured Time (2nd timestep onward) = 524237
+Intramolecular time only (2nd timestep onward) = 12157
+Intermolecular time only (2nd timestep onward) = 511875
+Other time (2nd timestep onward) = 205
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 62
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1210938053
+COMPUTEEND = 1212023083
+COMPUTETIME (after initialization) = 1085030
+Measured Time (2nd timestep onward) = 526150
+Intramolecular time only (2nd timestep onward) = 12232
+Intermolecular time only (2nd timestep onward) = 513720
+Other time (2nd timestep onward) = 198
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 63
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1212062639
+COMPUTEEND = 1213141535
+COMPUTETIME (after initialization) = 1078896
+Measured Time (2nd timestep onward) = 523873
+Intramolecular time only (2nd timestep onward) = 12335
+Intermolecular time only (2nd timestep onward) = 511341
+Other time (2nd timestep onward) = 197
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 64
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1213181164
+COMPUTEEND = 1214081201
+COMPUTETIME (after initialization) = 900037
+Measured Time (2nd timestep onward) = 524271
+Intramolecular time only (2nd timestep onward) = 12395
+Intermolecular time only (2nd timestep onward) = 511681
+Other time (2nd timestep onward) = 195
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 65
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1214121503
+COMPUTEEND = 1215189565
+COMPUTETIME (after initialization) = 1068062
+Measured Time (2nd timestep onward) = 524144
+Intramolecular time only (2nd timestep onward) = 12253
+Intermolecular time only (2nd timestep onward) = 511653
+Other time (2nd timestep onward) = 238
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 66
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1215237540
+COMPUTEEND = 1216315854
+COMPUTETIME (after initialization) = 1078314
+Measured Time (2nd timestep onward) = 525208
+Intramolecular time only (2nd timestep onward) = 12239
+Intermolecular time only (2nd timestep onward) = 512766
+Other time (2nd timestep onward) = 203
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 67
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1216355837
+COMPUTEEND = 1217404936
+COMPUTETIME (after initialization) = 1049099
+Measured Time (2nd timestep onward) = 523794
+Intramolecular time only (2nd timestep onward) = 12248
+Intermolecular time only (2nd timestep onward) = 511351
+Other time (2nd timestep onward) = 195
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 68
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1217445006
+COMPUTEEND = 1218515717
+COMPUTETIME (after initialization) = 1070711
+Measured Time (2nd timestep onward) = 524183
+Intramolecular time only (2nd timestep onward) = 12177
+Intermolecular time only (2nd timestep onward) = 511810
+Other time (2nd timestep onward) = 196
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 69
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1218555520
+COMPUTEEND = 1219635477
+COMPUTETIME (after initialization) = 1079957
+Measured Time (2nd timestep onward) = 524060
+Intramolecular time only (2nd timestep onward) = 12304
+Intermolecular time only (2nd timestep onward) = 511491
+Other time (2nd timestep onward) = 265
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 70
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1219675579
+COMPUTEEND = 1220744645
+COMPUTETIME (after initialization) = 1069066
+Measured Time (2nd timestep onward) = 525051
+Intramolecular time only (2nd timestep onward) = 12272
+Intermolecular time only (2nd timestep onward) = 512548
+Other time (2nd timestep onward) = 231
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 71
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1220785617
+COMPUTEEND = 1221834544
+COMPUTETIME (after initialization) = 1048927
+Measured Time (2nd timestep onward) = 524552
+Intramolecular time only (2nd timestep onward) = 12261
+Intermolecular time only (2nd timestep onward) = 512096
+Other time (2nd timestep onward) = 195
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 72
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1221874807
+COMPUTEEND = 1222853772
+COMPUTETIME (after initialization) = 978965
+Measured Time (2nd timestep onward) = 524242
+Intramolecular time only (2nd timestep onward) = 12265
+Intermolecular time only (2nd timestep onward) = 511776
+Other time (2nd timestep onward) = 201
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 73
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1222893697
+COMPUTEEND = 1223942593
+COMPUTETIME (after initialization) = 1048896
+Measured Time (2nd timestep onward) = 524180
+Intramolecular time only (2nd timestep onward) = 12292
+Intermolecular time only (2nd timestep onward) = 511690
+Other time (2nd timestep onward) = 198
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 74
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1223982400
+COMPUTEEND = 1225064194
+COMPUTETIME (after initialization) = 1081794
+Measured Time (2nd timestep onward) = 525390
+Intramolecular time only (2nd timestep onward) = 12436
+Intermolecular time only (2nd timestep onward) = 512756
+Other time (2nd timestep onward) = 198
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 75
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1225104334
+COMPUTEEND = 1226153356
+COMPUTETIME (after initialization) = 1049022
+Measured Time (2nd timestep onward) = 524291
+Intramolecular time only (2nd timestep onward) = 12295
+Intermolecular time only (2nd timestep onward) = 511787
+Other time (2nd timestep onward) = 209
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 76
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1226193242
+COMPUTEEND = 1227243907
+COMPUTETIME (after initialization) = 1050665
+Measured Time (2nd timestep onward) = 525066
+Intramolecular time only (2nd timestep onward) = 12260
+Intermolecular time only (2nd timestep onward) = 512610
+Other time (2nd timestep onward) = 196
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 77
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1227283698
+COMPUTEEND = 1228363602
+COMPUTETIME (after initialization) = 1079904
+Measured Time (2nd timestep onward) = 524145
+Intramolecular time only (2nd timestep onward) = 12309
+Intermolecular time only (2nd timestep onward) = 511635
+Other time (2nd timestep onward) = 201
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 78
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1228403422
+COMPUTEEND = 1229454149
+COMPUTETIME (after initialization) = 1050727
+Measured Time (2nd timestep onward) = 525069
+Intramolecular time only (2nd timestep onward) = 12276
+Intermolecular time only (2nd timestep onward) = 512589
+Other time (2nd timestep onward) = 204
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 79
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1229493810
+COMPUTEEND = 1230554224
+COMPUTETIME (after initialization) = 1060414
+Measured Time (2nd timestep onward) = 523981
+Intramolecular time only (2nd timestep onward) = 12217
+Intermolecular time only (2nd timestep onward) = 511567
+Other time (2nd timestep onward) = 197
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 80
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1230594070
+COMPUTEEND = 1231670065
+COMPUTETIME (after initialization) = 1075995
+Measured Time (2nd timestep onward) = 523903
+Intramolecular time only (2nd timestep onward) = 12251
+Intermolecular time only (2nd timestep onward) = 511426
+Other time (2nd timestep onward) = 226
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 81
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1231712224
+COMPUTEEND = 1232751733
+COMPUTETIME (after initialization) = 1039509
+Measured Time (2nd timestep onward) = 523929
+Intramolecular time only (2nd timestep onward) = 12258
+Intermolecular time only (2nd timestep onward) = 511476
+Other time (2nd timestep onward) = 195
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 82
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1232791562
+COMPUTEEND = 1233707667
+COMPUTETIME (after initialization) = 916105
+Measured Time (2nd timestep onward) = 525297
+Intramolecular time only (2nd timestep onward) = 12176
+Intermolecular time only (2nd timestep onward) = 512924
+Other time (2nd timestep onward) = 197
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 83
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1233747397
+COMPUTEEND = 1234813884
+COMPUTETIME (after initialization) = 1066487
+Measured Time (2nd timestep onward) = 524212
+Intramolecular time only (2nd timestep onward) = 12166
+Intermolecular time only (2nd timestep onward) = 511844
+Other time (2nd timestep onward) = 202
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 84
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1234853675
+COMPUTEEND = 1235939771
+COMPUTETIME (after initialization) = 1086096
+Measured Time (2nd timestep onward) = 524358
+Intramolecular time only (2nd timestep onward) = 12275
+Intermolecular time only (2nd timestep onward) = 511886
+Other time (2nd timestep onward) = 197
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 85
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1235979519
+COMPUTEEND = 1237066031
+COMPUTETIME (after initialization) = 1086512
+Measured Time (2nd timestep onward) = 524900
+Intramolecular time only (2nd timestep onward) = 12276
+Intermolecular time only (2nd timestep onward) = 512412
+Other time (2nd timestep onward) = 212
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 86
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1237105969
+COMPUTEEND = 1238036619
+COMPUTETIME (after initialization) = 930650
+Measured Time (2nd timestep onward) = 525410
+Intramolecular time only (2nd timestep onward) = 12242
+Intermolecular time only (2nd timestep onward) = 512970
+Other time (2nd timestep onward) = 198
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 87
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1238076348
+COMPUTEEND = 1239130731
+COMPUTETIME (after initialization) = 1054383
+Measured Time (2nd timestep onward) = 524055
+Intramolecular time only (2nd timestep onward) = 12213
+Intermolecular time only (2nd timestep onward) = 511642
+Other time (2nd timestep onward) = 200
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 88
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1239170715
+COMPUTEEND = 1240249295
+COMPUTETIME (after initialization) = 1078580
+Measured Time (2nd timestep onward) = 524436
+Intramolecular time only (2nd timestep onward) = 12306
+Intermolecular time only (2nd timestep onward) = 511934
+Other time (2nd timestep onward) = 196
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 89
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1240288925
+COMPUTEEND = 1241359065
+COMPUTETIME (after initialization) = 1070140
+Measured Time (2nd timestep onward) = 523894
+Intramolecular time only (2nd timestep onward) = 12226
+Intermolecular time only (2nd timestep onward) = 511469
+Other time (2nd timestep onward) = 199
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 90
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1241399551
+COMPUTEEND = 1242453499
+COMPUTETIME (after initialization) = 1053948
+Measured Time (2nd timestep onward) = 525219
+Intramolecular time only (2nd timestep onward) = 12309
+Intermolecular time only (2nd timestep onward) = 512684
+Other time (2nd timestep onward) = 226
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 91
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1242495723
+COMPUTEEND = 1243398000
+COMPUTETIME (after initialization) = 902277
+Measured Time (2nd timestep onward) = 525150
+Intramolecular time only (2nd timestep onward) = 12237
+Intermolecular time only (2nd timestep onward) = 512714
+Other time (2nd timestep onward) = 199
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 92
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1243437956
+COMPUTEEND = 1244507729
+COMPUTETIME (after initialization) = 1069773
+Measured Time (2nd timestep onward) = 523690
+Intramolecular time only (2nd timestep onward) = 12204
+Intermolecular time only (2nd timestep onward) = 511290
+Other time (2nd timestep onward) = 196
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 93
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1244547366
+COMPUTEEND = 1245644656
+COMPUTETIME (after initialization) = 1097290
+Measured Time (2nd timestep onward) = 525302
+Intramolecular time only (2nd timestep onward) = 13532
+Intermolecular time only (2nd timestep onward) = 511573
+Other time (2nd timestep onward) = 197
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 94
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1245684211
+COMPUTEEND = 1246757847
+COMPUTETIME (after initialization) = 1073636
+Measured Time (2nd timestep onward) = 523676
+Intramolecular time only (2nd timestep onward) = 12179
+Intermolecular time only (2nd timestep onward) = 511302
+Other time (2nd timestep onward) = 195
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 95
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1246797878
+COMPUTEEND = 1247748271
+COMPUTETIME (after initialization) = 950393
+Measured Time (2nd timestep onward) = 525448
+Intramolecular time only (2nd timestep onward) = 12225
+Intermolecular time only (2nd timestep onward) = 512990
+Other time (2nd timestep onward) = 233
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 96
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1247790655
+COMPUTEEND = 1248692107
+COMPUTETIME (after initialization) = 901452
+Measured Time (2nd timestep onward) = 525027
+Intramolecular time only (2nd timestep onward) = 12235
+Intermolecular time only (2nd timestep onward) = 512594
+Other time (2nd timestep onward) = 198
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 97
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1248732598
+COMPUTEEND = 1249811775
+COMPUTETIME (after initialization) = 1079177
+Measured Time (2nd timestep onward) = 523960
+Intramolecular time only (2nd timestep onward) = 12299
+Intermolecular time only (2nd timestep onward) = 511453
+Other time (2nd timestep onward) = 208
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 98
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1249852141
+COMPUTEEND = 1250918594
+COMPUTETIME (after initialization) = 1066453
+Measured Time (2nd timestep onward) = 524107
+Intramolecular time only (2nd timestep onward) = 12251
+Intermolecular time only (2nd timestep onward) = 511655
+Other time (2nd timestep onward) = 201
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 99
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1250958807
+COMPUTEEND = 1252045697
+COMPUTETIME (after initialization) = 1086890
+Measured Time (2nd timestep onward) = 525175
+Intramolecular time only (2nd timestep onward) = 12266
+Intermolecular time only (2nd timestep onward) = 512710
+Other time (2nd timestep onward) = 199
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)
+Test Num : 100
+Using 1 procs on 3 steps of 512 mols
+Other parameters:
+	TSTEP = 1.50e-16
+	NORDER = 6
+	NSAVE = -1
+	NRST = 3000
+	NPRINT = 3
+	NFMC = 0
+	CUTOFF = 6.212752
+
+64 boxes with 1 processors
+
+
+TEMPERATURE                =   298.00 K
+DENSITY                    =  0.99800 G/C.C.
+NUMBER OF MOLECULES        =      512
+NUMBER OF PROCESSORS       =        1
+TIME STEP                  = 1.50e-01 SEC
+ORDER USED TO SOLVE F=MA   =        6 
+NO. OF TIME STEPS          =        3 
+FREQUENCY OF DATA SAVING   =       -1 
+FREQUENCY TO WRITE RST FILE=     3000 
+xprocs = 1	yprocs = 1	zprocs = 1
+x_inc = 4	 y_inc = 4	 z_inc = 4
+x_left = 0	 y_left = 0	 z_left = 0
+SPHERICAL CUTOFF RADIUS    =   6.2128 ANGSTROM
+
+NS = 7.9999999999999893
+BOXL =  24.851010
+CUTOFF =   6.212752
+BOX_LENGTH =   6.212752
+BOX_PER_SIDE = 4
+XS =   3.106376
+ZERO = 1.55319
+WCOS = 0.585882
+WSIN = 0.756950
+***** NEW RUN STARTING FROM REGULAR LATTICE *****
+         3     4711.30613   1586.02005      9.16081     -1.85845 
+         6304.629    1430180.83630        414.12462
+COMPUTESTART (after initialization) = 1252085641
+COMPUTEEND = 1253150943
+COMPUTETIME (after initialization) = 1065302
+Measured Time (2nd timestep onward) = 527499
+Intramolecular time only (2nd timestep onward) = 12259
+Intermolecular time only (2nd timestep onward) = 515036
+Other time (2nd timestep onward) = 204
+
+Exited Happily with XTT = 6304.63 (note: XTT value is garbage if NPRINT > NSTEP)

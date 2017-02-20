@@ -1,0 +1,4000 @@
+Test Num : 1
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1673713505
+	Overall end time	          1674364032
+	Total time with initialization	              650527
+	Total time without initialization	              650507
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 2
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1674522297
+	Overall end time	          1675277531
+	Total time with initialization	              755234
+	Total time without initialization	              755212
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 3
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1675437143
+	Overall end time	          1676171776
+	Total time with initialization	              734633
+	Total time without initialization	              734610
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 4
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1676329867
+	Overall end time	          1677076088
+	Total time with initialization	              746221
+	Total time without initialization	              746195
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 5
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1677234624
+	Overall end time	          1677972321
+	Total time with initialization	              737697
+	Total time without initialization	              737674
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 6
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1678129843
+	Overall end time	          1678871263
+	Total time with initialization	              741420
+	Total time without initialization	              741398
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 7
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1679026994
+	Overall end time	          1679767659
+	Total time with initialization	              740665
+	Total time without initialization	              740643
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 8
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1679930434
+	Overall end time	          1680668221
+	Total time with initialization	              737787
+	Total time without initialization	              737760
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 9
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1680829185
+	Overall end time	          1681563615
+	Total time with initialization	              734430
+	Total time without initialization	              734403
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 10
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1681722286
+	Overall end time	          1682459643
+	Total time with initialization	              737357
+	Total time without initialization	              737331
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 11
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1682615592
+	Overall end time	          1683343732
+	Total time with initialization	              728140
+	Total time without initialization	              728118
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 12
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1683503643
+	Overall end time	          1684241026
+	Total time with initialization	              737383
+	Total time without initialization	              737356
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 13
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1684405373
+	Overall end time	          1685142279
+	Total time with initialization	              736906
+	Total time without initialization	              736884
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 14
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1685293987
+	Overall end time	          1686038593
+	Total time with initialization	              744606
+	Total time without initialization	              744584
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 15
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1686201270
+	Overall end time	          1686942237
+	Total time with initialization	              740967
+	Total time without initialization	              740943
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 16
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1687077833
+	Overall end time	          1687754685
+	Total time with initialization	              676852
+	Total time without initialization	              676829
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 17
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1687905494
+	Overall end time	          1688612578
+	Total time with initialization	              707084
+	Total time without initialization	              707060
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 18
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1688764778
+	Overall end time	          1689493857
+	Total time with initialization	              729079
+	Total time without initialization	              729056
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 19
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1689651219
+	Overall end time	          1690390051
+	Total time with initialization	              738832
+	Total time without initialization	              738809
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 20
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1690556392
+	Overall end time	          1691312123
+	Total time with initialization	              755731
+	Total time without initialization	              755704
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 21
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1691468089
+	Overall end time	          1692206577
+	Total time with initialization	              738488
+	Total time without initialization	              738465
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 22
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1692350135
+	Overall end time	          1693057165
+	Total time with initialization	              707030
+	Total time without initialization	              707008
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 23
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1693223286
+	Overall end time	          1693959974
+	Total time with initialization	              736688
+	Total time without initialization	              736661
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 24
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1694125862
+	Overall end time	          1694862123
+	Total time with initialization	              736261
+	Total time without initialization	              736234
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 25
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1695018752
+	Overall end time	          1695761908
+	Total time with initialization	              743156
+	Total time without initialization	              743128
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 26
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1695919239
+	Overall end time	          1696665210
+	Total time with initialization	              745971
+	Total time without initialization	              745948
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 27
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1696826765
+	Overall end time	          1697550032
+	Total time with initialization	              723267
+	Total time without initialization	              723239
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 28
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1697716748
+	Overall end time	          1698443642
+	Total time with initialization	              726894
+	Total time without initialization	              726868
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 29
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1698597310
+	Overall end time	          1699315585
+	Total time with initialization	              718275
+	Total time without initialization	              718255
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 30
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1699475389
+	Overall end time	          1700182854
+	Total time with initialization	              707465
+	Total time without initialization	              707356
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 31
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1700339708
+	Overall end time	          1701078898
+	Total time with initialization	              739190
+	Total time without initialization	              739167
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 32
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1701245034
+	Overall end time	          1702004650
+	Total time with initialization	              759616
+	Total time without initialization	              759589
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 33
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1702162954
+	Overall end time	          1702899569
+	Total time with initialization	              736615
+	Total time without initialization	              736594
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 34
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1703064594
+	Overall end time	          1703794210
+	Total time with initialization	              729616
+	Total time without initialization	              729591
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 35
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1703952566
+	Overall end time	          1704704985
+	Total time with initialization	              752419
+	Total time without initialization	              752396
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 36
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1704866078
+	Overall end time	          1705622584
+	Total time with initialization	              756506
+	Total time without initialization	              756480
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 37
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1705769255
+	Overall end time	          1706470031
+	Total time with initialization	              700776
+	Total time without initialization	              700756
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 38
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1706635468
+	Overall end time	          1707344503
+	Total time with initialization	              709035
+	Total time without initialization	              709008
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 39
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1707503263
+	Overall end time	          1708241086
+	Total time with initialization	              737823
+	Total time without initialization	              737798
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 40
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1708408477
+	Overall end time	          1709147461
+	Total time with initialization	              738984
+	Total time without initialization	              738958
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 41
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1709305506
+	Overall end time	          1710000807
+	Total time with initialization	              695301
+	Total time without initialization	              695281
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 42
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1710167155
+	Overall end time	          1710920721
+	Total time with initialization	              753566
+	Total time without initialization	              753539
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 43
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1711086031
+	Overall end time	          1711826695
+	Total time with initialization	              740664
+	Total time without initialization	              740637
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 44
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1711948416
+	Overall end time	          1712569693
+	Total time with initialization	              621277
+	Total time without initialization	              621256
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 45
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1712735658
+	Overall end time	          1713492477
+	Total time with initialization	              756819
+	Total time without initialization	              756796
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 46
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1713645329
+	Overall end time	          1714369153
+	Total time with initialization	              723824
+	Total time without initialization	              723799
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 47
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1714532197
+	Overall end time	          1715275171
+	Total time with initialization	              742974
+	Total time without initialization	              742953
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 48
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1715436267
+	Overall end time	          1716176467
+	Total time with initialization	              740200
+	Total time without initialization	              740173
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 49
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1716336195
+	Overall end time	          1717073858
+	Total time with initialization	              737663
+	Total time without initialization	              737640
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%
+Test Num : 50
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+	Overall start time	          1717232957
+	Overall end time	          1717973091
+	Total time with initialization	              740134
+	Total time without initialization	              740112
+Rasiosity Statistics
+
+    Histogram of interactions/elem
+	 Interactions  Occurrence
+	 -------------------------------
+	    49          1 (210000.000000)
+	    43          1 (118500.000000)
+	    40          1 (118500.000000)
+	    38          1 (5000.000000)
+	    35          2 (245000.000000)
+	    34          1 (210000.000000)
+	    32          2 (125000.000000)
+	    31          2 (210000.000000)
+	    28          2 (32265.625000)
+	    26          1 (52500.000000)
+	    25          3 (127000.000000)
+	    24          3 (285651.031250)
+	    23          1 (3828.125000)
+	    22          2 (3554.687500)
+	    21          6 (71156.250000)
+	    20          7 (20742.187500)
+	    19          12 (82259.117188)
+	    18          20 (105059.375000)
+	    17          18 (25488.064453)
+	    16          42 (16111.787109)
+	    15          26 (27641.826172)
+	    14          57 (7446.820312)
+	    13          74 (21521.533203)
+	    12          98 (13882.569336)
+	    11          51 (25080.345703)
+	    10          78 (11426.529297)
+	    9          115 (20710.306641)
+	    8          1156 (3464.927734)
+	    7          146 (11780.600586)
+	    6          154 (10559.935547)
+	    5          231 (6952.654785)
+	    4          206 (8945.261719)
+	    3          399 (4010.383545)
+	    2          535 (4820.003418)
+	    1          409 (2698.192627)
+	    0          523 (9865.489258)
+    Configurations
+	Patch assignment: Static equal number
+	Always inserting at top of list for visibility testing (not sorted)
+	Recursive pruning enabled for BSP tree traversal
+	Patch cache:      Enabled
+	Always check all other queues when task stealing (not neighbor scheme)
+    Parameters
+	Number of processors:    1
+	Number of task queues:   1
+	Number of tasks / queue: 200
+	Area epsilon:            2000.000000
+	#inter parallel refine:  5
+	#visibility comp / task: 4
+	BF epsilon:              0.015000
+	Energy convergence:      0.005000
+    Iterations to converge:   6 times
+    Resource Usage
+	Number of patches:            14
+	Total number of elements:     4386
+	Total number of interactions: 24079
+	          completely visible: 20371
+	        completely invisible: 1651
+	           partially visible: 2057
+	Interaction coherence (root interaction not counted)
+	       Common for 4 siblings: 15312
+	       Common for 3 siblings: 4368
+	       Common for 2 siblings: 2560
+	       Common for no sibling: 1535
+	Avg. elements per patch:      313.3
+	Avg. interactions per patch:  1719.9
+	Avg. interactions per element:5.5
+	Number of elements in equivalent uniform mesh: 8456
+	Elem(hierarchical)/Elem(uniform): 51.87%

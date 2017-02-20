@@ -1,0 +1,800 @@
+Test Num : 1
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          5415
+                            TIMING INFORMATION
+Start time                        :       2037578823
+Initialization finish time        :       2037593816
+Overall finish time               :       2037599231
+Total time with initialization    :            20408
+Total time without initialization :             5415
+
+Test Num : 2
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          5331
+                            TIMING INFORMATION
+Start time                        :       2037604356
+Initialization finish time        :       2037619138
+Overall finish time               :       2037624469
+Total time with initialization    :            20113
+Total time without initialization :             5331
+
+Test Num : 3
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          6048
+                            TIMING INFORMATION
+Start time                        :       2037629649
+Initialization finish time        :       2037644768
+Overall finish time               :       2037650816
+Total time with initialization    :            21167
+Total time without initialization :             6048
+
+Test Num : 4
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          7115
+                            TIMING INFORMATION
+Start time                        :       2037657120
+Initialization finish time        :       2037676335
+Overall finish time               :       2037683450
+Total time with initialization    :            26330
+Total time without initialization :             7115
+
+Test Num : 5
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          7048
+                            TIMING INFORMATION
+Start time                        :       2037689793
+Initialization finish time        :       2037709209
+Overall finish time               :       2037716257
+Total time with initialization    :            26464
+Total time without initialization :             7048
+
+Test Num : 6
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          7060
+                            TIMING INFORMATION
+Start time                        :       2037722579
+Initialization finish time        :       2037741721
+Overall finish time               :       2037748781
+Total time with initialization    :            26202
+Total time without initialization :             7060
+
+Test Num : 7
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          7051
+                            TIMING INFORMATION
+Start time                        :       2037757286
+Initialization finish time        :       2037776725
+Overall finish time               :       2037783776
+Total time with initialization    :            26490
+Total time without initialization :             7051
+
+Test Num : 8
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          7092
+                            TIMING INFORMATION
+Start time                        :       2037792227
+Initialization finish time        :       2037812037
+Overall finish time               :       2037819129
+Total time with initialization    :            26902
+Total time without initialization :             7092
+
+Test Num : 9
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          7103
+                            TIMING INFORMATION
+Start time                        :       2037827403
+Initialization finish time        :       2037846561
+Overall finish time               :       2037853664
+Total time with initialization    :            26261
+Total time without initialization :             7103
+
+Test Num : 10
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          7080
+                            TIMING INFORMATION
+Start time                        :       2037861978
+Initialization finish time        :       2037881555
+Overall finish time               :       2037888635
+Total time with initialization    :            26657
+Total time without initialization :             7080
+
+Test Num : 11
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          7090
+                            TIMING INFORMATION
+Start time                        :       2037896904
+Initialization finish time        :       2037916064
+Overall finish time               :       2037923154
+Total time with initialization    :            26250
+Total time without initialization :             7090
+
+Test Num : 12
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          7033
+                            TIMING INFORMATION
+Start time                        :       2037931481
+Initialization finish time        :       2037950793
+Overall finish time               :       2037957826
+Total time with initialization    :            26345
+Total time without initialization :             7033
+
+Test Num : 13
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          7028
+                            TIMING INFORMATION
+Start time                        :       2037966131
+Initialization finish time        :       2037985564
+Overall finish time               :       2037992592
+Total time with initialization    :            26461
+Total time without initialization :             7028
+
+Test Num : 14
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          6967
+                            TIMING INFORMATION
+Start time                        :       2038000859
+Initialization finish time        :       2038020475
+Overall finish time               :       2038027442
+Total time with initialization    :            26583
+Total time without initialization :             6967
+
+Test Num : 15
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          7082
+                            TIMING INFORMATION
+Start time                        :       2038035781
+Initialization finish time        :       2038054964
+Overall finish time               :       2038062046
+Total time with initialization    :            26265
+Total time without initialization :             7082
+
+Test Num : 16
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          7045
+                            TIMING INFORMATION
+Start time                        :       2038070398
+Initialization finish time        :       2038089671
+Overall finish time               :       2038096716
+Total time with initialization    :            26318
+Total time without initialization :             7045
+
+Test Num : 17
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          7057
+                            TIMING INFORMATION
+Start time                        :       2038105048
+Initialization finish time        :       2038124674
+Overall finish time               :       2038131731
+Total time with initialization    :            26683
+Total time without initialization :             7057
+
+Test Num : 18
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          7003
+                            TIMING INFORMATION
+Start time                        :       2038140097
+Initialization finish time        :       2038159585
+Overall finish time               :       2038166588
+Total time with initialization    :            26491
+Total time without initialization :             7003
+
+Test Num : 19
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          7050
+                            TIMING INFORMATION
+Start time                        :       2038175189
+Initialization finish time        :       2038194430
+Overall finish time               :       2038201480
+Total time with initialization    :            26291
+Total time without initialization :             7050
+
+Test Num : 20
+
+Sparse Cholesky Factorization
+     Problem:         
+     1 Processors
+     Postpass partition size: 32
+     16384 byte cache
+
+
+true partitions
+Fan-out, no block copy-across
+LB domain, embedded distribution
+No ordering
+1846 supers, 1.88 nodes/super, 82 max super
+1846/1107 supers before/after
+4029836/4389869 (1.09) ops before/after amalgamation
+before partition
+Divide for 1 P, 1 domains, 1.00 of work static, 1.00 eff, (inf overall)
+0 total domain updates
+345 max height, 4389869 ops, 4241.42 conc, 65.13 bl for 1 P
+Target partition size 0, postpass size 32
+Processor array is 1 by 1
+No redistribution
+Supers: 
+Blocks: 
+1 partitions
+1 partitions, 0 blocks
+4389869 operations for factorization
+
+                            PROCESS STATISTICS
+              Total
+ Proc         Time 
+    0          6983
+                            TIMING INFORMATION
+Start time                        :       2038209879
+Initialization finish time        :       2038229306
+Overall finish time               :       2038236289
+Total time with initialization    :            26410
+Total time without initialization :             6983
+

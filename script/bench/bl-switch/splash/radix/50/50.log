@@ -1,0 +1,1050 @@
+Test Num : 1
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          34989            9783           25171
+
+                 TIMING INFORMATION
+Start time                        :       1824632408
+Initialization finish time        :       1824843660
+Overall finish time               :       1824878649
+Total time with initialization    :           246241
+Total time without initialization :            34989
+
+Test Num : 2
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          26020            6844           19148
+
+                 TIMING INFORMATION
+Start time                        :       1824889467
+Initialization finish time        :       1825027422
+Overall finish time               :       1825053442
+Total time with initialization    :           163975
+Total time without initialization :            26020
+
+Test Num : 3
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24493            6442           18027
+
+                 TIMING INFORMATION
+Start time                        :       1825061748
+Initialization finish time        :       1825166264
+Overall finish time               :       1825190757
+Total time with initialization    :           129009
+Total time without initialization :            24493
+
+Test Num : 4
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24619            6402           18189
+
+                 TIMING INFORMATION
+Start time                        :       1825198733
+Initialization finish time        :       1825296262
+Overall finish time               :       1825320881
+Total time with initialization    :           122148
+Total time without initialization :            24619
+
+Test Num : 5
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24571            6416           18130
+
+                 TIMING INFORMATION
+Start time                        :       1825328828
+Initialization finish time        :       1825426141
+Overall finish time               :       1825450712
+Total time with initialization    :           121884
+Total time without initialization :            24571
+
+Test Num : 6
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24482            6418           18039
+
+                 TIMING INFORMATION
+Start time                        :       1825458674
+Initialization finish time        :       1825556107
+Overall finish time               :       1825580589
+Total time with initialization    :           121915
+Total time without initialization :            24482
+
+Test Num : 7
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24522            6429           18070
+
+                 TIMING INFORMATION
+Start time                        :       1825588512
+Initialization finish time        :       1825685837
+Overall finish time               :       1825710359
+Total time with initialization    :           121847
+Total time without initialization :            24522
+
+Test Num : 8
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24739            6553           18155
+
+                 TIMING INFORMATION
+Start time                        :       1825718480
+Initialization finish time        :       1825816213
+Overall finish time               :       1825840952
+Total time with initialization    :           122472
+Total time without initialization :            24739
+
+Test Num : 9
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24503            6409           18068
+
+                 TIMING INFORMATION
+Start time                        :       1825848897
+Initialization finish time        :       1825946177
+Overall finish time               :       1825970680
+Total time with initialization    :           121783
+Total time without initialization :            24503
+
+Test Num : 10
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24526            6464           18040
+
+                 TIMING INFORMATION
+Start time                        :       1825978679
+Initialization finish time        :       1826076014
+Overall finish time               :       1826100540
+Total time with initialization    :           121861
+Total time without initialization :            24526
+
+Test Num : 11
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24522            6444           18055
+
+                 TIMING INFORMATION
+Start time                        :       1826108492
+Initialization finish time        :       1826205780
+Overall finish time               :       1826230302
+Total time with initialization    :           121810
+Total time without initialization :            24522
+
+Test Num : 12
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24573            6504           18046
+
+                 TIMING INFORMATION
+Start time                        :       1826238241
+Initialization finish time        :       1826335775
+Overall finish time               :       1826360348
+Total time with initialization    :           122107
+Total time without initialization :            24573
+
+Test Num : 13
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24425            6402           17999
+
+                 TIMING INFORMATION
+Start time                        :       1826368290
+Initialization finish time        :       1826465531
+Overall finish time               :       1826489956
+Total time with initialization    :           121666
+Total time without initialization :            24425
+
+Test Num : 14
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24598            6490           18081
+
+                 TIMING INFORMATION
+Start time                        :       1826497981
+Initialization finish time        :       1826595307
+Overall finish time               :       1826619905
+Total time with initialization    :           121924
+Total time without initialization :            24598
+
+Test Num : 15
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24507            6391           18092
+
+                 TIMING INFORMATION
+Start time                        :       1826628210
+Initialization finish time        :       1826725535
+Overall finish time               :       1826750042
+Total time with initialization    :           121832
+Total time without initialization :            24507
+
+Test Num : 16
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24695            6505           18164
+
+                 TIMING INFORMATION
+Start time                        :       1826758055
+Initialization finish time        :       1826856313
+Overall finish time               :       1826881008
+Total time with initialization    :           122953
+Total time without initialization :            24695
+
+Test Num : 17
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24466            6402           18040
+
+                 TIMING INFORMATION
+Start time                        :       1826889027
+Initialization finish time        :       1826986338
+Overall finish time               :       1827010804
+Total time with initialization    :           121777
+Total time without initialization :            24466
+
+Test Num : 18
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24516            6452           18040
+
+                 TIMING INFORMATION
+Start time                        :       1827018853
+Initialization finish time        :       1827116052
+Overall finish time               :       1827140568
+Total time with initialization    :           121715
+Total time without initialization :            24516
+
+Test Num : 19
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24589            6414           18149
+
+                 TIMING INFORMATION
+Start time                        :       1827148575
+Initialization finish time        :       1827245793
+Overall finish time               :       1827270382
+Total time with initialization    :           121807
+Total time without initialization :            24589
+
+Test Num : 20
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24602            6451           18126
+
+                 TIMING INFORMATION
+Start time                        :       1827278380
+Initialization finish time        :       1827375817
+Overall finish time               :       1827400419
+Total time with initialization    :           122039
+Total time without initialization :            24602
+
+Test Num : 21
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24548            6433           18089
+
+                 TIMING INFORMATION
+Start time                        :       1827408480
+Initialization finish time        :       1827505767
+Overall finish time               :       1827530315
+Total time with initialization    :           121835
+Total time without initialization :            24548
+
+Test Num : 22
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24461            6414           18021
+
+                 TIMING INFORMATION
+Start time                        :       1827538431
+Initialization finish time        :       1827635691
+Overall finish time               :       1827660152
+Total time with initialization    :           121721
+Total time without initialization :            24461
+
+Test Num : 23
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24863            6453           18383
+
+                 TIMING INFORMATION
+Start time                        :       1827668150
+Initialization finish time        :       1827765490
+Overall finish time               :       1827790353
+Total time with initialization    :           122203
+Total time without initialization :            24863
+
+Test Num : 24
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24624            6409           18189
+
+                 TIMING INFORMATION
+Start time                        :       1827798355
+Initialization finish time        :       1827896157
+Overall finish time               :       1827920781
+Total time with initialization    :           122426
+Total time without initialization :            24624
+
+Test Num : 25
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24564            6425           18114
+
+                 TIMING INFORMATION
+Start time                        :       1827928744
+Initialization finish time        :       1828026013
+Overall finish time               :       1828050577
+Total time with initialization    :           121833
+Total time without initialization :            24564
+
+Test Num : 26
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24554            6442           18089
+
+                 TIMING INFORMATION
+Start time                        :       1828058607
+Initialization finish time        :       1828155932
+Overall finish time               :       1828180486
+Total time with initialization    :           121879
+Total time without initialization :            24554
+
+Test Num : 27
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24549            6418           18107
+
+                 TIMING INFORMATION
+Start time                        :       1828188433
+Initialization finish time        :       1828285729
+Overall finish time               :       1828310278
+Total time with initialization    :           121845
+Total time without initialization :            24549
+
+Test Num : 28
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24743            6525           18189
+
+                 TIMING INFORMATION
+Start time                        :       1828318430
+Initialization finish time        :       1828415911
+Overall finish time               :       1828440654
+Total time with initialization    :           122224
+Total time without initialization :            24743
+
+Test Num : 29
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24496            6377           18096
+
+                 TIMING INFORMATION
+Start time                        :       1828448619
+Initialization finish time        :       1828545884
+Overall finish time               :       1828570380
+Total time with initialization    :           121761
+Total time without initialization :            24496
+
+Test Num : 30
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24699            6450           18219
+
+                 TIMING INFORMATION
+Start time                        :       1828578377
+Initialization finish time        :       1828675653
+Overall finish time               :       1828700352
+Total time with initialization    :           121975
+Total time without initialization :            24699
+
+Test Num : 31
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24539            6453           18061
+
+                 TIMING INFORMATION
+Start time                        :       1828708323
+Initialization finish time        :       1828805698
+Overall finish time               :       1828830237
+Total time with initialization    :           121914
+Total time without initialization :            24539
+
+Test Num : 32
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24775            6586           18161
+
+                 TIMING INFORMATION
+Start time                        :       1828838245
+Initialization finish time        :       1828935854
+Overall finish time               :       1828960629
+Total time with initialization    :           122384
+Total time without initialization :            24775
+
+Test Num : 33
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24380            6417           17939
+
+                 TIMING INFORMATION
+Start time                        :       1828968657
+Initialization finish time        :       1829066016
+Overall finish time               :       1829090396
+Total time with initialization    :           121739
+Total time without initialization :            24380
+
+Test Num : 34
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24422            6378           18018
+
+                 TIMING INFORMATION
+Start time                        :       1829098428
+Initialization finish time        :       1829195760
+Overall finish time               :       1829220182
+Total time with initialization    :           121754
+Total time without initialization :            24422
+
+Test Num : 35
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24536            6441           18073
+
+                 TIMING INFORMATION
+Start time                        :       1829228240
+Initialization finish time        :       1829325507
+Overall finish time               :       1829350043
+Total time with initialization    :           121803
+Total time without initialization :            24536
+
+Test Num : 36
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24486            6397           18066
+
+                 TIMING INFORMATION
+Start time                        :       1829358009
+Initialization finish time        :       1829455252
+Overall finish time               :       1829479738
+Total time with initialization    :           121729
+Total time without initialization :            24486
+
+Test Num : 37
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24728            6678           18020
+
+                 TIMING INFORMATION
+Start time                        :       1829487744
+Initialization finish time        :       1829585341
+Overall finish time               :       1829610069
+Total time with initialization    :           122325
+Total time without initialization :            24728
+
+Test Num : 38
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24482            6441           18018
+
+                 TIMING INFORMATION
+Start time                        :       1829618054
+Initialization finish time        :       1829715358
+Overall finish time               :       1829739840
+Total time with initialization    :           121786
+Total time without initialization :            24482
+
+Test Num : 39
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24483            6436           18024
+
+                 TIMING INFORMATION
+Start time                        :       1829747799
+Initialization finish time        :       1829845449
+Overall finish time               :       1829869932
+Total time with initialization    :           122133
+Total time without initialization :            24483
+
+Test Num : 40
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24466            6409           18036
+
+                 TIMING INFORMATION
+Start time                        :       1829877955
+Initialization finish time        :       1829975241
+Overall finish time               :       1829999707
+Total time with initialization    :           121752
+Total time without initialization :            24466
+
+Test Num : 41
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24550            6390           18136
+
+                 TIMING INFORMATION
+Start time                        :       1830007757
+Initialization finish time        :       1830105298
+Overall finish time               :       1830129848
+Total time with initialization    :           122091
+Total time without initialization :            24550
+
+Test Num : 42
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24544            6390           18131
+
+                 TIMING INFORMATION
+Start time                        :       1830137883
+Initialization finish time        :       1830235189
+Overall finish time               :       1830259733
+Total time with initialization    :           121850
+Total time without initialization :            24544
+
+Test Num : 43
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24545            6457           18064
+
+                 TIMING INFORMATION
+Start time                        :       1830267796
+Initialization finish time        :       1830365197
+Overall finish time               :       1830389742
+Total time with initialization    :           121946
+Total time without initialization :            24545
+
+Test Num : 44
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24414            6410           17982
+
+                 TIMING INFORMATION
+Start time                        :       1830397714
+Initialization finish time        :       1830494951
+Overall finish time               :       1830519365
+Total time with initialization    :           121651
+Total time without initialization :            24414
+
+Test Num : 45
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24567            6432           18112
+
+                 TIMING INFORMATION
+Start time                        :       1830527362
+Initialization finish time        :       1830625090
+Overall finish time               :       1830649657
+Total time with initialization    :           122295
+Total time without initialization :            24567
+
+Test Num : 46
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24519            6438           18058
+
+                 TIMING INFORMATION
+Start time                        :       1830657706
+Initialization finish time        :       1830755220
+Overall finish time               :       1830779739
+Total time with initialization    :           122033
+Total time without initialization :            24519
+
+Test Num : 47
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24488            6422           18044
+
+                 TIMING INFORMATION
+Start time                        :       1830787876
+Initialization finish time        :       1830885127
+Overall finish time               :       1830909615
+Total time with initialization    :           121739
+Total time without initialization :            24488
+
+Test Num : 48
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24544            6417           18103
+
+                 TIMING INFORMATION
+Start time                        :       1830917590
+Initialization finish time        :       1831014876
+Overall finish time               :       1831039420
+Total time with initialization    :           121830
+Total time without initialization :            24544
+
+Test Num : 49
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24719            6425           18267
+
+                 TIMING INFORMATION
+Start time                        :       1831047535
+Initialization finish time        :       1831145198
+Overall finish time               :       1831169917
+Total time with initialization    :           122382
+Total time without initialization :            24719
+
+Test Num : 50
+
+Integer Radix Sort
+     262144 Keys
+     1 Processors
+     Radix = 1024
+     Max key = 524288
+
+
+                 PROCESS STATISTICS
+               Total            Rank            Sort
+ Proc          Time             Time            Time
+    0          24464            6411           18032
+
+                 TIMING INFORMATION
+Start time                        :       1831177954
+Initialization finish time        :       1831275254
+Overall finish time               :       1831299718
+Total time with initialization    :           121764
+Total time without initialization :            24464
+

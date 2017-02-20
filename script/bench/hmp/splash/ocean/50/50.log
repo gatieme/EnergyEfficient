@@ -1,0 +1,1150 @@
+Test Num : 1
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            250902              79652             0.317
+
+                       TIMING INFORMATION
+Start time                        :       1841879842
+Initialization finish time        :       1842091047
+Overall finish time               :       1842341953
+Total time with initialization    :           462111
+Total time without initialization :           250906
+    (excludes first timestep)
+
+Test Num : 2
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            250246              81357             0.325
+
+                       TIMING INFORMATION
+Start time                        :       1842351264
+Initialization finish time        :       1842535121
+Overall finish time               :       1842785369
+Total time with initialization    :           434105
+Total time without initialization :           250248
+    (excludes first timestep)
+
+Test Num : 3
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            253142              78998             0.312
+
+                       TIMING INFORMATION
+Start time                        :       1842797122
+Initialization finish time        :       1843010033
+Overall finish time               :       1843263179
+Total time with initialization    :           466057
+Total time without initialization :           253146
+    (excludes first timestep)
+
+Test Num : 4
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            253056              81466             0.322
+
+                       TIMING INFORMATION
+Start time                        :       1843274459
+Initialization finish time        :       1843472745
+Overall finish time               :       1843725804
+Total time with initialization    :           451345
+Total time without initialization :           253059
+    (excludes first timestep)
+
+Test Num : 5
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            248836              77744             0.312
+
+                       TIMING INFORMATION
+Start time                        :       1843738224
+Initialization finish time        :       1843920467
+Overall finish time               :       1844169308
+Total time with initialization    :           431084
+Total time without initialization :           248841
+    (excludes first timestep)
+
+Test Num : 6
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            247507              77300             0.312
+
+                       TIMING INFORMATION
+Start time                        :       1844180458
+Initialization finish time        :       1844386203
+Overall finish time               :       1844633712
+Total time with initialization    :           453254
+Total time without initialization :           247509
+    (excludes first timestep)
+
+Test Num : 7
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            249142              77376             0.311
+
+                       TIMING INFORMATION
+Start time                        :       1844645726
+Initialization finish time        :       1844851065
+Overall finish time               :       1845100211
+Total time with initialization    :           454485
+Total time without initialization :           249146
+    (excludes first timestep)
+
+Test Num : 8
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            250420              79189             0.316
+
+                       TIMING INFORMATION
+Start time                        :       1845111596
+Initialization finish time        :       1845327789
+Overall finish time               :       1845578212
+Total time with initialization    :           466616
+Total time without initialization :           250423
+    (excludes first timestep)
+
+Test Num : 9
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            247327              77993             0.315
+
+                       TIMING INFORMATION
+Start time                        :       1845590097
+Initialization finish time        :       1845794245
+Overall finish time               :       1846041576
+Total time with initialization    :           451479
+Total time without initialization :           247331
+    (excludes first timestep)
+
+Test Num : 10
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            249921              78263             0.313
+
+                       TIMING INFORMATION
+Start time                        :       1846052380
+Initialization finish time        :       1846273189
+Overall finish time               :       1846523114
+Total time with initialization    :           470734
+Total time without initialization :           249925
+    (excludes first timestep)
+
+Test Num : 11
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            244574              74590             0.305
+
+                       TIMING INFORMATION
+Start time                        :       1846535206
+Initialization finish time        :       1846734432
+Overall finish time               :       1846979009
+Total time with initialization    :           443803
+Total time without initialization :           244577
+    (excludes first timestep)
+
+Test Num : 12
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            255744              80014             0.313
+
+                       TIMING INFORMATION
+Start time                        :       1846990253
+Initialization finish time        :       1847201129
+Overall finish time               :       1847456876
+Total time with initialization    :           466623
+Total time without initialization :           255747
+    (excludes first timestep)
+
+Test Num : 13
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            258977              86457             0.334
+
+                       TIMING INFORMATION
+Start time                        :       1847468185
+Initialization finish time        :       1847676477
+Overall finish time               :       1847935456
+Total time with initialization    :           467271
+Total time without initialization :           258979
+    (excludes first timestep)
+
+Test Num : 14
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            247721              74790             0.302
+
+                       TIMING INFORMATION
+Start time                        :       1847947502
+Initialization finish time        :       1848152046
+Overall finish time               :       1848399772
+Total time with initialization    :           452270
+Total time without initialization :           247726
+    (excludes first timestep)
+
+Test Num : 15
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            248029              77827             0.314
+
+                       TIMING INFORMATION
+Start time                        :       1848411168
+Initialization finish time        :       1848619169
+Overall finish time               :       1848867200
+Total time with initialization    :           456032
+Total time without initialization :           248031
+    (excludes first timestep)
+
+Test Num : 16
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            254322              80137             0.315
+
+                       TIMING INFORMATION
+Start time                        :       1848879220
+Initialization finish time        :       1849093545
+Overall finish time               :       1849347869
+Total time with initialization    :           468649
+Total time without initialization :           254324
+    (excludes first timestep)
+
+Test Num : 17
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            250891              78231             0.312
+
+                       TIMING INFORMATION
+Start time                        :       1849359967
+Initialization finish time        :       1849559307
+Overall finish time               :       1849810203
+Total time with initialization    :           450236
+Total time without initialization :           250896
+    (excludes first timestep)
+
+Test Num : 18
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            248086              77182             0.311
+
+                       TIMING INFORMATION
+Start time                        :       1849821869
+Initialization finish time        :       1850033878
+Overall finish time               :       1850281967
+Total time with initialization    :           460098
+Total time without initialization :           248089
+    (excludes first timestep)
+
+Test Num : 19
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            251289              78258             0.311
+
+                       TIMING INFORMATION
+Start time                        :       1850293503
+Initialization finish time        :       1850510240
+Overall finish time               :       1850761534
+Total time with initialization    :           468031
+Total time without initialization :           251294
+    (excludes first timestep)
+
+Test Num : 20
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            246989              77727             0.315
+
+                       TIMING INFORMATION
+Start time                        :       1850773185
+Initialization finish time        :       1850965734
+Overall finish time               :       1851212728
+Total time with initialization    :           439543
+Total time without initialization :           246994
+    (excludes first timestep)
+
+Test Num : 21
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            250827              76470             0.305
+
+                       TIMING INFORMATION
+Start time                        :       1851223509
+Initialization finish time        :       1851445388
+Overall finish time               :       1851696216
+Total time with initialization    :           472707
+Total time without initialization :           250828
+    (excludes first timestep)
+
+Test Num : 22
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            255098              80841             0.317
+
+                       TIMING INFORMATION
+Start time                        :       1851708568
+Initialization finish time        :       1851902241
+Overall finish time               :       1852157344
+Total time with initialization    :           448776
+Total time without initialization :           255103
+    (excludes first timestep)
+
+Test Num : 23
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            249024              77390             0.311
+
+                       TIMING INFORMATION
+Start time                        :       1852169061
+Initialization finish time        :       1852371858
+Overall finish time               :       1852620885
+Total time with initialization    :           451824
+Total time without initialization :           249027
+    (excludes first timestep)
+
+Test Num : 24
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            252653              81236             0.322
+
+                       TIMING INFORMATION
+Start time                        :       1852632159
+Initialization finish time        :       1852848922
+Overall finish time               :       1853101578
+Total time with initialization    :           469419
+Total time without initialization :           252656
+    (excludes first timestep)
+
+Test Num : 25
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            248874              78382             0.315
+
+                       TIMING INFORMATION
+Start time                        :       1853112858
+Initialization finish time        :       1853327907
+Overall finish time               :       1853576782
+Total time with initialization    :           463924
+Total time without initialization :           248875
+    (excludes first timestep)
+
+Test Num : 26
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            249237              77646             0.312
+
+                       TIMING INFORMATION
+Start time                        :       1853588675
+Initialization finish time        :       1853790174
+Overall finish time               :       1854039415
+Total time with initialization    :           450740
+Total time without initialization :           249241
+    (excludes first timestep)
+
+Test Num : 27
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            255779              81537             0.319
+
+                       TIMING INFORMATION
+Start time                        :       1854050501
+Initialization finish time        :       1854271974
+Overall finish time               :       1854527758
+Total time with initialization    :           477257
+Total time without initialization :           255784
+    (excludes first timestep)
+
+Test Num : 28
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            245204              75910             0.310
+
+                       TIMING INFORMATION
+Start time                        :       1854539788
+Initialization finish time        :       1854722177
+Overall finish time               :       1854967384
+Total time with initialization    :           427596
+Total time without initialization :           245207
+    (excludes first timestep)
+
+Test Num : 29
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            255538              82879             0.324
+
+                       TIMING INFORMATION
+Start time                        :       1854978848
+Initialization finish time        :       1855197114
+Overall finish time               :       1855452656
+Total time with initialization    :           473808
+Total time without initialization :           255542
+    (excludes first timestep)
+
+Test Num : 30
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            247810              76875             0.310
+
+                       TIMING INFORMATION
+Start time                        :       1855464046
+Initialization finish time        :       1855662707
+Overall finish time               :       1855910521
+Total time with initialization    :           446475
+Total time without initialization :           247814
+    (excludes first timestep)
+
+Test Num : 31
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            250481              78526             0.314
+
+                       TIMING INFORMATION
+Start time                        :       1855922174
+Initialization finish time        :       1856128807
+Overall finish time               :       1856379293
+Total time with initialization    :           457119
+Total time without initialization :           250486
+    (excludes first timestep)
+
+Test Num : 32
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            248512              77783             0.313
+
+                       TIMING INFORMATION
+Start time                        :       1856390319
+Initialization finish time        :       1856592900
+Overall finish time               :       1856841416
+Total time with initialization    :           451097
+Total time without initialization :           248516
+    (excludes first timestep)
+
+Test Num : 33
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            251157              81620             0.325
+
+                       TIMING INFORMATION
+Start time                        :       1856853235
+Initialization finish time        :       1857068765
+Overall finish time               :       1857319927
+Total time with initialization    :           466692
+Total time without initialization :           251162
+    (excludes first timestep)
+
+Test Num : 34
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            249413              79137             0.317
+
+                       TIMING INFORMATION
+Start time                        :       1857333265
+Initialization finish time        :       1857540887
+Overall finish time               :       1857790306
+Total time with initialization    :           457041
+Total time without initialization :           249419
+    (excludes first timestep)
+
+Test Num : 35
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            247642              77051             0.311
+
+                       TIMING INFORMATION
+Start time                        :       1857801554
+Initialization finish time        :       1858017578
+Overall finish time               :       1858265222
+Total time with initialization    :           463668
+Total time without initialization :           247644
+    (excludes first timestep)
+
+Test Num : 36
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            256001              83241             0.325
+
+                       TIMING INFORMATION
+Start time                        :       1858276540
+Initialization finish time        :       1858493406
+Overall finish time               :       1858749410
+Total time with initialization    :           472870
+Total time without initialization :           256004
+    (excludes first timestep)
+
+Test Num : 37
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            254955              82986             0.325
+
+                       TIMING INFORMATION
+Start time                        :       1858761121
+Initialization finish time        :       1858964714
+Overall finish time               :       1859219672
+Total time with initialization    :           458551
+Total time without initialization :           254958
+    (excludes first timestep)
+
+Test Num : 38
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            247606              78823             0.318
+
+                       TIMING INFORMATION
+Start time                        :       1859231153
+Initialization finish time        :       1859414161
+Overall finish time               :       1859661772
+Total time with initialization    :           430619
+Total time without initialization :           247611
+    (excludes first timestep)
+
+Test Num : 39
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            250309              77833             0.311
+
+                       TIMING INFORMATION
+Start time                        :       1859673036
+Initialization finish time        :       1859893366
+Overall finish time               :       1860143680
+Total time with initialization    :           470644
+Total time without initialization :           250314
+    (excludes first timestep)
+
+Test Num : 40
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            248788              79439             0.319
+
+                       TIMING INFORMATION
+Start time                        :       1860155353
+Initialization finish time        :       1860340008
+Overall finish time               :       1860588800
+Total time with initialization    :           433447
+Total time without initialization :           248792
+    (excludes first timestep)
+
+Test Num : 41
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            250730              78541             0.313
+
+                       TIMING INFORMATION
+Start time                        :       1860600528
+Initialization finish time        :       1860818185
+Overall finish time               :       1861068918
+Total time with initialization    :           468390
+Total time without initialization :           250733
+    (excludes first timestep)
+
+Test Num : 42
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            251567              79278             0.315
+
+                       TIMING INFORMATION
+Start time                        :       1861080359
+Initialization finish time        :       1861280328
+Overall finish time               :       1861531899
+Total time with initialization    :           451540
+Total time without initialization :           251571
+    (excludes first timestep)
+
+Test Num : 43
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            251020              78856             0.314
+
+                       TIMING INFORMATION
+Start time                        :       1861543243
+Initialization finish time        :       1861768452
+Overall finish time               :       1862019476
+Total time with initialization    :           476233
+Total time without initialization :           251024
+    (excludes first timestep)
+
+Test Num : 44
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            253035              81097             0.320
+
+                       TIMING INFORMATION
+Start time                        :       1862030686
+Initialization finish time        :       1862244656
+Overall finish time               :       1862497695
+Total time with initialization    :           467009
+Total time without initialization :           253039
+    (excludes first timestep)
+
+Test Num : 45
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            250826              79082             0.315
+
+                       TIMING INFORMATION
+Start time                        :       1862509603
+Initialization finish time        :       1862718209
+Overall finish time               :       1862969040
+Total time with initialization    :           459437
+Total time without initialization :           250831
+    (excludes first timestep)
+
+Test Num : 46
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            252210              79649             0.316
+
+                       TIMING INFORMATION
+Start time                        :       1862979967
+Initialization finish time        :       1863199308
+Overall finish time               :       1863451521
+Total time with initialization    :           471554
+Total time without initialization :           252213
+    (excludes first timestep)
+
+Test Num : 47
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            247966              76796             0.310
+
+                       TIMING INFORMATION
+Start time                        :       1863463264
+Initialization finish time        :       1863662375
+Overall finish time               :       1863910345
+Total time with initialization    :           447081
+Total time without initialization :           247970
+    (excludes first timestep)
+
+Test Num : 48
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            251355              80397             0.320
+
+                       TIMING INFORMATION
+Start time                        :       1863921868
+Initialization finish time        :       1864134432
+Overall finish time               :       1864385790
+Total time with initialization    :           463922
+Total time without initialization :           251358
+    (excludes first timestep)
+
+Test Num : 49
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            254133              81973             0.323
+
+                       TIMING INFORMATION
+Start time                        :       1864397036
+Initialization finish time        :       1864606727
+Overall finish time               :       1864860865
+Total time with initialization    :           463829
+Total time without initialization :           254138
+    (excludes first timestep)
+
+Test Num : 50
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 1
+    Grid size                          : 258 x 258
+    Grid resolution (meters)           : 20000.00
+    Time between relaxations (seconds) : 28800
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0            250890              79390             0.316
+
+                       TIMING INFORMATION
+Start time                        :       1864872101
+Initialization finish time        :       1865090921
+Overall finish time               :       1865341815
+Total time with initialization    :           469714
+Total time without initialization :           250894
+    (excludes first timestep)
+

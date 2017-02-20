@@ -119,11 +119,14 @@ perf_sched_bench_splash_run( )
                 elif [ $APPLICATION == "cholesky" ]; then
                         cd $SPLASH_KERNELS_BIN/cholesky
                         ./CHOLESKY < inputs/lshp.O >> $LOG_FILE
-                elif [ $APPLICATION == "lu" ]; then
+                elif [ $APPLICATION == "fft" ]; then
                         cd $SPLASH_KERNELS_BIN/fft
                         ./FFT >> $LOG_FILE
+                elif [ $APPLICATION == "lu" ]; then
+                        cd $SPLASH_KERNELS_BIN/lu
+                        ./LU >> $LOG_FILE
                 elif [ $APPLICATION == "radix" ]; then
-                        cd $SPLASH_KERNELS_BIN/fft >> $LOG_FILE
+                        cd $SPLASH_KERNELS_BIN/radix >> $LOG_FILE
                         ./RADIX >> $LOG_FILE
                 fi
         done

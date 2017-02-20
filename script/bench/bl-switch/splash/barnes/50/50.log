@@ -1,0 +1,750 @@
+Test Num : 1
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1368646613
+COMPUTEEND    =   1372737537
+COMPUTETIME   =      4090924
+TRACKTIME     =      1982314
+PARTITIONTIME =        11579	 0.01
+TREEBUILDTIME =        66110	 0.03
+FORCECALCTIME =      1889134	 0.95
+RESTTIME      =        15491	 0.01
+Test Num : 2
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1372788733
+COMPUTEEND    =   1376765065
+COMPUTETIME   =      3976332
+TRACKTIME     =      1980664
+PARTITIONTIME =        11544	 0.01
+TREEBUILDTIME =        65563	 0.03
+FORCECALCTIME =      1887991	 0.95
+RESTTIME      =        15566	 0.01
+Test Num : 3
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1376819597
+COMPUTEEND    =   1380904767
+COMPUTETIME   =      4085170
+TRACKTIME     =      1985574
+PARTITIONTIME =        11543	 0.01
+TREEBUILDTIME =        66317	 0.03
+FORCECALCTIME =      1892284	 0.95
+RESTTIME      =        15430	 0.01
+Test Num : 4
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1380957457
+COMPUTEEND    =   1385072770
+COMPUTETIME   =      4115313
+TRACKTIME     =      1981060
+PARTITIONTIME =        11414	 0.01
+TREEBUILDTIME =        65682	 0.03
+FORCECALCTIME =      1888497	 0.95
+RESTTIME      =        15467	 0.01
+Test Num : 5
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1385126713
+COMPUTEEND    =   1389250321
+COMPUTETIME   =      4123608
+TRACKTIME     =      1982464
+PARTITIONTIME =        11538	 0.01
+TREEBUILDTIME =        65837	 0.03
+FORCECALCTIME =      1889672	 0.95
+RESTTIME      =        15417	 0.01
+Test Num : 6
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1389301236
+COMPUTEEND    =   1393433669
+COMPUTETIME   =      4132433
+TRACKTIME     =      1983068
+PARTITIONTIME =        11413	 0.01
+TREEBUILDTIME =        65775	 0.03
+FORCECALCTIME =      1890383	 0.95
+RESTTIME      =        15497	 0.01
+Test Num : 7
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1393486450
+COMPUTEEND    =   1397627212
+COMPUTETIME   =      4140762
+TRACKTIME     =      1999564
+PARTITIONTIME =        11562	 0.01
+TREEBUILDTIME =        66017	 0.03
+FORCECALCTIME =      1906347	 0.95
+RESTTIME      =        15638	 0.01
+Test Num : 8
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1397682374
+COMPUTEEND    =   1401791133
+COMPUTETIME   =      4108759
+TRACKTIME     =      1981409
+PARTITIONTIME =        11421	 0.01
+TREEBUILDTIME =        65782	 0.03
+FORCECALCTIME =      1888822	 0.95
+RESTTIME      =        15384	 0.01
+Test Num : 9
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1401847773
+COMPUTEEND    =   1405962460
+COMPUTETIME   =      4114687
+TRACKTIME     =      1982608
+PARTITIONTIME =        11449	 0.01
+TREEBUILDTIME =        65870	 0.03
+FORCECALCTIME =      1889797	 0.95
+RESTTIME      =        15492	 0.01
+Test Num : 10
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1406013994
+COMPUTEEND    =   1410054894
+COMPUTETIME   =      4040900
+TRACKTIME     =      1979127
+PARTITIONTIME =        11607	 0.01
+TREEBUILDTIME =        65653	 0.03
+FORCECALCTIME =      1886389	 0.95
+RESTTIME      =        15478	 0.01
+Test Num : 11
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1410108301
+COMPUTEEND    =   1414237878
+COMPUTETIME   =      4129577
+TRACKTIME     =      1987378
+PARTITIONTIME =        11601	 0.01
+TREEBUILDTIME =        66154	 0.03
+FORCECALCTIME =      1894051	 0.95
+RESTTIME      =        15572	 0.01
+Test Num : 12
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1414292901
+COMPUTEEND    =   1418432055
+COMPUTETIME   =      4139154
+TRACKTIME     =      1983578
+PARTITIONTIME =        11561	 0.01
+TREEBUILDTIME =        65852	 0.03
+FORCECALCTIME =      1890760	 0.95
+RESTTIME      =        15405	 0.01
+Test Num : 13
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1418485610
+COMPUTEEND    =   1422601775
+COMPUTETIME   =      4116165
+TRACKTIME     =      1982525
+PARTITIONTIME =        11529	 0.01
+TREEBUILDTIME =        65914	 0.03
+FORCECALCTIME =      1889709	 0.95
+RESTTIME      =        15373	 0.01
+Test Num : 14
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1422652943
+COMPUTEEND    =   1426629736
+COMPUTETIME   =      3976793
+TRACKTIME     =      1981113
+PARTITIONTIME =        11626	 0.01
+TREEBUILDTIME =        65723	 0.03
+FORCECALCTIME =      1888390	 0.95
+RESTTIME      =        15374	 0.01
+Test Num : 15
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1426680760
+COMPUTEEND    =   1430826941
+COMPUTETIME   =      4146181
+TRACKTIME     =      1985919
+PARTITIONTIME =        11579	 0.01
+TREEBUILDTIME =        66149	 0.03
+FORCECALCTIME =      1892571	 0.95
+RESTTIME      =        15620	 0.01
+Test Num : 16
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1430881537
+COMPUTEEND    =   1435018845
+COMPUTETIME   =      4137308
+TRACKTIME     =      1979039
+PARTITIONTIME =        11456	 0.01
+TREEBUILDTIME =        65805	 0.03
+FORCECALCTIME =      1886371	 0.95
+RESTTIME      =        15407	 0.01
+Test Num : 17
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1435070138
+COMPUTEEND    =   1439184461
+COMPUTETIME   =      4114323
+TRACKTIME     =      1980209
+PARTITIONTIME =        11548	 0.01
+TREEBUILDTIME =        65768	 0.03
+FORCECALCTIME =      1887410	 0.95
+RESTTIME      =        15483	 0.01
+Test Num : 18
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1439237365
+COMPUTEEND    =   1443364859
+COMPUTETIME   =      4127494
+TRACKTIME     =      1982478
+PARTITIONTIME =        11512	 0.01
+TREEBUILDTIME =        65667	 0.03
+FORCECALCTIME =      1889800	 0.95
+RESTTIME      =        15499	 0.01
+Test Num : 19
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1443417949
+COMPUTEEND    =   1447544389
+COMPUTETIME   =      4126440
+TRACKTIME     =      1990053
+PARTITIONTIME =        11719	 0.01
+TREEBUILDTIME =        66091	 0.03
+FORCECALCTIME =      1896633	 0.95
+RESTTIME      =        15610	 0.01
+Test Num : 20
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1447595362
+COMPUTEEND    =   1451572623
+COMPUTETIME   =      3977261
+TRACKTIME     =      1981764
+PARTITIONTIME =        11441	 0.01
+TREEBUILDTIME =        65771	 0.03
+FORCECALCTIME =      1889101	 0.95
+RESTTIME      =        15451	 0.01
+Test Num : 21
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1451626223
+COMPUTEEND    =   1455758673
+COMPUTETIME   =      4132450
+TRACKTIME     =      1980051
+PARTITIONTIME =        11633	 0.01
+TREEBUILDTIME =        65633	 0.03
+FORCECALCTIME =      1887307	 0.95
+RESTTIME      =        15478	 0.01
+Test Num : 22
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1455811460
+COMPUTEEND    =   1459827484
+COMPUTETIME   =      4016024
+TRACKTIME     =      1981505
+PARTITIONTIME =        11587	 0.01
+TREEBUILDTIME =        65664	 0.03
+FORCECALCTIME =      1888778	 0.95
+RESTTIME      =        15476	 0.01
+Test Num : 23
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1459883129
+COMPUTEEND    =   1464048261
+COMPUTETIME   =      4165132
+TRACKTIME     =      1987249
+PARTITIONTIME =        11595	 0.01
+TREEBUILDTIME =        66207	 0.03
+FORCECALCTIME =      1893967	 0.95
+RESTTIME      =        15480	 0.01
+Test Num : 24
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1464103651
+COMPUTEEND    =   1468233670
+COMPUTETIME   =      4130019
+TRACKTIME     =      1983248
+PARTITIONTIME =        11466	 0.01
+TREEBUILDTIME =        65760	 0.03
+FORCECALCTIME =      1890550	 0.95
+RESTTIME      =        15472	 0.01
+Test Num : 25
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1468287340
+COMPUTEEND    =   1472419975
+COMPUTETIME   =      4132635
+TRACKTIME     =      1982788
+PARTITIONTIME =        11746	 0.01
+TREEBUILDTIME =        65732	 0.03
+FORCECALCTIME =      1889909	 0.95
+RESTTIME      =        15401	 0.01
+Test Num : 26
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1472470819
+COMPUTEEND    =   1476601135
+COMPUTETIME   =      4130316
+TRACKTIME     =      1981733
+PARTITIONTIME =        11494	 0.01
+TREEBUILDTIME =        65770	 0.03
+FORCECALCTIME =      1889129	 0.95
+RESTTIME      =        15340	 0.01
+Test Num : 27
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1476652906
+COMPUTEEND    =   1480818054
+COMPUTETIME   =      4165148
+TRACKTIME     =      1987430
+PARTITIONTIME =        11525	 0.01
+TREEBUILDTIME =        66089	 0.03
+FORCECALCTIME =      1894197	 0.95
+RESTTIME      =        15619	 0.01
+Test Num : 28
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1480873768
+COMPUTEEND    =   1485022598
+COMPUTETIME   =      4148830
+TRACKTIME     =      1979579
+PARTITIONTIME =        11466	 0.01
+TREEBUILDTIME =        65734	 0.03
+FORCECALCTIME =      1886912	 0.95
+RESTTIME      =        15467	 0.01
+Test Num : 29
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1485076099
+COMPUTEEND    =   1489192941
+COMPUTETIME   =      4116842
+TRACKTIME     =      1982221
+PARTITIONTIME =        11440	 0.01
+TREEBUILDTIME =        65773	 0.03
+FORCECALCTIME =      1889484	 0.95
+RESTTIME      =        15524	 0.01
+Test Num : 30
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1489243764
+COMPUTEEND    =   1493221567
+COMPUTETIME   =      3977803
+TRACKTIME     =      1982676
+PARTITIONTIME =        11574	 0.01
+TREEBUILDTIME =        65721	 0.03
+FORCECALCTIME =      1889965	 0.95
+RESTTIME      =        15416	 0.01
+Test Num : 31
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1493273736
+COMPUTEEND    =   1497416781
+COMPUTETIME   =      4143045
+TRACKTIME     =      1990364
+PARTITIONTIME =        11605	 0.01
+TREEBUILDTIME =        66173	 0.03
+FORCECALCTIME =      1897169	 0.95
+RESTTIME      =        15417	 0.01
+Test Num : 32
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1497470784
+COMPUTEEND    =   1501584322
+COMPUTETIME   =      4113538
+TRACKTIME     =      1980584
+PARTITIONTIME =        11546	 0.01
+TREEBUILDTIME =        65697	 0.03
+FORCECALCTIME =      1887851	 0.95
+RESTTIME      =        15490	 0.01
+Test Num : 33
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1501638464
+COMPUTEEND    =   1505769001
+COMPUTETIME   =      4130537
+TRACKTIME     =      1982121
+PARTITIONTIME =        11613	 0.01
+TREEBUILDTIME =        65727	 0.03
+FORCECALCTIME =      1889314	 0.95
+RESTTIME      =        15467	 0.01
+Test Num : 34
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1505820219
+COMPUTEEND    =   1509949819
+COMPUTETIME   =      4129600
+TRACKTIME     =      1981316
+PARTITIONTIME =        11612	 0.01
+TREEBUILDTIME =        65646	 0.03
+FORCECALCTIME =      1888617	 0.95
+RESTTIME      =        15441	 0.01
+Test Num : 35
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1510001283
+COMPUTEEND    =   1514146847
+COMPUTETIME   =      4145564
+TRACKTIME     =      1987623
+PARTITIONTIME =        11648	 0.01
+TREEBUILDTIME =        65996	 0.03
+FORCECALCTIME =      1894412	 0.95
+RESTTIME      =        15567	 0.01
+Test Num : 36
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1514200767
+COMPUTEEND    =   1518312160
+COMPUTETIME   =      4111393
+TRACKTIME     =      1982398
+PARTITIONTIME =        11496	 0.01
+TREEBUILDTIME =        65608	 0.03
+FORCECALCTIME =      1889832	 0.95
+RESTTIME      =        15462	 0.01
+Test Num : 37
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1518365331
+COMPUTEEND    =   1522481055
+COMPUTETIME   =      4115724
+TRACKTIME     =      1983153
+PARTITIONTIME =        11669	 0.01
+TREEBUILDTIME =        65685	 0.03
+FORCECALCTIME =      1890359	 0.95
+RESTTIME      =        15440	 0.01
+Test Num : 38
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1522531581
+COMPUTEEND    =   1526639618
+COMPUTETIME   =      4108037
+TRACKTIME     =      1980434
+PARTITIONTIME =        11534	 0.01
+TREEBUILDTIME =        65457	 0.03
+FORCECALCTIME =      1888045	 0.95
+RESTTIME      =        15398	 0.01
+Test Num : 39
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1526690320
+COMPUTEEND    =   1530842975
+COMPUTETIME   =      4152655
+TRACKTIME     =      1987369
+PARTITIONTIME =        11611	 0.01
+TREEBUILDTIME =        65872	 0.03
+FORCECALCTIME =      1894355	 0.95
+RESTTIME      =        15531	 0.01
+Test Num : 40
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1530894852
+COMPUTEEND    =   1535021065
+COMPUTETIME   =      4126213
+TRACKTIME     =      1978746
+PARTITIONTIME =        11426	 0.01
+TREEBUILDTIME =        65407	 0.03
+FORCECALCTIME =      1886545	 0.95
+RESTTIME      =        15368	 0.01
+Test Num : 41
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1535071653
+COMPUTEEND    =   1539113266
+COMPUTETIME   =      4041613
+TRACKTIME     =      1981749
+PARTITIONTIME =        11503	 0.01
+TREEBUILDTIME =        65558	 0.03
+FORCECALCTIME =      1889205	 0.95
+RESTTIME      =        15483	 0.01
+Test Num : 42
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1539164276
+COMPUTEEND    =   1543155305
+COMPUTETIME   =      3991029
+TRACKTIME     =      1981070
+PARTITIONTIME =        11602	 0.01
+TREEBUILDTIME =        65433	 0.03
+FORCECALCTIME =      1888521	 0.95
+RESTTIME      =        15514	 0.01
+Test Num : 43
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1543206554
+COMPUTEEND    =   1547211916
+COMPUTETIME   =      4005362
+TRACKTIME     =      1988795
+PARTITIONTIME =        11595	 0.01
+TREEBUILDTIME =        65805	 0.03
+FORCECALCTIME =      1895882	 0.95
+RESTTIME      =        15513	 0.01
+Test Num : 44
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1547262998
+COMPUTEEND    =   1551378486
+COMPUTETIME   =      4115488
+TRACKTIME     =      1980651
+PARTITIONTIME =        11608	 0.01
+TREEBUILDTIME =        65457	 0.03
+FORCECALCTIME =      1888093	 0.95
+RESTTIME      =        15493	 0.01
+Test Num : 45
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1551434909
+COMPUTEEND    =   1555539259
+COMPUTETIME   =      4104350
+TRACKTIME     =      1981114
+PARTITIONTIME =        11559	 0.01
+TREEBUILDTIME =        65556	 0.03
+FORCECALCTIME =      1888555	 0.95
+RESTTIME      =        15444	 0.01
+Test Num : 46
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1555589846
+COMPUTEEND    =   1559718758
+COMPUTETIME   =      4128912
+TRACKTIME     =      1979433
+PARTITIONTIME =        11649	 0.01
+TREEBUILDTIME =        65907	 0.03
+FORCECALCTIME =      1886463	 0.95
+RESTTIME      =        15414	 0.01
+Test Num : 47
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1559774521
+COMPUTEEND    =   1563920404
+COMPUTETIME   =      4145883
+TRACKTIME     =      1985819
+PARTITIONTIME =        11687	 0.01
+TREEBUILDTIME =        65874	 0.03
+FORCECALCTIME =      1892669	 0.95
+RESTTIME      =        15589	 0.01
+Test Num : 48
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1563971087
+COMPUTEEND    =   1568116899
+COMPUTETIME   =      4145812
+TRACKTIME     =      1982639
+PARTITIONTIME =        11595	 0.01
+TREEBUILDTIME =        65547	 0.03
+FORCECALCTIME =      1889997	 0.95
+RESTTIME      =        15500	 0.01
+Test Num : 49
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1568172062
+COMPUTEEND    =   1572307067
+COMPUTETIME   =      4135005
+TRACKTIME     =      1982047
+PARTITIONTIME =        11533	 0.01
+TREEBUILDTIME =        65346	 0.03
+FORCECALCTIME =      1889673	 0.95
+RESTTIME      =        15495	 0.01
+Test Num : 50
+
+		Hack code: Plummer model
+
+     nbody     dtime       eps       tol     dtout     tstop    fcells     NPROC
+     16384   0.02500    0.0500      1.00     0.250     0.075      2.00         1
+
+COMPUTESTART  =   1572361128
+COMPUTEEND    =   1576498202
+COMPUTETIME   =      4137074
+TRACKTIME     =      1981032
+PARTITIONTIME =        11626	 0.01
+TREEBUILDTIME =        65612	 0.03
+FORCECALCTIME =      1888334	 0.95
+RESTTIME      =        15460	 0.01

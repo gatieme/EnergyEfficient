@@ -1,0 +1,2400 @@
+Test Num : 1
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1058            212       0.20038
+
+                 TIMING INFORMATION
+Start time                        :       1255005241
+Initialization finish time        :       1255008945
+Overall finish time               :       1255010003
+Total time with initialization    :             4762
+Total time without initialization :             1058
+Overall transpose time            :              212
+Overall transpose fraction        :          0.20038
+
+Test Num : 2
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1052            221       0.21008
+
+                 TIMING INFORMATION
+Start time                        :       1255023083
+Initialization finish time        :       1255026762
+Overall finish time               :       1255027814
+Total time with initialization    :             4731
+Total time without initialization :             1052
+Overall transpose time            :              221
+Overall transpose fraction        :          0.21008
+
+Test Num : 3
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1054            213       0.20209
+
+                 TIMING INFORMATION
+Start time                        :       1255040754
+Initialization finish time        :       1255044549
+Overall finish time               :       1255045603
+Total time with initialization    :             4849
+Total time without initialization :             1054
+Overall transpose time            :              213
+Overall transpose fraction        :          0.20209
+
+Test Num : 4
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1062            221       0.20810
+
+                 TIMING INFORMATION
+Start time                        :       1255058414
+Initialization finish time        :       1255062185
+Overall finish time               :       1255063247
+Total time with initialization    :             4833
+Total time without initialization :             1062
+Overall transpose time            :              221
+Overall transpose fraction        :          0.20810
+
+Test Num : 5
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1048            212       0.20229
+
+                 TIMING INFORMATION
+Start time                        :       1255076120
+Initialization finish time        :       1255079780
+Overall finish time               :       1255080828
+Total time with initialization    :             4708
+Total time without initialization :             1048
+Overall transpose time            :              212
+Overall transpose fraction        :          0.20229
+
+Test Num : 6
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1057            215       0.20341
+
+                 TIMING INFORMATION
+Start time                        :       1255093802
+Initialization finish time        :       1255097490
+Overall finish time               :       1255098547
+Total time with initialization    :             4745
+Total time without initialization :             1057
+Overall transpose time            :              215
+Overall transpose fraction        :          0.20341
+
+Test Num : 7
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1054            217       0.20588
+
+                 TIMING INFORMATION
+Start time                        :       1255111567
+Initialization finish time        :       1255115408
+Overall finish time               :       1255116462
+Total time with initialization    :             4895
+Total time without initialization :             1054
+Overall transpose time            :              217
+Overall transpose fraction        :          0.20588
+
+Test Num : 8
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1055            217       0.20569
+
+                 TIMING INFORMATION
+Start time                        :       1255129326
+Initialization finish time        :       1255133111
+Overall finish time               :       1255134166
+Total time with initialization    :             4840
+Total time without initialization :             1055
+Overall transpose time            :              217
+Overall transpose fraction        :          0.20569
+
+Test Num : 9
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1197            218       0.18212
+
+                 TIMING INFORMATION
+Start time                        :       1255147179
+Initialization finish time        :       1255150845
+Overall finish time               :       1255152042
+Total time with initialization    :             4863
+Total time without initialization :             1197
+Overall transpose time            :              218
+Overall transpose fraction        :          0.18212
+
+Test Num : 10
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1054            222       0.21063
+
+                 TIMING INFORMATION
+Start time                        :       1255164915
+Initialization finish time        :       1255168590
+Overall finish time               :       1255169644
+Total time with initialization    :             4729
+Total time without initialization :             1054
+Overall transpose time            :              222
+Overall transpose fraction        :          0.21063
+
+Test Num : 11
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1140            218       0.19123
+
+                 TIMING INFORMATION
+Start time                        :       1255182573
+Initialization finish time        :       1255186255
+Overall finish time               :       1255187395
+Total time with initialization    :             4822
+Total time without initialization :             1140
+Overall transpose time            :              218
+Overall transpose fraction        :          0.19123
+
+Test Num : 12
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1054            216       0.20493
+
+                 TIMING INFORMATION
+Start time                        :       1255200313
+Initialization finish time        :       1255204102
+Overall finish time               :       1255205156
+Total time with initialization    :             4843
+Total time without initialization :             1054
+Overall transpose time            :              216
+Overall transpose fraction        :          0.20493
+
+Test Num : 13
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1121            213       0.19001
+
+                 TIMING INFORMATION
+Start time                        :       1255217981
+Initialization finish time        :       1255221625
+Overall finish time               :       1255222746
+Total time with initialization    :             4765
+Total time without initialization :             1121
+Overall transpose time            :              213
+Overall transpose fraction        :          0.19001
+
+Test Num : 14
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1050            218       0.20762
+
+                 TIMING INFORMATION
+Start time                        :       1255235686
+Initialization finish time        :       1255239347
+Overall finish time               :       1255240397
+Total time with initialization    :             4711
+Total time without initialization :             1050
+Overall transpose time            :              218
+Overall transpose fraction        :          0.20762
+
+Test Num : 15
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1054            211       0.20019
+
+                 TIMING INFORMATION
+Start time                        :       1255253361
+Initialization finish time        :       1255257167
+Overall finish time               :       1255258221
+Total time with initialization    :             4860
+Total time without initialization :             1054
+Overall transpose time            :              211
+Overall transpose fraction        :          0.20019
+
+Test Num : 16
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1049            210       0.20019
+
+                 TIMING INFORMATION
+Start time                        :       1255271001
+Initialization finish time        :       1255274739
+Overall finish time               :       1255275788
+Total time with initialization    :             4787
+Total time without initialization :             1049
+Overall transpose time            :              210
+Overall transpose fraction        :          0.20019
+
+Test Num : 17
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1050            213       0.20286
+
+                 TIMING INFORMATION
+Start time                        :       1255288722
+Initialization finish time        :       1255292465
+Overall finish time               :       1255293515
+Total time with initialization    :             4793
+Total time without initialization :             1050
+Overall transpose time            :              213
+Overall transpose fraction        :          0.20286
+
+Test Num : 18
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1045            214       0.20478
+
+                 TIMING INFORMATION
+Start time                        :       1255306553
+Initialization finish time        :       1255310209
+Overall finish time               :       1255311254
+Total time with initialization    :             4701
+Total time without initialization :             1045
+Overall transpose time            :              214
+Overall transpose fraction        :          0.20478
+
+Test Num : 19
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1050            216       0.20571
+
+                 TIMING INFORMATION
+Start time                        :       1255324339
+Initialization finish time        :       1255327992
+Overall finish time               :       1255329042
+Total time with initialization    :             4703
+Total time without initialization :             1050
+Overall transpose time            :              216
+Overall transpose fraction        :          0.20571
+
+Test Num : 20
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1050            211       0.20095
+
+                 TIMING INFORMATION
+Start time                        :       1255342008
+Initialization finish time        :       1255345692
+Overall finish time               :       1255346742
+Total time with initialization    :             4734
+Total time without initialization :             1050
+Overall transpose time            :              211
+Overall transpose fraction        :          0.20095
+
+Test Num : 21
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1052            218       0.20722
+
+                 TIMING INFORMATION
+Start time                        :       1255359688
+Initialization finish time        :       1255363458
+Overall finish time               :       1255364510
+Total time with initialization    :             4822
+Total time without initialization :             1052
+Overall transpose time            :              218
+Overall transpose fraction        :          0.20722
+
+Test Num : 22
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1119            281       0.25112
+
+                 TIMING INFORMATION
+Start time                        :       1255377497
+Initialization finish time        :       1255381175
+Overall finish time               :       1255382294
+Total time with initialization    :             4797
+Total time without initialization :             1119
+Overall transpose time            :              281
+Overall transpose fraction        :          0.25112
+
+Test Num : 23
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1066            219       0.20544
+
+                 TIMING INFORMATION
+Start time                        :       1255395267
+Initialization finish time        :       1255398956
+Overall finish time               :       1255400022
+Total time with initialization    :             4755
+Total time without initialization :             1066
+Overall transpose time            :              219
+Overall transpose fraction        :          0.20544
+
+Test Num : 24
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1047            212       0.20248
+
+                 TIMING INFORMATION
+Start time                        :       1255413055
+Initialization finish time        :       1255416731
+Overall finish time               :       1255417778
+Total time with initialization    :             4723
+Total time without initialization :             1047
+Overall transpose time            :              212
+Overall transpose fraction        :          0.20248
+
+Test Num : 25
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1054            213       0.20209
+
+                 TIMING INFORMATION
+Start time                        :       1255430814
+Initialization finish time        :       1255434573
+Overall finish time               :       1255435627
+Total time with initialization    :             4813
+Total time without initialization :             1054
+Overall transpose time            :              213
+Overall transpose fraction        :          0.20209
+
+Test Num : 26
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1053            220       0.20893
+
+                 TIMING INFORMATION
+Start time                        :       1255448497
+Initialization finish time        :       1255452275
+Overall finish time               :       1255453328
+Total time with initialization    :             4831
+Total time without initialization :             1053
+Overall transpose time            :              220
+Overall transpose fraction        :          0.20893
+
+Test Num : 27
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1175            224       0.19064
+
+                 TIMING INFORMATION
+Start time                        :       1255466294
+Initialization finish time        :       1255470000
+Overall finish time               :       1255471175
+Total time with initialization    :             4881
+Total time without initialization :             1175
+Overall transpose time            :              224
+Overall transpose fraction        :          0.19064
+
+Test Num : 28
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1056            220       0.20833
+
+                 TIMING INFORMATION
+Start time                        :       1255484097
+Initialization finish time        :       1255487748
+Overall finish time               :       1255488804
+Total time with initialization    :             4707
+Total time without initialization :             1056
+Overall transpose time            :              220
+Overall transpose fraction        :          0.20833
+
+Test Num : 29
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1049            208       0.19828
+
+                 TIMING INFORMATION
+Start time                        :       1255501761
+Initialization finish time        :       1255505507
+Overall finish time               :       1255506556
+Total time with initialization    :             4795
+Total time without initialization :             1049
+Overall transpose time            :              208
+Overall transpose fraction        :          0.19828
+
+Test Num : 30
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1050            220       0.20952
+
+                 TIMING INFORMATION
+Start time                        :       1255519367
+Initialization finish time        :       1255523103
+Overall finish time               :       1255524153
+Total time with initialization    :             4786
+Total time without initialization :             1050
+Overall transpose time            :              220
+Overall transpose fraction        :          0.20952
+
+Test Num : 31
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1137            300       0.26385
+
+                 TIMING INFORMATION
+Start time                        :       1255537004
+Initialization finish time        :       1255540776
+Overall finish time               :       1255541913
+Total time with initialization    :             4909
+Total time without initialization :             1137
+Overall transpose time            :              300
+Overall transpose fraction        :          0.26385
+
+Test Num : 32
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1072            223       0.20802
+
+                 TIMING INFORMATION
+Start time                        :       1255554858
+Initialization finish time        :       1255558519
+Overall finish time               :       1255559591
+Total time with initialization    :             4733
+Total time without initialization :             1072
+Overall transpose time            :              223
+Overall transpose fraction        :          0.20802
+
+Test Num : 33
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1063            217       0.20414
+
+                 TIMING INFORMATION
+Start time                        :       1255572712
+Initialization finish time        :       1255576391
+Overall finish time               :       1255577454
+Total time with initialization    :             4742
+Total time without initialization :             1063
+Overall transpose time            :              217
+Overall transpose fraction        :          0.20414
+
+Test Num : 34
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1054            217       0.20588
+
+                 TIMING INFORMATION
+Start time                        :       1255590496
+Initialization finish time        :       1255594253
+Overall finish time               :       1255595307
+Total time with initialization    :             4811
+Total time without initialization :             1054
+Overall transpose time            :              217
+Overall transpose fraction        :          0.20588
+
+Test Num : 35
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1056            216       0.20455
+
+                 TIMING INFORMATION
+Start time                        :       1255608275
+Initialization finish time        :       1255612056
+Overall finish time               :       1255613112
+Total time with initialization    :             4837
+Total time without initialization :             1056
+Overall transpose time            :              216
+Overall transpose fraction        :          0.20455
+
+Test Num : 36
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1059            219       0.20680
+
+                 TIMING INFORMATION
+Start time                        :       1255626019
+Initialization finish time        :       1255629716
+Overall finish time               :       1255630775
+Total time with initialization    :             4756
+Total time without initialization :             1059
+Overall transpose time            :              219
+Overall transpose fraction        :          0.20680
+
+Test Num : 37
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1052            214       0.20342
+
+                 TIMING INFORMATION
+Start time                        :       1255643773
+Initialization finish time        :       1255647443
+Overall finish time               :       1255648495
+Total time with initialization    :             4722
+Total time without initialization :             1052
+Overall transpose time            :              214
+Overall transpose fraction        :          0.20342
+
+Test Num : 38
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1066            218       0.20450
+
+                 TIMING INFORMATION
+Start time                        :       1255661440
+Initialization finish time        :       1255665242
+Overall finish time               :       1255666308
+Total time with initialization    :             4868
+Total time without initialization :             1066
+Overall transpose time            :              218
+Overall transpose fraction        :          0.20450
+
+Test Num : 39
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1042            210       0.20154
+
+                 TIMING INFORMATION
+Start time                        :       1255679170
+Initialization finish time        :       1255682913
+Overall finish time               :       1255683955
+Total time with initialization    :             4785
+Total time without initialization :             1042
+Overall transpose time            :              210
+Overall transpose fraction        :          0.20154
+
+Test Num : 40
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1061            219       0.20641
+
+                 TIMING INFORMATION
+Start time                        :       1255696907
+Initialization finish time        :       1255700587
+Overall finish time               :       1255701648
+Total time with initialization    :             4741
+Total time without initialization :             1061
+Overall transpose time            :              219
+Overall transpose fraction        :          0.20641
+
+Test Num : 41
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1052            213       0.20247
+
+                 TIMING INFORMATION
+Start time                        :       1255714937
+Initialization finish time        :       1255718632
+Overall finish time               :       1255719684
+Total time with initialization    :             4747
+Total time without initialization :             1052
+Overall transpose time            :              213
+Overall transpose fraction        :          0.20247
+
+Test Num : 42
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1052            217       0.20627
+
+                 TIMING INFORMATION
+Start time                        :       1255732623
+Initialization finish time        :       1255736304
+Overall finish time               :       1255737356
+Total time with initialization    :             4733
+Total time without initialization :             1052
+Overall transpose time            :              217
+Overall transpose fraction        :          0.20627
+
+Test Num : 43
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1065            220       0.20657
+
+                 TIMING INFORMATION
+Start time                        :       1255750452
+Initialization finish time        :       1255754382
+Overall finish time               :       1255755447
+Total time with initialization    :             4995
+Total time without initialization :             1065
+Overall transpose time            :              220
+Overall transpose fraction        :          0.20657
+
+Test Num : 44
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1067            226       0.21181
+
+                 TIMING INFORMATION
+Start time                        :       1255768292
+Initialization finish time        :       1255772044
+Overall finish time               :       1255773111
+Total time with initialization    :             4819
+Total time without initialization :             1067
+Overall transpose time            :              226
+Overall transpose fraction        :          0.21181
+
+Test Num : 45
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1069            227       0.21235
+
+                 TIMING INFORMATION
+Start time                        :       1255786070
+Initialization finish time        :       1255789792
+Overall finish time               :       1255790861
+Total time with initialization    :             4791
+Total time without initialization :             1069
+Overall transpose time            :              227
+Overall transpose fraction        :          0.21235
+
+Test Num : 46
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1055            218       0.20664
+
+                 TIMING INFORMATION
+Start time                        :       1255803919
+Initialization finish time        :       1255807616
+Overall finish time               :       1255808671
+Total time with initialization    :             4752
+Total time without initialization :             1055
+Overall transpose time            :              218
+Overall transpose fraction        :          0.20664
+
+Test Num : 47
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1048            213       0.20324
+
+                 TIMING INFORMATION
+Start time                        :       1255821585
+Initialization finish time        :       1255825376
+Overall finish time               :       1255826424
+Total time with initialization    :             4839
+Total time without initialization :             1048
+Overall transpose time            :              213
+Overall transpose fraction        :          0.20324
+
+Test Num : 48
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1053            214       0.20323
+
+                 TIMING INFORMATION
+Start time                        :       1255839317
+Initialization finish time        :       1255843076
+Overall finish time               :       1255844129
+Total time with initialization    :             4812
+Total time without initialization :             1053
+Overall transpose time            :              214
+Overall transpose fraction        :          0.20323
+
+Test Num : 49
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1064            216       0.20301
+
+                 TIMING INFORMATION
+Start time                        :       1255857016
+Initialization finish time        :       1255860711
+Overall finish time               :       1255861775
+Total time with initialization    :             4759
+Total time without initialization :             1064
+Overall transpose time            :              216
+Overall transpose fraction        :          0.20301
+
+Test Num : 50
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1063            221       0.20790
+
+                 TIMING INFORMATION
+Start time                        :       1255874981
+Initialization finish time        :       1255878657
+Overall finish time               :       1255879720
+Total time with initialization    :             4739
+Total time without initialization :             1063
+Overall transpose time            :              221
+Overall transpose fraction        :          0.20790
+
+Test Num : 51
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1052            216       0.20532
+
+                 TIMING INFORMATION
+Start time                        :       1255892895
+Initialization finish time        :       1255896563
+Overall finish time               :       1255897615
+Total time with initialization    :             4720
+Total time without initialization :             1052
+Overall transpose time            :              216
+Overall transpose fraction        :          0.20532
+
+Test Num : 52
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1059            218       0.20585
+
+                 TIMING INFORMATION
+Start time                        :       1255910558
+Initialization finish time        :       1255914356
+Overall finish time               :       1255915415
+Total time with initialization    :             4857
+Total time without initialization :             1059
+Overall transpose time            :              218
+Overall transpose fraction        :          0.20585
+
+Test Num : 53
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1076            235       0.21840
+
+                 TIMING INFORMATION
+Start time                        :       1255928290
+Initialization finish time        :       1255932068
+Overall finish time               :       1255933144
+Total time with initialization    :             4854
+Total time without initialization :             1076
+Overall transpose time            :              235
+Overall transpose fraction        :          0.21840
+
+Test Num : 54
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1041            215       0.20653
+
+                 TIMING INFORMATION
+Start time                        :       1255946056
+Initialization finish time        :       1255949684
+Overall finish time               :       1255950725
+Total time with initialization    :             4669
+Total time without initialization :             1041
+Overall transpose time            :              215
+Overall transpose fraction        :          0.20653
+
+Test Num : 55
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1058            215       0.20321
+
+                 TIMING INFORMATION
+Start time                        :       1255963670
+Initialization finish time        :       1255967364
+Overall finish time               :       1255968422
+Total time with initialization    :             4752
+Total time without initialization :             1058
+Overall transpose time            :              215
+Overall transpose fraction        :          0.20321
+
+Test Num : 56
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1058            220       0.20794
+
+                 TIMING INFORMATION
+Start time                        :       1255981393
+Initialization finish time        :       1255985233
+Overall finish time               :       1255986291
+Total time with initialization    :             4898
+Total time without initialization :             1058
+Overall transpose time            :              220
+Overall transpose fraction        :          0.20794
+
+Test Num : 57
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1045            215       0.20574
+
+                 TIMING INFORMATION
+Start time                        :       1255999222
+Initialization finish time        :       1256002955
+Overall finish time               :       1256004000
+Total time with initialization    :             4778
+Total time without initialization :             1045
+Overall transpose time            :              215
+Overall transpose fraction        :          0.20574
+
+Test Num : 58
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1055            222       0.21043
+
+                 TIMING INFORMATION
+Start time                        :       1256016858
+Initialization finish time        :       1256020515
+Overall finish time               :       1256021570
+Total time with initialization    :             4712
+Total time without initialization :             1055
+Overall transpose time            :              222
+Overall transpose fraction        :          0.21043
+
+Test Num : 59
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1047            213       0.20344
+
+                 TIMING INFORMATION
+Start time                        :       1256034541
+Initialization finish time        :       1256038308
+Overall finish time               :       1256039355
+Total time with initialization    :             4814
+Total time without initialization :             1047
+Overall transpose time            :              213
+Overall transpose fraction        :          0.20344
+
+Test Num : 60
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1065            226       0.21221
+
+                 TIMING INFORMATION
+Start time                        :       1256052351
+Initialization finish time        :       1256056029
+Overall finish time               :       1256057094
+Total time with initialization    :             4743
+Total time without initialization :             1065
+Overall transpose time            :              226
+Overall transpose fraction        :          0.21221
+
+Test Num : 61
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1054            215       0.20398
+
+                 TIMING INFORMATION
+Start time                        :       1256070018
+Initialization finish time        :       1256073796
+Overall finish time               :       1256074850
+Total time with initialization    :             4832
+Total time without initialization :             1054
+Overall transpose time            :              215
+Overall transpose fraction        :          0.20398
+
+Test Num : 62
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1116            214       0.19176
+
+                 TIMING INFORMATION
+Start time                        :       1256087810
+Initialization finish time        :       1256091484
+Overall finish time               :       1256092600
+Total time with initialization    :             4790
+Total time without initialization :             1116
+Overall transpose time            :              214
+Overall transpose fraction        :          0.19176
+
+Test Num : 63
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1056            215       0.20360
+
+                 TIMING INFORMATION
+Start time                        :       1256105640
+Initialization finish time        :       1256109291
+Overall finish time               :       1256110347
+Total time with initialization    :             4707
+Total time without initialization :             1056
+Overall transpose time            :              215
+Overall transpose fraction        :          0.20360
+
+Test Num : 64
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1054            216       0.20493
+
+                 TIMING INFORMATION
+Start time                        :       1256123430
+Initialization finish time        :       1256127121
+Overall finish time               :       1256128175
+Total time with initialization    :             4745
+Total time without initialization :             1054
+Overall transpose time            :              216
+Overall transpose fraction        :          0.20493
+
+Test Num : 65
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1054            217       0.20588
+
+                 TIMING INFORMATION
+Start time                        :       1256141054
+Initialization finish time        :       1256144864
+Overall finish time               :       1256145918
+Total time with initialization    :             4864
+Total time without initialization :             1054
+Overall transpose time            :              217
+Overall transpose fraction        :          0.20588
+
+Test Num : 66
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1043            212       0.20326
+
+                 TIMING INFORMATION
+Start time                        :       1256158885
+Initialization finish time        :       1256162622
+Overall finish time               :       1256163665
+Total time with initialization    :             4780
+Total time without initialization :             1043
+Overall transpose time            :              212
+Overall transpose fraction        :          0.20326
+
+Test Num : 67
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1047            212       0.20248
+
+                 TIMING INFORMATION
+Start time                        :       1256176609
+Initialization finish time        :       1256180269
+Overall finish time               :       1256181316
+Total time with initialization    :             4707
+Total time without initialization :             1047
+Overall transpose time            :              212
+Overall transpose fraction        :          0.20248
+
+Test Num : 68
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1050            214       0.20381
+
+                 TIMING INFORMATION
+Start time                        :       1256194379
+Initialization finish time        :       1256198025
+Overall finish time               :       1256199075
+Total time with initialization    :             4696
+Total time without initialization :             1050
+Overall transpose time            :              214
+Overall transpose fraction        :          0.20381
+
+Test Num : 69
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1072            230       0.21455
+
+                 TIMING INFORMATION
+Start time                        :       1256212183
+Initialization finish time        :       1256215880
+Overall finish time               :       1256216952
+Total time with initialization    :             4769
+Total time without initialization :             1072
+Overall transpose time            :              230
+Overall transpose fraction        :          0.21455
+
+Test Num : 70
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1058            216       0.20416
+
+                 TIMING INFORMATION
+Start time                        :       1256229796
+Initialization finish time        :       1256233552
+Overall finish time               :       1256234610
+Total time with initialization    :             4814
+Total time without initialization :             1058
+Overall transpose time            :              216
+Overall transpose fraction        :          0.20416
+
+Test Num : 71
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1184            223       0.18834
+
+                 TIMING INFORMATION
+Start time                        :       1256247397
+Initialization finish time        :       1256251084
+Overall finish time               :       1256252268
+Total time with initialization    :             4871
+Total time without initialization :             1184
+Overall transpose time            :              223
+Overall transpose fraction        :          0.18834
+
+Test Num : 72
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1053            216       0.20513
+
+                 TIMING INFORMATION
+Start time                        :       1256265233
+Initialization finish time        :       1256268914
+Overall finish time               :       1256269967
+Total time with initialization    :             4734
+Total time without initialization :             1053
+Overall transpose time            :              216
+Overall transpose fraction        :          0.20513
+
+Test Num : 73
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1062            214       0.20151
+
+                 TIMING INFORMATION
+Start time                        :       1256282978
+Initialization finish time        :       1256286678
+Overall finish time               :       1256287740
+Total time with initialization    :             4762
+Total time without initialization :             1062
+Overall transpose time            :              214
+Overall transpose fraction        :          0.20151
+
+Test Num : 74
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1053            215       0.20418
+
+                 TIMING INFORMATION
+Start time                        :       1256300574
+Initialization finish time        :       1256304329
+Overall finish time               :       1256305382
+Total time with initialization    :             4808
+Total time without initialization :             1053
+Overall transpose time            :              215
+Overall transpose fraction        :          0.20418
+
+Test Num : 75
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1049            211       0.20114
+
+                 TIMING INFORMATION
+Start time                        :       1256318219
+Initialization finish time        :       1256322051
+Overall finish time               :       1256323100
+Total time with initialization    :             4881
+Total time without initialization :             1049
+Overall transpose time            :              211
+Overall transpose fraction        :          0.20114
+
+Test Num : 76
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1047            212       0.20248
+
+                 TIMING INFORMATION
+Start time                        :       1256335937
+Initialization finish time        :       1256339582
+Overall finish time               :       1256340629
+Total time with initialization    :             4692
+Total time without initialization :             1047
+Overall transpose time            :              212
+Overall transpose fraction        :          0.20248
+
+Test Num : 77
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1060            216       0.20377
+
+                 TIMING INFORMATION
+Start time                        :       1256353645
+Initialization finish time        :       1256357347
+Overall finish time               :       1256358407
+Total time with initialization    :             4762
+Total time without initialization :             1060
+Overall transpose time            :              216
+Overall transpose fraction        :          0.20377
+
+Test Num : 78
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1052            215       0.20437
+
+                 TIMING INFORMATION
+Start time                        :       1256371352
+Initialization finish time        :       1256375094
+Overall finish time               :       1256376146
+Total time with initialization    :             4794
+Total time without initialization :             1052
+Overall transpose time            :              215
+Overall transpose fraction        :          0.20437
+
+Test Num : 79
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1052            220       0.20913
+
+                 TIMING INFORMATION
+Start time                        :       1256389099
+Initialization finish time        :       1256392908
+Overall finish time               :       1256393960
+Total time with initialization    :             4861
+Total time without initialization :             1052
+Overall transpose time            :              220
+Overall transpose fraction        :          0.20913
+
+Test Num : 80
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1059            217       0.20491
+
+                 TIMING INFORMATION
+Start time                        :       1256406900
+Initialization finish time        :       1256410592
+Overall finish time               :       1256411651
+Total time with initialization    :             4751
+Total time without initialization :             1059
+Overall transpose time            :              217
+Overall transpose fraction        :          0.20491
+
+Test Num : 81
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1046            215       0.20554
+
+                 TIMING INFORMATION
+Start time                        :       1256424749
+Initialization finish time        :       1256428418
+Overall finish time               :       1256429464
+Total time with initialization    :             4715
+Total time without initialization :             1046
+Overall transpose time            :              215
+Overall transpose fraction        :          0.20554
+
+Test Num : 82
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1052            216       0.20532
+
+                 TIMING INFORMATION
+Start time                        :       1256442409
+Initialization finish time        :       1256446080
+Overall finish time               :       1256447132
+Total time with initialization    :             4723
+Total time without initialization :             1052
+Overall transpose time            :              216
+Overall transpose fraction        :          0.20532
+
+Test Num : 83
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1063            221       0.20790
+
+                 TIMING INFORMATION
+Start time                        :       1256460017
+Initialization finish time        :       1256463770
+Overall finish time               :       1256464833
+Total time with initialization    :             4816
+Total time without initialization :             1063
+Overall transpose time            :              221
+Overall transpose fraction        :          0.20790
+
+Test Num : 84
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1112            218       0.19604
+
+                 TIMING INFORMATION
+Start time                        :       1256477866
+Initialization finish time        :       1256481531
+Overall finish time               :       1256482643
+Total time with initialization    :             4777
+Total time without initialization :             1112
+Overall transpose time            :              218
+Overall transpose fraction        :          0.19604
+
+Test Num : 85
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1048            217       0.20706
+
+                 TIMING INFORMATION
+Start time                        :       1256495576
+Initialization finish time        :       1256499260
+Overall finish time               :       1256500308
+Total time with initialization    :             4732
+Total time without initialization :             1048
+Overall transpose time            :              217
+Overall transpose fraction        :          0.20706
+
+Test Num : 86
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1054            212       0.20114
+
+                 TIMING INFORMATION
+Start time                        :       1256513309
+Initialization finish time        :       1256516970
+Overall finish time               :       1256518024
+Total time with initialization    :             4715
+Total time without initialization :             1054
+Overall transpose time            :              212
+Overall transpose fraction        :          0.20114
+
+Test Num : 87
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1053            213       0.20228
+
+                 TIMING INFORMATION
+Start time                        :       1256530839
+Initialization finish time        :       1256534635
+Overall finish time               :       1256535688
+Total time with initialization    :             4849
+Total time without initialization :             1053
+Overall transpose time            :              213
+Overall transpose fraction        :          0.20228
+
+Test Num : 88
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1052            216       0.20532
+
+                 TIMING INFORMATION
+Start time                        :       1256548536
+Initialization finish time        :       1256552378
+Overall finish time               :       1256553430
+Total time with initialization    :             4894
+Total time without initialization :             1052
+Overall transpose time            :              216
+Overall transpose fraction        :          0.20532
+
+Test Num : 89
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1057            213       0.20151
+
+                 TIMING INFORMATION
+Start time                        :       1256566418
+Initialization finish time        :       1256570079
+Overall finish time               :       1256571136
+Total time with initialization    :             4718
+Total time without initialization :             1057
+Overall transpose time            :              213
+Overall transpose fraction        :          0.20151
+
+Test Num : 90
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1053            217       0.20608
+
+                 TIMING INFORMATION
+Start time                        :       1256584052
+Initialization finish time        :       1256587716
+Overall finish time               :       1256588769
+Total time with initialization    :             4717
+Total time without initialization :             1053
+Overall transpose time            :              217
+Overall transpose fraction        :          0.20608
+
+Test Num : 91
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1057            216       0.20435
+
+                 TIMING INFORMATION
+Start time                        :       1256601580
+Initialization finish time        :       1256605848
+Overall finish time               :       1256606905
+Total time with initialization    :             5325
+Total time without initialization :             1057
+Overall transpose time            :              216
+Overall transpose fraction        :          0.20435
+
+Test Num : 92
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1054            218       0.20683
+
+                 TIMING INFORMATION
+Start time                        :       1256619803
+Initialization finish time        :       1256623611
+Overall finish time               :       1256624665
+Total time with initialization    :             4862
+Total time without initialization :             1054
+Overall transpose time            :              218
+Overall transpose fraction        :          0.20683
+
+Test Num : 93
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1123            217       0.19323
+
+                 TIMING INFORMATION
+Start time                        :       1256637570
+Initialization finish time        :       1256641271
+Overall finish time               :       1256642394
+Total time with initialization    :             4824
+Total time without initialization :             1123
+Overall transpose time            :              217
+Overall transpose fraction        :          0.19323
+
+Test Num : 94
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1055            214       0.20284
+
+                 TIMING INFORMATION
+Start time                        :       1256655439
+Initialization finish time        :       1256659118
+Overall finish time               :       1256660173
+Total time with initialization    :             4734
+Total time without initialization :             1055
+Overall transpose time            :              214
+Overall transpose fraction        :          0.20284
+
+Test Num : 95
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1066            223       0.20919
+
+                 TIMING INFORMATION
+Start time                        :       1256673210
+Initialization finish time        :       1256676931
+Overall finish time               :       1256677997
+Total time with initialization    :             4787
+Total time without initialization :             1066
+Overall transpose time            :              223
+Overall transpose fraction        :          0.20919
+
+Test Num : 96
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1045            209       0.20000
+
+                 TIMING INFORMATION
+Start time                        :       1256690824
+Initialization finish time        :       1256694528
+Overall finish time               :       1256695573
+Total time with initialization    :             4749
+Total time without initialization :             1045
+Overall transpose time            :              209
+Overall transpose fraction        :          0.20000
+
+Test Num : 97
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1061            220       0.20735
+
+                 TIMING INFORMATION
+Start time                        :       1256708485
+Initialization finish time        :       1256712214
+Overall finish time               :       1256713275
+Total time with initialization    :             4790
+Total time without initialization :             1061
+Overall transpose time            :              220
+Overall transpose fraction        :          0.20735
+
+Test Num : 98
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1050            214       0.20381
+
+                 TIMING INFORMATION
+Start time                        :       1256726265
+Initialization finish time        :       1256729937
+Overall finish time               :       1256730987
+Total time with initialization    :             4722
+Total time without initialization :             1050
+Overall transpose time            :              214
+Overall transpose fraction        :          0.20381
+
+Test Num : 99
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1050            214       0.20381
+
+                 TIMING INFORMATION
+Start time                        :       1256744177
+Initialization finish time        :       1256747846
+Overall finish time               :       1256748896
+Total time with initialization    :             4719
+Total time without initialization :             1050
+Overall transpose time            :              214
+Overall transpose fraction        :          0.20381
+
+Test Num : 100
+
+FFT with Blocking Transpose
+   1024 Complex Doubles
+   1 Processors
+   65536 Cache lines
+   16 Byte line size
+   4096 Bytes per page
+
+
+                 PROCESS STATISTICS
+            Computation      Transpose     Transpose
+ Proc          Time            Time        Fraction
+    0              1052            213       0.20247
+
+                 TIMING INFORMATION
+Start time                        :       1256761920
+Initialization finish time        :       1256765557
+Overall finish time               :       1256766609
+Total time with initialization    :             4689
+Total time without initialization :             1052
+Overall transpose time            :              213
+Overall transpose fraction        :          0.20247
+
