@@ -118,7 +118,7 @@ perf_sched_bench_splash_run( )
                         ./WATER-SPATIAL < input >> $LOG_FILE
                 elif [ $APPLICATION == "cholesky" ]; then
                         cd $SPLASH_KERNELS_BIN/cholesky
-                        ./CHOLESKY < inputs/ >> $LOG_FILE
+                        ./CHOLESKY < inputs/lshp.O >> $LOG_FILE
                 elif [ $APPLICATION == "lu" ]; then
                         cd $SPLASH_KERNELS_BIN/fft
                         ./FFT >> $LOG_FILE
