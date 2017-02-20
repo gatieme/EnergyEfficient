@@ -11,7 +11,7 @@ perf_sched_bench_clear()
         echo -e "+++++++++++++++++++++\n"
 }
 
-perf_sched_bench_run()
+perf_sched_bench_run( )
 {
         if [ $BENCH == "perf" ]; then
                 perf_sched_bench_perf_run
@@ -22,43 +22,44 @@ perf_sched_bench_run()
 
 perf_sched_bench_perf_run( )
 {
-#  写入表头信息
-echo "#bench      = $BENCH"        > $RESULT_FILE
-echo "#application= $APPLICATION"  >> $RESULT_FILE
-echo "#min_group  = $MIN_GROUP"    >> $RESULT_FILE
-echo "#max_group  = $MAX_GROUP"    >> $RESULT_FILE
-echo "#step_group = $STEP_GROUP"   >> $RESULT_FILE
-echo "#loop_num   = $LOOP"         >> $RESULT_FILE
-echo "#logdir     = $LOG_DIR"      >> $RESULT_FILE
-echo "#resultfile = $RGESULT_FILE" >> $RESULT_FILE
-for (( GROUP = $MIN_GROUP; GROUP <= $MAX_GROUP; GROUP += $STEP_GROUP ))   #  增加GROUP的值
-do
-        echo "+++++++++++++++++++++"
-        echo "$BENCH $APPLICATION $GROUP"
-        echo "+++++++++++++++++++++"
-
-        echo "====================="
-        for (( i = 1; i <= $LOOP; i++ ))          #  每次统计循环进行NUM次以防止误差
+        #  写入表头信息
+        echo "#bench      = $BENCH"        > $RESULT_FILE
+        echo "#application= $APPLICATION"  >> $RESULT_FILE
+        echo "#min_group  = $MIN_GROUP"    >> $RESULT_FILE
+        echo "#max_group  = $MAX_GROUP"    >> $RESULT_FILE
+        echo "#step_group = $STEP_GROUP"   >> $RESULT_FILE
+        echo "#loop_num   = $LOOP"         >> $RESULT_FILE
+        echo "#logdir     = $LOG_DIR"      >> $RESULT_FILE
+        echo "#resultfile = $RGESULT_FILE" >> $RESULT_FILE
+        for (( GROUP = $MIN_GROUP; GROUP <= $MAX_GROUP; GROUP += $STEP_GROUP ))   #  增加GROUP的值
         do
+                echo "+++++++++++++++++++++"
+                echo "$BENCH $APPLICATION $GROUP"
+                echo "+++++++++++++++++++++"
 
-                echo -e "GROUP : $GROUP, Test Num : $i"
-                if [ $i == 1 ]; then
-                        echo -e "GROUP : $GROUP, Test Num : $i" > $LOG_DIR/$GROUP.log
-                else
-                        echo -e "GROUP : $GROUP, Test Num : $i" >> $LOG_DIR/$GROUP.log
-                fi
-                if [ $APPLICATION == "messaging" ]; then
-                        #perf bench sched messaging -g $GROUP
-                        perf bench sched messaging -g $GROUP >> $LOG_DIR/$GROUP.log
-                elif [ $APPLICATION == "pipe" ]; then
-                        #perf bench sched pipe -l $GROUP
-                        perf bench sched pipe -l $GROUP >> $LOG_DIR/$GROUP.log
-                fi
+                echo "====================="
+                for (( i = 1; i <= $LOOP; i++ ))          #  每次统计循环进行NUM次以防止误差
+                do
+
+                        echo -e "GROUP : $GROUP, Test Num : $i"
+                        if [ $i == 1 ]; then
+                                echo -e "GROUP : $GROUP, Test Num : $i" > $LOG_DIR/$GROUP.log
+                        else
+                                echo -e "GROUP : $GROUP, Test Num : $i" >> $LOG_DIR/$GROUP.log
+                        fi
+
+                        if [ $APPLICATION == "messaging" ]; then
+                                #perf bench sched messaging -g $GROUP
+                                perf bench sched messaging -g $GROUP >> $LOG_DIR/$GROUP.log
+                        elif [ $APPLICATION == "pipe" ]; then
+                                #perf bench sched pipe -l $GROUP
+                                perf bench sched pipe -l $GROUP >> $LOG_DIR/$GROUP.log
+                        fi
+                done
+                echo -e "=====================\n\n"
+                #python readlog.py  -f $LOG_DIR/$GROUP.log -g $GROUP -l $LOOP >>$RESULT_FILE
+                python readlog.py -d $(SPLASH_APPS_BIN)RESULT  -b $APPLICATION -min $MIN_GROUP -max $MAX_GROUP -step $STEP_GROUP -l $LOOP -g $GROUP >>$RESULT_FILE
         done
-        echo -e "=====================\n\n"
-        #python readlog.py  -f $LOG_DIR/$GROUP.log -g $GROUP -l $LOOP >>$RESULT_FILE
-        python readlog.py -d $(SPLASH_APPS_BIN)RESULT  -b $APPLICATION -min $MIN_GROUP -max $MAX_GROUP -step $STEP_GROUP -l $LOOP -g $GROUP >>$RESULT_FILE
-done
 }
 
 # 运行splash基准测试程序
@@ -67,9 +68,9 @@ perf_sched_bench_splash_run( )
         echo "#bench      = $BENCH"        > $RESULT_FILE
         echo "#application= $APPLICATION"  >> $RESULT_FILE
         echo "#loop_num   = $LOOP"         >> $RESULT_FILE
-        echo "#log_dir    = $LOG_DIR"      
+        echo "#log_dir    = $LOG_DIR"
         echo "#log_file   = $LOG_FILE"
-        echo "#result_dir = $RESULT_DIR"   
+        echo "#result_dir = $RESULT_DIR"
         echo "#result_file= $RESULT_FILE"
         echo "+++++++++++++++++++++"
         echo "$BENCH $APPLICATION"
@@ -86,7 +87,7 @@ perf_sched_bench_splash_run( )
         SPLASH_BIN=/home/gatieme/Work/GitHub/splash2_benchmark/codes
         SPLASH_APPS_BIN=$SPLASH_BIN/apps
         SPLASH_KERNELS_BIN=$SPLASH_BIN/kernels
-        
+
         LOG_FILE=$LOG_DIR/$LOOP.log
         for (( i = 1; i <= $LOOP; i++ ))          #  每次统计循环进行NUM次以防止误差
         do
@@ -113,7 +114,7 @@ perf_sched_bench_splash_run( )
 }
 
 
-raw_input()
+raw_input( )
 {
         while true;
         do
@@ -200,16 +201,18 @@ elif [ $# == 4 ]; then
         RESULT_FILE=$RESULT_DIR/$APPLICATION/$LOOP.log
 else
         echo "Usage :"
-        echo -e "\t$0 [messageing|pipe] [min_group] max_group [step_group] loop"
+        echo -e "\t$0 perf [messageing|pipe] [min_group] max_group [step_group] loop"
+        echo -e "\t$0 splash [barnes|fmm|ocean|radiosity|raytrace|volrend|water-nsquared |water-spatial] loop"
         echo -e "\tmessage      : use perf bench messaging -g max_group"
         echo -e "\tpipe         : use perf bench pipe -l max_group"
         echo -e "\tmax_group    : see group@messaging loop@pipe"
         echo -e "\tloop         : loop to reduces system error "
         echo -e "\t$0 $APPLICATION min_group=1 max_group=100 step_group=1 loop=1"
-        raw_input
+        #raw_input
         #APPLICATION="messaging"
         #MAX_GROUP=100
         #LOOP=1
+        exit
 fi
 
 
