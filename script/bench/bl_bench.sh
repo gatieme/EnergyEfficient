@@ -84,7 +84,7 @@ perf_sched_bench_splash_run( )
         #7--  WATER-NSQUARED < input
         #8--  WATER-SPATIAL < input
         echo "====================="
-        SPLASH_BIN=/home/gatieme/Work/GitHub/splash2_benchmark/codes
+        SPLASH_BIN=~/Work/GitHub/Benchmark/splash-2/splash2/codes
         SPLASH_APPS_BIN=$SPLASH_BIN/apps
         SPLASH_KERNELS_BIN=$SPLASH_BIN/kernels
 
@@ -94,19 +94,37 @@ perf_sched_bench_splash_run( )
                 echo -e "Test Num : $i"
                 echo -e "Test Num : $i" >>$LOG_FILE
                 if   [ $APPLICATION == "barnes" ]; then
-                        $SPLASH_APPS_BIN/barnes/BARNES < $SPLASH_APPS_BIN/barnes/input >> $LOG_FILE
+                        cd $SPLASH_APPS_BIN/barnes
+                        ./BARNES < input >> $LOG_FILE
                 elif [ $APPLICATION == "fmm" ]; then
-                        $SPLASH_APPS_BIN/fmm/FMM < $SPLASH_APPS_BIN/fmm/inputs/input.16384 >> $LOG_FILE
+                        cd $SPLASH_APPS_BIN/fmm
+                        ./FMM < inputs/input.16384 >> $LOG_FILE
                 elif [ $APPLICATION == "ocean" ]; then
-                        $SPLASH_APPS_BIN/ocean/OCEAN >> $LOG_FILE
+                        cd $SPLASH_APPS_BIN/ocean
+                        ./OCEAN >> $LOG_FILE
                 elif [ $APPLICATION == "radiosity" ]; then
-                        $SPLASH_APPS_BIN/radiosity/RADIOSITY -batch >> $LOG_FILE
+                        cd $SPLASH_APPS_BIN/radiosity
+                        ./RADIOSITY -batch >> $LOG_FILE
+                elif [ $APPLICATION == "raytrace" ]; then #5--  RAYTRACE -m64 inputs/car.env
+                        cd $SPLASH_APPS_BIN/raytrace
+                        ./RAYTRACE -m64 inputs/car.env >> $LOG_FILE
                 elif [ $APPLICATION == "volrend" ]; then
                         $SPLASH_APPS_BIN/volrend/VOLREND 1 $SPLASH_APPS_BIN/volrend/inputs/head >> $LOG_FILE
                 elif [ $APPLICATION == "water-nsquared" ]; then
-                        $SPLASH_APPS_BIN/water-nsquared/WATER-NSQUARED < $SPLASH_APPS_BIN/water-nsquared/input >> $LOG_FILE
+                        cd $SPLASH_APPS_BIN/water-nsquared
+                        ./WATER-NSQUARED < input >> $LOG_FILE
                 elif [ $APPLICATION == "water-spatial" ]; then
-                        $SPLASH_APPS_BIN/water-spatial/WATER-SPATIAL < $SPLASH_APPS_BIN/water-spatial/input >> $LOG_FILE
+                        cd $SPLASH_APPS_BIN/water-spatial
+                        ./WATER-SPATIAL < input >> $LOG_FILE
+                elif [ $APPLICATION == "cholesky" ]; then
+                        cd $SPLASH_KERNELS_BIN/cholesky
+                        ./CHOLESKY < inputs/ >> $LOG_FILE
+                elif [ $APPLICATION == "lu" ]; then
+                        cd $SPLASH_KERNELS_BIN/fft
+                        ./FFT >> $LOG_FILE
+                elif [ $APPLICATION == "radix" ]; then
+                        cd $SPLASH_KERNELS_BIN/fft >> $LOG_FILE
+                        ./RADIX >> $LOG_FILE
                 fi
         done
 
@@ -177,7 +195,7 @@ RESULT_DIR=""
 LOG_DIR=""
 RESULT_FILE=""
 
-if [ $# == 6 ]; then
+if [ $# == 7 ]; then
         echo "$0 result_dir perf app min_group max_group step_group loop"
         echo "$0 result_dir splash app loop"
         RESULT=$1
@@ -196,7 +214,7 @@ elif [ $# == 4 ]; then
         APPLICATION=$3
         LOOP=$4
         RESULT_DIR=$RESULT/$BENCH
-        LOG_DIR=$RESULT_DIR/$APPLICATION/$LOOP
+        LOG_DIR=$PWD/$RESULT_DIR/$APPLICATION/$LOOP
         LOG_FILE=$LOG_DIR/$LOOP.log
         RESULT_FILE=$RESULT_DIR/$APPLICATION/$LOOP.log
 else

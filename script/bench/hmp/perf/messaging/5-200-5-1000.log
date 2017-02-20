@@ -1,0 +1,8 @@
+#bench      = perf
+#application= messaging
+#min_group  = 5
+#max_group  = 200
+#step_group = 5
+#loop_num   = 1000
+#logdir     = hmp/perf/messaging/5-200-5-1000
+#resultfile = 
