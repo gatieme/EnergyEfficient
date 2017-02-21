@@ -13,26 +13,69 @@ perf_sched_bench_clear()
 
 perf_sched_bench_run( )
 {
-#  写入表头信息
-echo "#perf_bench = $BENCH"       > $RESULT_FILE
-echo "#min_group  = $MIN_GROUP"   >> $RESULT_FILE
-echo "#max_group  = $MAX_GROUP"   >> $RESULT_FILE
-echo "#step_group = $STEP_GROUP"  >> $RESULT_FILE
-echo "#loop_num   = $LOOP"        >> $RESULT_FILE
-echo "#logdir     = $LOG_DIR"     >> $RESULT_FILE
-echo "#resultfile = $RESULT_FILE" >> $RESULT_FILE
-for (( GROUP = $MIN_GROUP; GROUP <= $MAX_GROUP; GROUP += $STEP_GROUP ))   #  增加GROUP的值
-do
-        echo "+++++++++++++++++++++"
-        echo "$BENCH $GROUP"
-        echo "+++++++++++++++++++++"
+        if [ $BENCH == "perf" ]; then
+                perf_sched_bench_perf_run
+        elif [ $BENCH == "splash" ]; then
+                perf_sched_bench_splash_run
+        fi
+}
 
-        python readlog.py -d ./RESULT  -b $BENCH -min $MIN_GROUP -max $MAX_GROUP -step $STEP_GROUP -l $LOOP -g $GROUP >>$RESULT_FILE 
-done
+perf_sched_bench_perf_run( )
+{
+        #  写入表头信息
+        echo "#bench      = $BENCH"        > $RESULT_FILE
+        echo "#application= $APPLICATION"  >> $RESULT_FILE
+        echo "#min_group  = $MIN_GROUP"    >> $RESULT_FILE
+        echo "#max_group  = $MAX_GROUP"    >> $RESULT_FILE
+        echo "#step_group = $STEP_GROUP"   >> $RESULT_FILE
+        echo "#loop_num   = $LOOP"         >> $RESULT_FILE
+        echo "#logdir     = $LOG_DIR"      >> $RESULT_FILE
+        echo "#resultfile = $RGESULT_FILE" >> $RESULT_FILE
+        for (( GROUP = $MIN_GROUP; GROUP <= $MAX_GROUP; GROUP += $STEP_GROUP ))   #  增加GROUP的值
+        do
+                echo "+++++++++++++++++++++"
+                echo "$BENCH $APPLICATION $GROUP"
+                echo "+++++++++++++++++++++"
+
+                #python readlog.py  -f $LOG_DIR/$GROUP.log -g $GROUP -l $LOOP >>$RESULT_FILE
+                python readlog.py -d $RESULT -b $BENCH --app $APPLICATION -min $MIN_GROUP -max $MAX_GROUP -step $STEP_GROUP -l $LOOP -g $GROUP >>$RESULT_FILE
+        done
+}
+
+# 运行splash基准测试程序
+perf_sched_bench_splash_run( )
+{
+        echo "#bench      = $BENCH"        > $RESULT_FILE
+        echo "#application= $APPLICATION"  >> $RESULT_FILE
+        echo "#loop_num   = $LOOP"         >> $RESULT_FILE
+        echo "#log_dir    = $LOG_DIR"
+        echo "#log_file   = $LOG_FILE"
+        echo "#result_dir = $RESULT_DIR"
+        echo "#result_file= $RESULT_FILE"
+        echo "+++++++++++++++++++++"
+        echo "$BENCH $APPLICATION"
+        echo "+++++++++++++++++++++"
+        #1--  BARNES < input
+        #2--  FMM < inputs/input.16384
+        #3--  OCEAN
+        #4--  RADIOSITY -batch
+        #5--  RAYTRACE -m64 inputs/car.env
+        #6--  VOLREND 1 inputs/head
+        #7--  WATER-NSQUARED < input
+        #8--  WATER-SPATIAL < input
+        echo "====================="
+        SPLASH_BIN=~/Work/GitHub/Benchmark/splash-2/splash2/codes
+        SPLASH_APPS_BIN=$SPLASH_BIN/apps
+        SPLASH_KERNELS_BIN=$SPLASH_BIN/kernels 
+
+        LOG_FILE=$LOG_DIR/$LOOP.log
+        python ./readlog.py -d $RESULT -b $BENCH --app $APPLICATION -l $LOOP
+        python ./readlog.py -d $RESULT -b $BENCH --app $APPLICATION -l $LOOP >>$RESULT_FILE
+
 }
 
 
-raw_input()
+raw_input( )
 {
         while true;
         do
@@ -80,62 +123,59 @@ kill_perf()
 
 
 
-RESULT_DIR=RESULT/perf
 
 echo $#
-BENCH="messaging"
+APPLICATION="messaging"
 MIN_GROUP=1
 MAX_GROUP=100
 STEP_GROUP=1
 LOOP=1
 LOG_DIR=""
+LOG_FILE=""
+RESULT=""
+RESULT_FILE=""
+RESULT_DIR=""
+LOG_DIR=""
 RESULT_FILE=""
 
-if [ $# == 0 ]; then
+if [ $# == 7 ]; then
+        echo "$0 result_dir perf app min_group max_group step_group loop"
+        echo "$0 result_dir splash app loop"
+        RESULT=$1
+        BENCH=$2
+        APPLICATION=$3
+        MIN_GROUP=$4
+        MAX_GROUP=$5
+        STEP_GROUP=$6
+        LOOP=$7
+        RESULT_DIR=$RESULT/$BENCH
+        LOG_DIR=$RESULT_DIR/$APPLICATION/$MIN_GROUP-$MAX_GROUP-$STEP_GROUP-$LOOP
+        RESULT_FILE=$RESULT_DIR/$APPLICATION/$MIN_GROUP-$MAX_GROUP-$STEP_GROUP-$LOOP.log
+elif [ $# == 4 ]; then
+        RESULT=$1
+        BENCH=$2
+        APPLICATION=$3
+        LOOP=$4
+        RESULT_DIR=$RESULT/$BENCH
+        LOG_DIR=$PWD/$RESULT_DIR/$APPLICATION/$LOOP
+        LOG_FILE=$LOG_DIR/$LOOP.log
+        RESULT_FILE=$RESULT_DIR/$APPLICATION/$LOOP.log
+else
         echo "Usage :"
-        echo -e "\t$0 [messageing|pipe] [min_group] max_group [step_group] loop"
+        echo -e "\t$0 perf [messageing|pipe] [min_group] max_group [step_group] loop"
+        echo -e "\t$0 splash [barnes|fmm|ocean|radiosity|raytrace|volrend|water-nsquared |water-spatial] loop"
         echo -e "\tmessage      : use perf bench messaging -g max_group"
         echo -e "\tpipe         : use perf bench pipe -l max_group"
         echo -e "\tmax_group    : see group@messaging loop@pipe"
         echo -e "\tloop         : loop to reduces system error "
-        echo -e "\t$0 $BENCH min_group=1 max_group=100 step_group=1 loop=1"
-        raw_input
-        #BENCH="messaging"
+        echo -e "\t$0 $APPLICATION min_group=1 max_group=100 step_group=1 loop=1"
+        #raw_input
+        #APPLICATION="messaging"
         #MAX_GROUP=100
         #LOOP=1
-elif [ $# == 1 ]; then
-        echo "$0 bench min_group=1 max_group=100 step_group=1 loop=1"
-        BENCH=$1
-        #MAX_GROUP=100
-elif [ $# == 2 ]; then
-        echo "$0 bench min_group=1 max_group step_group=1 loop=1"
-        BENC=$1
-        MAX_GROUP=$2
-elif [ $# == 3 ]; then
-        echo "$0 bench min_group=1 max_group step_group=1 loop"
-        BENCH=$1
-        MAX_GROUP=$2
-        LOOP=$3
-elif [ $# == 5 ]; then
-        echo "$0 bench min_group max_group step_group loop"
-        BENCH=$1
-        MIN_GROUP=$2
-        MAX_GROUP=$3
-        STEP_GROUP=$4
-        LOOP=$5
+        exit
 fi
 
-LOG_DIR=$RESULT_DIR/$BENCH/$MIN_GROUP-$MAX_GROUP-$STEP_GROUP-$LOOP
-RESULT_FILE=$RESULT_DIR/$BENCH/$MIN_GROUP-$MAX_GROUP-$STEP_GROUP-$LOOP.log
 
-echo "bench      = $BENCH"
-echo "min_group  = $MIN_GROUP"
-echo "max_group  = $MAX_GROUP"
-echo "step_group = $STEP_GROUP"
-echo "loop       = $LOOP"
-echo "logdir     = $LOG_DIR"
-echo "resultfile = $RESULT_FILE"
-sleep 1
 
 perf_sched_bench_run
-

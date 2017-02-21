@@ -58,7 +58,7 @@ perf_sched_bench_perf_run( )
                 done
                 echo -e "=====================\n\n"
                 #python readlog.py  -f $LOG_DIR/$GROUP.log -g $GROUP -l $LOOP >>$RESULT_FILE
-                python readlog.py -d $(SPLASH_APPS_BIN)RESULT  -b $APPLICATION -min $MIN_GROUP -max $MAX_GROUP -step $STEP_GROUP -l $LOOP -g $GROUP >>$RESULT_FILE
+                python readlog.py -d $RESULT -b $BENCH --app $APPLICATION -min $MIN_GROUP -max $MAX_GROUP -step $STEP_GROUP -l $LOOP -g $GROUP >>$RESULT_FILE
         done
 }
 
@@ -131,7 +131,8 @@ perf_sched_bench_splash_run( )
                 fi
         done
 
-        echo "====================="
+        python ./readlog.py -d $RESULT -b $BENCH --app $APPLICATION -l $LOOP >>$RESULT_FILE
+
 }
 
 

@@ -4,347 +4,1347 @@ Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3585681537
+        Overall end time             3586800421
+        Total time with initialization               1118884
+        Total time without initialization               1118862
 Test Num : 2
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3588718412
+        Overall end time             3589852745
+        Total time with initialization               1134333
+        Total time without initialization               1134313
 Test Num : 3
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3591776270
+        Overall end time             3592892460
+        Total time with initialization               1116190
+        Total time without initialization               1116172
 Test Num : 4
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3594834363
+        Overall end time             3595963785
+        Total time with initialization               1129422
+        Total time without initialization               1129402
 Test Num : 5
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3597874801
+        Overall end time             3598990865
+        Total time with initialization               1116064
+        Total time without initialization               1116044
 Test Num : 6
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3600926396
+        Overall end time             3602053554
+        Total time with initialization               1127158
+        Total time without initialization               1127137
 Test Num : 7
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3603963289
+        Overall end time             3605088881
+        Total time with initialization               1125592
+        Total time without initialization               1125571
 Test Num : 8
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3606966780
+        Overall end time             3608083123
+        Total time with initialization               1116343
+        Total time without initialization               1116323
 Test Num : 9
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3610011373
+        Overall end time             3611140072
+        Total time with initialization               1128699
+        Total time without initialization               1128679
 Test Num : 10
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3613079868
+        Overall end time             3614210683
+        Total time with initialization               1130815
+        Total time without initialization               1130795
 Test Num : 11
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3616144938
+        Overall end time             3617262591
+        Total time with initialization               1117653
+        Total time without initialization               1117632
 Test Num : 12
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3619206544
+        Overall end time             3620324654
+        Total time with initialization               1118110
+        Total time without initialization               1118092
 Test Num : 13
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3622265054
+        Overall end time             3623390971
+        Total time with initialization               1125917
+        Total time without initialization               1125896
 Test Num : 14
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3625362899
+        Overall end time             3626495766
+        Total time with initialization               1132867
+        Total time without initialization               1132848
 Test Num : 15
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3628449470
+        Overall end time             3629567734
+        Total time with initialization               1118264
+        Total time without initialization               1118244
 Test Num : 16
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3631534712
+        Overall end time             3632652969
+        Total time with initialization               1118257
+        Total time without initialization               1118231
 Test Num : 17
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3634599629
+        Overall end time             3635726547
+        Total time with initialization               1126918
+        Total time without initialization               1126898
 Test Num : 18
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3637642557
+        Overall end time             3638774813
+        Total time with initialization               1132256
+        Total time without initialization               1132235
 Test Num : 19
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3640693762
+        Overall end time             3641811687
+        Total time with initialization               1117925
+        Total time without initialization               1117903
 Test Num : 20
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3643577172
+        Overall end time             3644694649
+        Total time with initialization               1117477
+        Total time without initialization               1117457
 Test Num : 21
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3646641944
+        Overall end time             3647764035
+        Total time with initialization               1122091
+        Total time without initialization               1122072
 Test Num : 22
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3649669628
+        Overall end time             3650801023
+        Total time with initialization               1131395
+        Total time without initialization               1131375
 Test Num : 23
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3652739391
+        Overall end time             3653870440
+        Total time with initialization               1131049
+        Total time without initialization               1131029
 Test Num : 24
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3655807120
+        Overall end time             3656930998
+        Total time with initialization               1123878
+        Total time without initialization               1123860
 Test Num : 25
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3658870763
+        Overall end time             3659988612
+        Total time with initialization               1117849
+        Total time without initialization               1117828
 Test Num : 26
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3661908733
+        Overall end time             3663035393
+        Total time with initialization               1126660
+        Total time without initialization               1126639
 Test Num : 27
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3664936101
+        Overall end time             3666073051
+        Total time with initialization               1136950
+        Total time without initialization               1136931
 Test Num : 28
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3667995140
+        Overall end time             3669112706
+        Total time with initialization               1117566
+        Total time without initialization               1117545
 Test Num : 29
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3671042607
+        Overall end time             3672165698
+        Total time with initialization               1123091
+        Total time without initialization               1123069
 Test Num : 30
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3674100889
+        Overall end time             3675227266
+        Total time with initialization               1126377
+        Total time without initialization               1126356
 Test Num : 31
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3677158452
+        Overall end time             3678284197
+        Total time with initialization               1125745
+        Total time without initialization               1125724
 Test Num : 32
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3680183118
+        Overall end time             3681305232
+        Total time with initialization               1122114
+        Total time without initialization               1122094
 Test Num : 33
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3683198205
+        Overall end time             3684323212
+        Total time with initialization               1125007
+        Total time without initialization               1124987
 Test Num : 34
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3686279036
+        Overall end time             3687404223
+        Total time with initialization               1125187
+        Total time without initialization               1125168
 Test Num : 35
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3689322139
+        Overall end time             3690448694
+        Total time with initialization               1126555
+        Total time without initialization               1126534
 Test Num : 36
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3692370231
+        Overall end time             3693493957
+        Total time with initialization               1123726
+        Total time without initialization               1123706
 Test Num : 37
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3695253897
+        Overall end time             3696383670
+        Total time with initialization               1129773
+        Total time without initialization               1129751
 Test Num : 38
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3698306185
+        Overall end time             3699425397
+        Total time with initialization               1119212
+        Total time without initialization               1119192
 Test Num : 39
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3701343142
+        Overall end time             3702477168
+        Total time with initialization               1134026
+        Total time without initialization               1134006
 Test Num : 40
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3704407515
+        Overall end time             3705532055
+        Total time with initialization               1124540
+        Total time without initialization               1124520
 Test Num : 41
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3707366407
+        Overall end time             3708490428
+        Total time with initialization               1124021
+        Total time without initialization               1124003
 Test Num : 42
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3710398934
+        Overall end time             3711522571
+        Total time with initialization               1123637
+        Total time without initialization               1123616
 Test Num : 43
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3713419586
+        Overall end time             3714549641
+        Total time with initialization               1130055
+        Total time without initialization               1130034
 Test Num : 44
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3716477167
+        Overall end time             3717595983
+        Total time with initialization               1118816
+        Total time without initialization               1118795
 Test Num : 45
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3719513902
+        Overall end time             3720634106
+        Total time with initialization               1120204
+        Total time without initialization               1120183
 Test Num : 46
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3722403585
+        Overall end time             3723532856
+        Total time with initialization               1129271
+        Total time without initialization               1129249
 Test Num : 47
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3725434797
+        Overall end time             3726571760
+        Total time with initialization               1136963
+        Total time without initialization               1136943
 Test Num : 48
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3728471453
+        Overall end time             3729590674
+        Total time with initialization               1119221
+        Total time without initialization               1119199
 Test Num : 49
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3731538796
+        Overall end time             3732664836
+        Total time with initialization               1126040
+        Total time without initialization               1126020
 Test Num : 50
 
 Number of processors:     	1
 Global shared memory size:	64 MB
 Samples per pixel:        	1
 
-Unable to open environment file inputs/car.env.
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time               3734615787
+        Overall end time             3735737672
+        Total time with initialization               1121885
+        Total time without initialization               1121866

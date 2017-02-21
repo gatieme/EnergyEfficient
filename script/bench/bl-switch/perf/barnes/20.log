@@ -1,0 +1,8 @@
+#bench      = perf
+#application= barnes
+#min_group  = 1
+#max_group  = 100
+#step_group = 1
+#loop_num   = 20
+#logdir     = /e/[O]Github/EnergyEfficient/script/bench/./bl-switch/perf/barnes/20
+#resultfile = 

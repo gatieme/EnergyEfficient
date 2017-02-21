@@ -44,15 +44,16 @@ def writeData(positions, types, nums, sigalrm, sigsegv, sigill) :
 
 
 
-
-def getReItem(data) :
+# 取出数据data, 符合正则表达式的数据
+def getReItem(data, reStr) :
     """
     """
     try:
         #  匹配的信息如下
         #  Total time: 0.038 [sec]
         #reStr = r'Total time: ([-+]?[0-9]*\.?[0-9]+) [sec]'
-        reStr = r'Total time: ([0-9]*\.?[0-9]+)'
+
+        #reStr = r'Total time: ([0-9]*\.?[0-9]+)'
 
         pattern = re.compile(reStr, re.S)
         myItems = re.findall(pattern, data)
@@ -68,10 +69,23 @@ def getAvgResult(myItems):
         sum += float(item)
     avg = sum / len(myItems)
     #print "sum = %f, avg = %f" % (sum, avg)
-
     return avg
 
 
+def PrintResult(myItems, title, islist) :
+    avg = getAvgResult(myItems)
+    if islist == True :  # 输出列中每一行的数据
+        print "avg = %f" % (avg)
+        for i in range(len(myItems)) :
+            print "%4d, %f" % (i + 1, float(myItems[i]))
+    else :              # 按照个数输出平均数, 标题为
+        if (len(myItems) != int(args.loop)) :
+            print "miss something in read %sm, len = %d" % (resultfile, len(myItems))
+            exit(-1)
+        if (args.curr_group != None) :
+            print " %4s, %f" %(args.curr_group, avg)
+        else :
+            print "avg = %d" % int(avg)
 
 
 if __name__ == "__main__" :
@@ -91,9 +105,9 @@ if __name__ == "__main__" :
         exit(0)
 
     parser = argparse.ArgumentParser( )
-    #parser.add_argument("-n", "--name", dest = "name", help = "bl-switch | iks | hmp | hmpcb...")
     parser.add_argument("-d", "--dir", dest = "directory", help = "The Directory")
-    parser.add_argument("-b", "--bench", dest = "bench", help = "messaging | pipe...")
+    parser.add_argument("-b", "--bench", dest = "bench", help = "messaging | pipe...")    
+    parser.add_argument("-a", "--app", dest = "application", help = "messaging | pipe...")
     parser.add_argument("-f", "--file", dest = "resultfile", help = "The file you want to read...")
     parser.add_argument("-min", "--min_group", dest = "min_group", help = "The min group you give...")
     parser.add_argument("-max", "--max_group", dest = "max_group", help = "The max group you give...")
@@ -103,29 +117,50 @@ if __name__ == "__main__" :
     args = parser.parse_args( )
 
     if (args.resultfile == None) :
-        resultfile = args.directory + "/perf/" + args.bench + "/"                                           \
-                   + args.min_group + "-" + args.max_group + "-" + args.step_group + "-" +args.loop + "/"   \
-                   + args.curr_group + ".log"
+        if (args.bench == "perf") :
+            resultfile = args.directory + "/" + args.bench + "/" + args.application + "/"                       \
+                       + args.min_group + "-" + args.max_group + "-" + args.step_group + "-" +args.loop + "/"   \
+                       + args.curr_group + ".log"
+        elif (args.bench == "splash") :
+            resultfile = args.directory + "/" + args.bench + "/" + args.application + "/" + args.loop + "/" + args.loop + ".log"
+        else :
+            print "error bench"
+            exit(-1)
     else :
         resultfile = args.resultfile
-
+    #-------------------------------------------------
+    #   不同的application输出不一致, 
+    #   因此需要使用不同的正则表达式来匹配输出
+    #   application  : resrt
+    #-------------------------------------------------
+    reStrTable = {
+        # perf
+        "messaging"     :   u"[0-9]*\.?[0-9]+",
+        "pipe"          :   u"[0-9]*\.?[0-9]+",
+        # splash
+        "barnes"        :   u"COMPUTETIME\s+=\s+([0-9]+)",
+        "fft"           :   u"Total time with initialization\s+:\s+([0-9]+)",
+        "radiosity"     :   u"\s+Total time with initialization\s+([0-9]+)",
+        "raytrace"      :   u"\s+Total time with initialization\s+([0-9]+)",
+        "water-spatial" :   u"COMPUTETIME \(after initialization\)\s+=\s+([0-9]+)",
+        "cholesky"      :   u"Total time with initialization\s+:\s+([0-9]+)",
+        "lu"            :   u"Total time with initialization\s+:\s+([0-9]+)",
+        "ocean"         :   u"Total time with initialization\s+:\s+([0-9]+)",
+        "radix"         :   u"Total time with initialization\s+:\s+([0-9]+)",
+        "water-nsquared":   u"COMPUTETIME \(after initialization\)\s+=\s+([0-9]+)",
+    }
     #print resultfile
     resultdata = readFile(resultfile)
-    #print resultdata
-    myItems = getReItem(resultdata)
-    #print len(myItems), myItems
+    print "resultfile = ", resultfile
+    print "restr = \"%s\"" % (reStrTable[args.application])
+    myItems = getReItem(resultdata, reStrTable[args.application])
+    print len(myItems), myItems
 
-    avg = getAvgResult(myItems)
-    if ((int(args.min_group) + int(args.step_group)) > int(args.max_group)) :  #  同一个循环多次
-        print "avg = %f" % (avg)
-        for i in range(len(myItems)) :
-            print "%4d, %f" % (i + 1, float(myItems[i]))
+
+
+    if (args.bench == "splash" or (args.bench == "perf" and (int(args.min_group) + int(args.step_group)) > int(args.max_group))) :  #  同一个循环多次
+        PrintResult(myItems, args.curr_group, True)   # 列表输出
     else :
-        if (len(myItems) != int(args.loop)) :
-            print "miss something in read %sm, len = %d" % (resultfile, len(myItems))
-            exit(-1)
-
-        print " %4s, %f" %(args.curr_group, avg)
-
+        PrintResult(myItems, args.curr_group, False)  # 只输出一行数据
     exit(0)
 
