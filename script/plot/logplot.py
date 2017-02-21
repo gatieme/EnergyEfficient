@@ -35,7 +35,7 @@ class PerfPlotData :
         self.marker = marker
 
 
-def ShowPerfPlot(poltDataList):
+def ShowPerfPlot(poltDataList, poly):
     #http://blog.csdn.net/kkxgx/article/details/6951959
     #http://www.mamicode.com/info-detail-280610.html
     #http://blog.csdn.net/panda1234lee/article/details/52311593
@@ -56,16 +56,17 @@ def ShowPerfPlot(poltDataList):
         print len(data.xData), len(data.yData)
         #  曲线平滑--http://rys1314520.iteye.com/blog/1820777
         #  曲线平滑--http://blog.sina.com.cn/s/blog_142e602960102wegx.html
+        if poly == True :
+            #计算多项式
+            c = np.polyfit(data.xData, data.yData, 10)   #  拟合多项式的系数存储在数组c中
+            yy = np.polyval(c, data.xData)                  #  根据多项式求函数值
 
-        #计算多项式
-        #c = np.polyfit(data.xData, data.yData, 3)   #  拟合多项式的系数存储在数组c中
-        #yy = np.polyval(c, data.xData)                  #  根据多项式求函数值
-
-        #进行曲线绘制
-        #x_new = np.linspace(0, 200, 40)
-        #f_liner = np.polyval(c,x_new)
-        #plt.plot(x_new, f_liner, color = data.color, linestyle = '--', marker = data.marker, label = data.plotName)
-        plt.plot(data.xData, data.yData, color = data.color, linestyle = '--', marker = data.marker, label = data.plotName)
+            #进行曲线绘制
+            x_new = np.linspace(0, 1000000, 11)
+            f_liner = np.polyval(c,x_new)
+            plt.plot(x_new, f_liner, color = data.color, linestyle = '--', marker = data.marker, label = data.plotName)
+        else :
+            plt.plot(data.xData, data.yData, color = data.color, linestyle = '--', marker = data.marker, label = data.plotName)
         plt.legend(loc = "upper left")
         #plt.savefig('cdf.png', format = 'png')
 
@@ -144,12 +145,15 @@ if __name__ == "__main__" :
     parser.add_argument("-l", "--loop", dest = "loop", help = "The file you want to read...")
     args = parser.parse_args( )
 
+    #nameTuple = ( "hmp", "hmpcb")
     nameTuple = ( "bl-switch", "iks", "hmp", "hmpcb")
+    #nameTuple = ( "bl-switch", "iks", "hmp", "hmpcb", "little-cluster", "big-cluster", "big-little-cluster")
+    #nameTuple = ( "little-cluster", "big-cluster", "big-little-cluster")
     #   1）控制颜色
     #   颜色之间的对应关系为
     #   b---blue   c---cyan  g---green    k----black
     #   m---magenta r---red  w---white    y----yellow
-    colorTuple = ( 'b', 'c', 'g', 'k', 'm', 'r', 'w', 'y')
+    colorTuple = ( 'b', 'c', 'g', 'k', 'm', 'r', 'y', 'y')
     #.  Point marker
     #,  Pixel marker
     #o  Circle marker
@@ -198,5 +202,5 @@ if __name__ == "__main__" :
         plotdata = PerfPlotData(name, resultfile, xData, yData, color, marker)
         plotDataList.append(plotdata)
 
-    ShowPerfPlot(plotDataList)
+    ShowPerfPlot(plotDataList, False)
     exit(0)
