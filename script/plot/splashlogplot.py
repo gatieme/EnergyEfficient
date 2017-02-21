@@ -91,32 +91,63 @@ def ReadPlotXData(minData, maxData, step) :
     return xData;
 
 
-def ReadPlotData(filepath, lines, iszero) :
-    fileobject = open(filepath)
 
-    if iszero == True :
-        xData = [ 0 ]
-        yData = [ 0 ]
-    else :
-        xData = [ ]
-        yData = [ ]
-    while 1 :
-        linedata = fileobject.readlines(lines)
 
-        if not linedata:
-            break
-        for line in linedata:
-            #print line
-            xyData = ParsePlotData(line)
-            if (xyData != None) :
-                #print "data = ", xyData[0], xyData[1]
-                xData.append(xyData[1])
-                yData.append(xyData[2])
-            else :
-                #print "line = ", line
-                pass
-    return (xData, yData)
+#----------------------------------
+def readFile(file):
+    """
+    """
+    file_object = open(file)
 
+    try :
+
+        read_data = file_object.read( )
+        return read_data
+
+    finally :
+
+        file_object.close( )
+
+
+
+def writeData(positions, types, nums, sigalrm, sigsegv, sigill) :
+    """
+    """
+    resultfile = "./RESULT/" + nums + "/result.log"
+    file_object = open(resultfile, "a")
+    file_object.write(positions.center(10) + types.center(20) + str(sigalrm).center(10) + str(sigsegv).center(10) + str(sigill).center(10) + "\n")
+    file_object.close( )
+
+
+
+
+# 取出数据data, 符合正则表达式的数据
+def getReItem(data, reStr) :
+    """
+    """
+    try:
+        #  匹配的信息如下
+        #  Total time: 0.038 [sec]
+        #reStr = r'Total time: ([-+]?[0-9]*\.?[0-9]+) [sec]'
+
+        
+
+        pattern = re.compile(reStr, re.S)
+        myItems = re.findall(pattern, data)
+        #print myItems
+        return myItems
+    finally:
+        pass
+
+
+def ReadPlotData(filepath) :
+    resultdata = readFile(filepath)
+    #print resultdata 
+    reStr = r"avg = ([0-9]*\.?[0-9]+)"
+    myItems = getReItem(resultdata, reStr)
+    #print len(myItems), myItems
+    return myItems
+#----------------------------------
 
 
 if __name__ == "__main__" :
@@ -149,13 +180,13 @@ if __name__ == "__main__" :
     args = parser.parse_args( )
 
     #nameTuple = ( "hmp", "hmpcb")
-    subjectsTuple = ( "barnes", "fft", "ocean", "radix", "water-spatial", "cholesky", "lu", "radiosity", "raytrace", "water-nsquared")
+    appTuple = ( "barnes", "fft", "ocean", "radix", "water-spatial", "cholesky", "lu", "radiosity", "raytrace", "water-nsquared")
     nameTuple = ( "bl-switch", "iks", "hmp", "hmpcb")
     #   1）控制颜色
     #   颜色之间的对应关系为
     #   b---blue   c---cyan  g---green    k----black
     #   m---magenta r---red  w---white    y----yellow
-    colorTuple = ( 'b', 'c', 'g', 'k', 'm', 'r', 'y', 'y')
+    colorTuple = ( 'b', 'c', 'g', 'k', 'm', 'r', 'y', 'y', 'b', 'c')
     
     # plot数据
     # 其中有len(subjectsTuple)个长度为len(nameTuple)的列表
@@ -164,24 +195,29 @@ if __name__ == "__main__" :
     plotDataList = []  
 
     #for name in nameTuple :
-    for subIndex in range(len(subjectsTuple)) :
-        subject = subjectsTuple[subIndex]
-        color = colorTuple[subIndex]
+    for appIndex in range(len(appTuple)) :
+        app = appTuple[appIndex]
+        color = colorTuple[appIndex]
 
+        #  每个进程的信息
+        subPlotDataList = []
         for nameIndex in range(len(nameTuple)) :
+            name = nameTuple[nameIndex]
             if (name == "NULL") :
                 break
-            resultfile = args.directory + "/" + name + "/splash/" + args.application + "/" + args.loop + ".log"       
+            resultfile = args.directory + "/" + name + "/splash/" + app + "/" + args.loop + ".log"       
             print "\n=========================================="
             print "resultfile :", resultfile
 
-
             yData = ReadPlotData(resultfile)
             print "+++++++", len(yData), "+++++++"
+            if len(yData) != 1 :
+                exit(-1)
             print yData
             print "==========================================\n"
-            plotdata = PerfPlotData(name, resultfile, xData, yData, color, marker)
-            plotDataList.append(plotdata)
+            #plotdata = SplashPlotData(name, resultfile, xData, yData, color, marker)
+            #plotDataList.append(plotdata)
+            plotDataList.append(yData)
 
-    ShowPerfPlot(plotDataList, False)
+    #ShowPerfPlot(plotDataList, False)
     exit(0)
