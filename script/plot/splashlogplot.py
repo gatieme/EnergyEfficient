@@ -139,6 +139,7 @@ if __name__ == "__main__" :
     parser = argparse.ArgumentParser( )
     #parser.add_argument("-n", "--name", dest = "name", help = "bl-switch | iks | hmp | hmpcb...")
     parser.add_argument("-b", "--bench", dest = "bench", help = "messaging | pipe...")
+    parser.add_argument("-a", "--app", dest = "application", help = "messaging | pipe...")
     parser.add_argument("-d", "--dir", dest = "directory", help = "The Directory")
     parser.add_argument("-f", "--file", dest = "resultfile", help = "The file you want to read...")
     parser.add_argument("-min", "--min_group", dest = "min_group", help = "The min group you give...")
@@ -148,61 +149,39 @@ if __name__ == "__main__" :
     args = parser.parse_args( )
 
     #nameTuple = ( "hmp", "hmpcb")
+    subjectsTuple = ( "barnes", "fft", "ocean", "radix", "water-spatial", "cholesky", "lu", "radiosity", "raytrace", "water-nsquared")
     nameTuple = ( "bl-switch", "iks", "hmp", "hmpcb")
-    #nameTuple = ( "bl-switch", "iks", "hmp", "hmpcb", "little-cluster", "big-cluster", "big-little-cluster")
-    #nameTuple = ( "little-cluster", "big-cluster", "big-little-cluster")
     #   1）控制颜色
     #   颜色之间的对应关系为
     #   b---blue   c---cyan  g---green    k----black
     #   m---magenta r---red  w---white    y----yellow
     colorTuple = ( 'b', 'c', 'g', 'k', 'm', 'r', 'y', 'y')
-    #.  Point marker
-    #,  Pixel marker
-    #o  Circle marker
-    #v  Triangle down marker
-    #^  Triangle up marker
-    #<  Triangle left marker
-    #>  Triangle right marker
-    #1  Tripod down marker
-    #2  Tripod up marker
-    #3  Tripod left marker
-    #4  Tripod right marker
-    #s  Square marker
-    #p  Pentagon marker
-    #*  Star marker
-    #h  Hexagon marker
-    #H  Rotated hexagon D Diamond marker
-    #d  Thin diamond marker
-    #| Vertical line (vlinesymbol) marker
-    #_  Horizontal line (hline symbol) marker
-    #+  Plus marker
-    #x  Cross (x) marker
-    markerTuple= ( 'o', '^', '*', 's', 'p', '2', 'h', )
-    plotDataList = []
+    
+    # plot数据
+    # 其中有len(subjectsTuple)个长度为len(nameTuple)的列表
+    # 用于标识每个进程subjectsTuple在nameTuple环境下运行的结果集合
+    # 买个进程有一个颜色标识
+    plotDataList = []  
 
     #for name in nameTuple :
-    for index in range(len(nameTuple)) :
-        name = nameTuple[index]
-        color = colorTuple[index]
-        marker = markerTuple[index]
-        if (name == "NULL") :
-            break
-        resultfile = args.directory + "/" + name + "/perf/" + args.bench + "/" \
-                   + args.min_group + "-" + args.max_group + "-" + args.step_group + "-" +args.loop + ".log"
-        print "\n=========================================="
-        print "resultfile :", resultfile
+    for subIndex in range(len(subjectsTuple)) :
+        subject = subjectsTuple[subIndex]
+        color = colorTuple[subIndex]
 
-        if ((int(args.min_group) + int(args.step_group)) > int(args.max_group)) :  #  同一个循环多次
-            iszero = False
-        else :
-            iszero = True
-        (xData, yData) = ReadPlotData(resultfile, 1000, iszero)
-        print "+++++++", len(xData), len(yData), "+++++++"
-        print xData
-        print yData
-        print "==========================================\n"
-        plotdata = PerfPlotData(name, resultfile, xData, yData, color, marker)
-        plotDataList.append(plotdata)
+        for nameIndex in range(len(nameTuple)) :
+            if (name == "NULL") :
+                break
+            resultfile = args.directory + "/" + name + "/splash/" + args.application + "/" + args.loop + ".log"       
+            print "\n=========================================="
+            print "resultfile :", resultfile
+
+
+            yData = ReadPlotData(resultfile)
+            print "+++++++", len(yData), "+++++++"
+            print yData
+            print "==========================================\n"
+            plotdata = PerfPlotData(name, resultfile, xData, yData, color, marker)
+            plotDataList.append(plotdata)
 
     ShowPerfPlot(plotDataList, False)
     exit(0)
