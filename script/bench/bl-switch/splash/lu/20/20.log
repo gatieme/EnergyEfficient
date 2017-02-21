@@ -1,20 +1,400 @@
 Test Num : 1
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        703769           754         33136        669665           138
+
+                            TIMING INFORMATION
+Start time                        :       2743068572
+Initialization finish time        :       2743231793
+Overall finish time               :       2743935564
+Total time with initialization    :           866992
+Total time without initialization :           703771
+
 Test Num : 2
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        645904           726         30705        614260           135
+
+                            TIMING INFORMATION
+Start time                        :       2743943588
+Initialization finish time        :       2744021787
+Overall finish time               :       2744667693
+Total time with initialization    :           724105
+Total time without initialization :           645906
+
 Test Num : 3
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        745540           776         35180        709366           130
+
+                            TIMING INFORMATION
+Start time                        :       2744675670
+Initialization finish time        :       2744794614
+Overall finish time               :       2745540156
+Total time with initialization    :           864486
+Total time without initialization :           745542
+
 Test Num : 4
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        749750           823         35218        713441           173
+
+                            TIMING INFORMATION
+Start time                        :       2745548087
+Initialization finish time        :       2745669944
+Overall finish time               :       2746419697
+Total time with initialization    :           871610
+Total time without initialization :           749753
+
 Test Num : 5
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        746301           775         34753        710559           128
+
+                            TIMING INFORMATION
+Start time                        :       2746427629
+Initialization finish time        :       2746551498
+Overall finish time               :       2747297801
+Total time with initialization    :           870172
+Total time without initialization :           746303
+
 Test Num : 6
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        738888           777         36212        701661           145
+
+                            TIMING INFORMATION
+Start time                        :       2747305769
+Initialization finish time        :       2747423581
+Overall finish time               :       2748162471
+Total time with initialization    :           856702
+Total time without initialization :           738890
+
 Test Num : 7
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        709882           756         33289        675632           126
+
+                            TIMING INFORMATION
+Start time                        :       2748180901
+Initialization finish time        :       2748314049
+Overall finish time               :       2749023934
+Total time with initialization    :           843033
+Total time without initialization :           709885
+
 Test Num : 8
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        777861           829         35824        740963           153
+
+                            TIMING INFORMATION
+Start time                        :       2749032027
+Initialization finish time        :       2749160133
+Overall finish time               :       2749937996
+Total time with initialization    :           905969
+Total time without initialization :           777863
+
 Test Num : 9
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        744412           774         35051        708383           126
+
+                            TIMING INFORMATION
+Start time                        :       2749945978
+Initialization finish time        :       2750064718
+Overall finish time               :       2750809133
+Total time with initialization    :           863155
+Total time without initialization :           744415
+
 Test Num : 10
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        749634           809         34978        713606           155
+
+                            TIMING INFORMATION
+Start time                        :       2750817165
+Initialization finish time        :       2750940111
+Overall finish time               :       2751689747
+Total time with initialization    :           872582
+Total time without initialization :           749636
+
 Test Num : 11
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        652933           731         30826        621175           123
+
+                            TIMING INFORMATION
+Start time                        :       2751697806
+Initialization finish time        :       2751785034
+Overall finish time               :       2752437969
+Total time with initialization    :           740163
+Total time without initialization :           652935
+
 Test Num : 12
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        744645           783         35031        708583           151
+
+                            TIMING INFORMATION
+Start time                        :       2752445956
+Initialization finish time        :       2752565723
+Overall finish time               :       2753310370
+Total time with initialization    :           864414
+Total time without initialization :           744647
+
 Test Num : 13
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        736833           775         34760        701089           132
+
+                            TIMING INFORMATION
+Start time                        :       2753318528
+Initialization finish time        :       2753440153
+Overall finish time               :       2754176989
+Total time with initialization    :           858461
+Total time without initialization :           736836
+
 Test Num : 14
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        740531           774         36029        703499           139
+
+                            TIMING INFORMATION
+Start time                        :       2754185011
+Initialization finish time        :       2754298244
+Overall finish time               :       2755038777
+Total time with initialization    :           853766
+Total time without initialization :           740533
+
 Test Num : 15
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        753539           787         35232        717299           139
+
+                            TIMING INFORMATION
+Start time                        :       2755046834
+Initialization finish time        :       2755166721
+Overall finish time               :       2755920263
+Total time with initialization    :           873429
+Total time without initialization :           753542
+
 Test Num : 16
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        749277           782         35397        712841           159
+
+                            TIMING INFORMATION
+Start time                        :       2755928339
+Initialization finish time        :       2756050522
+Overall finish time               :       2756799801
+Total time with initialization    :           871462
+Total time without initialization :           749279
+
 Test Num : 17
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        737784           779         34831        701955           137
+
+                            TIMING INFORMATION
+Start time                        :       2756807858
+Initialization finish time        :       2756928748
+Overall finish time               :       2757666534
+Total time with initialization    :           858676
+Total time without initialization :           737786
+
 Test Num : 18
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        675215           767         31732        642499           131
+
+                            TIMING INFORMATION
+Start time                        :       2757674560
+Initialization finish time        :       2757772713
+Overall finish time               :       2758447930
+Total time with initialization    :           773370
+Total time without initialization :           675217
+
 Test Num : 19
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        743361           772         35236        707101           177
+
+                            TIMING INFORMATION
+Start time                        :       2758455946
+Initialization finish time        :       2758575560
+Overall finish time               :       2759318923
+Total time with initialization    :           862977
+Total time without initialization :           743363
+
 Test Num : 20
+
+Blocked Dense LU Factorization
+     512 by 512 Matrix
+     1 Processors
+     16 by 16 Element Blocks
+
+
+                            PROCESS STATISTICS
+              Total      Diagonal     Perimeter      Interior       Barrier
+ Proc         Time         Time         Time           Time          Time
+    0        647645           730         30818        615865           145
+
+                            TIMING INFORMATION
+Start time                        :       2759326825
+Initialization finish time        :       2759405501
+Overall finish time               :       2760053148
+Total time with initialization    :           726323
+Total time without initialization :           647647
+
