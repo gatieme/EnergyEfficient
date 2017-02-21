@@ -92,7 +92,12 @@ perf_sched_bench_splash_run( )
         for (( i = 1; i <= $LOOP; i++ ))          #  每次统计循环进行NUM次以防止误差
         do
                 echo -e "Test Num : $i"
-                echo -e "Test Num : $i" >>$LOG_FILE
+                if [ $i == 1 ]; then
+                        echo -e "Test Num : $i" > $LOG_DIR/$GROUP.log
+                else
+                        echo -e "Test Num : $i" >> $LOG_DIR/$GROUP.log
+                fi
+                
                 if   [ $APPLICATION == "barnes" ]; then
                         cd $SPLASH_APPS_BIN/barnes
                         ./BARNES < input >> $LOG_FILE
