@@ -36,6 +36,11 @@ class PerfPlotData :
         self.marker = marker
 
 
+#----------------------------------
+#
+#   读取数据绘制plot图表
+#
+#----------------------------------
 
 
 # 添加数据标签
@@ -64,6 +69,8 @@ def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = T
     #自动调整label显示方式，如果太挤则倾斜显示
     fig = plt.figure(num = 1, figsize = (8, 6))
     fig.autofmt_xdate( )
+    plt.title("scheduler splash benchmark")
+    plt.ylabel("time", size = 14)
     # 必须配置中文字体，否则会显示成方块
     # 注意所有希望图表显示的中文必须为unicode格式
     # http://blog.sciencenet.cn/blog-43412-343002.html
@@ -90,7 +97,7 @@ def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = T
     plt.xticks(xdata + bar_width, appTuple)#, fontproperties=custom_font)
     # Y轴范围
     if standardized == True :
-        plt.ylim(ymin = 0, ymax = 100)
+        plt.ylim(ymin = 0, ymax = 4200)
     else :
         plt.ylim(ymin = 0, ymax = 4200)
 
@@ -106,17 +113,6 @@ def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = T
 
 
 
-def ParsePlotData(str) :
-    # 测试字符串格式化
-    # 通过parse库可以实现与format相反的功能
-    # 其结果类似与C语言的sscanf
-    str_format =  "{:s}{:d}, {:f}"
-    xydata = parse.parse(str_format, str)
-    #print xydata
-    return xydata #(xydata[1], xydata[2])
-
-
-
 def ReadPlotXData(minData, maxData, step) :
     #  生成X轴的数据，从minData~maxData，步长为step
     xData = range(minData, maxData,  step)
@@ -124,8 +120,49 @@ def ReadPlotXData(minData, maxData, step) :
 
 
 
-
 #----------------------------------
+#
+#   将数据标准化
+#
+##----------------------------------
+
+
+#http://blog.csdn.net/kryolith/article/details/39770187
+def MaxMinNormalization(x, Min, Max):  
+    x = (x - Min) / (Max - Min);  
+    return x;  
+
+def StandardizedPlotDataList(plotDataList) :
+    """
+    每个name系统中各个进程app的运行情况
+    每行对应一个系统
+    每列对应一个进程
+    由于各个进行运行的时间差异比较大
+    为了在一个图形上显示的比较好看因此将这些数据进行标准化
+
+    http://blog.csdn.net/kryolith/article/details/39770187
+    """
+
+    for col in range(len(plotDataList[0]))  :       #  每列代表一个进程app
+        colList = []        
+        for row in range(len(plotDataList)) :      #  每行代表一个系统name
+            colList.append(plotDataList[row][col])
+        print "col = ", col, colList
+
+        minData = min(colList)
+        maxData = max(colList)
+        for row in range(len(plotDataList)) :      #  每行代表一个系统name
+            tmp =  MaxMinNormalization(plotDataList[row][col], minData, maxData)
+            plotDataList[row][col] = tmp * 4000
+
+
+
+
+#-----------------------------------
+#
+#   从log中读取并处理数据
+#
+#-----------------------------------
 def readFile(file):
     """
     """
@@ -180,34 +217,6 @@ def ReadPlotData(filepath) :
 
 
 
-#http://blog.csdn.net/kryolith/article/details/39770187
-def MaxMinNormalization(x, Min, Max):  
-    x = (x - Min) / (Max - Min);  
-    return x;  
-
-def StandardizedPlotDataList(plotDataList) :
-    """
-    每个name系统中各个进程app的运行情况
-    每行对应一个系统
-    每列对应一个进程
-    由于各个进行运行的时间差异比较大
-    为了在一个图形上显示的比较好看因此将这些数据进行标准化
-
-    http://blog.csdn.net/kryolith/article/details/39770187
-    """
-
-    for col in range(len(plotDataList[0]))  :       #  每列代表一个进程app
-        colList = []        
-        for row in range(len(plotDataList)) :      #  每行代表一个系统name
-            colList.append(plotDataList[row][col])
-        print "col = ", col, colList
-        maxData = max(colList)
-        minData = min(colList)
-        
-        for row in range(len(plotDataList)) :      #  每行代表一个系统name
-            tmp =  MaxMinNormalization(plotDataList[row][col], minData, maxData)
-            plotDataList[row][col] = tmp * 100    
-
 
 
 
@@ -242,13 +251,15 @@ if __name__ == "__main__" :
     args = parser.parse_args( )
 
     #nameTuple = ( "hmp", "hmpcb")
+    #appTuple = ( "fft", "radix", "cholesky" )  #300
+    appTuple = ( "fft", "ocean", "radix", "water-spatial", "cholesky", "lu", "radiosity", "raytrace", "water-nsquared") # 2000
     appTuple = ( "barnes", "fft", "ocean", "radix", "water-spatial", "cholesky", "lu", "radiosity", "raytrace", "water-nsquared")
     nameTuple = ( "bl-switch", "iks", "hmp", "hmpcb")
     #   1）控制颜色
     #   颜色之间的对应关系为
     #   b---blue   c---cyan  g---green    k----black
     #   m---magenta r---red  w---white    y----yellow
-    colorTuple = ( 'b', 'c', 'g', 'k', 'm', 'r', 'y', 'y', 'b', 'c')
+    colorTuple = ( 'r', 'b', 'y', 'k', 'g', 'c', 'm', 'r', 'y', 'y', 'b', 'c')
     
     # plot数据
     # 其中有len(subjectsTuple)个长度为len(nameTuple)的列表
@@ -278,14 +289,15 @@ if __name__ == "__main__" :
             #print yData
             #print "==========================================\n"
 
-            appPlotDataList.append(int(string.atof(yData[0]) / 1000))   #  每个进程的运行情况
+            appPlotDataList.append(string.atof(yData[0]) / 1000)   #  每个进程的运行情况
         print name, appPlotDataList
         #plotdata = SplashPlotData(name = app, xData = , yData = appPlotDataList, color = color)
         plotDataList.append(appPlotDataList)    # 每个name系统中各个进程app的运行情况, 每行对应一个系统, 每列对应一个进程
+    
+
     print "name =  ", nameTuple
     print "app = ", appTuple
     print "data = ", plotDataList
     print "color = ", colorTuple
-
     ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = False)
     exit(0)
