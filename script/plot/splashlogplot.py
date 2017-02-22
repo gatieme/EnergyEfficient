@@ -171,6 +171,27 @@ def ReadPlotData(filepath) :
 #----------------------------------
 
 
+
+
+
+
+def StandardizedPlotDataList(plotDataList, min, max) :
+    """
+    每个name系统中各个进程app的运行情况
+    每行对应一个系统
+    每列对应一个进程
+    由于各个进行运行的时间差异比较大
+    为了在一个图形上显示的比较好看因此将这些数据进行标准化
+
+    http://blog.csdn.net/kryolith/article/details/39770187
+    """
+    for col in len(plotDataList[0]) :       #  每列代表一个进程app
+        for row in len(plotDataList) :      #  每行代表一个系统name
+
+
+
+
+
 if __name__ == "__main__" :
 
 #python logplot.py -d ../bench  -b messaging -min 10 -max 100 -step 10 -l 5
@@ -237,13 +258,14 @@ if __name__ == "__main__" :
             #print yData
             #print "==========================================\n"
 
-            appPlotDataList.append(yData[0])
+            appPlotDataList.append(yData[0])   #  每个进程的运行情况
         print name, appPlotDataList
         #plotdata = SplashPlotData(name = app, xData = , yData = appPlotDataList, color = color)
-        plotDataList.append(appPlotDataList)
+        plotDataList.append(appPlotDataList)    # 每个name系统中各个进程app的运行情况, 每行对应一个系统, 每列对应一个进程
     print "name =  ", nameTuple
     print "app = ", appTuple
     print "data = ", plotDataList
     print "color = ", colorTuple
+    #
     ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple)
     exit(0)
