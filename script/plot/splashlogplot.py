@@ -3,7 +3,9 @@
 
 
 #!coding:utf-8
-
+#http://www.huochai.mobi/p/d/1601065/?share_tid=874fc167e1fe&fmid=
+#https://segmentfault.com/a/1190000004103325
+#
 import re
 import sys
 import argparse
@@ -52,7 +54,7 @@ def AddPlotLabels(xdata, ydata, width, color, name):
     color : 柱状图的颜色
     name  : 柱状图的名称
     """
-    rects = plt.bar(xdata, ydata, width, color = color, label = name)
+    rects = plt.bar(xdata, ydata, width, color = color, label = name)#, align = "center")
 
     #  柱状图上显示text信息
     #  plt.text的参数分别是：x坐标，y坐标，要显示的文字
@@ -63,7 +65,7 @@ def AddPlotLabels(xdata, ydata, width, color, name):
     #    rect.set_edgecolor('white')
 
 
-def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = True):
+def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = True, minY = 0, maxY = 4200):
 
     if standardized == True :
         StandardizedPlotDataList(plotDataList)
@@ -71,8 +73,8 @@ def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = T
     #自动调整label显示方式，如果太挤则倾斜显示
     fig = plt.figure(num = 1, figsize = (8, 6))
     fig.autofmt_xdate( )
-    plt.title("scheduler splash benchmark")
-    plt.ylabel("time(ms)", size = 14)
+    plt.title("调度器scheduler splash benchmark")
+    plt.ylabel("时间time(ms)", size = 14)
     plt.grid( ) # 开启网格
     # 必须配置中文字体，否则会显示成方块
     # 注意所有希望图表显示的中文必须为unicode格式
@@ -91,21 +93,22 @@ def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = T
 
     xdata = np.arange(len(appTuple))   # 
 
+    print "\n==============================================================="
+    print "+++++++ plot data +++++++"
     for nameIndex in range(len(nameTuple)) :
         print nameTuple[nameIndex], poltDataList[nameIndex]
         AddPlotLabels(xdata + bar_width * nameIndex, poltDataList[nameIndex], bar_width, \
             colorTuple[nameIndex], nameTuple[nameIndex])
+    print "===============================================================\n"
 
     # X轴标题
     plt.xticks(xdata + bar_width, appTuple)#, fontproperties=custom_font)
     # Y轴范围
-    if standardized == True :
-        plt.ylim(ymin = 0, ymax = 4200)
-    else :
-        plt.ylim(ymin = 0, ymax = 4200)
+    plt.ylim(minY, maxY)
+
 
     # 图表标题
-    plt.title(u'调度器')#, fontproperties=custom_font)
+    #plt.title(u'调度器')#, fontproperties=custom_font)
     # 图例显示在图表下方
     plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.03), fancybox=True, ncol=5)#, prop=custom_font)
 
@@ -270,6 +273,8 @@ if __name__ == "__main__" :
     # 买个进程有一个颜色标识
     plotDataList = []  
 
+    print "\n==============================================================="
+    print "+++++++ read plot data +++++++"
     #for name in nameTuple :
     for nameIndex in range(len(nameTuple)) :
         name = nameTuple[nameIndex]
@@ -296,11 +301,15 @@ if __name__ == "__main__" :
         print name, appPlotDataList
         #plotdata = SplashPlotData(name = app, xData = , yData = appPlotDataList, color = color)
         plotDataList.append(appPlotDataList)    # 每个name系统中各个进程app的运行情况, 每行对应一个系统, 每列对应一个进程
-    
+    print "===============================================================\n" 
 
-    print "name =  ", nameTuple
-    print "app = ", appTuple
-    print "data = ", plotDataList
-    print "color = ", colorTuple
-    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = False)
+    print "\n===============================================================" 
+    print "+++++++ all data you get +++++++"
+    print "name =", nameTuple
+    print "app =", appTuple
+    print "data =", plotDataList
+    print "color =", colorTuple
+    print "===============================================================\n" 
+    
+    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = False, minY = 0, maxY = 4200)
     exit(0)
