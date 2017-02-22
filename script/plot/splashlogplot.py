@@ -46,8 +46,6 @@ def AddPlotLabels(xdata, ydata, width, color, name):
     color : 柱状图的颜色
     name  : 柱状图的名称
     """
-    print xdata
-    print yData
     rects = plt.bar(xdata, ydata, width, color = color, label = name)
 
     for rect in rects:
@@ -58,10 +56,6 @@ def AddPlotLabels(xdata, ydata, width, color, name):
 
 
 def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple):
-    print "name =  ", nameTuple
-    print "app = ", appTuple
-    print "data = ", plotDataList
-    print "color = ", colorTuple
     #自动调整label显示方式，如果太挤则倾斜显示
     fig = plt.figure(num = 1, figsize = (8, 6))
     fig.autofmt_xdate( )
@@ -78,18 +72,19 @@ def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple):
     
 
     # 设置柱形图宽度
-    bar_width = 0.1
+    bar_width = 0.2
 
-    xdata = np.arange(len(nameTuple))   # 
+    xdata = np.arange(len(appTuple))   # 
 
-    for appIndex in range(len(appTuple)) :
-        print appTuple[appIndex], poltDataList[appIndex]
-        AddPlotLabels(xdata + bar_width * appIndex, poltDataList[appIndex], bar_width, colorTuple[appIndex], appTuple[appIndex])
+    for nameIndex in range(len(nameTuple)) :
+        print nameTuple[nameIndex], poltDataList[nameIndex]
+        AddPlotLabels(xdata + bar_width * nameIndex, poltDataList[nameIndex], bar_width, \
+            colorTuple[nameIndex], nameTuple[nameIndex])
 
     # X轴标题
-    plt.xticks(xdata + bar_width, nameTuple)#, fontproperties=custom_font)
+    plt.xticks(xdata + bar_width, appTuple)#, fontproperties=custom_font)
     # Y轴范围
-    plt.ylim(ymin = 0, ymax = 2000000)
+    plt.ylim(ymin = 0, ymax = 4200000)
 
     # 图表标题
     plt.title(u'调度器')#, fontproperties=custom_font)
@@ -221,14 +216,14 @@ if __name__ == "__main__" :
     plotDataList = []  
 
     #for name in nameTuple :
-    for appIndex in range(len(appTuple)) :
-        app = appTuple[appIndex]
-        color = colorTuple[appIndex]
+    for nameIndex in range(len(nameTuple)) :
+        name = nameTuple[nameIndex]
+        color = colorTuple[nameIndex]
 
         #  每个进程的信息
         appPlotDataList = []
-        for nameIndex in range(len(nameTuple)) :
-            name = nameTuple[nameIndex]
+        for appIndex in range(len(appTuple)) :
+            app = appTuple[appIndex]
             if (name == "NULL") :
                 break
             resultfile = args.directory + "/" + name + "/splash/" + app + "/" + args.loop + ".log"       
@@ -243,7 +238,7 @@ if __name__ == "__main__" :
             #print "==========================================\n"
 
             appPlotDataList.append(yData[0])
-        print app, appPlotDataList
+        print name, appPlotDataList
         #plotdata = SplashPlotData(name = app, xData = , yData = appPlotDataList, color = color)
         plotDataList.append(appPlotDataList)
     print "name =  ", nameTuple
