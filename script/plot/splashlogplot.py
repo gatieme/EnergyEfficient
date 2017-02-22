@@ -54,11 +54,13 @@ def AddPlotLabels(xdata, ydata, width, color, name):
     """
     rects = plt.bar(xdata, ydata, width, color = color, label = name)
 
-    for rect in rects:
-        height = rect.get_height( )
-        plt.text(rect.get_x() + rect.get_width() / 2, height, height, ha='center', va='bottom')
-        # 柱形图边缘用白色填充，纯粹为了美观
-        rect.set_edgecolor('white')
+    #  柱状图上显示text信息
+    #  plt.text的参数分别是：x坐标，y坐标，要显示的文字
+    #for rect in rects:
+    #    height = rect.get_height( )
+    #    plt.text(rect.get_x() + rect.get_width() / 2, height, height, ha='center', va='bottom')
+    #    # 柱形图边缘用白色填充，纯粹为了美观
+    #    rect.set_edgecolor('white')
 
 
 def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = True):
@@ -70,7 +72,8 @@ def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = T
     fig = plt.figure(num = 1, figsize = (8, 6))
     fig.autofmt_xdate( )
     plt.title("scheduler splash benchmark")
-    plt.ylabel("time", size = 14)
+    plt.ylabel("time(ms)", size = 14)
+    plt.grid( ) # 开启网格
     # 必须配置中文字体，否则会显示成方块
     # 注意所有希望图表显示的中文必须为unicode格式
     # http://blog.sciencenet.cn/blog-43412-343002.html
