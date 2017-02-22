@@ -26,6 +26,9 @@ def add_labels(xdata, ydata, width, color, name):
     color : 柱状图的颜色
     name  : 柱状图的名称
     """
+    print xdata
+    print ydata
+    print width
     rects = plt.bar(xdata, ydata, width, color = color, label = name)
 
     for rect in rects:

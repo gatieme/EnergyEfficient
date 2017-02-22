@@ -35,40 +35,69 @@ class PerfPlotData :
         self.marker = marker
 
 
-def ShowPerfPlot(poltDataList, poly):
-    #http://blog.csdn.net/kkxgx/article/details/6951959
-    #http://www.mamicode.com/info-detail-280610.html
-    #http://blog.csdn.net/panda1234lee/article/details/52311593
-    #  中文信息支持
-    mpl.rcParams['font.sans-serif'] = ['SimHei'] #用来正常显示中文标签
-    mpl.rcParams['axes.unicode_minus'] = False #用来正常显示负号
+
+
+# 添加数据标签
+def AddPlotLabels(xdata, ydata, width, color, name):
+    """
+    xdaya : x轴的数据
+    ydata : y轴的数据
+    width : 柱状图的宽度
+    color : 柱状图的颜色
+    name  : 柱状图的名称
+    """
+    print xdata
+    print yData
+    rects = plt.bar(xdata, ydata, width, color = color, label = name)
+
+    for rect in rects:
+        height = rect.get_height( )
+        plt.text(rect.get_x() + rect.get_width() / 2, height, height, ha='center', va='bottom')
+        # 柱形图边缘用白色填充，纯粹为了美观
+        rect.set_edgecolor('white')
+
+
+def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple):
+    print "name =  ", nameTuple
+    print "app = ", appTuple
+    print "data = ", plotDataList
+    print "color = ", colorTuple
     #自动调整label显示方式，如果太挤则倾斜显示
     fig = plt.figure(num = 1, figsize = (8, 6))
     fig.autofmt_xdate( )
-    #plt.title("Scheduler Bench Performance...")
-    plt.title("调度器benchmark")
-    plt.xlabel("group", size = 14)
-    plt.ylabel("time", size = 14)
-    plt.grid( ) # 开启网格
+    # 必须配置中文字体，否则会显示成方块
+    # 注意所有希望图表显示的中文必须为unicode格式
+    # http://blog.sciencenet.cn/blog-43412-343002.html
+    # https://segmentfault.com/a/1190000004103325
+    # http://www.jianshu.com/p/8c0fe1240e78
+    #custom_font = mpl.font_manager.FontProperties(fname='SimHei')
+    #font_size = 10 # 字体大小
+    #fig_size = (8, 6) # 图表大小
+    mpl.rcParams['font.sans-serif'] = ['SimHei'] #用来正常显示中文标签
+    mpl.rcParams['axes.unicode_minus'] = False #用来正常显示负号
+    
 
-    for data in plotDataList :
-        #  设置图表的信息
-        print len(data.xData), len(data.yData)
-        #  曲线平滑--http://rys1314520.iteye.com/blog/1820777
-        #  曲线平滑--http://blog.sina.com.cn/s/blog_142e602960102wegx.html
-        if poly == True :
-            #计算多项式
-            c = np.polyfit(data.xData, data.yData, 10)   #  拟合多项式的系数存储在数组c中
-            yy = np.polyval(c, data.xData)                  #  根据多项式求函数值
+    # 设置柱形图宽度
+    bar_width = 0.1
 
-            #进行曲线绘制
-            x_new = np.linspace(0, 1000000, 11)
-            f_liner = np.polyval(c,x_new)
-            plt.plot(x_new, f_liner, color = data.color, linestyle = '--', marker = data.marker, label = data.plotName)
-        else :
-            plt.plot(data.xData, data.yData, color = data.color, linestyle = '--', marker = data.marker, label = data.plotName)
-        plt.legend(loc = "upper left")
-        #plt.savefig('cdf.png', format = 'png')
+    xdata = np.arange(len(nameTuple))   # 
+
+    for appIndex in range(len(appTuple)) :
+        print appTuple[appIndex], poltDataList[appIndex]
+        AddPlotLabels(xdata + bar_width * appIndex, poltDataList[appIndex], bar_width, colorTuple[appIndex], appTuple[appIndex])
+
+    # X轴标题
+    plt.xticks(xdata + bar_width, nameTuple)#, fontproperties=custom_font)
+    # Y轴范围
+    plt.ylim(ymin = 0, ymax = 2000000)
+
+    # 图表标题
+    plt.title(u'调度器')#, fontproperties=custom_font)
+    # 图例显示在图表下方
+    plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.03), fancybox=True, ncol=5)#, prop=custom_font)
+
+    # 图表输出到本地
+    plt.show( )
 
     plt.show( )
 
@@ -100,12 +129,9 @@ def readFile(file):
     file_object = open(file)
 
     try :
-
         read_data = file_object.read( )
         return read_data
-
     finally :
-
         file_object.close( )
 
 
@@ -200,24 +226,29 @@ if __name__ == "__main__" :
         color = colorTuple[appIndex]
 
         #  每个进程的信息
-        subPlotDataList = []
+        appPlotDataList = []
         for nameIndex in range(len(nameTuple)) :
             name = nameTuple[nameIndex]
             if (name == "NULL") :
                 break
             resultfile = args.directory + "/" + name + "/splash/" + app + "/" + args.loop + ".log"       
-            print "\n=========================================="
-            print "resultfile :", resultfile
+            #print "\n=========================================="
+            #print "resultfile :", resultfile
 
             yData = ReadPlotData(resultfile)
-            print "+++++++", len(yData), "+++++++"
+            #print "+++++++", len(yData), "+++++++"
             if len(yData) != 1 :
                 exit(-1)
-            print yData
-            print "==========================================\n"
-            #plotdata = SplashPlotData(name, resultfile, xData, yData, color, marker)
-            #plotDataList.append(plotdata)
-            plotDataList.append(yData)
+            #print yData
+            #print "==========================================\n"
 
-    #ShowPerfPlot(plotDataList, False)
+            appPlotDataList.append(yData[0])
+        print app, appPlotDataList
+        #plotdata = SplashPlotData(name = app, xData = , yData = appPlotDataList, color = color)
+        plotDataList.append(appPlotDataList)
+    print "name =  ", nameTuple
+    print "app = ", appTuple
+    print "data = ", plotDataList
+    print "color = ", colorTuple
+    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple)
     exit(0)
