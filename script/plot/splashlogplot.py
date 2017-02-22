@@ -14,6 +14,7 @@ import parse
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
+import string
 
 class PerfPlotData :
     plotName = "none name"
@@ -55,7 +56,11 @@ def AddPlotLabels(xdata, ydata, width, color, name):
         rect.set_edgecolor('white')
 
 
-def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple):
+def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = True):
+
+    if standardized == True :
+        StandardizedPlotDataList(plotDataList)
+    
     #自动调整label显示方式，如果太挤则倾斜显示
     fig = plt.figure(num = 1, figsize = (8, 6))
     fig.autofmt_xdate( )
@@ -84,7 +89,10 @@ def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple):
     # X轴标题
     plt.xticks(xdata + bar_width, appTuple)#, fontproperties=custom_font)
     # Y轴范围
-    plt.ylim(ymin = 0, ymax = 4200000)
+    if standardized == True :
+        plt.ylim(ymin = 0, ymax = 100)
+    else :
+        plt.ylim(ymin = 0, ymax = 4200)
 
     # 图表标题
     plt.title(u'调度器')#, fontproperties=custom_font)
@@ -172,10 +180,12 @@ def ReadPlotData(filepath) :
 
 
 
+#http://blog.csdn.net/kryolith/article/details/39770187
+def MaxMinNormalization(x, Min, Max):  
+    x = (x - Min) / (Max - Min);  
+    return x;  
 
-
-
-def StandardizedPlotDataList(plotDataList, min, max) :
+def StandardizedPlotDataList(plotDataList) :
     """
     每个name系统中各个进程app的运行情况
     每行对应一个系统
@@ -185,8 +195,18 @@ def StandardizedPlotDataList(plotDataList, min, max) :
 
     http://blog.csdn.net/kryolith/article/details/39770187
     """
-    for col in len(plotDataList[0]) :       #  每列代表一个进程app
-        for row in len(plotDataList) :      #  每行代表一个系统name
+
+    for col in range(len(plotDataList[0]))  :       #  每列代表一个进程app
+        colList = []        
+        for row in range(len(plotDataList)) :      #  每行代表一个系统name
+            colList.append(plotDataList[row][col])
+        print "col = ", col, colList
+        maxData = max(colList)
+        minData = min(colList)
+        
+        for row in range(len(plotDataList)) :      #  每行代表一个系统name
+            tmp =  MaxMinNormalization(plotDataList[row][col], minData, maxData)
+            plotDataList[row][col] = tmp * 100    
 
 
 
@@ -258,7 +278,7 @@ if __name__ == "__main__" :
             #print yData
             #print "==========================================\n"
 
-            appPlotDataList.append(yData[0])   #  每个进程的运行情况
+            appPlotDataList.append(int(string.atof(yData[0]) / 1000))   #  每个进程的运行情况
         print name, appPlotDataList
         #plotdata = SplashPlotData(name = app, xData = , yData = appPlotDataList, color = color)
         plotDataList.append(appPlotDataList)    # 每个name系统中各个进程app的运行情况, 每行对应一个系统, 每列对应一个进程
@@ -266,6 +286,6 @@ if __name__ == "__main__" :
     print "app = ", appTuple
     print "data = ", plotDataList
     print "color = ", colorTuple
-    #
-    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple)
+
+    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = False)
     exit(0)
