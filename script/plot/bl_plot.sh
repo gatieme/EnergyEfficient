@@ -2,6 +2,16 @@
 #  perf sched messaging -g $GROUP
 #------------------------------------------
 
+
+bench_plot_run()
+{
+	if [ $BENCH == "splash" ]; then
+		splash_bench_plot_run
+	elif [ $BENCH == "messaging" ] || [ $BENCH == "pipe" ]; then
+		perf_bench_plot_run
+	fi
+}
+
 perf_bench_plot_run( )
 {
         #  写入表头信息
@@ -12,8 +22,17 @@ perf_bench_plot_run( )
         echo "#step_group = $STEP_GROUP"
         echo "#loop_num   = $LOOP"
         #echo "#logdir     = $LOG_DIR"
-        python logplot.py -d $DIRECTORY -b $BENCH -min $MIN_GROUP -max $MAX_GROUP -step $STEP_GROUP -l $LOOP
+        python perflogplot.py -d $DIRECTORY -b $BENCH -min $MIN_GROUP -max $MAX_GROUP -step $STEP_GROUP -l $LOOP
 
+}
+
+splash_bench_plot_run()
+{
+        #  写入表头信息
+        echo "#directory  = $DIRECTORY"
+        echo "#bench      = $BENCH"
+        echo "#loop_num   = $LOOP"
+        python splashlogplot.py -d $DIRECTORY -b $BENCH -l $LOOP
 }
 
 
@@ -77,7 +96,20 @@ LOOP=1
 LOG_DIR=""
 #RESULT_FILE=""
 
-if [ $# == 0 ]; then
+if [ $# == 6 ]; then
+        echo "$0 directory bench=[messaging|pipe] min_group max_group step_group loop"
+        DIRECTORY=$1
+	BENCH=$2
+        MIN_GROUP=$3
+        MAX_GROUP=$4
+        STEP_GROUP=$5
+	LOOP=$6
+elif [ $# == 3 ]; then
+        echo "$0 directory bench=splash loop"
+	DIRECTORY=$1
+	BENCH=$2
+	LOOP=$3
+elif [ $# == 0 ]; then
         echo "Usage :"
         echo -e "\t$0 [messageing|pipe] [min_group] max_group [step_group] loop"
         echo -e "\tmessage      : use perf bench messaging -g max_group"
@@ -85,35 +117,11 @@ if [ $# == 0 ]; then
         echo -e "\tmax_group    : see group@messaging loop@pipe"
         echo -e "\tloop         : loop to reduces system error "
         echo -e "\t$0 $BENCH min_group=1 max_group=100 step_group=1 loop=1"
-        raw_input
-        #BENCH="messaging"
-        #MAX_GROUP=100
-        #LOOP=1
-elif [ $# == 1 ]; then
-        echo "$0 bench min_group=1 max_group=100 step_group=1 loop=1"
-        BENCH=$1
-        #MAX_GROUP=100
-elif [ $# == 2 ]; then
-        echo "$0 bench min_group=1 max_group step_group=1 loop=1"
-        BENC=$1
-        MAX_GROUP=$2
-elif [ $# == 3 ]; then
-        echo "$0 bench min_group=1 max_group step_group=1 loop"
-        BENCH=$1
-        MAX_GROUP=$2
-        LOOP=$3
-elif [ $# == 5 ]; then
-        echo "$0 bench min_group max_group step_group loop"
-        BENCH=$1
-        MIN_GROUP=$2
-        MAX_GROUP=$3
-        STEP_GROUP=$4
-        LOOP=$5
+        #raw_input
 fi
 
 #LOG_DIR=$RESULT_DIR/$BENCH/$MIN_GROUP-$MAX_GROUP-$STEP_GROUP-$LOOP
 #RESULT_FILE=$RESULT_DIR/$BENCH/$MIN_GROUP-$MAX_GROUP-$STEP_GROUP-$LOOP.log
 
-#perf_sched_bench_plot_clear
-perf_bench_plot_run
+bench_plot_run
 
