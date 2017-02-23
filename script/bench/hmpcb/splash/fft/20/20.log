@@ -17,7 +17,7 @@ FFT with Blocking Transpose
 Start time                        :        590246104
 Initialization finish time        :        590249124
 Overall finish time               :        590249586
-Total time with initialization    :             3482
+Total time with initialization    :             3182
 Total time without initialization :              462
 Overall transpose time            :              153
 Overall transpose fraction        :          0.33117
@@ -41,7 +41,7 @@ FFT with Blocking Transpose
 Start time                        :        590260609
 Initialization finish time        :        590263569
 Overall finish time               :        590264036
-Total time with initialization    :             3427
+Total time with initialization    :             2927
 Total time without initialization :              467
 Overall transpose time            :              156
 Overall transpose fraction        :          0.33405
@@ -65,7 +65,7 @@ FFT with Blocking Transpose
 Start time                        :        590274724
 Initialization finish time        :        590277722
 Overall finish time               :        590278186
-Total time with initialization    :             3462
+Total time with initialization    :             3162
 Total time without initialization :              464
 Overall transpose time            :              153
 Overall transpose fraction        :          0.32974
@@ -89,7 +89,7 @@ FFT with Blocking Transpose
 Start time                        :        590288731
 Initialization finish time        :        590291668
 Overall finish time               :        590292128
-Total time with initialization    :             3397
+Total time with initialization    :             2997
 Total time without initialization :              460
 Overall transpose time            :              149
 Overall transpose fraction        :          0.32391
@@ -113,7 +113,7 @@ FFT with Blocking Transpose
 Start time                        :        590302796
 Initialization finish time        :        590305825
 Overall finish time               :        590306280
-Total time with initialization    :             3484
+Total time with initialization    :             3284
 Total time without initialization :              455
 Overall transpose time            :              147
 Overall transpose fraction        :          0.32308
@@ -137,7 +137,7 @@ FFT with Blocking Transpose
 Start time                        :        590316878
 Initialization finish time        :        590319836
 Overall finish time               :        590320288
-Total time with initialization    :             3410
+Total time with initialization    :             3110
 Total time without initialization :              452
 Overall transpose time            :              144
 Overall transpose fraction        :          0.31858
@@ -161,7 +161,7 @@ FFT with Blocking Transpose
 Start time                        :        590331094
 Initialization finish time        :        590334044
 Overall finish time               :        590334498
-Total time with initialization    :             3404
+Total time with initialization    :             3104
 Total time without initialization :              454
 Overall transpose time            :              144
 Overall transpose fraction        :          0.31718
@@ -185,7 +185,7 @@ FFT with Blocking Transpose
 Start time                        :        590345153
 Initialization finish time        :        590348115
 Overall finish time               :        590348568
-Total time with initialization    :             3415
+Total time with initialization    :             3115
 Total time without initialization :              453
 Overall transpose time            :              143
 Overall transpose fraction        :          0.31567
@@ -209,7 +209,7 @@ FFT with Blocking Transpose
 Start time                        :        590359165
 Initialization finish time        :        590362093
 Overall finish time               :        590362544
-Total time with initialization    :             3379
+Total time with initialization    :             2979
 Total time without initialization :              451
 Overall transpose time            :              140
 Overall transpose fraction        :          0.31042
@@ -233,7 +233,7 @@ FFT with Blocking Transpose
 Start time                        :        590373290
 Initialization finish time        :        590376309
 Overall finish time               :        590376761
-Total time with initialization    :             3471
+Total time with initialization    :             3171
 Total time without initialization :              452
 Overall transpose time            :              142
 Overall transpose fraction        :          0.31416
@@ -257,7 +257,7 @@ FFT with Blocking Transpose
 Start time                        :        590387361
 Initialization finish time        :        590390314
 Overall finish time               :        590390767
-Total time with initialization    :             3406
+Total time with initialization    :             3106
 Total time without initialization :              453
 Overall transpose time            :              144
 Overall transpose fraction        :          0.31788
@@ -281,7 +281,7 @@ FFT with Blocking Transpose
 Start time                        :        590401365
 Initialization finish time        :        590404307
 Overall finish time               :        590404762
-Total time with initialization    :             3397
+Total time with initialization    :             2997
 Total time without initialization :              455
 Overall transpose time            :              146
 Overall transpose fraction        :          0.32088
@@ -305,7 +305,7 @@ FFT with Blocking Transpose
 Start time                        :        590415491
 Initialization finish time        :        590418441
 Overall finish time               :        590418896
-Total time with initialization    :             3405
+Total time with initialization    :             3105
 Total time without initialization :              455
 Overall transpose time            :              143
 Overall transpose fraction        :          0.31429
@@ -329,7 +329,7 @@ FFT with Blocking Transpose
 Start time                        :        590429677
 Initialization finish time        :        590432624
 Overall finish time               :        590433076
-Total time with initialization    :             3399
+Total time with initialization    :             2999
 Total time without initialization :              452
 Overall transpose time            :              143
 Overall transpose fraction        :          0.31637
@@ -353,7 +353,7 @@ FFT with Blocking Transpose
 Start time                        :        590443743
 Initialization finish time        :        590446738
 Overall finish time               :        590447196
-Total time with initialization    :             3453
+Total time with initialization    :             3153
 Total time without initialization :              458
 Overall transpose time            :              144
 Overall transpose fraction        :          0.31441
@@ -377,7 +377,7 @@ FFT with Blocking Transpose
 Start time                        :        590457825
 Initialization finish time        :        590460775
 Overall finish time               :        590461230
-Total time with initialization    :             3405
+Total time with initialization    :             3105
 Total time without initialization :              455
 Overall transpose time            :              146
 Overall transpose fraction        :          0.32088
@@ -401,7 +401,7 @@ FFT with Blocking Transpose
 Start time                        :        590472524
 Initialization finish time        :        590475521
 Overall finish time               :        590475979
-Total time with initialization    :             3455
+Total time with initialization    :             3155
 Total time without initialization :              458
 Overall transpose time            :              148
 Overall transpose fraction        :          0.32314
@@ -425,7 +425,7 @@ FFT with Blocking Transpose
 Start time                        :        590486868
 Initialization finish time        :        590489809
 Overall finish time               :        590490264
-Total time with initialization    :             3396
+Total time with initialization    :             2996
 Total time without initialization :              455
 Overall transpose time            :              146
 Overall transpose fraction        :          0.32088
@@ -449,7 +449,7 @@ FFT with Blocking Transpose
 Start time                        :        590500963
 Initialization finish time        :        590503927
 Overall finish time               :        590504391
-Total time with initialization    :             3428
+Total time with initialization    :             3128
 Total time without initialization :              464
 Overall transpose time            :              151
 Overall transpose fraction        :          0.32543
@@ -473,7 +473,7 @@ FFT with Blocking Transpose
 Start time                        :        590515265
 Initialization finish time        :        590518222
 Overall finish time               :        590518682
-Total time with initialization    :             3417
+Total time with initialization    :             3117
 Total time without initialization :              460
 Overall transpose time            :              151
 Overall transpose fraction        :          0.32826

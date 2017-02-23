@@ -15,7 +15,7 @@ Blocked Dense LU Factorization
 Start time                        :        908710832
 Initialization finish time        :        908779916
 Overall finish time               :        908974076
-Total time with initialization    :           263244
+Total time with initialization    :           183244
 Total time without initialization :           194160
 
 Test Num : 2
@@ -35,7 +35,7 @@ Blocked Dense LU Factorization
 Start time                        :        908983710
 Initialization finish time        :        909019675
 Overall finish time               :        909199240
-Total time with initialization    :           215530
+Total time with initialization    :           185530
 Total time without initialization :           179565
 
 Test Num : 3
@@ -215,7 +215,7 @@ Blocked Dense LU Factorization
 Start time                        :        910901203
 Initialization finish time        :        910933994
 Overall finish time               :        911122931
-Total time with initialization    :           221728
+Total time with initialization    :           191728
 Total time without initialization :           188937
 
 Test Num : 12
@@ -295,7 +295,7 @@ Blocked Dense LU Factorization
 Start time                        :        911760238
 Initialization finish time        :        911799280
 Overall finish time               :        911989239
-Total time with initialization    :           229001
+Total time with initialization    :           199001
 Total time without initialization :           189959
 
 Test Num : 16
@@ -395,6 +395,6 @@ Blocked Dense LU Factorization
 Start time                        :        912803536
 Initialization finish time        :        912837589
 Overall finish time               :        913020905
-Total time with initialization    :           217369
+Total time with initialization    :           187369
 Total time without initialization :           183316
 

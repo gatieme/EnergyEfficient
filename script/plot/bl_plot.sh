@@ -109,7 +109,7 @@ elif [ $# == 3 ]; then
 	DIRECTORY=$1
 	BENCH=$2
 	LOOP=$3
-elif [ $# == 0 ]; then
+else
         echo "Usage :"
         echo -e "\t$0 [messageing|pipe] [min_group] max_group [step_group] loop"
         echo -e "\tmessage      : use perf bench messaging -g max_group"
@@ -118,6 +118,7 @@ elif [ $# == 0 ]; then
         echo -e "\tloop         : loop to reduces system error "
         echo -e "\t$0 $BENCH min_group=1 max_group=100 step_group=1 loop=1"
         #raw_input
+	exit -1
 fi
 
 #LOG_DIR=$RESULT_DIR/$BENCH/$MIN_GROUP-$MAX_GROUP-$STEP_GROUP-$LOOP
