@@ -73,8 +73,8 @@ def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = T
     #自动调整label显示方式，如果太挤则倾斜显示
     fig = plt.figure(num = 1, figsize = (8, 6))
     fig.autofmt_xdate( )
-    plt.title("调度器scheduler splash benchmark")
-    plt.ylabel("时间time(ms)", size = 14)
+    plt.title("scheduler splash benchmark")
+    plt.ylabel("time(ms)", size = 14)
     plt.grid( ) # 开启网格
     # 必须配置中文字体，否则会显示成方块
     # 注意所有希望图表显示的中文必须为unicode格式
@@ -84,8 +84,8 @@ def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = T
     #custom_font = mpl.font_manager.FontProperties(fname='SimHei')
     #font_size = 10 # 字体大小
     #fig_size = (8, 6) # 图表大小
-    mpl.rcParams['font.sans-serif'] = ['SimHei'] #用来正常显示中文标签
-    mpl.rcParams['axes.unicode_minus'] = False #用来正常显示负号
+    #mpl.rcParams['font.sans-serif'] = ['SimHei'] #用来正常显示中文标签
+    #mpl.rcParams['axes.unicode_minus'] = False #用来正常显示负号
     
 
     # 设置柱形图宽度
@@ -96,13 +96,14 @@ def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = T
     print "\n==============================================================="
     print "+++++++ plot data +++++++"
     for nameIndex in range(len(nameTuple)) :
-        print nameTuple[nameIndex], poltDataList[nameIndex]
+        #print nameIndex
         AddPlotLabels(xdata + bar_width * nameIndex, poltDataList[nameIndex], bar_width, \
             colorTuple[nameIndex], nameTuple[nameIndex])
     print "===============================================================\n"
 
     # X轴标题
-    plt.xticks(xdata + bar_width, appTuple)#, fontproperties=custom_font)
+    # xdata + bar_width * len(nameTuple) / 2 使得x的标签在中间开始显示
+    plt.xticks(xdata + bar_width * len(nameTuple) / 2, appTuple)#, fontproperties=custom_font)
     # Y轴范围
     plt.ylim(minY, maxY)
 
