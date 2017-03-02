@@ -73,7 +73,7 @@ def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = T
     #自动调整label显示方式，如果太挤则倾斜显示
     fig = plt.figure(num = 1, figsize = (8, 6))
     fig.autofmt_xdate( )
-    #plt.title("scheduler splash benchmark")
+    plt.title("scheduler splash benchmark")
     plt.ylabel("time(ms)", size = 14)
     plt.grid( ) # 开启网格
     # 必须配置中文字体，否则会显示成方块

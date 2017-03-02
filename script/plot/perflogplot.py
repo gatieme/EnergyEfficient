@@ -43,10 +43,11 @@ def ShowPerfPlot(poltDataList, poly):
     mpl.rcParams['font.sans-serif'] = ['SimHei'] #用来正常显示中文标签
     mpl.rcParams['axes.unicode_minus'] = False #用来正常显示负号
     #自动调整label显示方式，如果太挤则倾斜显示
-    fig = plt.figure(num = 1, figsize = (8, 6))
+    fig = plt.figure(num = 1, figsize = (6, 5))
     fig.autofmt_xdate( )
     #plt.title("Scheduler Bench Performance...")
-    plt.title("调度器benchmark")
+    title_str = "scheduler performance test(perf/messaging)"
+    #plt.title(title_str)
     plt.xlabel("group", size = 14)
     plt.ylabel("time", size = 14)
     plt.grid( ) # 开启网格
@@ -68,8 +69,8 @@ def ShowPerfPlot(poltDataList, poly):
         else :
             plt.plot(data.xData, data.yData, color = data.color, linestyle = '--', marker = data.marker, label = data.plotName)
         plt.legend(loc = "upper left")
-        #plt.savefig('cdf.png', format = 'png')
 
+    #plt.savefig(title_str + '.png', format = 'png')
     plt.show( )
 
 
