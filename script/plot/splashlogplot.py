@@ -27,7 +27,7 @@ class PerfPlotData :
     def __init__(self, plotName, logFile, xData, yData, color, marker) :
 
         """
-        namelist        plot数据的标识, 对应各个调度算法[bl-switch, iks, hmp, hmpcb]
+        namelist        plot数据的标识, 对应各个调度算法[bl-switch, iks, hmp, hmpdb]
         xdata           存储了横轴的数据
         """
         self.plotName = plotName
@@ -246,7 +246,7 @@ if __name__ == "__main__" :
         exit(0)
 
     parser = argparse.ArgumentParser( )
-    #parser.add_argument("-n", "--name", dest = "name", help = "bl-switch | iks | hmp | hmpcb...")
+    #parser.add_argument("-n", "--name", dest = "name", help = "bl-switch | iks | hmp | hmpdb...")
     parser.add_argument("-b", "--bench", dest = "bench", help = "messaging | pipe...")
     parser.add_argument("-a", "--app", dest = "application", help = "messaging | pipe...")
     parser.add_argument("-d", "--dir", dest = "directory", help = "The Directory")
@@ -257,11 +257,11 @@ if __name__ == "__main__" :
     parser.add_argument("-l", "--loop", dest = "loop", help = "The file you want to read...")
     args = parser.parse_args( )
 
-    #nameTuple = ( "hmp", "hmpcb")
+    #nameTuple = ( "hmp", "hmpdb")
     #appTuple = ( "fft", "radix", "cholesky" )  #300
     appTuple = ( "fft", "ocean", "radix", "water-spatial", "cholesky", "lu", "radiosity", "raytrace", "water-nsquared") # 2000
     appTuple = ( "barnes", "fft", "ocean", "radix", "water-spatial", "cholesky", "lu", "radiosity", "raytrace", "water-nsquared")
-    nameTuple = ( "bl-switch", "iks", "hmp", "hmpcb")
+    nameTuple = ( "bl-switch", "iks", "hmp", "hmpdb")
     #   1）控制颜色
     #   颜色之间的对应关系为
     #   b---blue   c---cyan  g---green    k----black
