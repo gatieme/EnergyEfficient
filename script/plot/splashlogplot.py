@@ -259,7 +259,9 @@ if __name__ == "__main__" :
     #appTuple = ( "fft", "radix", "cholesky" )  #300
     #appTuple = ( "fft", "ocean", "radix", "water-spatial", "cholesky", "lu", "radiosity", "raytrace", "water-nsquared") # 2000
     #appTuple = ( "barnes", "ocean", "water-spatial", "lu", "radiosity", "raytrace", "water-nsquared")
-    appTuple = ( "barnes", "ocean", "water-s", "lu", "radiosity", "raytrace", "water-ns")
+    #appTuple = ( "barnes", "ocean", "water-s", "lu", "radiosity", "raytrace", "water-ns")
+    appTuple = ( "ocean", "water-s", "lu", "radiosity", "raytrace", "water-ns")
+    
     nameTuple = ( "bl-switch", "iks", "hmp", "hmpdb")
     #   1）控制颜色
     #   颜色之间的对应关系为
@@ -311,5 +313,5 @@ if __name__ == "__main__" :
     print "color =", colorTuple
     print "===============================================================\n" 
     
-    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = False, minY = 0, maxY = 4200)
+    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = False, minY = 0, maxY = 2000)
     exit(0)
