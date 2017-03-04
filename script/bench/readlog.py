@@ -106,7 +106,7 @@ if __name__ == "__main__" :
 
     parser = argparse.ArgumentParser( )
     parser.add_argument("-d", "--dir", dest = "directory", help = "The Directory")
-    parser.add_argument("-b", "--bench", dest = "bench", help = "messaging | pipe...")    
+    parser.add_argument("-b", "--bench", dest = "bench", help = "messaging | pipe...")
     parser.add_argument("-a", "--app", dest = "application", help = "messaging | pipe...")
     parser.add_argument("-f", "--file", dest = "resultfile", help = "The file you want to read...")
     parser.add_argument("-min", "--min_group", dest = "min_group", help = "The min group you give...")
@@ -129,14 +129,14 @@ if __name__ == "__main__" :
     else :
         resultfile = args.resultfile
     #-------------------------------------------------
-    #   不同的application输出不一致, 
+    #   不同的application输出不一致,
     #   因此需要使用不同的正则表达式来匹配输出
     #   application  : resrt
     #-------------------------------------------------
     reStrTable = {
         # perf
-        "messaging"     :   u"[0-9]*\.?[0-9]+",
-        "pipe"          :   u"[0-9]*\.?[0-9]+",
+        "messaging"     :   r"Total time: ([0-9]*\.?[0-9]+)",
+        "pipe"          :   r"Total time: ([0-9]*\.?[0-9]+)",
         # splash
         "barnes"        :   u"COMPUTETIME\s+=\s+([0-9]+)",
         "fft"           :   u"Total time with initialization\s+:\s+([0-9]+)",
@@ -151,12 +151,10 @@ if __name__ == "__main__" :
     }
     #print resultfile
     resultdata = readFile(resultfile)
-    print "resultfile = ", resultfile
-    print "restr = \"%s\"" % (reStrTable[args.application])
+    ##print "resultfile = ", resultfile
+    ##print "restr = \"%s\"" % (reStrTable[args.application])
     myItems = getReItem(resultdata, reStrTable[args.application])
-    print len(myItems), myItems
-
-
+    ##print len(myItems), myItems
 
     if (args.bench == "splash" or (args.bench == "perf" and (int(args.min_group) + int(args.step_group)) > int(args.max_group))) :  #  同一个循环多次
         PrintResult(myItems, args.curr_group, True)   # 列表输出

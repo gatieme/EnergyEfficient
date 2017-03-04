@@ -1,0 +1,8 @@
+#bench      = perf
+#application= messaging
+#min_group  = 5
+#max_group  = 100
+#step_group = 5
+#loop_num   = 100
+#logdir     = ./bl-switch/perf/messaging/5-100-5-100
+#resultfile = 

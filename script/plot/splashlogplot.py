@@ -257,8 +257,9 @@ if __name__ == "__main__" :
 
     #nameTuple = ( "hmp", "hmpdb")
     #appTuple = ( "fft", "radix", "cholesky" )  #300
-    appTuple = ( "fft", "ocean", "radix", "water-spatial", "cholesky", "lu", "radiosity", "raytrace", "water-nsquared") # 2000
-    appTuple = ( "barnes", "fft", "ocean", "radix", "water-spatial", "cholesky", "lu", "radiosity", "raytrace", "water-nsquared")
+    #appTuple = ( "fft", "ocean", "radix", "water-spatial", "cholesky", "lu", "radiosity", "raytrace", "water-nsquared") # 2000
+    #appTuple = ( "barnes", "ocean", "water-spatial", "lu", "radiosity", "raytrace", "water-nsquared")
+    appTuple = ( "barnes", "ocean", "water-s", "lu", "radiosity", "raytrace", "water-ns")
     nameTuple = ( "bl-switch", "iks", "hmp", "hmpdb")
     #   1）控制颜色
     #   颜色之间的对应关系为
