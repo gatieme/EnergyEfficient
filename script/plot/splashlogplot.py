@@ -316,6 +316,6 @@ if __name__ == "__main__" :
     print "color =", colorTuple
     print "===============================================================\n" 
     
-    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = True, minY = 0, maxY = 8.5)
+    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = True, minY = 0, maxY = 7)
     #ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = False, minY = 0, maxY = 4200)
     exit(0)
