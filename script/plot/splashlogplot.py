@@ -96,7 +96,7 @@ def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = T
     print "\n==============================================================="
     print "+++++++ plot data +++++++"
     for nameIndex in range(len(nameTuple)) :
-        #print nameIndex
+        print nameIndex, plotDataList[nameIndex]
         AddPlotLabels(xdata + bar_width * nameIndex, poltDataList[nameIndex], bar_width, \
             colorTuple[nameIndex], nameTuple[nameIndex])
     print "===============================================================\n"
@@ -154,11 +154,13 @@ def StandardizedPlotDataList(plotDataList) :
             colList.append(plotDataList[row][col])
         print "col = ", col, colList
 
-        minData = min(colList)
-        maxData = max(colList)
+        minData = min(colList) * 1.0
+        maxData = max(colList) * 1.0
         for row in range(len(plotDataList)) :      #  每行代表一个系统name
-            tmp =  MaxMinNormalization(plotDataList[row][col], minData, maxData)
-            plotDataList[row][col] = tmp * 4000
+            #tmp =  MaxMinNormalization(plotDataList[row][col], minData, maxData)
+            #plotDataList[row][col] = tmp
+            #plotDataList[row][col] = plotDataList[row][col] / (maxData * 1.1)
+            plotDataList[row][col] = plotDataList[row][col] / plotDataList[3][col]
 
 
 
@@ -257,10 +259,11 @@ if __name__ == "__main__" :
 
     #nameTuple = ( "hmp", "hmpdb")
     #appTuple = ( "fft", "radix", "cholesky" )  #300
-    #appTuple = ( "fft", "ocean", "radix", "water-spatial", "cholesky", "lu", "radiosity", "raytrace", "water-nsquared") # 2000
+    #appTuple = ( "cholesky", "fft", "radix", "lu", "ocean", "radiosity", "barnes", "raytrace", "water-ns", "water-s") # 2000
+    appTuple = ( "radix", "radiosity", "water-ns", "lu", "cholesky", "fft", "water-s", "barnes", "ocean", "raytrace") # 2000
     #appTuple = ( "barnes", "ocean", "water-spatial", "lu", "radiosity", "raytrace", "water-nsquared")
     #appTuple = ( "barnes", "ocean", "water-s", "lu", "radiosity", "raytrace", "water-ns")
-    appTuple = ( "ocean", "water-s", "lu", "radiosity", "raytrace", "water-ns")
+    #appTuple = ( "ocean", "water-s", "lu", "radiosity", "raytrace", "water-ns")
     
     nameTuple = ( "bl-switch", "iks", "hmp", "hmpdb")
     #   1）控制颜色
@@ -299,7 +302,7 @@ if __name__ == "__main__" :
             #print yData
             #print "==========================================\n"
 
-            appPlotDataList.append(int(string.atof(yData[0]) / 1000))   #  每个进程的运行情况
+            appPlotDataList.append(string.atof(yData[0]) / 1000.0)   #  每个进程的运行情况
         print name, appPlotDataList
         #plotdata = SplashPlotData(name = app, xData = , yData = appPlotDataList, color = color)
         plotDataList.append(appPlotDataList)    # 每个name系统中各个进程app的运行情况, 每行对应一个系统, 每列对应一个进程
@@ -313,5 +316,6 @@ if __name__ == "__main__" :
     print "color =", colorTuple
     print "===============================================================\n" 
     
-    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = False, minY = 0, maxY = 2000)
+    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = True, minY = 0, maxY = 8.5)
+    #ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = False, minY = 0, maxY = 4200)
     exit(0)
