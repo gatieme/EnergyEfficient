@@ -302,7 +302,7 @@ if __name__ == "__main__" :
             #print yData
             #print "==========================================\n"
 
-            appPlotDataList.append(string.atof(yData[0]) / 1000.0)   #  每个进程的运行情况
+            appPlotDataList.append(string.atof(yData[0]))   #  每个进程的运行情况
         print name, appPlotDataList
         #plotdata = SplashPlotData(name = app, xData = , yData = appPlotDataList, color = color)
         plotDataList.append(appPlotDataList)    # 每个name系统中各个进程app的运行情况, 每行对应一个系统, 每列对应一个进程
@@ -316,6 +316,6 @@ if __name__ == "__main__" :
     print "color =", colorTuple
     print "===============================================================\n" 
     
-    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = False, minY = 0, maxY = 4200)
+    #ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = False, minY = 0, maxY = 4200)
     ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = True, minY = 0, maxY = 7)
     exit(0)
