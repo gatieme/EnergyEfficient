@@ -160,7 +160,7 @@ def StandardizedPlotDataList(plotDataList) :
             #tmp =  MaxMinNormalization(plotDataList[row][col], minData, maxData)
             #plotDataList[row][col] = tmp
             #plotDataList[row][col] = plotDataList[row][col] / (maxData * 1.1)
-            plotDataList[row][col] = plotDataList[row][col] / plotDataList[3][col]
+            plotDataList[row][col] = plotDataList[row][col] / plotDataList[len(plotDataList) - 1][col]
 
 
 
@@ -260,12 +260,14 @@ if __name__ == "__main__" :
     #nameTuple = ( "hmp", "hmpdb")
     #appTuple = ( "fft", "radix", "cholesky" )  #300
     #appTuple = ( "cholesky", "fft", "radix", "lu", "ocean", "radiosity", "barnes", "raytrace", "water-ns", "water-s") # 2000
-    appTuple = ( "radix", "radiosity", "water-ns", "lu", "cholesky", "fft", "water-s", "barnes", "ocean", "raytrace") # 2000
+    appTuple = ( "radix", "radiosity", "water-ns", "lu", "cholesky", "fft", "water-s", "barnes", "ocean", "raytrace") # nice
     #appTuple = ( "barnes", "ocean", "water-spatial", "lu", "radiosity", "raytrace", "water-nsquared")
     #appTuple = ( "barnes", "ocean", "water-s", "lu", "radiosity", "raytrace", "water-ns")
     #appTuple = ( "ocean", "water-s", "lu", "radiosity", "raytrace", "water-ns")
     
     nameTuple = ( "bl-switch", "iks", "hmp", "hmpdb")
+    #nameTuple = ( "big", "little", "hmp", "hmpdb")
+    #nameTuple = ( "big", "little", "bl-switch", "iks", "hmp", "hmpdb")
     #   1）控制颜色
     #   颜色之间的对应关系为
     #   b---blue   c---cyan  g---green    k----black
@@ -317,5 +319,5 @@ if __name__ == "__main__" :
     print "===============================================================\n" 
     
     #ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = False, minY = 0, maxY = 4200)
-    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = True, minY = 0, maxY = 4)
+    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = True, minY = 0, maxY = 7)
     exit(0)

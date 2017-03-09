@@ -1,0 +1,540 @@
+Test Num : 1
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                360861767
+        Overall end time              361327877
+        Total time with initialization                466110
+        Total time without initialization                466098
+Test Num : 2
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                362199075
+        Overall end time              362661876
+        Total time with initialization                462801
+        Total time without initialization                462787
+Test Num : 3
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                363512218
+        Overall end time              363975726
+        Total time with initialization                463508
+        Total time without initialization                463495
+Test Num : 4
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                364849912
+        Overall end time              365314598
+        Total time with initialization                464686
+        Total time without initialization                464672
+Test Num : 5
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                366172223
+        Overall end time              366634189
+        Total time with initialization                461966
+        Total time without initialization                461954
+Test Num : 6
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                367479249
+        Overall end time              367928959
+        Total time with initialization                449710
+        Total time without initialization                449695
+Test Num : 7
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                368779129
+        Overall end time              369218812
+        Total time with initialization                439683
+        Total time without initialization                439669
+Test Num : 8
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                370073670
+        Overall end time              370510920
+        Total time with initialization                437250
+        Total time without initialization                437235
+Test Num : 9
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                371353216
+        Overall end time              371793664
+        Total time with initialization                440448
+        Total time without initialization                440433
+Test Num : 10
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                372631873
+        Overall end time              373069195
+        Total time with initialization                437322
+        Total time without initialization                437307
+Test Num : 11
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                373913101
+        Overall end time              374376536
+        Total time with initialization                463435
+        Total time without initialization                463421
+Test Num : 12
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                375247931
+        Overall end time              375686621
+        Total time with initialization                438690
+        Total time without initialization                438676
+Test Num : 13
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                376553082
+        Overall end time              377020001
+        Total time with initialization                466919
+        Total time without initialization                466907
+Test Num : 14
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                377883432
+        Overall end time              378346959
+        Total time with initialization                463527
+        Total time without initialization                463515
+Test Num : 15
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                379204288
+        Overall end time              379644089
+        Total time with initialization                439801
+        Total time without initialization                439786
+Test Num : 16
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                380482193
+        Overall end time              380946398
+        Total time with initialization                464205
+        Total time without initialization                464192
+Test Num : 17
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                381803229
+        Overall end time              382260890
+        Total time with initialization                457661
+        Total time without initialization                457648
+Test Num : 18
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                383105631
+        Overall end time              383542976
+        Total time with initialization                437345
+        Total time without initialization                437331
+Test Num : 19
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                384402202
+        Overall end time              384841123
+        Total time with initialization                438921
+        Total time without initialization                438906
+Test Num : 20
+
+Number of processors:     	1
+Global shared memory size:	64 MB
+Samples per pixel:        	1
+
+Number of primitive objects: 	7629
+Number of primitive elements:	46423
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      43160         43160           104 
+     hashtable entries:        339484        339484             4 
+     emptycell entries:          6628          6628             4 
+     voxel:                    625740        625740            20 
+     bintree_node:            8246880       8246880            80 
+
+     Totals:                  9261892       9261892      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time                385680624
+        Overall end time              386119607
+        Total time with initialization                438983
+        Total time without initialization                438967
