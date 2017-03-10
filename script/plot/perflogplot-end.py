@@ -35,7 +35,7 @@ class PerfPlotData :
         self.marker = marker
 
 
-def ShowPerfPlot(plotDataList, poly):
+def ShowPerfPlot(plotDataList, poly, numRows, numCols, plotNum):
     #http://blog.csdn.net/kkxgx/article/details/6951959
     #http://www.mamicode.com/info-detail-280610.html
     #http://blog.csdn.net/panda1234lee/article/details/52311593
@@ -43,8 +43,8 @@ def ShowPerfPlot(plotDataList, poly):
     mpl.rcParams['font.sans-serif'] = ['SimHei'] #用来正常显示中文标签
     mpl.rcParams['axes.unicode_minus'] = False #用来正常显示负号
     #自动调整label显示方式，如果太挤则倾斜显示
-    fig = plt.figure(num = 1, figsize = (6, 5))
-    fig.autofmt_xdate( )
+
+    plt.subplot(numRows, numCols, plotNum)  
     #plt.title("Scheduler Bench Performance...")
     title_str = "scheduler performance test(perf/messaging)"
     #plt.title(title_str)
@@ -68,10 +68,10 @@ def ShowPerfPlot(plotDataList, poly):
             plt.plot(x_new, f_liner, color = data.color, linestyle = '--', marker = data.marker, label = data.plotName)
         else :
             plt.plot(data.xData, data.yData, color = data.color, linestyle = '--', marker = data.marker, label = data.plotName)
-        plt.legend(loc = "upper left")
+        #plt.legend(loc = "upper left")
 
     #plt.savefig(title_str + '.png', format = 'png')
-    plt.show( )
+    #plt.show( )
 
 
 
@@ -120,7 +120,9 @@ def ReadPlotData(filepath, lines, iszero) :
 
 
 #def PerfBenchPlotRun(nameTuple, colorTuple, marketTuple, bench, ming, maxg, setg) :
-def PerfBenchPlotRun(nameTuple, colorTuple, marketTuple, args) :
+#def PerfBenchPlotRun(nameTuple, colorTuple, marketTuple, \
+def PerfBenchPlotRun(directory, bench, min_group, max_group, step_group, loop,  \
+                    numRows, numCols, plotNum) :
     plotDataList = []
     #for name in nameTuple :
     for index in range(len(nameTuple)) :
@@ -129,12 +131,12 @@ def PerfBenchPlotRun(nameTuple, colorTuple, marketTuple, args) :
         marker = markerTuple[index]
         if (name == "NULL") :
             break
-        resultfile = args.directory + "/" + name + "/perf/" + args.bench + "/" \
-                   + args.min_group + "-" + args.max_group + "-" + args.step_group + "-" +args.loop + ".log"
+        resultfile = directory + "/" + name + "/perf/" + bench + "/" \
+                   + min_group + "-" + max_group + "-" + step_group + "-" + loop + ".log"
         print "\n=========================================="
         print "resultfile :", resultfile
 
-        if ((int(args.min_group) + int(args.step_group)) > int(args.max_group)) :  #  同一个循环多次
+        if ((int(min_group) + int(step_group)) > int(max_group)) :  #  同一个循环多次
             iszero = False
         else :
             iszero = True
@@ -146,7 +148,7 @@ def PerfBenchPlotRun(nameTuple, colorTuple, marketTuple, args) :
         plotdata = PerfPlotData(name, resultfile, xData, yData, color, marker)
         plotDataList.append(plotdata)
 
-    ShowPerfPlot(plotDataList, False)
+    ShowPerfPlot(plotDataList, False, numRows, numCols, plotNum)
 
 
 
@@ -155,28 +157,6 @@ if __name__ == "__main__" :
 #python logplot.py -d ../bench  -b messaging -min 10 -max 100 -step 10 -l 5
     reload(sys)
     sys.setdefaultencoding("utf-8")
-
-    if len(sys.argv) > 1:               #  如果在程序运行时，传递了命令行参数
-        pass
-        #  打印传递的命令行参数的信息
-        #print "您输入的所有参数共 %d 个，信息为 sys.argv = %s" % (len(sys.argv), sys.argv)
-
-        #for i, eachArg in enumerate(sys.argv):
-        #    print "[%d] = %s" % (i, eachArg)
-    else:
-        print "Useage : read.py file..."
-        exit(0)
-
-    parser = argparse.ArgumentParser( )
-    #parser.add_argument("-n", "--name", dest = "name", help = "bl-switch | iks | hmp | hmpdb...")
-    parser.add_argument("-b", "--bench", dest = "bench", help = "messaging | pipe...")
-    parser.add_argument("-d", "--dir", dest = "directory", help = "The Directory")
-    parser.add_argument("-f", "--file", dest = "resultfile", help = "The file you want to read...")
-    parser.add_argument("-min", "--min_group", dest = "min_group", help = "The min group you give...")
-    parser.add_argument("-max", "--max_group", dest = "max_group", help = "The max group you give...")
-    parser.add_argument("-step", "--step_group", dest = "step_group", help = "The step of the group grown you  give...")
-    parser.add_argument("-l", "--loop", dest = "loop", help = "The file you want to read...")
-    args = parser.parse_args( )
 
     #nameTuple = ( "hmp", "hmpdb")
     nameTuple = ( "bl-switch", "iks", "hmp", "hmpdb")
@@ -209,6 +189,24 @@ if __name__ == "__main__" :
     #+  Plus marker
     #x  Cross (x) marker
     markerTuple= ( 'o', '^', '*', 's', 'p', '2', 'h', )
-    PerfBenchPlotRun(nameTuple, colorTuple, markerTuple, args)
+    
+    fig = plt.figure(num = 1, figsize = (6, 5))
+    fig.autofmt_xdate( )
+    PerfBenchPlotRun("../bench", "messaging",  "10",  "10", "5", "100", 3, 2, 1)    
+    PerfBenchPlotRun("../bench", "messaging",  "20",  "20", "5", "100", 3, 2, 2)    
+    PerfBenchPlotRun("../bench", "messaging",  "50",  "50", "5", "100", 3, 2, 3)    
+    PerfBenchPlotRun("../bench", "messaging", "100", "100", "5", "100", 3, 2, 4)
+    PerfBenchPlotRun("../bench", "messaging",   "5", "200", "5",   "5", 3, 1, 3)
+    plt.legend(loc = "center")
 
+    fig = plt.figure(num = 2, figsize = (6, 5))
+    fig.autofmt_xdate( )
+    PerfBenchPlotRun("../bench", "pipe",  "1000",  "1000", "5", "100", 3, 2, 1)    
+    PerfBenchPlotRun("../bench", "pipe",  "10000",  "10000", "5", "100", 3, 2, 2)    
+    PerfBenchPlotRun("../bench", "pipe",  "100000",  "100000", "5", "100", 3, 2, 3)    
+    PerfBenchPlotRun("../bench", "pipe", "1000000", "1000000", "5", "100", 3, 2, 4)
+    PerfBenchPlotRun("../bench", "pipe",   "100000", "1000000", "100000",   "10", 3, 1, 3)
+    plt.legend(loc = "lower center")
+
+    plt.show( )  
     exit(0)
