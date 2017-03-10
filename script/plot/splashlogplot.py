@@ -272,7 +272,8 @@ if __name__ == "__main__" :
     #   颜色之间的对应关系为
     #   b---blue   c---cyan  g---green    k----black
     #   m---magenta r---red  w---white    y----yellow
-    colorTuple = ( 'r', 'b', 'y', 'k', 'g', 'c', 'm', 'r', 'y', 'y', 'b', 'c')
+    #colorTuple = ( 'r', 'b', 'y', 'k', 'g', 'c', 'm', 'r', 'y', 'y', 'b', 'c')
+    colorTuple = ( '#CCCCCC', '#CC6666', '#1DACD6', '#6E5160', '#', 'k', 'g', 'c', 'm', 'r', 'y', 'y', 'b', 'c')
     
     # plot数据
     # 其中有len(subjectsTuple)个长度为len(nameTuple)的列表
