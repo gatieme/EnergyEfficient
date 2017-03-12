@@ -22,7 +22,6 @@ class PerfPlotData :
     yData = []
 
     def __init__(self, plotName, logFile, xData, yData, color, marker) :
-
         """
         namelist        plot数据的标识, 对应各个调度算法[bl-switch, iks, hmp, hmpdb]
         xdata           存储了横轴的数据
@@ -35,7 +34,8 @@ class PerfPlotData :
         self.marker = marker
 
 
-def ShowPerfPlot(plotDataList, poly, numRows, numCols, plotNum):
+def ShowPerfPlot(plotDataList, poly, numRows, numCols, plotNum,  \
+                title, xlabel, ylabel) :
     #http://blog.csdn.net/kkxgx/article/details/6951959
     #http://www.mamicode.com/info-detail-280610.html
     #http://blog.csdn.net/panda1234lee/article/details/52311593
@@ -46,10 +46,10 @@ def ShowPerfPlot(plotDataList, poly, numRows, numCols, plotNum):
 
     plt.subplot(numRows, numCols, plotNum)  
     #plt.title("Scheduler Bench Performance...")
-    title_str = "scheduler performance test(perf/messaging)"
-    #plt.title(title_str)
-    plt.xlabel("group", size = 14)
-    plt.ylabel("time", size = 14)
+    #title_str = "scheduler performance test(perf/messaging)"
+    plt.title(title)
+    plt.xlabel(xlabel, size = 14)
+    plt.ylabel(ylabel, size = 14)
     plt.grid( ) # 开启网格
 
     for data in plotDataList :
@@ -122,7 +122,8 @@ def ReadPlotData(filepath, lines, iszero) :
 #def PerfBenchPlotRun(nameTuple, colorTuple, marketTuple, bench, ming, maxg, setg) :
 #def PerfBenchPlotRun(nameTuple, colorTuple, marketTuple, \
 def PerfBenchPlotRun(directory, bench, min_group, max_group, step_group, loop,  \
-                    numRows, numCols, plotNum) :
+                    numRows, numCols, plotNum,                                  \
+                    title, xlabel, ylabel) :
     plotDataList = []
     #for name in nameTuple :
     for index in range(len(nameTuple)) :
@@ -148,7 +149,7 @@ def PerfBenchPlotRun(directory, bench, min_group, max_group, step_group, loop,  
         plotdata = PerfPlotData(name, resultfile, xData, yData, color, marker)
         plotDataList.append(plotdata)
 
-    ShowPerfPlot(plotDataList, False, numRows, numCols, plotNum)
+    ShowPerfPlot(plotDataList, False, numRows, numCols, plotNum, title, xlabel, ylabel)
 
 
 
@@ -192,21 +193,35 @@ if __name__ == "__main__" :
     
     fig = plt.figure(num = 1, figsize = (6, 5))
     fig.autofmt_xdate( )
-    PerfBenchPlotRun("../bench", "messaging",  "10",  "10", "5", "100", 3, 2, 1)    
-    PerfBenchPlotRun("../bench", "messaging",  "20",  "20", "5", "100", 3, 2, 2)    
-    PerfBenchPlotRun("../bench", "messaging",  "50",  "50", "5", "100", 3, 2, 3)    
-    PerfBenchPlotRun("../bench", "messaging", "100", "100", "5", "100", 3, 2, 4)
-    PerfBenchPlotRun("../bench", "messaging",   "5", "200", "5",   "5", 3, 1, 3)
-    plt.legend(loc = "center")
+    fig.subplots_adjust(hspace=0.5, wspace=0.1)
+
+    PerfBenchPlotRun("../bench", "messaging",  "10",  "10", "5", "100", 3, 2, 1, \
+                    title = "Fig-1 group = 10", xlabel = "times", ylabel = "time")    
+    PerfBenchPlotRun("../bench", "messaging",  "20",  "20", "5", "100", 3, 2, 2, \
+                    title = "Fig-2 group = 20", xlabel = "times", ylabel = "time")    
+    PerfBenchPlotRun("../bench", "messaging",  "50",  "50", "5", "100", 3, 2, 3, \
+                    title = "Fig-3 group = 50", xlabel = "times", ylabel = "time") 
+    PerfBenchPlotRun("../bench", "messaging", "100", "100", "5", "100", 3, 2, 4, \
+                    title = "Fig-4 group = 100", xlabel = "times", ylabel = "time")
+    PerfBenchPlotRun("../bench", "messaging",   "5", "200", "5",   "5", 3, 1, 3, \
+                    title = "Fig-5 group(5-200)", xlabel = "group", ylabel = "time") 
+    plt.legend(loc = "upper left")
+    #plt.spaceplots([0, 0, 0, 0], [0.2, 0.2])
 
     fig = plt.figure(num = 2, figsize = (6, 5))
     fig.autofmt_xdate( )
-    PerfBenchPlotRun("../bench", "pipe",  "1000",  "1000", "5", "100", 3, 2, 1)    
-    PerfBenchPlotRun("../bench", "pipe",  "10000",  "10000", "5", "100", 3, 2, 2)    
-    PerfBenchPlotRun("../bench", "pipe",  "100000",  "100000", "5", "100", 3, 2, 3)    
-    PerfBenchPlotRun("../bench", "pipe", "1000000", "1000000", "5", "100", 3, 2, 4)
-    PerfBenchPlotRun("../bench", "pipe",   "100000", "1000000", "100000",   "10", 3, 1, 3)
-    plt.legend(loc = "lower center")
+    fig.subplots_adjust(hspace=0.5, wspace=0.1)
+    PerfBenchPlotRun("../bench", "pipe",  "1000",  "1000", "5", "100", 3, 2, 1, \
+                    title = "Fig-1 loop = 1000", xlabel = "times", ylabel = "time")   
+    PerfBenchPlotRun("../bench", "pipe",  "10000",  "10000", "5", "100", 3, 2, 2, \
+                    title = "Fig-2 loop = 10000", xlabel = "times", ylabel = "time")       
+    PerfBenchPlotRun("../bench", "pipe",  "100000",  "100000", "5", "100", 3, 2, 3, \
+                    title = "Fig-3 loop = 100000", xlabel = "times", ylabel = "time")   
+    PerfBenchPlotRun("../bench", "pipe", "1000000", "1000000", "5", "100", 3, 2, 4, \
+                    title = "Fig-4 loop = 1000000", xlabel = "times", ylabel = "time")   
+    PerfBenchPlotRun("../bench", "pipe",   "100000", "1000000", "100000",   "10", 3, 1, 3, \
+                    title = "Fig-5 loop(100000-1000000)", xlabel = "loop", ylabel = "time")   
+    plt.legend(loc = "upper left")
 
     plt.show( )  
     exit(0)
