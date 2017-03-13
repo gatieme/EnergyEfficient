@@ -1,7 +1,7 @@
 #bench      = splash
 #application= fft
 #loop_num   = 20
-avg = 1239.650000
+avg = 0.849
    1, 1439.000000
    2, 1236.000000
    3, 1265.000000

@@ -65,16 +65,15 @@ def AddPlotLabels(xdata, ydata, width, color, name):
     #    rect.set_edgecolor('white')
 
 
-def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = True, minY = 0, maxY = 4200):
+def ShowPerfPlot(plotDataList, standardized, numRows, numCols, plotNum, title, ylabel, minY, maxY):
 
     if standardized == True :
         StandardizedPlotDataList(plotDataList)
     
-    #自动调整label显示方式，如果太挤则倾斜显示
-    fig = plt.figure(num = 1, figsize = (8, 6))
-    fig.autofmt_xdate( )
-    plt.title("scheduler splash benchmark")
-    plt.ylabel("time(ms)", size = 14)
+
+    plt.subplot(numRows, numCols, plotNum)  
+    plt.title(title)
+    plt.ylabel(ylabel, size = 14)
     plt.grid( ) # 开启网格
     # 必须配置中文字体，否则会显示成方块
     # 注意所有希望图表显示的中文必须为unicode格式
@@ -96,8 +95,8 @@ def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = T
     print "\n==============================================================="
     print "+++++++ plot data +++++++"
     for nameIndex in range(len(nameTuple)) :
-        #print nameIndex
-        AddPlotLabels(xdata + bar_width * nameIndex, poltDataList[nameIndex], bar_width, \
+        print nameIndex, plotDataList[nameIndex]
+        AddPlotLabels(xdata + bar_width * nameIndex, plotDataList[nameIndex], bar_width, \
             colorTuple[nameIndex], nameTuple[nameIndex])
     print "===============================================================\n"
 
@@ -111,10 +110,10 @@ def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = T
     # 图表标题
     #plt.title(u'调度器')#, fontproperties=custom_font)
     # 图例显示在图表下方
-    plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.03), fancybox=True, ncol=5)#, prop=custom_font)
+    #plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.03), fancybox=True, ncol=5)#, prop=custom_font)
 
     # 图表输出到本地
-    plt.show( )
+    #plt.show( )
 
 
 
@@ -154,11 +153,13 @@ def StandardizedPlotDataList(plotDataList) :
             colList.append(plotDataList[row][col])
         print "col = ", col, colList
 
-        minData = min(colList)
-        maxData = max(colList)
+        minData = min(colList) * 1.0
+        maxData = max(colList) * 1.0
         for row in range(len(plotDataList)) :      #  每行代表一个系统name
-            tmp =  MaxMinNormalization(plotDataList[row][col], minData, maxData)
-            plotDataList[row][col] = tmp * 4000
+            #tmp =  MaxMinNormalization(plotDataList[row][col], minData, maxData)
+            #plotDataList[row][col] = tmp
+            #plotDataList[row][col] = plotDataList[row][col] / (maxData * 1.1)
+            plotDataList[row][col] = plotDataList[row][col] / plotDataList[len(plotDataList) - 1][col]
 
 
 
@@ -200,9 +201,6 @@ def getReItem(data, reStr) :
         #  匹配的信息如下
         #  Total time: 0.038 [sec]
         #reStr = r'Total time: ([-+]?[0-9]*\.?[0-9]+) [sec]'
-
-        
-
         pattern = re.compile(reStr, re.S)
         myItems = re.findall(pattern, data)
         #print myItems
@@ -223,55 +221,10 @@ def ReadPlotData(filepath) :
 
 
 
-
-
-
-if __name__ == "__main__" :
-
-#python logplot.py -d ../bench  -b messaging -min 10 -max 100 -step 10 -l 5
-    reload(sys)
-    sys.setdefaultencoding("utf-8")
-
-    if len(sys.argv) > 1:               #  如果在程序运行时，传递了命令行参数
-        pass
-        #  打印传递的命令行参数的信息
-        #print "您输入的所有参数共 %d 个，信息为 sys.argv = %s" % (len(sys.argv), sys.argv)
-
-        #for i, eachArg in enumerate(sys.argv):
-        #    print "[%d] = %s" % (i, eachArg)
-    else:
-        print "Useage : read.py file..."
-        exit(0)
-
-    parser = argparse.ArgumentParser( )
-    #parser.add_argument("-n", "--name", dest = "name", help = "bl-switch | iks | hmp | hmpdb...")
-    parser.add_argument("-b", "--bench", dest = "bench", help = "messaging | pipe...")
-    parser.add_argument("-a", "--app", dest = "application", help = "messaging | pipe...")
-    parser.add_argument("-d", "--dir", dest = "directory", help = "The Directory")
-    parser.add_argument("-f", "--file", dest = "resultfile", help = "The file you want to read...")
-    parser.add_argument("-min", "--min_group", dest = "min_group", help = "The min group you give...")
-    parser.add_argument("-max", "--max_group", dest = "max_group", help = "The max group you give...")
-    parser.add_argument("-step", "--step_group", dest = "step_group", help = "The step of the group grown you  give...")
-    parser.add_argument("-l", "--loop", dest = "loop", help = "The file you want to read...")
-    args = parser.parse_args( )
-
-    #nameTuple = ( "hmp", "hmpdb")
-    #appTuple = ( "fft", "radix", "cholesky" )  #300
-    appTuple = ( "fft", "ocean", "radix", "water-spatial", "cholesky", "lu", "radiosity", "raytrace", "water-nsquared") # 2000
-    appTuple = ( "barnes", "fft", "ocean", "radix", "water-spatial", "cholesky", "lu", "radiosity", "raytrace", "water-nsquared")
-    nameTuple = ( "bl-switch", "iks", "hmp", "hmpdb")
-    #   1）控制颜色
-    #   颜色之间的对应关系为
-    #   b---blue   c---cyan  g---green    k----black
-    #   m---magenta r---red  w---white    y----yellow
-    colorTuple = ( 'r', 'b', 'y', 'k', 'g', 'c', 'm', 'r', 'y', 'y', 'b', 'c')
-    
-    # plot数据
-    # 其中有len(subjectsTuple)个长度为len(nameTuple)的列表
-    # 用于标识每个进程subjectsTuple在nameTuple环境下运行的结果集合
-    # 买个进程有一个颜色标识
-    plotDataList = []  
-
+def SpalshBenchPlotRun(directory, loop, standardized,     \
+                        numRows, numCols, plotNum,          \
+                        title, ylabel, minY, maxY) :
+    plotDataList = [] 
     print "\n==============================================================="
     print "+++++++ read plot data +++++++"
     #for name in nameTuple :
@@ -285,7 +238,7 @@ if __name__ == "__main__" :
             app = appTuple[appIndex]
             if (name == "NULL") :
                 break
-            resultfile = args.directory + "/" + name + "/splash/" + app + "/" + args.loop + ".log"       
+            resultfile = directory + "/" + name + "/splash/" + app + "/" + loop + ".log"       
             #print "\n=========================================="
             #print "resultfile :", resultfile
 
@@ -296,7 +249,7 @@ if __name__ == "__main__" :
             #print yData
             #print "==========================================\n"
 
-            appPlotDataList.append(int(string.atof(yData[0]) / 1000))   #  每个进程的运行情况
+            appPlotDataList.append(string.atof(yData[0]))   #  每个进程的运行情况
         print name, appPlotDataList
         #plotdata = SplashPlotData(name = app, xData = , yData = appPlotDataList, color = color)
         plotDataList.append(appPlotDataList)    # 每个name系统中各个进程app的运行情况, 每行对应一个系统, 每列对应一个进程
@@ -310,5 +263,47 @@ if __name__ == "__main__" :
     print "color =", colorTuple
     print "===============================================================\n" 
     
-    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = False, minY = 0, maxY = 4200)
+    #ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = False, minY = 0, maxY = 4200)
+    ShowPerfPlot(plotDataList, standardized, numRows, numCols, plotNum, title, ylabel, minY, maxY)
+
+
+
+if __name__ == "__main__" :
+
+#python logplot.py -d ../bench  -b messaging -min 10 -max 100 -step 10 -l 5
+    reload(sys)
+    sys.setdefaultencoding("utf-8")
+
+    #nameTuple = ( "hmp", "hmpdb")
+    #appTuple = ( "fft", "radix", "cholesky" )  #300
+    #appTuple = ( "cholesky", "fft", "radix", "lu", "ocean", "radiosity", "barnes", "raytrace", "water-ns", "water-s") # 2000
+    appTuple = ( "radix", "radiosity", "water-ns", "lu", "cholesky", "fft", "water-s", "barnes", "ocean", "raytrace") # nice
+    #appTuple = ( "barnes", "ocean", "water-spatial", "lu", "radiosity", "raytrace", "water-nsquared")
+    #appTuple = ( "barnes", "ocean", "water-s", "lu", "radiosity", "raytrace", "water-ns")
+    #appTuple = ( "ocean", "water-s", "lu", "radiosity", "raytrace", "water-ns")
+    
+    nameTuple = ( "performance", "powersave", "ondemand", "big", "little")
+    #nameTuple = ( "big", "little", "hmp", "hmpdb")
+    #nameTuple = ( "big", "little", "bl-switch", "iks", "hmp", "hmpdb")
+    #   1）控制颜色
+    #   颜色之间的对应关系为
+    #   b---blue   c---cyan  g---green    k----black
+    #   m---magenta r---red  w---white    y----yellow
+    #colorTuple = ( 'r', 'b', 'y', 'k', 'g', 'c', 'm', 'r', 'y', 'y', 'b', 'c')
+    colorTuple = ( '#CCCCCC', '#CC6666', '#1DACD6', '#6E5160', 'k', 'g', 'c', 'm', 'r', 'y', 'y', 'b', 'c')
+    
+    # plot数据
+    # 其中有len(subjectsTuple)个长度为len(nameTuple)的列表
+    # 用于标识每个进程subjectsTuple在nameTuple环境下运行的结果集合
+    # 买个进程有一个颜色标识
+    #自动调整label显示方式，如果太挤则倾斜显示
+    fig = plt.figure(num = 0, figsize = (8, 6))
+    fig.autofmt_xdate( )
+    fig.subplots_adjust(hspace=0.2, wspace=0.1)
+
+    SpalshBenchPlotRun("../bench", "20", True, 2, 1, 1, title = "Fig-1 spalsh runtime", ylabel = "time", minY = 0, maxY = 3)
+    SpalshBenchPlotRun("../bench", "power", True, 2, 1, 2, title = "Fig-2 splash power", ylabel = "power", minY = 0, maxY = 2)
+    plt.legend(loc='upper center', bbox_to_anchor=(0.5, -0.1), fancybox=True, ncol=5)#, prop=custom_font)
+
+    plt.show( )
     exit(0)
