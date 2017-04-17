@@ -46,7 +46,7 @@ def ShowPerfPlot(plotDataList, poly):
     fig = plt.figure(num = 1, figsize = (6, 5))
     fig.autofmt_xdate( )
     #plt.title("Scheduler Bench Performance...")
-    title_str = "scheduler performance (perf/messaging) LOOP=[100000,1000000]"
+    title_str = "scheduler performance (perf/messaging) GROUP=100"
     plt.title(title_str)
     plt.xlabel("loop", size = 14)
     plt.ylabel("time", size = 14)

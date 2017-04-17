@@ -73,8 +73,8 @@ def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = T
     #自动调整label显示方式，如果太挤则倾斜显示
     fig = plt.figure(num = 1, figsize = (8, 6))
     fig.autofmt_xdate( )
-    plt.title("scheduler splash benchmark/runtime")
-    plt.ylabel("time(ms)", size = 14)
+    plt.title("scheduler splash benchmark/energy")
+    plt.ylabel("energy", size = 14)
     plt.grid( ) # 开启网格
     # 必须配置中文字体，否则会显示成方块
     # 注意所有希望图表显示的中文必须为unicode格式
@@ -257,13 +257,8 @@ if __name__ == "__main__" :
     parser.add_argument("-l", "--loop", dest = "loop", help = "The file you want to read...")
     args = parser.parse_args( )
 
-    #nameTuple = ( "hmp", "hmpdb")
-    #appTuple = ( "fft", "radix", "cholesky" )  #300
-    #appTuple = ( "cholesky", "fft", "radix", "lu", "ocean", "radiosity", "barnes", "raytrace", "water-ns", "water-s") # 2000
-    appTuple = ( "radix", "radiosity", "water-ns", "lu", "cholesky", "fft", "water-s", "barnes", "ocean", "raytrace") # nice
-    #appTuple = ( "barnes", "ocean", "water-spatial", "lu", "radiosity", "raytrace", "water-nsquared")
-    #appTuple = ( "barnes", "ocean", "water-s", "lu", "radiosity", "raytrace", "water-ns")
-    #appTuple = ( "ocean", "water-s", "lu", "radiosity", "raytrace", "water-ns")
+    appTuple = ( "radix", "cholesky", "fft", "water-s", "ocean" )  #300
+    #appTuple = ( "radix", "radiosity", "water-ns", "lu", "cholesky", "fft", "water-s", "barnes", "ocean", "raytrace") # nice
     
     nameTuple = ( "bl-switch", "iks", "hmp", "hmpdb")
     #nameTuple = ( "big", "little", "hmp", "hmpdb")
@@ -273,7 +268,7 @@ if __name__ == "__main__" :
     #   b---blue   c---cyan  g---green    k----black
     #   m---magenta r---red  w---white    y----yellow
     #colorTuple = ( 'r', 'b', 'y', 'k', 'g', 'c', 'm', 'r', 'y', 'y', 'b', 'c')
-    colorTuple = ( '#CCCCCC', '#CC6666', '#1DACD6', '#6E5160', '#', 'k', 'g', 'c', 'm', 'r', 'y', 'y', 'b', 'c')
+    colorTuple = ( '#FFFFFF', '#CCCCCC', '#CC6666', '#000000', '#1DACD6', '#6E5160', 'k', 'g', 'c', 'm', 'r', 'y', 'y', 'b', 'c')
     
     # plot数据
     # 其中有len(subjectsTuple)个长度为len(nameTuple)的列表
@@ -320,5 +315,5 @@ if __name__ == "__main__" :
     print "===============================================================\n" 
     
     #ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = False, minY = 0, maxY = 4200)
-    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = True, minY = 0, maxY = 3.5)
+    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = True, minY = 0, maxY = 2)
     exit(0)
