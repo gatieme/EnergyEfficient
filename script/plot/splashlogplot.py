@@ -18,6 +18,8 @@ import matplotlib.pyplot as plt
 import numpy as np
 import string
 
+import openpyxl
+
 class PerfPlotData :
     plotName = "none name"
     logfile = "none path"
@@ -63,6 +65,9 @@ def AddPlotLabels(xdata, ydata, width, color, name):
     #    plt.text(rect.get_x() + rect.get_width() / 2, height, height, ha='center', va='bottom')
     #    # 柱形图边缘用白色填充，纯粹为了美观
     #    rect.set_edgecolor('white')
+
+
+
 
 
 def ShowPerfPlot(nameTuple, appTuple, poltDataList, colorTuple, standardized = True, minY = 0, maxY = 4200):
@@ -163,6 +168,33 @@ def StandardizedPlotDataList(plotDataList) :
             plotDataList[row][col] = plotDataList[row][col] / plotDataList[len(plotDataList) - 1][col]
 
 
+ 
+def WriteExcelFile(plotDataList, filename, sheetname, nameTuple, appTuple) :
+    """
+    将数据写入Excel
+    """
+    #wb = openpyxl.Workbook()
+    #ws = wb.active
+    wb = openpyxl.load_workbook(filename)
+    print wb.get_sheet_names( )
+    if sheetname in wb.get_sheet_names( ) :
+        ws = wb.get_sheet_by_name(sheetname)
+        print sheetname, "in", wb.get_sheet_names( ) 
+    else :
+     
+        ws = wb.create_sheet(sheetname)
+        print "create", sheetname, "sheet"
+
+
+        ws.cell(row = 1, column = 1).value = "time"
+    for row in range(len(plotDataList)) :
+        name = nameTuple[row]
+        ws.cell(row = row + 2, column = 1).value = str.upper(name)
+        for col in range(len(plotDataList[row])) :
+            app = appTuple[col]
+            ws.cell(row = 1, column = col + 2).value = app
+            ws.cell(row = row + 2, column = col + 2).value = plotDataList[row][col]
+    wb.save(filename)
 
 
 #-----------------------------------
@@ -315,5 +347,16 @@ if __name__ == "__main__" :
     print "===============================================================\n" 
     
     #ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = False, minY = 0, maxY = 4200)
-    ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = True, minY = 0, maxY = 2)
+    #ShowPerfPlot(nameTuple, appTuple, plotDataList, colorTuple, standardized = True, minY = 0, maxY = 2)
+    
+
+    # 标准化数据之后, 将数据写入Excel
+    StandardizedPlotDataList(plotDataList)
+    print plotDataList
+    filename = args.bench + ".xlsx";
+    sheetname = args.loop
+    WriteExcelFile(plotDataList, filename, sheetname, nameTuple, appTuple)
+
+
+
     exit(0)

@@ -15,6 +15,9 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 
+
+import openpyxl
+
 class PerfPlotData :
     plotName = "none name"
     logfile = "none path"
@@ -146,7 +149,34 @@ def PerfBenchPlotRun(nameTuple, colorTuple, marketTuple, args) :
         plotdata = PerfPlotData(name, resultfile, xData, yData, color, marker)
         plotDataList.append(plotdata)
 
-    ShowPerfPlot(plotDataList, False)
+    #ShowPerfPlot(plotDataList, False)
+
+    filename = args.bench + ".xlsx";
+    sheetname = args.min_group + "-" + args.max_group + "-" + args.step_group + "-" + args.loop
+    WriteExcelFile(plotDataList, filename, sheetname)
+
+
+def WriteExcelFile(plotDataList, filename, sheetname) :
+    """
+    将数据写入Excel
+    """
+    #wb = openpyxl.Workbook()
+    #ws = wb.active
+    wb = openpyxl.load_workbook(filename)
+    print wb.get_sheet_names( )
+    if sheetname in wb.get_sheet_names( ) :
+        ws = wb.get_sheet_by_name(sheetname)
+        print sheetname, "in", wb.get_sheet_names( ) 
+    else :
+        ws = wb.create_sheet(sheetname)
+        print "create", sheetname, "sheet"
+
+    for row in range(len(plotDataList)) :
+        ydata = plotDataList[row].yData
+        ws.cell(row = row + 1, column = 1).value = str.upper(plotDataList[row].plotName)
+        for col in range(len(plotDataList[row].yData)) :
+            ws.cell(row = row + 1, column = col + 2).value = ydata[col]
+    wb.save(filename)
 
 
 
