@@ -174,8 +174,12 @@ def WriteExcelFile(plotDataList, filename, sheetname) :
     for row in range(len(plotDataList)) :
         ydata = plotDataList[row].yData
         ws.cell(row = row + 1, column = 1).value = str.upper(plotDataList[row].plotName)
+
         for col in range(len(plotDataList[row].yData)) :
-            ws.cell(row = row + 1, column = col + 2).value = ydata[col]
+            if row == 0:
+                ws.cell(row = 1, column = col + 2).value = plotDataList[row].xData[col]
+            else :
+                ws.cell(row = row + 1, column = col + 2).value = ydata[col]
     wb.save(filename)
 
 
